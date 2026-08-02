@@ -1,0 +1,301 @@
+player_id,fpl_full_name,fpl_team,understat_id,understat_name,understat_score,needs_review_understat,review_reason_understat,fbref_id,fbref_name,fbref_score,needs_review_fbref,review_reason_fbref,needs_review,total_minutes
+3,Karl Hein,Arsenal,5061,Kepa,60.00000000000001,True,low name-match confidence,Mikel Merino,Mikel Merino,57.14285714285714,True,low name-match confidence,True,0
+464,Jack Moorhouse,Man Utd,13150,Jack Fletcher,51.85185185185186,True,low name-match confidence,Jack Fletcher,Jack Fletcher,51.85185185185186,True,low name-match confidence,True,0
+461,Jayce Fitzgerald,Man Utd,14272,Tyler Fletcher,46.666666666666664,True,low name-match confidence,Tyler Fletcher,Tyler Fletcher,46.666666666666664,True,low name-match confidence,True,0
+460,Toby Collyer,Man Utd,14272,Tyler Fletcher,46.15384615384615,True,low name-match confidence,Tyler Fletcher,Tyler Fletcher,46.15384615384615,True,low name-match confidence,True,0
+454,Antony dos Santos,Man Utd,7768,Mason Mount,50.0,True,low name-match confidence,Mason Mount,Mason Mount,50.0,True,low name-match confidence,True,0
+451,Marcus Rashford,Man Utd,7080,Matheus Cunha,42.85714285714286,True,low name-match confidence,Manuel Ugarte,Manuel Ugarte,42.85714285714286,True,low name-match confidence,True,0
+445,Harry Amass,Man Utd,1687,Harry Maguire,69.23076923076923,True,low name-match confidence,Harry Maguire,Harry Maguire,69.23076923076923,True,low name-match confidence,True,0
+439,Diego León Blanco,Man Utd,7281,Diogo Dalot,63.0,True,low name-match confidence,Diogo Dalot,Diogo Dalot,63.0,True,low name-match confidence,True,0
+435,Dermot Mee,Man Utd,13080,Ayden Heaven,45.45454545454546,True,low name-match confidence,Ayden Heaven,Ayden Heaven,45.45454545454546,True,low name-match confidence,True,0
+434,Tom Heaton,Man Utd,14266,Bendito Mantato,54.0,True,low name-match confidence,Bendito Mantato,Bendito Mantato,54.0,True,low name-match confidence,True,0
+433,Elyh Harrison,Man Utd,13467,Tyler Fredricson,55.172413793103445,True,low name-match confidence,Tyler Fredricson,Tyler Fredricson,55.172413793103445,True,low name-match confidence,True,0
+432,André Onana,Man Utd,13080,Ayden Heaven,52.17391304347826,True,low name-match confidence,Ayden Heaven,Ayden Heaven,52.17391304347826,True,low name-match confidence,True,0
+764,Reigan Heskey,Man City,2496,Rodri,45.0,True,low name-match confidence,Rayan Cherki,Rayan Cherki,56.00000000000001,True,low name-match confidence,True,0
+763,Charlie Gray,Man City,9077,James Trafford,46.15384615384615,True,low name-match confidence,Rayan Cherki,Rayan Cherki,55.416666666666664,True,low name-match confidence,True,0
+742,Ryan McAidoo,Man City,6674,Rayan Ait Nouri,59.25925925925925,True,low name-match confidence,Rayan Aït-Nouri,Rayan Aït-Nouri,61.53846153846154,True,low name-match confidence,True,0
+740,Stephen Mfuni,Man City,11363,Antoine Semenyo,47.5,True,low name-match confidence,Antoine Semenyo,Antoine Semenyo,47.5,True,low name-match confidence,True,0
+429,Kalvin Phillips,Man City,11735,Sávio,54.0,True,low name-match confidence,Sávio,Sávio,54.0,True,low name-match confidence,True,0
+463,Sékou Koné,Man Utd,7768,Mason Mount,47.61904761904761,True,low name-match confidence,Mason Mount,Mason Mount,47.61904761904761,True,low name-match confidence,True,0
+465,Rasmus Højlund,Man Utd,7080,Matheus Cunha,46.15384615384615,True,low name-match confidence,Matheus Cunha,Matheus Cunha,46.15384615384615,True,low name-match confidence,True,0
+425,Claudio Echeverri,Man City,2496,Rodri,67.5,True,low name-match confidence,Rodri,Rodri,67.5,True,low name-match confidence,True,0
+467,Chido Obi,Man Utd,7281,Diogo Dalot,40.0,True,low name-match confidence,Diogo Dalot,Diogo Dalot,40.0,True,low name-match confidence,True,0
+765,Leo Shahar,Newcastle,10216,Lewis Hall,50.0,True,low name-match confidence,Lewis Hall,Lewis Hall,50.0,True,low name-match confidence,True,0
+753,John Ruddy,Newcastle,6063,Jacob Murphy,45.45454545454546,True,low name-match confidence,Jacob Murphy,Jacob Murphy,45.45454545454546,True,low name-match confidence,True,0
+689,Seung-Soo Park,Newcastle,13532,Sean Neave,43.47826086956522,True,low name-match confidence,Sean Neave,Sean Neave,43.47826086956522,True,low name-match confidence,True,0
+498,Joe White,Newcastle,6630,Joe Willock,69.23076923076923,True,low name-match confidence,Joe Willock,Joe Willock,69.23076923076923,True,low name-match confidence,True,0
+496,Garang Kuol,Newcastle,7382,Dan Burn,42.10526315789473,True,low name-match confidence,Dan Burn,Dan Burn,42.10526315789473,True,low name-match confidence,True,0
+495,Isaac Hayden,Newcastle,5603,Aaron Ramsdale,46.15384615384615,True,low name-match confidence,Aaron Ramsdale,Aaron Ramsdale,46.15384615384615,True,low name-match confidence,True,0
+492,Antoñito Cordero Campillo,Newcastle,8150,Anthony Gordon,60.00000000000001,True,low name-match confidence,Anthony Gordon,Anthony Gordon,60.00000000000001,True,low name-match confidence,True,0
+484,Matt Targett,Newcastle,9512,Valentino Livramento,42.75,True,low name-match confidence,Malick Thiaw,Malick Thiaw,41.666666666666664,True,low name-match confidence,True,0
+483,Miodrag Pivaš,Newcastle,652,Kieran Trippier,42.85714285714286,True,low name-match confidence,Kieran Trippier,Kieran Trippier,42.85714285714286,True,low name-match confidence,True,0
+482,Harrison Ashby,Newcastle,5603,Aaron Ramsdale,50.0,True,low name-match confidence,Aaron Ramsdale,Aaron Ramsdale,50.0,True,low name-match confidence,True,0
+472,Odysseas Vlachodimos,Newcastle,13532,Sean Neave,45.0,True,low name-match confidence,Sean Neave,Sean Neave,45.0,True,low name-match confidence,True,0
+471,Mark Gillespie,Newcastle,766,Jamaal Lascelles,46.666666666666664,True,low name-match confidence,Jamaal Lascelles,Jamaal Lascelles,46.666666666666664,True,low name-match confidence,True,0
+827,Jim Thwaites,Man Utd,7902,Matthijs de Ligt,40.714285714285715,True,low name-match confidence,Matthijs de Ligt,Matthijs de Ligt,40.714285714285715,True,low name-match confidence,True,0
+788,Godwill Kukonki,Man Utd,7281,Diogo Dalot,38.46153846153846,True,low name-match confidence,Amad Diallo,Amad Diallo,38.46153846153846,True,low name-match confidence,True,0
+468,Ethan Wheatley,Man Utd,13080,Ayden Heaven,53.84615384615385,True,low name-match confidence,Ayden Heaven,Ayden Heaven,53.84615384615385,True,low name-match confidence,True,0
+428,Sverre Nypan,Man City,11735,Sávio,51.42857142857142,True,low name-match confidence,Sávio,Sávio,51.42857142857142,True,low name-match confidence,True,0
+420,İlkay Gündoğan,Man City,3635,Bernardo Silva,47.5,True,low name-match confidence,Bernardo Silva,Bernardo Silva,47.5,True,low name-match confidence,True,0
+4,Tommy Setford,Arsenal,11132,Ethan Nwaneri,44.44444444444444,True,low name-match confidence,Ethan Nwaneri,Ethan Nwaneri,44.44444444444444,True,low name-match confidence,True,0
+368,Ármin Pécsi,Liverpool,9788,Dominik Szoboszlai,45.0,True,low name-match confidence,Alisson,Alisson,45.0,True,low name-match confidence,True,0
+838,Rhys Chadwick,Leeds,6544,Lukas Nmecha,40.0,True,low name-match confidence,Lukas Nmecha,Lukas Nmecha,40.0,True,low name-match confidence,True,0
+837,Jayden Lienou,Leeds,9205,Jayden Bogle,72.0,True,low name-match confidence,Jayden Bogle,Jayden Bogle,72.0,True,low name-match confidence,True,0
+787,Sam Chambers,Leeds,902,Sam Byram,66.66666666666667,True,low name-match confidence,Sam Byram,Sam Byram,66.66666666666667,True,low name-match confidence,True,0
+741,Harry Gray,Leeds,780,Karl Darlow,45.45454545454546,True,low name-match confidence,Karl Darlow,Karl Darlow,45.45454545454546,True,low name-match confidence,True,0
+363,Patrick Bamford,Leeds,11966,Noah Okafor,46.15384615384615,True,low name-match confidence,Noah Okafor,Noah Okafor,46.15384615384615,True,low name-match confidence,True,0
+361,Darko Gyabi,Leeds,780,Karl Darlow,51.81818181818182,True,low name-match confidence,Karl Darlow,Karl Darlow,51.81818181818182,True,low name-match confidence,True,0
+360,Joe Gelhardt,Leeds,6377,Joe Rodon,66.66666666666667,True,low name-match confidence,Joe Rodon,Joe Rodon,66.66666666666667,True,low name-match confidence,True,0
+359,Charlie Crew,Leeds,5555,Dominic Calvert-Lewin,54.4090909090909,True,low name-match confidence,Dominic Calvert-Lewin,Dominic Calvert-Lewin,54.4090909090909,True,low name-match confidence,True,0
+357,Largie Ramazani,Leeds,8000,Ilia Gruev,45.0,True,low name-match confidence,Ilia Gruev,Ilia Gruev,45.0,True,low name-match confidence,True,0
+355,Sam Greenwood,Leeds,902,Sam Byram,63.33333333333332,True,low name-match confidence,Sam Byram,Sam Byram,63.33333333333332,True,low name-match confidence,True,0
+349,Isaac Schmidt,Leeds,9910,Anton Stach,41.666666666666664,True,low name-match confidence,Anton Stach,Anton Stach,41.666666666666664,True,low name-match confidence,True,0
+340,Alex Cairns,Leeds,10751,Brenden Aaronson,56.25,True,low name-match confidence,Brenden Aaronson,Brenden Aaronson,56.25,True,low name-match confidence,True,0
+339,Illan Meslier,Leeds,5595,Daniel James,48.0,True,low name-match confidence,Daniel James,Daniel James,48.0,True,low name-match confidence,True,0
+786,Alfie McNally,Fulham,11728,Calvin Bassey,46.15384615384615,True,low name-match confidence,Calvin Bassey,Calvin Bassey,46.15384615384615,True,low name-match confidence,True,0
+770,Seth Ridgeon,Fulham,8285,Sander Berge,50.0,True,low name-match confidence,Sander Berge,Sander Berge,50.0,True,low name-match confidence,True,0
+839,Alfie Cresswell,Leeds,8000,Ilia Gruev,47.36842105263159,True,low name-match confidence,Ilia Gruev,Ilia Gruev,47.36842105263159,True,low name-match confidence,True,0
+377,Konstantinos Tsimikas,Liverpool,1257,Alisson,40.0,True,low name-match confidence,Alisson,Alisson,40.0,True,low name-match confidence,True,0
+404,Manuel Akanji,Man City,2254,Mateo Kovacic,53.84615384615385,True,low name-match confidence,Mateo Kovačić,Mateo Kovačić,53.84615384615385,True,low name-match confidence,True,0
+378,Amara Nallo,Liverpool,8808,Wataru Endo,54.54545454545454,True,low name-match confidence,Wataru Endo,Wataru Endo,54.54545454545454,True,low name-match confidence,True,0
+401,Marcus Bettinelli,Man City,7603,Marc Guehi,60.00000000000001,True,low name-match confidence,Marc Guéhi,Marc Guéhi,60.00000000000001,True,low name-match confidence,True,0
+399,Ederson Santana de Moraes,Man City,579,Nathan Aké,59.85,True,low name-match confidence,Nathan Aké,Nathan Aké,59.85,True,low name-match confidence,True,0
+832,Talla Ndiaye,Liverpool,5232,Alexander Isak,53.84615384615385,True,low name-match confidence,Alexander Isak,Alexander Isak,53.84615384615385,True,low name-match confidence,True,0
+830,Will Wright,Liverpool,8397,Florian Wirtz,51.85185185185186,True,low name-match confidence,Florian Wirtz,Florian Wirtz,51.85185185185186,True,low name-match confidence,True,0
+760,Wellity Lucky,Liverpool,7546,Harvey Elliott,42.22222222222222,True,low name-match confidence,Harvey Elliott,Harvey Elliott,42.22222222222222,True,low name-match confidence,True,0
+746,Kieran Morrison,Liverpool,1257,Alisson,65.45454545454547,True,low name-match confidence,Alisson,Alisson,65.45454545454547,True,low name-match confidence,True,0
+692,Giovanni Leoni,Liverpool,833,Virgil van Dijk,48.27586206896552,True,low name-match confidence,Virgil van Dijk,Virgil van Dijk,48.27586206896552,True,low name-match confidence,True,0
+398,Jayden Danns,Liverpool,852,Freddie Woodman,44.44444444444444,True,low name-match confidence,Freddie Woodman,Freddie Woodman,44.44444444444444,True,low name-match confidence,True,0
+397,Darwin Núñez Ribeiro,Liverpool,1688,Andrew Robertson,50.0,True,low name-match confidence,Andy Robertson,Andy Robertson,50.0,True,low name-match confidence,True,0
+395,Tyler Morton,Liverpool,1688,Andrew Robertson,50.0,True,low name-match confidence,Andy Robertson,Andy Robertson,50.0,True,low name-match confidence,True,0
+394,James McConnell,Liverpool,8379,Alexis Mac Allister,47.05882352941176,True,low name-match confidence,Alexis Mac Allister,Alexis Mac Allister,47.05882352941176,True,low name-match confidence,True,0
+393,Stefan Bajčetić Maquieira,Liverpool,1433,Federico Chiesa,43.44827586206897,True,low name-match confidence,Federico Chiesa,Federico Chiesa,43.44827586206897,True,low name-match confidence,True,0
+383,Luis Díaz Marulanda,Liverpool,1257,Alisson,49.090909090909086,True,low name-match confidence,Alisson,Alisson,49.090909090909086,True,low name-match confidence,True,0
+380,Calvin Ramsay,Liverpool,1257,Alisson,55.38461538461539,True,low name-match confidence,Alisson,Alisson,55.38461538461539,True,low name-match confidence,True,0
+379,Rhys Williams,Liverpool,1257,Alisson,45.0,True,low name-match confidence,Alisson,Alisson,45.0,True,low name-match confidence,True,0
+772,Sam Alabi,Newcastle,7958,Sandro Tonali,48.0,True,low name-match confidence,Sandro Tonali,Sandro Tonali,48.0,True,low name-match confidence,True,0
+503,Carlos Miguel dos Santos Pereira,Nott'm Forest,8252,Nicolás Domínguez,55.862068965517246,True,low name-match confidence,Nicolás Domínguez,Nicolás Domínguez,55.862068965517246,True,low name-match confidence,True,0
+504,Matt Turner,Nott'm Forest,13068,Morato,60.00000000000001,True,low name-match confidence,Morato,Morato,60.00000000000001,True,low name-match confidence,True,0
+738,Lukasz Fabianski,West Ham,7365,Lucas Paquetá,48.27586206896552,True,low name-match confidence,Lucas Paquetá,Lucas Paquetá,48.27586206896552,True,low name-match confidence,True,0
+617,Maxwel Cornet,West Ham,12948,Mateus Fernandes,48.27586206896552,True,low name-match confidence,Igor,Igor,48.857142857142854,True,low name-match confidence,True,0
+616,Edson Álvarez Velázquez,West Ham,14290,Pablo,48.857142857142854,True,low name-match confidence,Pablo,Pablo,48.857142857142854,True,low name-match confidence,True,0
+611,Kaelan Casey,West Ham,10948,Valentín Castellanos,57.0,True,low name-match confidence,Valentín Castellanos,Valentín Castellanos,57.0,True,low name-match confidence,True,0
+604,Emerson Palmieri dos Santos,West Ham,13247,Ezra Mayers,56.25,True,low name-match confidence,Ezra Mayers,Ezra Mayers,56.25,True,low name-match confidence,True,0
+602,Krisztián Hegyi,West Ham,6722,Konstantinos Mavropanos,45.0,True,low name-match confidence,Konstantinos Mavropanos,Konstantinos Mavropanos,45.0,True,low name-match confidence,True,0
+601,Wes Foderingham,West Ham,12948,Mateus Fernandes,51.61290322580645,True,low name-match confidence,Mateus Fernandes,Mateus Fernandes,51.61290322580645,True,low name-match confidence,True,0
+818,James Wilson,Spurs,6818,James Maddison,76.92307692307692,True,low name-match confidence,James Maddison,James Maddison,76.92307692307692,True,low name-match confidence,True,0
+811,Rio Kyerematen,Spurs,6108,Rodrigo Bentancur,45.16129032258065,True,low name-match confidence,Rodrigo Bentancur,Rodrigo Bentancur,45.16129032258065,True,low name-match confidence,True,0
+790,Lucá Williams-Barnett,Spurs,9332,Dane Scarlett,54.78260869565218,True,low name-match confidence,Dane Scarlett,Dane Scarlett,54.78260869565218,True,low name-match confidence,True,0
+751,Yusuf Akhamrich,Spurs,14410,Souza,54.0,True,low name-match confidence,Souza,Souza,54.0,True,low name-match confidence,True,0
+598,Will Lankshear,Spurs,1679,Dominic Solanke,50.0,True,low name-match confidence,Dominic Solanke,Dominic Solanke,50.0,True,low name-match confidence,True,0
+594,Yang Min-hyeok,Spurs,13348,Antonín Kinsky,44.44444444444444,True,low name-match confidence,Antonín Kinský,Antonín Kinský,44.44444444444444,True,low name-match confidence,True,0
+592,Mikey Moore,Spurs,10050,Micky van de Ven,44.44444444444444,True,low name-match confidence,Micky van de Ven,Micky van de Ven,44.44444444444444,True,low name-match confidence,True,0
+590,Bryan Gil Salvatierra,Spurs,10184,Archie Gray,50.0,True,low name-match confidence,Archie Gray,Archie Gray,50.0,True,low name-match confidence,True,0
+589,Manor Solomon,Spurs,5743,Randal Kolo Muani,53.333333333333336,True,low name-match confidence,Randal Kolo Muani,Randal Kolo Muani,53.333333333333336,True,low name-match confidence,True,0
+622,Lewis Orford,West Ham,12948,Mateus Fernandes,42.85714285714286,True,low name-match confidence,Igor,Igor,51.42857142857142,True,low name-match confidence,True,0
+752,Airidas Golambeckis,West Ham,8288,Tomas Soucek,45.0,True,low name-match confidence,Igor,Igor,51.42857142857142,True,low name-match confidence,True,0
+509,David Mota Veiga Teixeira do Carmo,Nott'm Forest,13068,Morato,57.0,True,low name-match confidence,Morato,Morato,57.0,True,low name-match confidence,True,0
+802,Keiber Lamadrid,West Ham,13247,Ezra Mayers,46.15384615384615,True,low name-match confidence,Ezra Mayers,Ezra Mayers,46.15384615384615,True,low name-match confidence,True,0
+828,Alfie Brooks,Wolves,5598,Angel Gomes,43.47826086956522,True,low name-match confidence,Angel Gomes,Angel Gomes,43.47826086956522,True,low name-match confidence,True,0
+778,Ethan Sutherland,Wolves,13022,André,67.5,True,low name-match confidence,André,André,67.5,True,low name-match confidence,True,0
+777,Temple Ojinnaka,Wolves,10293,Toti,48.857142857142854,True,low name-match confidence,Pedro Lima,Pedro Lima,45.0,True,low name-match confidence,True,0
+767,Luke Rawlings,Wolves,10945,Santiago Bueno,42.22222222222222,True,low name-match confidence,Santiago Bueno,Santiago Bueno,42.22222222222222,True,low name-match confidence,True,0
+766,Saheed Olagunju,Wolves,9740,José Sá,48.857142857142854,True,low name-match confidence,José Sá,José Sá,48.857142857142854,True,low name-match confidence,True,0
+658,Nathan Fraser,Wolves,13022,André,54.0,True,low name-match confidence,André,André,54.0,True,low name-match confidence,True,0
+657,Leon Chiwome,Wolves,11384,João Gomes,45.45454545454546,True,low name-match confidence,João Gomes,João Gomes,45.45454545454546,True,low name-match confidence,True,0
+655,Fábio Soares Silva,Wolves,13022,André,57.0,True,low name-match confidence,André,André,57.0,True,low name-match confidence,True,0
+653,Joe Hodge,Wolves,9740,José Sá,65.45454545454547,True,low name-match confidence,José Sá,José Sá,65.45454545454547,True,low name-match confidence,True,0
+652,Enso González Medina,Wolves,10140,Hugo Bueno,60.35294117647058,True,low name-match confidence,Hugo Bueno,Hugo Bueno,60.35294117647058,True,low name-match confidence,True,0
+649,Boubacar Traoré,Wolves,13022,André,60.00000000000001,True,low name-match confidence,André,André,60.00000000000001,True,low name-match confidence,True,0
+647,Gonçalo Manuel Ganchinho Guedes,Wolves,10856,Emmanuel Agbadou,56.25,True,low name-match confidence,Emmanuel Agbadou,Emmanuel Agbadou,56.25,True,low name-match confidence,True,0
+641,Alfie Pond,Wolves,13022,André,51.42857142857142,True,low name-match confidence,André,André,51.42857142857142,True,low name-match confidence,True,0
+639,Bastien Meupiyou Menadjou,Wolves,13484,Mateus Mané,51.42857142857142,True,low name-match confidence,Mateus Mane,Mateus Mane,51.42857142857142,True,low name-match confidence,True,0
+825,Finlay Herrick,West Ham,13026,Luis Guilherme,40.714285714285715,True,low name-match confidence,Nayef Aguerd,Nayef Aguerd,46.15384615384615,True,low name-match confidence,True,0
+583,Dejan Kulusevski,Spurs,5261,Kevin Danso,56.29629629629629,True,low name-match confidence,Kevin Danso,Kevin Danso,56.29629629629629,True,low name-match confidence,True,0
+579,Son Heung-min,Spurs,14410,Souza,51.42857142857142,True,low name-match confidence,Souza,Souza,51.42857142857142,True,low name-match confidence,True,0
+578,Luka Vušković,Spurs,13224,Callum Olusesi,44.44444444444444,True,low name-match confidence,Callum Olusesi,Callum Olusesi,44.44444444444444,True,low name-match confidence,True,0
+577,Takai Kōta,Spurs,5743,Randal Kolo Muani,47.36842105263159,True,low name-match confidence,Randal Kolo Muani,Randal Kolo Muani,47.36842105263159,True,low name-match confidence,True,0
+538,Zak Johnson,Sunderland,13714,Jenson Seelt,49.565217391304344,True,low name-match confidence,Jenson Seelt,Jenson Seelt,49.565217391304344,True,low name-match confidence,True,0
+537,Niall Huggins,Sunderland,13720,Dan Neil,53.4375,True,low name-match confidence,Dan Neil,Dan Neil,53.4375,True,low name-match confidence,True,0
+536,Leo Fuhr Hjelde,Sunderland,8651,Enzo Le Fée,46.15384615384615,True,low name-match confidence,Enzo Le Fée,Enzo Le Fée,46.15384615384615,True,low name-match confidence,True,0
+534,Joe Anderson,Sunderland,13714,Jenson Seelt,49.25925925925927,True,low name-match confidence,Jenson Seelt,Jenson Seelt,49.25925925925927,True,low name-match confidence,True,0
+533,Aji Alese,Sunderland,8986,Omar Alderete,54.54545454545454,True,low name-match confidence,Omar Alderete,Omar Alderete,54.54545454545454,True,low name-match confidence,True,0
+530,Blondy Nna Noukeu,Sunderland,14424,Nilson Angulo,46.666666666666664,True,low name-match confidence,Nilson Angulo,Nilson Angulo,46.666666666666664,True,low name-match confidence,True,0
+529,Simon Moore,Sunderland,11710,Simon Adingra,59.375,True,low name-match confidence,Simon Adingra,Simon Adingra,59.375,True,low name-match confidence,True,0
+528,Anthony Patterson,Sunderland,14424,Nilson Angulo,44.33333333333333,True,low name-match confidence,Nilson Angulo,Nilson Angulo,44.33333333333333,True,low name-match confidence,True,0
+841,Lamin Sillah,Nott'm Forest,725,Ola Aina,55.38461538461539,True,low name-match confidence,Ola Aina,Ola Aina,55.38461538461539,True,low name-match confidence,True,0
+836,Jimmy Sinclair,Nott'm Forest,13779,Jair,77.14285714285715,True,low name-match confidence,James Mcatee,James Mcatee,61.53846153846154,True,low name-match confidence,True,0
+835,Archie Whitehall,Nott'm Forest,13779,Jair,60.00000000000001,True,low name-match confidence,Jair Cunha,Jair Cunha,51.42857142857142,True,low name-match confidence,True,0
+524,Marko Stamenić,Nott'm Forest,6174,Nikola Milenkovic,51.61290322580645,True,low name-match confidence,Nikola Milenković,Nikola Milenković,51.61290322580645,True,low name-match confidence,True,0
+520,Lewis O'Brien,Nott'm Forest,8786,Stefan Ortega Moreno,49.090909090909086,True,low name-match confidence,Oleksandr Zinchenko,Oleksandr Zinchenko,45.16129032258065,True,low name-match confidence,True,0
+514,Willy Boly,Nott'm Forest,8204,Neco Williams,49.565217391304344,True,low name-match confidence,Neco Williams,Neco Williams,49.565217391304344,True,low name-match confidence,True,0
+512,Omar Richards,Nott'm Forest,10348,Omari Hutchinson,55.172413793103445,True,low name-match confidence,Omari Hutchinson,Omari Hutchinson,55.172413793103445,True,low name-match confidence,True,0
+540,Timothée Pembélé,Sunderland,13713,Trai Hume,47.5,True,low name-match confidence,Trai Hume,Trai Hume,47.5,True,low name-match confidence,True,0
+546,Milan Aleksić,Sunderland,13717,Chemsdine Talbi,50.0,True,low name-match confidence,Chemsdine Talbi,Chemsdine Talbi,50.0,True,low name-match confidence,True,0
+550,Ian Poveda-Ocampo,Sunderland,13720,Dan Neil,45.0,True,low name-match confidence,Dan Neil,Dan Neil,45.0,True,low name-match confidence,True,0
+564,Nazarii Rusyn,Sunderland,925,Patrick Roberts,42.85714285714286,True,low name-match confidence,Patrick Roberts,Patrick Roberts,42.85714285714286,True,low name-match confidence,True,0
+576,Ashley Phillips,Spurs,9780,Mathys Tel,42.35294117647059,True,low name-match confidence,Mathys Tel,Mathys Tel,42.35294117647059,True,low name-match confidence,True,0
+566,Brandon Austin,Spurs,9105,Radu Dragusin,66.66666666666667,True,low name-match confidence,Radu Drăgușin,Radu Drăgușin,66.66666666666667,True,low name-match confidence,True,0
+822,Jaydon Jones,Sunderland,13720,Dan Neil,56.25,True,low name-match confidence,Dan Neil,Dan Neil,56.25,True,low name-match confidence,True,0
+821,Jack Whittaker,Sunderland,14460,Djiamgone Jocelin Ta Bi,42.75,True,low name-match confidence,Jocelin Ta Bi,Jocelin Ta Bi,44.44444444444444,True,low name-match confidence,True,0
+775,Tymur Tutierov,Sunderland,11633,Marc Guiu,50.0,True,low name-match confidence,Marc Guiu,Marc Guiu,50.0,True,low name-match confidence,True,0
+774,Jenson Jones,Sunderland,13714,Jenson Seelt,66.66666666666667,True,low name-match confidence,Jenson Seelt,Jenson Seelt,66.66666666666667,True,low name-match confidence,True,0
+563,Luís Hemir Silva Semedo,Sunderland,13717,Chemsdine Talbi,49.87499999999999,True,low name-match confidence,Chemsdine Talbi,Chemsdine Talbi,49.87499999999999,True,low name-match confidence,True,0
+554,Abdoullah Ba,Sunderland,13715,Dan Ballard,49.565217391304344,True,low name-match confidence,Daniel Ballard,Daniel Ballard,43.84615384615385,True,low name-match confidence,True,0
+562,Ahmed Abdullahi,Sunderland,13713,Trai Hume,55.38461538461539,True,low name-match confidence,Trai Hume,Trai Hume,55.38461538461539,True,low name-match confidence,True,0
+559,Nectarios Triantis,Sunderland,7432,Reinildo,48.0,True,low name-match confidence,Trai Hume,Trai Hume,47.5,True,low name-match confidence,True,0
+558,Jay Matete,Sunderland,8986,Omar Alderete,52.17391304347826,True,low name-match confidence,Omar Alderete,Omar Alderete,52.17391304347826,True,low name-match confidence,True,0
+557,Harrison Jones,Sunderland,13712,Robin Roefs,56.00000000000001,True,low name-match confidence,Robin Roefs,Robin Roefs,56.00000000000001,True,low name-match confidence,True,0
+556,Pierre Ekwah Elimby,Sunderland,13720,Dan Neil,45.0,True,low name-match confidence,Dan Neil,Dan Neil,45.0,True,low name-match confidence,True,0
+555,Alan Browne,Sunderland,9789,Brian Brobbey,58.33333333333333,True,low name-match confidence,Brian Brobbey,Brian Brobbey,58.33333333333333,True,low name-match confidence,True,0
+664,Benjamin Lecomte,Fulham,5973,Kenny Tete,53.84615384615385,True,low name-match confidence,Bernd Leno,Bernd Leno,53.84615384615385,True,low name-match confidence,True,0
+334,Luke Harris,Fulham,910,Harrison Reed,63.333333333333336,True,low name-match confidence,Harrison Reed,Harrison Reed,63.333333333333336,True,low name-match confidence,True,0
+333,Martial Godo,Fulham,3203,Issa Diop,47.61904761904761,True,low name-match confidence,Issa Diop,Issa Diop,47.61904761904761,True,low name-match confidence,True,0
+79,Chris Mepham,Bournemouth,10744,Ryan Christie,55.16129032258064,True,low name-match confidence,Ryan Christie,Ryan Christie,55.16129032258064,True,low name-match confidence,True,0
+76,Owen Bevan,Bournemouth,12963,Evanilson,59.99999999999999,True,low name-match confidence,Evanilson,Evanilson,59.99999999999999,True,low name-match confidence,True,0
+75,Matai Akinmboni,Bournemouth,8211,Amine Adli,47.36842105263159,True,low name-match confidence,Amine Adli,Amine Adli,47.36842105263159,True,low name-match confidence,True,0
+71,Illia Zabarnyi,Bournemouth,14395,Rayan,54.0,True,low name-match confidence,Rayan,Rayan,54.0,True,low name-match confidence,True,0
+70,Alex Paulsen,Bournemouth,14374,Alex Tóth,74.34782608695652,True,low name-match confidence,Alex Tóth,Alex Tóth,74.34782608695652,True,low name-match confidence,True,0
+69,Callan McKenna,Bournemouth,6219,Enes Ünal,55.38461538461539,True,low name-match confidence,Enes Ünal,Enes Ünal,55.38461538461539,True,low name-match confidence,True,0
+68,Will Dennis,Bournemouth,12963,Evanilson,51.42857142857142,True,low name-match confidence,Evanilson,Evanilson,51.42857142857142,True,low name-match confidence,True,0
+66,Norberto Murara Neto,Bournemouth,14395,Rayan,54.0,True,low name-match confidence,Rayan,Rayan,54.0,True,low name-match confidence,True,0
+820,Kian McMahon-Brown,Burnley,13729,Zian Flemming,46.666666666666664,True,low name-match confidence,Zian Flemming,Zian Flemming,46.666666666666664,True,low name-match confidence,True,0
+784,George Brierley,Burnley,12094,Mike Trésor,45.86206896551724,True,low name-match confidence,Mike Trésor,Mike Trésor,45.86206896551724,True,low name-match confidence,True,0
+776,Oliver Pimlott,Burnley,13726,Oliver Sonne,63.33333333333332,True,low name-match confidence,Oliver Sonne,Oliver Sonne,63.33333333333332,True,low name-match confidence,True,0
+219,Michael Obafemi,Burnley,12094,Mike Trésor,63.33333333333332,True,low name-match confidence,Mike Trésor,Mike Trésor,63.33333333333332,True,low name-match confidence,True,0
+212,Oluwaseun Adewumi,Burnley,11824,Lucas Pires,50.0,True,low name-match confidence,Lucas,Lucas,72.0,True,low name-match confidence,True,0
+211,Aaron Ramsey,Burnley,14281,Jaydon Banel,50.0,True,low name-match confidence,Jaydon Amauri Banel,Jaydon Amauri Banel,51.42857142857142,True,low name-match confidence,True,0
+208,Luca Koleosho,Burnley,11824,Lucas Pires,58.33333333333333,True,low name-match confidence,Lucas,Lucas,80.0,True,low name-match confidence,True,0
+204,Darko Churlinov,Burnley,1018,Josh Cullen,46.15384615384615,True,low name-match confidence,Josh Cullen,Josh Cullen,46.15384615384615,True,low name-match confidence,True,0
+78,Julián Araujo Zúñiga,Bournemouth,13474,Julio Soler,54.0,True,low name-match confidence,Julio Soler,Julio Soler,54.0,True,low name-match confidence,True,0
+89,Philip Billing,Bournemouth,11504,Eli Junior Kroupi,36.774193548387096,True,low name-match confidence,Eli Junior Kroupi,Eli Junior Kroupi,36.774193548387096,True,low name-match confidence,True,0
+118,Jayden Meghoma,Brentford,11281,Michael Kayode,54.285714285714285,True,low name-match confidence,Michael Kayode,Michael Kayode,54.285714285714285,True,low name-match confidence,True,0
+91,Luis Sinisterra Lucumí,Bournemouth,10744,Ryan Christie,51.3,True,low name-match confidence,Ryan Christie,Ryan Christie,51.3,True,low name-match confidence,True,0
+115,Benjamin Fredrick,Brentford,9678,Ethan Pinnock,46.666666666666664,True,low name-match confidence,Ethan Pinnock,Ethan Pinnock,46.666666666666664,True,low name-match confidence,True,0
+114,Benjamin Arthur,Brentford,7904,Caoimhin Kelleher,43.75,True,low name-match confidence,Caoimhín Kelleher,Caoimhín Kelleher,43.75,True,low name-match confidence,True,0
+112,Mads Roerslev Rasmussen,Brentford,7166,Mathias Jensen,48.46153846153846,True,low name-match confidence,Mathias Jensen,Mathias Jensen,48.46153846153846,True,low name-match confidence,True,0
+104,Julian Eyestone,Brentford,605,Jordan Henderson,58.06451612903225,True,low name-match confidence,Jordan Henderson,Jordan Henderson,58.06451612903225,True,low name-match confidence,True,0
+103,Matthew Cox,Brentford,9733,Nathan Collins,48.0,True,low name-match confidence,Nathan Collins,Nathan Collins,48.0,True,low name-match confidence,True,0
+102,Ellery Balcombe,Brentford,7904,Caoimhin Kelleher,53.4375,True,low name-match confidence,Caoimhín Kelleher,Caoimhín Kelleher,53.4375,True,low name-match confidence,True,0
+806,Christos Mandas,Bournemouth,10744,Ryan Christie,61.07142857142856,True,low name-match confidence,Ryan Christie,Ryan Christie,61.07142857142856,True,low name-match confidence,True,0
+799,Charlie Stevens,Bournemouth,10864,Marcos Senesi,57.14285714285714,True,low name-match confidence,Marcos Senesi,Marcos Senesi,57.14285714285714,True,low name-match confidence,True,0
+782,Fraser Forster,Bournemouth,10744,Ryan Christie,51.85185185185186,True,low name-match confidence,Ryan Christie,Ryan Christie,51.85185185185186,True,low name-match confidence,True,0
+756,Malcom DaCosta,Bournemouth,10864,Marcos Senesi,44.44444444444444,True,low name-match confidence,Marcos Senesi,Marcos Senesi,44.44444444444444,True,low name-match confidence,True,0
+687,Remy Rees-Dottin,Bournemouth,10744,Ryan Christie,50.0,True,low name-match confidence,Ryan Christie,Ryan Christie,50.0,True,low name-match confidence,True,0
+99,Daniel Adu-Adjei,Bournemouth,8211,Amine Adli,56.84210526315789,True,low name-match confidence,Amine Adli,Amine Adli,56.84210526315789,True,low name-match confidence,True,0
+95,Zain Silcott-Duberry,Bournemouth,8211,Amine Adli,52.94117647058824,True,low name-match confidence,Amine Adli,Amine Adli,52.94117647058824,True,low name-match confidence,True,0
+94,Dominic Sadi,Bournemouth,8211,Amine Adli,63.63636363636363,True,low name-match confidence,Amine Adli,Amine Adli,63.63636363636363,True,low name-match confidence,True,0
+92,Romain Faivre,Bournemouth,8211,Amine Adli,52.17391304347826,True,low name-match confidence,Amine Adli,Amine Adli,52.17391304347826,True,low name-match confidence,True,0
+203,Enock Agyei,Burnley,11701,Zeki Amdouni,43.47826086956522,True,low name-match confidence,Max Weiß,Max Weiß,45.0,True,low name-match confidence,True,0
+201,Manuel Benson Hedilazio,Burnley,12094,Mike Trésor,55.38461538461539,True,low name-match confidence,Mike Trésor,Mike Trésor,55.38461538461539,True,low name-match confidence,True,0
+196,Shurandy Sambo,Burnley,8384,Armando Broja,51.85185185185186,True,low name-match confidence,Armando Broja,Armando Broja,51.85185185185186,True,low name-match confidence,True,0
+194,Jordan Beyer,Burnley,14281,Jaydon Banel,50.0,True,low name-match confidence,Armando Broja,Armando Broja,48.0,True,low name-match confidence,True,0
+51,Samuel Iling-Junior,Aston Villa,2203,Emiliano Buendía,47.05882352941176,True,low name-match confidence,Emiliano Martínez,Emiliano Martínez,43.42857142857143,True,low name-match confidence,True,0
+46,Yasin Özcan,Aston Villa,11807,Ian Maatsen,51.81818181818182,True,low name-match confidence,Ian Maatsen,Ian Maatsen,51.81818181818182,True,low name-match confidence,True,0
+45,Lino da Cruz Sousa,Aston Villa,4401,Emiliano Martinez,45.714285714285715,True,low name-match confidence,Ezri Konsa,Ezri Konsa,52.94117647058824,True,low name-match confidence,True,0
+43,Álex Moreno Lopera,Aston Villa,12412,Morgan Rogers,55.38461538461539,True,low name-match confidence,Morgan Rogers,Morgan Rogers,55.38461538461539,True,low name-match confidence,True,0
+35,Filip Marschall,Aston Villa,9614,Marco Bizot,43.84615384615385,True,low name-match confidence,Marco Bizot,Marco Bizot,43.84615384615385,True,low name-match confidence,True,0
+34,Joe Gauci,Aston Villa,7723,John McGinn,52.17391304347826,True,low name-match confidence,John McGinn,John McGinn,52.17391304347826,True,low name-match confidence,True,0
+759,Marli Salmon,Arsenal,7526,Martín Zubimendi,50.0,True,low name-match confidence,Martín Zubimendi,Martín Zubimendi,50.0,True,low name-match confidence,True,0
+711,Andre Harriman-Annous,Arsenal,5553,Declan Rice,45.0,True,low name-match confidence,Declan Rice,Declan Rice,45.0,True,low name-match confidence,True,0
+29,Albert Sambi Lokonga,Arsenal,5613,Gabriel,51.42857142857142,True,low name-match confidence,Kai Havertz,Kai Havertz,48.857142857142854,True,low name-match confidence,True,0
+28,Ismeal Kabia,Arsenal,5613,Gabriel,49.090909090909086,True,low name-match confidence,William Saliba,William Saliba,46.15384615384615,True,low name-match confidence,True,0
+23,Fábio Ferreira Vieira,Arsenal,5613,Gabriel,51.42857142857142,True,low name-match confidence,David Raya,David Raya,50.0,True,low name-match confidence,True,0
+15,Josh Nichols,Arsenal,10024,Cristhian Mosquera,37.5,True,low name-match confidence,Cristhian Mosquera,Cristhian Mosquera,37.5,True,low name-match confidence,True,0
+14,Maldini Kacurri,Arsenal,5061,Kepa,57.0,True,low name-match confidence,Gabriel Martinelli,Gabriel Martinelli,51.81818181818182,True,low name-match confidence,True,0
+13,Brayden Clarke,Arsenal,5061,Kepa,60.00000000000001,True,low name-match confidence,Declan Rice,Declan Rice,56.00000000000001,True,low name-match confidence,True,0
+9,Jakub Kiwior,Arsenal,8129,Riccardo Calafiori,40.0,True,low name-match confidence,Riccardo Calafiori,Riccardo Calafiori,40.0,True,low name-match confidence,True,0
+56,Enzo Barrenechea,Aston Villa,2203,Emiliano Buendía,50.0,True,low name-match confidence,Emiliano Martínez,Emiliano Martínez,48.48484848484848,True,low name-match confidence,True,0
+57,Lewis Dobbin,Aston Villa,1823,Lucas Digne,52.17391304347826,True,low name-match confidence,Lucas Digne,Lucas Digne,52.17391304347826,True,low name-match confidence,True,0
+60,Ben Broggio,Aston Villa,2203,Emiliano Buendía,47.5,True,low name-match confidence,Jamaldeen Jimoh,Jamaldeen Jimoh,45.16129032258065,True,low name-match confidence,True,0
+768,Leon Routh,Aston Villa,5221,Leon Bailey,54.285714285714285,True,low name-match confidence,Leon Bailey,Leon Bailey,54.285714285714285,True,low name-match confidence,True,0
+189,Owen Dodgson,Burnley,13726,Oliver Sonne,50.0,True,low name-match confidence,Oliver Sonne,Oliver Sonne,50.0,True,low name-match confidence,True,0
+188,Hannes Delcroix,Burnley,9558,Hannibal Mejbri,53.333333333333336,True,low name-match confidence,Hannibal Mejbri,Hannibal Mejbri,53.333333333333336,True,low name-match confidence,True,0
+186,Connor Roberts,Burnley,8969,Florentino Luís,41.379310344827594,True,low name-match confidence,Florentino Luís,Florentino Luís,41.379310344827594,True,low name-match confidence,True,0
+185,Václav Hladký,Burnley,638,Kyle Walker,39.58333333333333,True,low name-match confidence,Lucas,Lucas,42.75,True,low name-match confidence,True,0
+184,Etienne Green,Burnley,9487,Maxime Estève,43.84615384615385,True,low name-match confidence,Maxime Estève,Maxime Estève,43.84615384615385,True,low name-match confidence,True,0
+781,TJ Carroll,Aston Villa,8865,Ollie Watkins,41.30434782608695,True,low name-match confidence,Ollie Watkins,Ollie Watkins,41.30434782608695,True,low name-match confidence,True,0
+757,Ronnie Hollingshead,Aston Villa,1024,Tyrone Mings,58.06451612903225,True,low name-match confidence,Tyrone Mings,Tyrone Mings,58.06451612903225,True,low name-match confidence,True,0
+61,Leander Dendoncker,Aston Villa,9749,Donyell Malen,49.03225806451612,True,low name-match confidence,Donyell Malen,Donyell Malen,49.03225806451612,True,low name-match confidence,True,0
+710,Travis Patterson,Aston Villa,6221,Pau Torres,50.294117647058826,True,low name-match confidence,Pau Torres,Pau Torres,50.294117647058826,True,low name-match confidence,True,0
+703,Sam Proctor,Aston Villa,6221,Pau Torres,50.0,True,low name-match confidence,Pau Torres,Pau Torres,50.0,True,low name-match confidence,True,0
+701,Triston Rowe,Aston Villa,12412,Morgan Rogers,48.0,True,low name-match confidence,Morgan Rogers,Morgan Rogers,48.0,True,low name-match confidence,True,0
+688,James Wright,Aston Villa,13310,Jamaldeen Jimoh,51.85185185185186,True,low name-match confidence,Jamaldeen Jimoh,Jamaldeen Jimoh,51.85185185185186,True,low name-match confidence,True,0
+65,Zépiqueno Redmond,Aston Villa,2203,Emiliano Buendía,48.48484848484848,True,low name-match confidence,Emi Buendía,Emi Buendía,47.36842105263159,True,low name-match confidence,True,0
+63,Kadan Young,Aston Villa,5956,Youri Tielemans,43.84615384615385,True,low name-match confidence,Youri Tielemans,Youri Tielemans,43.84615384615385,True,low name-match confidence,True,0
+117,Kim Ji-soo,Brentford,9677,Kristoffer Ajer,48.0,True,low name-match confidence,Kristoffer Ajer,Kristoffer Ajer,48.0,True,low name-match confidence,True,0
+127,Gustavo Nunes Fernandes Gomes,Brentford,13222,Thiago,45.0,True,low name-match confidence,Frank Onyeka,Frank Onyeka,45.0,True,low name-match confidence,True,0
+327,Andreas Hoelgebaum Pereira,Fulham,8285,Sander Berge,52.94117647058824,True,low name-match confidence,Sander Berge,Sander Berge,52.94117647058824,True,low name-match confidence,True,0
+798,Danny Imray,Crystal Palace,12408,Daniel Muñoz,66.66666666666667,True,low name-match confidence,Daniel Muñoz,Daniel Muñoz,66.66666666666667,True,low name-match confidence,True,0
+780,Ben Casey,Crystal Palace,11070,Jørgen Strand Larsen,48.48484848484848,True,low name-match confidence,Jørgen Strand Larsen,Jørgen Strand Larsen,48.48484848484848,True,low name-match confidence,True,0
+773,Dean Benamar,Crystal Palace,7702,Dean Henderson,61.53846153846154,True,low name-match confidence,Dean Henderson,Dean Henderson,61.53846153846154,True,low name-match confidence,True,0
+286,Zach Marsh,Crystal Palace,8430,Chris Richards,56.25,True,low name-match confidence,Chris Richards,Chris Richards,56.25,True,low name-match confidence,True,0
+282,Franco Umeh-Chibueze,Crystal Palace,8706,Eberechi Eze,57.27272727272727,True,low name-match confidence,Eberechi Eze,Eberechi Eze,57.27272727272727,True,low name-match confidence,True,0
+280,David Ozoh,Crystal Palace,12408,Daniel Muñoz,54.54545454545454,True,low name-match confidence,Daniel Muñoz,Daniel Muñoz,54.54545454545454,True,low name-match confidence,True,0
+279,Matheus França de Oliveira,Crystal Palace,13387,Romain Esse,47.5,True,low name-match confidence,Romain Esse,Romain Esse,47.5,True,low name-match confidence,True,0
+278,Jesurun Rak-Sakyi,Crystal Palace,14263,Joél Drakes-Thomas,48.48484848484848,True,low name-match confidence,Joél Drakes-Thomas,Joél Drakes-Thomas,48.48484848484848,True,low name-match confidence,True,0
+277,Malcolm Ebiowei,Crystal Palace,7603,Marc Guehi,51.3,True,low name-match confidence,Marc Guéhi,Marc Guéhi,51.3,True,low name-match confidence,True,0
+275,Naouirou Ahamada,Crystal Palace,6145,Daichi Kamada,55.172413793103445,True,low name-match confidence,Daichi Kamada,Daichi Kamada,55.172413793103445,True,low name-match confidence,True,0
+274,Asher Agbinone,Crystal Palace,5652,Walter Benítez,50.0,True,low name-match confidence,Walter Benítez,Walter Benítez,50.0,True,low name-match confidence,True,0
+268,Cheick Doucouré,Crystal Palace,11167,Chadi Riad,50.0,True,low name-match confidence,Chadi Riad,Chadi Riad,50.0,True,low name-match confidence,True,0
+265,Caleb Kporha,Crystal Palace,11167,Chadi Riad,45.45454545454546,True,low name-match confidence,Chadi Riad,Chadi Riad,45.45454545454546,True,low name-match confidence,True,0
+264,Rob Holding,Crystal Palace,13777,Rio Cardines,52.17391304347826,True,low name-match confidence,Rio Cardines,Rio Cardines,52.17391304347826,True,low name-match confidence,True,0
+255,Remi Matthews,Crystal Palace,8214,Tyrick Mitchell,50.0,True,low name-match confidence,Tyrick Mitchell,Tyrick Mitchell,50.0,True,low name-match confidence,True,0
+834,Ryan Kavuma-McQueen,Chelsea,11253,Mamadou Sarr,42.75,True,low name-match confidence,Mamadou Sarr,Mamadou Sarr,42.75,True,low name-match confidence,True,0
+793,George King,Crystal Palace,9024,Yeremi Pino,54.54545454545454,True,low name-match confidence,Yéremy Pino,Yéremy Pino,54.54545454545454,True,low name-match confidence,True,0
+288,Mark Travers,Everton,7438,James Garner,47.5,True,low name-match confidence,James Garner,James Garner,47.5,True,low name-match confidence,True,0
+131,Yunus Emre Konak,Brentford,9679,Rico Henry,40.23529411764706,True,low name-match confidence,Rico Henry,Rico Henry,40.23529411764706,True,low name-match confidence,True,0
+289,Harry Tyrer,Everton,12916,Thierno Barry,48.0,True,low name-match confidence,Thierno Barry,Thierno Barry,48.0,True,low name-match confidence,True,0
+323,Samuel Amissah,Fulham,7208,Samuel Chukwueze,57.0,True,low name-match confidence,Samuel Chukwueze,Samuel Chukwueze,57.0,True,low name-match confidence,True,0
+315,Steven Benda,Fulham,181,Bernd Leno,60.454545454545446,True,low name-match confidence,Bernd Leno,Bernd Leno,60.454545454545446,True,low name-match confidence,True,0
+779,Braiden Graham,Everton,8476,Jarrad Branthwaite,50.0,True,low name-match confidence,Jarrad Branthwaite,Jarrad Branthwaite,50.0,True,low name-match confidence,True,0
+705,Elijah Campbell,Everton,9983,Beto,45.0,True,low name-match confidence,Beto,Beto,45.0,True,low name-match confidence,True,0
+704,Tyler Onyango,Everton,10586,Tyler Dibling,61.53846153846154,True,low name-match confidence,Tyler Dibling,Tyler Dibling,61.53846153846154,True,low name-match confidence,True,0
+667,Adam Aznou,Everton,7438,James Garner,45.45454545454546,True,low name-match confidence,James Garner,James Garner,45.45454545454546,True,low name-match confidence,True,0
+630,Tom King,Everton,9983,Beto,60.00000000000001,True,low name-match confidence,Beto,Beto,60.00000000000001,True,low name-match confidence,True,0
+313,Martin Sherif,Everton,11331,Merlin Röhl,50.0,True,low name-match confidence,Merlin Röhl,Merlin Röhl,50.0,True,low name-match confidence,True,0
+312,Youssef Ramalho Chermiti,Everton,585,Seamus Coleman,42.10526315789473,True,low name-match confidence,Séamus Coleman,Séamus Coleman,42.10526315789473,True,low name-match confidence,True,0
+309,Jenson Metcalfe,Everton,675,Jack Grealish,50.0,True,low name-match confidence,Jack Grealish,Jack Grealish,50.0,True,low name-match confidence,True,0
+308,Isaac Heath,Everton,9983,Beto,45.0,True,low name-match confidence,Beto,Beto,45.0,True,low name-match confidence,True,0
+307,Coby Ebere,Everton,9983,Beto,45.0,True,low name-match confidence,Beto,Beto,45.0,True,low name-match confidence,True,0
+306,Callum Bates,Everton,9983,Beto,48.857142857142854,True,low name-match confidence,Beto,Beto,48.857142857142854,True,low name-match confidence,True,0
+298,Reece Welch,Everton,1653,Michael Keane,39.58333333333333,True,low name-match confidence,Michael Keane,Michael Keane,39.58333333333333,True,low name-match confidence,True,0
+297,Roman Dixon,Everton,9307,Iliman Ndiaye,50.0,True,low name-match confidence,Iliman Ndiaye,Iliman Ndiaye,50.0,True,low name-match confidence,True,0
+833,Mathis Eboué,Chelsea,10542,Jamie Bynoe-Gittens,46.95652173913043,True,low name-match confidence,Moisés Caicedo,Moisés Caicedo,46.15384615384615,True,low name-match confidence,True,0
+803,Teddy Sharman-Lowe,Chelsea,11808,Andrey Santos,46.666666666666664,True,low name-match confidence,Andrey Santos,Andrey Santos,46.666666666666664,True,low name-match confidence,True,0
+789,Max Merrick,Chelsea,13476,Shumaira Mheuka,46.15384615384615,True,low name-match confidence,Shumaira Mheuka,Shumaira Mheuka,46.15384615384615,True,low name-match confidence,True,0
+743,Landon Emenalo,Chelsea,10552,Alejandro Garnacho,56.25,True,low name-match confidence,Alejandro Garnacho,Alejandro Garnacho,56.25,True,low name-match confidence,True,0
+153,Adam Webster,Brighton,501,Danny Welbeck,53.84615384615385,True,low name-match confidence,Danny Welbeck,Danny Welbeck,53.84615384615385,True,low name-match confidence,True,0
+150,Tariq Lamptey,Brighton,14118,Charalampos Kostoulas,49.090909090909086,True,low name-match confidence,Matt O'Riley,Matt O'Riley,50.0,True,low name-match confidence,True,0
+147,Pervis Estupiñán Tenorio,Brighton,14127,Nehemiah Oriola,48.46153846153846,True,low name-match confidence,Nehemiah Oriola,Nehemiah Oriola,48.46153846153846,True,low name-match confidence,True,0
+142,Kjell Scherpen,Brighton,8780,Joël Veltman,46.15384615384615,True,low name-match confidence,Joël Veltman,Joël Veltman,46.15384615384615,True,low name-match confidence,True,0
+141,Carl Rushworth,Brighton,239,Pascal Groß,50.0,True,low name-match confidence,Pascal Groß,Pascal Groß,50.0,True,low name-match confidence,True,0
+140,Tom McGill,Brighton,489,James Milner,45.45454545454546,True,low name-match confidence,James Milner,James Milner,45.45454545454546,True,low name-match confidence,True,0
+138,Jason Steele,Brighton,11269,Jack Hinshelwood,50.0,True,low name-match confidence,James Milner,James Milner,50.0,True,low name-match confidence,True,0
+826,Riley Owen,Brentford,8942,Aaron Hickey,51.81818181818182,True,low name-match confidence,Aaron Hickey,Aaron Hickey,51.81818181818182,True,low name-match confidence,True,0
+824,Conor McManus,Brentford,9733,Nathan Collins,42.22222222222222,True,low name-match confidence,Nathan Collins,Nathan Collins,42.22222222222222,True,low name-match confidence,True,0
+823,Joshua Stephenson,Brentford,605,Jordan Henderson,60.60606060606061,True,low name-match confidence,Jordan Henderson,Jordan Henderson,60.60606060606061,True,low name-match confidence,True,0
+819,Ollie Shield,Brentford,14217,Romelle Donovan,44.44444444444444,True,low name-match confidence,Romelle Donovan,Romelle Donovan,44.44444444444444,True,low name-match confidence,True,0
+810,Luka Bentt,Brentford,10809,Keane Lewis-Potter,44.44444444444444,True,low name-match confidence,Keane Lewis-Potter,Keane Lewis-Potter,44.44444444444444,True,low name-match confidence,True,0
+137,Iwan Morgan,Brentford,9662,Dango Ouattara,48.0,True,low name-match confidence,Dango Ouattara,Dango Ouattara,48.0,True,low name-match confidence,True,0
+134,Ryan Trevitt,Brentford,10809,Keane Lewis-Potter,48.27586206896552,True,low name-match confidence,Keane Lewis-Potter,Keane Lewis-Potter,48.27586206896552,True,low name-match confidence,True,0
+132,Paris Maghoma,Brentford,13222,Thiago,46.63636363636363,True,low name-match confidence,Antoni Milambo,Antoni Milambo,44.44444444444444,True,low name-match confidence,True,0
+154,Eiran Cashin,Brighton,489,James Milner,47.5,True,low name-match confidence,James Milner,James Milner,47.5,True,low name-match confidence,True,0
+155,Jacob Slater,Brighton,489,James Milner,50.0,True,low name-match confidence,James Milner,James Milner,50.0,True,low name-match confidence,True,0
+156,Charlie Tasker,Brighton,10527,Carlos Baleba,59.25925925925925,True,low name-match confidence,Carlos Baleba,Carlos Baleba,59.25925925925925,True,low name-match confidence,True,0
+222,Mike Penders,Chelsea,8272,João Pedro,54.0,True,low name-match confidence,João Pedro,João Pedro,54.0,True,low name-match confidence,True,0
+251,Nicolas Jackson,Chelsea,12535,Josh Acheampong,46.666666666666664,True,low name-match confidence,Joshua Acheampong,Joshua Acheampong,43.75,True,low name-match confidence,True,0
+248,Kendry Páez Andrade,Chelsea,11356,Enzo Fernández,48.48484848484848,True,low name-match confidence,Enzo Fernández,Enzo Fernández,48.48484848484848,True,low name-match confidence,True,0
+245,Mykhailo Mudryk,Chelsea,9017,Malo Gusto,48.0,True,low name-match confidence,Malo Gusto,Malo Gusto,48.0,True,low name-match confidence,True,0
+240,Christopher Nkunku,Chelsea,6382,Pedro Neto,45.0,True,low name-match confidence,Pedro Neto,Pedro Neto,45.0,True,low name-match confidence,True,0
+234,Aarón Anselmino,Chelsea,5590,Tosin Adarabioyo,49.03225806451612,True,low name-match confidence,Tosin Adarabioyo,Tosin Adarabioyo,49.03225806451612,True,low name-match confidence,True,0
+223,Gabriel Słonina,Chelsea,13094,Dário Essugo,46.15384615384615,True,low name-match confidence,Dario Essugo,Dario Essugo,46.15384615384615,True,low name-match confidence,True,0
+761,Freddie Simmonds,Brighton,13066,Ferdi Kadioglu,46.666666666666664,True,low name-match confidence,Ferdi Kadioglu,Ferdi Kadioglu,46.666666666666664,True,low name-match confidence,True,0
+161,Julio Enciso Espínola,Brighton,10169,Diego Coppola,52.94117647058824,True,low name-match confidence,Diego Coppola,Diego Coppola,52.94117647058824,True,low name-match confidence,True,0
+179,Evan Ferguson,Brighton,11711,Bart Verbruggen,42.85714285714286,True,low name-match confidence,Bart Verbruggen,Bart Verbruggen,42.85714285714286,True,low name-match confidence,True,0
+177,Andrew Moran,Brighton,10806,Kaoru Mitoma,50.0,True,low name-match confidence,Kaoru Mitoma,Kaoru Mitoma,50.0,True,low name-match confidence,True,0
+176,Adrian Mazilu,Brighton,13066,Ferdi Kadioglu,51.85185185185186,True,low name-match confidence,Ferdi Kadioglu,Ferdi Kadioglu,51.85185185185186,True,low name-match confidence,True,0
+174,Malick Yalcouyé,Brighton,13711,Maxim De Cuyper,53.333333333333336,True,low name-match confidence,Maxim De Cuyper,Maxim De Cuyper,53.333333333333336,True,low name-match confidence,True,0
+171,Jeremy Sarmiento Morante,Brighton,10806,Kaoru Mitoma,52.5,True,low name-match confidence,Kaoru Mitoma,Kaoru Mitoma,52.5,True,low name-match confidence,True,0
+165,Abdallah Sima,Brighton,10527,Carlos Baleba,43.84615384615385,True,low name-match confidence,Carlos Baleba,Carlos Baleba,43.84615384615385,True,low name-match confidence,True,0
+831,Josh Gracey,Wolves,9740,José Sá,60.00000000000001,True,low name-match confidence,José Sá,José Sá,60.00000000000001,True,low name-match confidence,True,0

@@ -1,0 +1,1707 @@
+FPL Pipeline Run — 20260721_174024
+================================
+
+=== [17:40:24] Running: extract_fpl_clean_dataset.py ===
+Fetching bootstrap data...
+Total players in FPL: 841
+[1/841] Processed Raya
+[2/841] Processed Arrizabalaga
+[3/841] Processed Hein
+[4/841] Processed Setford
+[5/841] Processed Gabriel
+[6/841] Processed Saliba
+[7/841] Processed Calafiori
+[8/841] Processed J.Timber
+[9/841] Processed Kiwior
+[10/841] Processed Lewis-Skelly
+[11/841] Processed White
+[12/841] Processed Clarke
+[13/841] Processed Kacurri
+[14/841] Processed Nichols
+[15/841] Processed Saka
+[16/841] Processed Ødegaard
+[17/841] Processed Madueke
+[18/841] Processed Martinelli
+[19/841] Processed Trossard
+[20/841] Processed Rice
+[21/841] Processed Merino
+[22/841] Processed Fábio Vieira
+[23/841] Processed Nørgaard
+[24/841] Processed Nwaneri
+[25/841] Processed Zubimendi
+[26/841] Processed Kabia
+[27/841] Processed Sambi
+[28/841] Processed Havertz
+[29/841] Processed G.Jesus
+[30/841] Processed Eze
+[31/841] Processed Mosquera
+[32/841] Processed Gyökeres
+[33/841] Processed Dowman
+[34/841] Processed Harriman-Annous
+[35/841] Processed Hincapie
+[36/841] Processed Salmon
+[37/841] Processed Martinez
+[38/841] Processed M.Bizot
+[39/841] Processed Gauci
+[40/841] Processed Marschall
+[41/841] Processed Cash
+[42/841] Processed Digne
+[43/841] Processed Konsa
+[44/841] Processed Maatsen
+[45/841] Processed Mings
+[46/841] Processed Pau
+[47/841] Processed A.García
+[48/841] Processed Alex Moreno
+[49/841] Processed Bogarde
+[50/841] Processed Sousa
+[51/841] Processed Yasin
+[52/841] Processed Rogers
+[53/841] Processed Tielemans
+[54/841] Processed Bailey
+[55/841] Processed Buendía
+[56/841] Processed Iling Jr
+[57/841] Processed Malen
+[58/841] Processed McGinn
+[59/841] Processed Barkley
+[60/841] Processed Barrenechea
+[61/841] Processed Dobbin
+[62/841] Processed Kamara
+[63/841] Processed Onana
+[64/841] Processed Broggio
+[65/841] Processed Dendoncker
+[66/841] Processed Jimoh-Aloba
+[67/841] Processed Young
+[68/841] Processed Watkins
+[69/841] Processed Redmond
+[70/841] Processed Elliott
+[71/841] Processed Sancho
+[72/841] Processed Wright
+[73/841] Processed Douglas Luiz
+[74/841] Processed Rowe
+[75/841] Processed Burrowes
+[76/841] Processed Proctor
+[77/841] Processed Patterson
+[78/841] Processed Lindelöf
+[79/841] Processed George Hemmings
+[80/841] Processed Hollingshead
+[81/841] Processed Leon Routh
+[82/841] Processed Carroll
+[83/841] Processed Alysson
+[84/841] Processed Abraham
+[85/841] Processed Weiss
+[86/841] Processed Green
+[87/841] Processed Hladký
+[88/841] Processed Roberts
+[89/841] Processed Walker
+[90/841] Processed Delcroix
+[91/841] Processed Dodgson
+[92/841] Processed Ekdal
+[93/841] Processed Estève
+[94/841] Processed Hartman
+[95/841] Processed Humphreys
+[96/841] Processed Jordan
+[97/841] Processed Lucas Pires
+[98/841] Processed Sambo
+[99/841] Processed Sonne
+[100/841] Processed Tuanzebe
+[101/841] Processed Worrall
+[102/841] Processed Anthony
+[103/841] Processed Benson
+[104/841] Processed Bruun Larsen
+[105/841] Processed Boateng
+[106/841] Processed Churlinov
+[107/841] Processed Cullen
+[108/841] Processed Edwards
+[109/841] Processed Hannibal
+[110/841] Processed Koleosho
+[111/841] Processed Laurent
+[112/841] Processed Tchaouna
+[113/841] Processed A.Ramsey
+[114/841] Processed Adewumi
+[115/841] Processed Banel
+[116/841] Processed Trésor
+[117/841] Processed Flemming
+[118/841] Processed Amdouni
+[119/841] Processed Foster
+[120/841] Processed Barnes
+[121/841] Processed Obafemi
+[122/841] Processed Dúbravka
+[123/841] Processed Ward-Prowse
+[124/841] Processed Ugochukwu
+[125/841] Processed Broja
+[126/841] Processed Florentino
+[127/841] Processed Pimlott
+[128/841] Processed Brierley
+[129/841] Processed McMahon-Brown
+[130/841] Processed Neto
+[131/841] Processed Petrović
+[132/841] Processed Dennis
+[133/841] Processed McKenna
+[134/841] Processed Paulsen
+[135/841] Processed Zabarnyi
+[136/841] Processed Senesi
+[137/841] Processed Smith
+[138/841] Processed Truffert
+[139/841] Processed Akinmboni
+[140/841] Processed Bevan
+[141/841] Processed Hill
+[142/841] Processed J.Araujo
+[143/841] Processed Mepham
+[144/841] Processed Soler
+[145/841] Processed Kluivert
+[146/841] Processed Tavernier
+[147/841] Processed Adams
+[148/841] Processed Brooks
+[149/841] Processed Christie
+[150/841] Processed Cook
+[151/841] Processed Philip
+[152/841] Processed Scott
+[153/841] Processed Sinisterra
+[154/841] Processed Faivre
+[155/841] Processed H.Traorè
+[156/841] Processed Sadi
+[157/841] Processed Silcott-Duberry
+[158/841] Processed Winterburn
+[159/841] Processed Evanilson
+[160/841] Processed Enes Ünal
+[161/841] Processed Adu-Adjei
+[162/841] Processed Kroupi.Jr
+[163/841] Processed Gannon-Doak
+[164/841] Processed Diakité
+[165/841] Processed Rees-Dottin
+[166/841] Processed Adli
+[167/841] Processed A.Jimenez
+[168/841] Processed Milosavljević
+[169/841] Processed DaCosta
+[170/841] Processed Forster
+[171/841] Processed Stevens
+[172/841] Processed Tóth.A
+[173/841] Processed Mandas
+[174/841] Processed Rayan
+[175/841] Processed Nelson
+[176/841] Processed O.Dango
+[177/841] Processed Kelleher
+[178/841] Processed Balcombe
+[179/841] Processed Cox
+[180/841] Processed Eyestone
+[181/841] Processed Valdimarsson
+[182/841] Processed Collins
+[183/841] Processed Lewis-Potter
+[184/841] Processed Ajer
+[185/841] Processed Henry
+[186/841] Processed Kayode
+[187/841] Processed Pinnock
+[188/841] Processed Roerslev
+[189/841] Processed Van den Berg
+[190/841] Processed Arthur
+[191/841] Processed Fredrick
+[192/841] Processed Hickey
+[193/841] Processed Ji-soo
+[194/841] Processed Meghoma
+[195/841] Processed Schade
+[196/841] Processed Damsgaard
+[197/841] Processed Milambo
+[198/841] Processed Carvalho
+[199/841] Processed Henderson
+[200/841] Processed Janelt
+[201/841] Processed Jensen
+[202/841] Processed Nunes
+[203/841] Processed Onyeka
+[204/841] Processed Yarmoliuk
+[205/841] Processed Donovan
+[206/841] Processed Konak
+[207/841] Processed Maghoma
+[208/841] Processed Peart-Harris
+[209/841] Processed Trevitt
+[210/841] Processed Thiago
+[211/841] Processed Morgan
+[212/841] Processed Dasilva
+[213/841] Processed Furo
+[214/841] Processed Bentt
+[215/841] Processed Shield
+[216/841] Processed Stephenson
+[217/841] Processed McManus
+[218/841] Processed Owen
+[219/841] Processed Steele
+[220/841] Processed Verbruggen
+[221/841] Processed McGill
+[222/841] Processed Rushworth
+[223/841] Processed Scherpen
+[224/841] Processed Boscagli
+[225/841] Processed Coppola
+[226/841] Processed De Cuyper
+[227/841] Processed Dunk
+[228/841] Processed Estupiñan
+[229/841] Processed F.Kadıoğlu
+[230/841] Processed Igor
+[231/841] Processed Lamptey
+[232/841] Processed Van Hecke
+[233/841] Processed Veltman
+[234/841] Processed Webster
+[235/841] Processed Cashin
+[236/841] Processed Slater
+[237/841] Processed Tasker
+[238/841] Processed Mitoma
+[239/841] Processed Georginio
+[240/841] Processed March
+[241/841] Processed Minteh
+[242/841] Processed Enciso
+[243/841] Processed Gruda
+[244/841] Processed Hinshelwood
+[245/841] Processed O'Riley
+[246/841] Processed Sima
+[247/841] Processed Ayari
+[248/841] Processed Baleba
+[249/841] Processed Gomez
+[250/841] Processed Milner
+[251/841] Processed Sarmiento
+[252/841] Processed Watson
+[253/841] Processed Wieffer
+[254/841] Processed Yalcouye
+[255/841] Processed Knight
+[256/841] Processed Mazilu
+[257/841] Processed Moran
+[258/841] Processed Welbeck
+[259/841] Processed Ferguson
+[260/841] Processed Tzimas
+[261/841] Processed Kostoulas
+[262/841] Processed Oriola
+[263/841] Processed Simmonds
+[264/841] Processed Groß
+[265/841] Processed Howell
+[266/841] Processed Sánchez
+[267/841] Processed Jörgensen
+[268/841] Processed Penders
+[269/841] Processed Slonina
+[270/841] Processed Cucurella
+[271/841] Processed James
+[272/841] Processed Chalobah
+[273/841] Processed Colwill
+[274/841] Processed Gusto
+[275/841] Processed B.Badiashile
+[276/841] Processed Fofana
+[277/841] Processed M.Sarr
+[278/841] Processed Tosin
+[279/841] Processed Acheampong
+[280/841] Processed Anselmino
+[281/841] Processed Palmer
+[282/841] Processed Neto
+[283/841] Processed Enzo
+[284/841] Processed Estêvão
+[285/841] Processed Gittens
+[286/841] Processed Nkunku
+[287/841] Processed Caicedo
+[288/841] Processed Lavia
+[289/841] Processed Mudryk
+[290/841] Processed Andrey Santos
+[291/841] Processed D.Essugo
+[292/841] Processed Paez
+[293/841] Processed João Pedro
+[294/841] Processed Delap
+[295/841] Processed N.Jackson
+[296/841] Processed Marc Guiu
+[297/841] Processed Garnacho
+[298/841] Processed Hato
+[299/841] Processed Emenalo
+[300/841] Processed Merrick
+[301/841] Processed Sharman-Lowe
+[302/841] Processed Derry
+[303/841] Processed Eboué
+[304/841] Processed Kavuma-McQueen
+[305/841] Processed Mheuka
+[306/841] Processed Henderson
+[307/841] Processed Benitez
+[308/841] Processed Matthews
+[309/841] Processed Muñoz
+[310/841] Processed Lacroix
+[311/841] Processed Mitchell
+[312/841] Processed Sosa
+[313/841] Processed Richards
+[314/841] Processed Chadi Riad
+[315/841] Processed Clyne
+[316/841] Processed Holding
+[317/841] Processed Kporha
+[318/841] Processed Sarr
+[319/841] Processed Doucouré
+[320/841] Processed Esse
+[321/841] Processed Hughes
+[322/841] Processed Kamada
+[323/841] Processed Lerma
+[324/841] Processed Wharton
+[325/841] Processed Agbinone
+[326/841] Processed Ahamada
+[327/841] Processed Devenny
+[328/841] Processed Ebiowei
+[329/841] Processed J.Rak-Sakyi
+[330/841] Processed M.França
+[331/841] Processed Ozoh
+[332/841] Processed Rodney
+[333/841] Processed Umeh
+[334/841] Processed Mateta
+[335/841] Processed Nketiah
+[336/841] Processed Édouard
+[337/841] Processed Marsh
+[338/841] Processed Johnson
+[339/841] Processed Strand Larsen
+[340/841] Processed Guessand
+[341/841] Processed Cardines
+[342/841] Processed Yeremy
+[343/841] Processed Canvot
+[344/841] Processed Uche
+[345/841] Processed Drakes-Thomas
+[346/841] Processed Benamar
+[347/841] Processed Casey
+[348/841] Processed King
+[349/841] Processed Imray
+[350/841] Processed Dewsbury-Hall
+[351/841] Processed George
+[352/841] Processed Pickford
+[353/841] Processed Travers
+[354/841] Processed Tyrer
+[355/841] Processed Branthwaite
+[356/841] Processed Tarkowski
+[357/841] Processed Mykolenko
+[358/841] Processed O'Brien
+[359/841] Processed Coleman
+[360/841] Processed Keane
+[361/841] Processed Patterson
+[362/841] Processed Dixon
+[363/841] Processed Welch
+[364/841] Processed Ndiaye
+[365/841] Processed McNeil
+[366/841] Processed Alcaraz
+[367/841] Processed Gana
+[368/841] Processed Garner
+[369/841] Processed Iroegbunam
+[370/841] Processed Armstrong
+[371/841] Processed Bates
+[372/841] Processed Ebere
+[373/841] Processed Heath
+[374/841] Processed Metcalfe
+[375/841] Processed Barry
+[376/841] Processed Beto
+[377/841] Processed Y.Chermiti
+[378/841] Processed Sherif
+[379/841] Processed Grealish
+[380/841] Processed King
+[381/841] Processed Aznou
+[382/841] Processed Onyango
+[383/841] Processed Campbell
+[384/841] Processed Dibling
+[385/841] Processed Röhl
+[386/841] Processed Graham
+[387/841] Processed Leno
+[388/841] Processed Benda
+[389/841] Processed Robinson
+[390/841] Processed Andersen
+[391/841] Processed Bassey
+[392/841] Processed Castagne
+[393/841] Processed Diop
+[394/841] Processed J.Cuenca
+[395/841] Processed Tete
+[396/841] Processed Amissah
+[397/841] Processed Iwobi
+[398/841] Processed Smith Rowe
+[399/841] Processed Andreas
+[400/841] Processed Sessegnon
+[401/841] Processed Wilson
+[402/841] Processed Berge
+[403/841] Processed Cairney
+[404/841] Processed Lukić
+[405/841] Processed Godo
+[406/841] Processed Harris
+[407/841] Processed King
+[408/841] Processed Reed
+[409/841] Processed Raúl
+[410/841] Processed Muniz
+[411/841] Processed Bobb
+[412/841] Processed Lecomte
+[413/841] Processed Chukwueze
+[414/841] Processed Kevin
+[415/841] Processed Kusi-Asare
+[416/841] Processed Ridgeon
+[417/841] Processed McNally
+[418/841] Processed Buonanotte
+[419/841] Processed Meslier
+[420/841] Processed Cairns
+[421/841] Processed Darlow
+[422/841] Processed Bogle
+[423/841] Processed Struijk
+[424/841] Processed Bijol
+[425/841] Processed Bornauw
+[426/841] Processed Byram
+[427/841] Processed Gudmundsson
+[428/841] Processed Rodon
+[429/841] Processed Schmidt
+[430/841] Processed Aaronson
+[431/841] Processed Gnonto
+[432/841] Processed Harrison
+[433/841] Processed James
+[434/841] Processed Ampadu
+[435/841] Processed Greenwood
+[436/841] Processed Gruev
+[437/841] Processed Ramazani
+[438/841] Processed Tanaka
+[439/841] Processed Crew
+[440/841] Processed Gelhardt
+[441/841] Processed Gyabi
+[442/841] Processed Piroe
+[443/841] Processed Bamford
+[444/841] Processed Mateo Joseph
+[445/841] Processed Nmecha
+[446/841] Processed Longstaff
+[447/841] Processed Stach
+[448/841] Processed Perri
+[449/841] Processed Calvert-Lewin
+[450/841] Processed Okafor
+[451/841] Processed Justin
+[452/841] Processed Gray
+[453/841] Processed Chambers
+[454/841] Processed Lienou
+[455/841] Processed Chadwick
+[456/841] Processed Cresswell
+[457/841] Processed A.Becker
+[458/841] Processed Mamardashvili
+[459/841] Processed Pécsi
+[460/841] Processed Woodman
+[461/841] Processed Frimpong
+[462/841] Processed Kerkez
+[463/841] Processed Robertson
+[464/841] Processed Virgil
+[465/841] Processed Konaté
+[466/841] Processed Bradley
+[467/841] Processed Gomez
+[468/841] Processed Tsimikas
+[469/841] Processed Nallo
+[470/841] Processed R.Williams
+[471/841] Processed Ramsay
+[472/841] Processed M.Salah
+[473/841] Processed Wirtz
+[474/841] Processed Luis Díaz
+[475/841] Processed Gakpo
+[476/841] Processed Chiesa
+[477/841] Processed Mac Allister
+[478/841] Processed Szoboszlai
+[479/841] Processed C.Jones
+[480/841] Processed Gravenberch
+[481/841] Processed Endo
+[482/841] Processed Bajcetic
+[483/841] Processed McConnell
+[484/841] Processed Morton
+[485/841] Processed Nyoni
+[486/841] Processed Darwin
+[487/841] Processed Danns
+[488/841] Processed Isak
+[489/841] Processed Ekitiké
+[490/841] Processed Ngumoha
+[491/841] Processed Leoni
+[492/841] Processed Morrison
+[493/841] Processed Lucky
+[494/841] Processed Wright
+[495/841] Processed Ndiaye
+[496/841] Processed Semenyo
+[497/841] Processed Trafford
+[498/841] Processed Guéhi
+[499/841] Processed Ederson M.
+[500/841] Processed Bettinelli
+[501/841] Processed Aït-Nouri
+[502/841] Processed Gvardiol
+[503/841] Processed Akanji
+[504/841] Processed Aké
+[505/841] Processed Khusanov
+[506/841] Processed Matheus N.
+[507/841] Processed Rúben
+[508/841] Processed Stones
+[509/841] Processed Lewis
+[510/841] Processed O'Reilly
+[511/841] Processed Vitor Reis
+[512/841] Processed Marmoush
+[513/841] Processed Foden
+[514/841] Processed Savinho
+[515/841] Processed Bernardo
+[516/841] Processed Cherki
+[517/841] Processed Doku
+[518/841] Processed Gündoğan
+[519/841] Processed Rodrigo
+[520/841] Processed Kovačić
+[521/841] Processed N.Gonzalez
+[522/841] Processed Echeverri
+[523/841] Processed Reijnders
+[524/841] Processed Nypan
+[525/841] Processed Phillips
+[526/841] Processed Haaland
+[527/841] Processed Donnarumma
+[528/841] Processed Mukasa
+[529/841] Processed Mfuni
+[530/841] Processed McAidoo
+[531/841] Processed Gray
+[532/841] Processed Heskey
+[533/841] Processed Alleyne
+[534/841] Processed Mbeumo
+[535/841] Processed Bayindir
+[536/841] Processed Onana
+[537/841] Processed Harrison
+[538/841] Processed Heaton
+[539/841] Processed Mee
+[540/841] Processed De Ligt
+[541/841] Processed Martinez
+[542/841] Processed Mazraoui
+[543/841] Processed D.Leon
+[544/841] Processed Dalot
+[545/841] Processed Dorgu
+[546/841] Processed Maguire
+[547/841] Processed Shaw
+[548/841] Processed Yoro
+[549/841] Processed Amass
+[550/841] Processed Fredricson
+[551/841] Processed Heaven
+[552/841] Processed Malacia
+[553/841] Processed B.Fernandes
+[554/841] Processed Cunha
+[555/841] Processed Rashford
+[556/841] Processed Amad
+[557/841] Processed Antony
+[558/841] Processed Mount
+[559/841] Processed Casemiro
+[560/841] Processed Mainoo
+[561/841] Processed Ugarte
+[562/841] Processed Collyer
+[563/841] Processed Fitzgerald
+[564/841] Processed J.Fletcher
+[565/841] Processed Kone
+[566/841] Processed Moorhouse
+[567/841] Processed Højlund
+[568/841] Processed Zirkzee
+[569/841] Processed Obi
+[570/841] Processed Wheatley
+[571/841] Processed Šeško
+[572/841] Processed Lammens
+[573/841] Processed Lacey
+[574/841] Processed Bendito Mantato
+[575/841] Processed Fletcher
+[576/841] Processed Kukonki
+[577/841] Processed Thwaites
+[578/841] Processed J.Ramsey
+[579/841] Processed Wissa
+[580/841] Processed Pope
+[581/841] Processed Gillespie
+[582/841] Processed Odysseas
+[583/841] Processed Hall
+[584/841] Processed Schär
+[585/841] Processed Botman
+[586/841] Processed Burn
+[587/841] Processed Livramento
+[588/841] Processed Trippier
+[589/841] Processed Krafth
+[590/841] Processed Lascelles
+[591/841] Processed A.Murphy
+[592/841] Processed Ashby
+[593/841] Processed Pivas
+[594/841] Processed Targett
+[595/841] Processed Gordon
+[596/841] Processed Elanga
+[597/841] Processed Barnes
+[598/841] Processed Bruno G.
+[599/841] Processed J.Murphy
+[600/841] Processed Joelinton
+[601/841] Processed Tonali
+[602/841] Processed Antoñito C.
+[603/841] Processed Willock
+[604/841] Processed Hayden
+[605/841] Processed Kuol
+[606/841] Processed L.Miley
+[607/841] Processed White
+[608/841] Processed Osula
+[609/841] Processed Neave
+[610/841] Processed Ramsdale
+[611/841] Processed Thiaw
+[612/841] Processed Seung soo
+[613/841] Processed Woltemade
+[614/841] Processed Ruddy
+[615/841] Processed Shahar
+[616/841] Processed Alabi
+[617/841] Processed Zinchenko
+[618/841] Processed Ortega Moreno
+[619/841] Processed McAtee
+[620/841] Processed Sels
+[621/841] Processed C.Miguel
+[622/841] Processed Turner
+[623/841] Processed Milenković
+[624/841] Processed Murillo
+[625/841] Processed Aina
+[626/841] Processed N.Williams
+[627/841] Processed David Carmo
+[628/841] Processed Jair Cunha
+[629/841] Processed Morato
+[630/841] Processed O.Richards
+[631/841] Processed Abbott
+[632/841] Processed Boly
+[633/841] Processed Gibbs-White
+[634/841] Processed Hudson-Odoi
+[635/841] Processed Anderson
+[636/841] Processed Jota
+[637/841] Processed Dominguez
+[638/841] Processed O'Brien
+[639/841] Processed Sangaré
+[640/841] Processed Yates
+[641/841] Processed Da Silva Moreira
+[642/841] Processed Stamenic
+[643/841] Processed Wood
+[644/841] Processed Igor Jesus
+[645/841] Processed Awoniyi
+[646/841] Processed Ndoye
+[647/841] Processed Gunn
+[648/841] Processed Hutchinson
+[649/841] Processed Kalimuendo
+[650/841] Processed John
+[651/841] Processed Savona
+[652/841] Processed Cuiabano
+[653/841] Processed Bakwa
+[654/841] Processed Lucca
+[655/841] Processed Netz
+[656/841] Processed Whitehall
+[657/841] Processed Sinclair
+[658/841] Processed Sillah
+[659/841] Processed Patterson
+[660/841] Processed Moore
+[661/841] Processed Nna Noukeu
+[662/841] Processed Ballard
+[663/841] Processed Hume
+[664/841] Processed Alese
+[665/841] Processed Anderson
+[666/841] Processed Cirkin
+[667/841] Processed Hjelde
+[668/841] Processed Huggins
+[669/841] Processed Johnson
+[670/841] Processed O'Nien
+[671/841] Processed Pembele
+[672/841] Processed Reinildo
+[673/841] Processed Seelt
+[674/841] Processed Adingra
+[675/841] Processed Diarra
+[676/841] Processed Roberts
+[677/841] Processed Aleksić
+[678/841] Processed E.Le Fée
+[679/841] Processed Mundle
+[680/841] Processed Neil
+[681/841] Processed Poveda
+[682/841] Processed Rigg
+[683/841] Processed Sadiki
+[684/841] Processed Talbi
+[685/841] Processed Ba
+[686/841] Processed Browne
+[687/841] Processed Ekwah
+[688/841] Processed H.Jones
+[689/841] Processed Matete
+[690/841] Processed Triantis
+[691/841] Processed Isidor
+[692/841] Processed Mayenda
+[693/841] Processed Abdullahi
+[694/841] Processed Luís Hemir
+[695/841] Processed Rusyn
+[696/841] Processed Xhaka
+[697/841] Processed Roefs
+[698/841] Processed Masuaku
+[699/841] Processed Alderete
+[700/841] Processed Mukiele
+[701/841] Processed Geertruida
+[702/841] Processed Brobbey
+[703/841] Processed Traoré
+[704/841] Processed Jenson Jones
+[705/841] Processed Tutierov
+[706/841] Processed Jocelin.T
+[707/841] Processed Ellborg
+[708/841] Processed Angulo
+[709/841] Processed Whittaker
+[710/841] Processed Jones
+[711/841] Processed Vicario
+[712/841] Processed Austin
+[713/841] Processed Kinsky
+[714/841] Processed Pedro Porro
+[715/841] Processed Romero
+[716/841] Processed Danso
+[717/841] Processed Davies
+[718/841] Processed Dragusin
+[719/841] Processed Spence
+[720/841] Processed Udogie
+[721/841] Processed Van de Ven
+[722/841] Processed Phillips
+[723/841] Processed Takai
+[724/841] Processed Vuskovic
+[725/841] Processed Son
+[726/841] Processed Maddison
+[727/841] Processed Kudus
+[728/841] Processed Kulusevski
+[729/841] Processed Tel
+[730/841] Processed Bentancur
+[731/841] Processed Bergvall
+[732/841] Processed Bissouma
+[733/841] Processed Odobert
+[734/841] Processed Solomon
+[735/841] Processed Bryan
+[736/841] Processed Gray
+[737/841] Processed Moore
+[738/841] Processed P.M.Sarr
+[739/841] Processed Min-hyeok
+[740/841] Processed Olusesi
+[741/841] Processed Solanke
+[742/841] Processed Richarlison
+[743/841] Processed Lankshear
+[744/841] Processed Scarlett
+[745/841] Processed J.Palhinha
+[746/841] Processed Xavi
+[747/841] Processed Kolo Muani
+[748/841] Processed Byfield
+[749/841] Processed Rowswell
+[750/841] Processed Akhamrich
+[751/841] Processed Williams-Barnett
+[752/841] Processed Gallagher
+[753/841] Processed Souza
+[754/841] Processed Kyerematen
+[755/841] Processed Wilson
+[756/841] Processed Adama
+[757/841] Processed Areola
+[758/841] Processed Foderingham
+[759/841] Processed Hegyi
+[760/841] Processed Diouf
+[761/841] Processed Emerson
+[762/841] Processed Kilman
+[763/841] Processed Mavropanos
+[764/841] Processed N.Aguerd
+[765/841] Processed Scarles
+[766/841] Processed Todibo
+[767/841] Processed Wan-Bissaka
+[768/841] Processed Casey
+[769/841] Processed L.Paquetá
+[770/841] Processed Souček
+[771/841] Processed Summerville
+[772/841] Processed Álvarez
+[773/841] Processed Cornet
+[774/841] Processed G.Rodriguez
+[775/841] Processed L.Guilherme
+[776/841] Processed Earthy
+[777/841] Processed Irving
+[778/841] Processed Orford
+[779/841] Processed Potts
+[780/841] Processed Bowen
+[781/841] Processed Füllkrug
+[782/841] Processed Marshall
+[783/841] Processed Walker-Peters
+[784/841] Processed Wilson
+[785/841] Processed Hermansen
+[786/841] Processed M.Fernandes
+[787/841] Processed S.Magassa
+[788/841] Processed Fabianski
+[789/841] Processed Mayers
+[790/841] Processed Golambeckis
+[791/841] Processed Mohamadou Kanté
+[792/841] Processed Pablo
+[793/841] Processed Taty
+[794/841] Processed Lamadrid
+[795/841] Processed Disasi
+[796/841] Processed Herrick
+[797/841] Processed Johnstone
+[798/841] Processed José Sá
+[799/841] Processed Bentley
+[800/841] Processed Agbadou
+[801/841] Processed Doherty
+[802/841] Processed H.Bueno
+[803/841] Processed Mosquera
+[804/841] Processed R.Gomes
+[805/841] Processed S.Bueno
+[806/841] Processed Toti
+[807/841] Processed Hoever
+[808/841] Processed Meupiyou
+[809/841] Processed Pedro Lima
+[810/841] Processed Pond
+[811/841] Processed Hee Chan
+[812/841] Processed André
+[813/841] Processed Bellegarde
+[814/841] Processed Fer López
+[815/841] Processed J.Gomes
+[816/841] Processed Guedes
+[817/841] Processed Munetsi
+[818/841] Processed B.Traore
+[819/841] Processed Chirewa
+[820/841] Processed Edozie
+[821/841] Processed Gonzalez
+[822/841] Processed Hodge
+[823/841] Processed Fábio Silva
+[824/841] Processed Kalajdžić
+[825/841] Processed Chiwome
+[826/841] Processed Fraser
+[827/841] Processed J.Arias
+[828/841] Processed Møller Wolfe
+[829/841] Processed Tchatchoua
+[830/841] Processed Krejčí
+[831/841] Processed Tolu
+[832/841] Processed Mané
+[833/841] Processed Olagunju
+[834/841] Processed Rawlings
+[835/841] Processed Ojinnaka
+[836/841] Processed Sutherland
+[837/841] Processed Abbey
+[838/841] Processed Angel
+[839/841] Processed Armstrong
+[840/841] Processed Brooks
+[841/841] Processed Gracey
+
+Dataset created!
+   player_id player_name  ... actual_points calculated_points
+0          1        Raya  ...            10                10
+1          1        Raya  ...             6                 6
+2          1        Raya  ...             2                 2
+3          1        Raya  ...             6                 6
+4          1        Raya  ...             2                 2
+
+[5 rows x 33 columns]
+
+Saved dataset to: data/raw/fpl_clean_dataset.csv
+
+Dataset shape: (29747, 33)
+
+Points comparison:
+   actual_points  calculated_points
+0             10                 10
+1              6                  6
+2              2                  2
+3              6                  6
+4              2                  2
+5              2                  2
+6              6                  6
+7              6                  6
+8              6                  6
+9              6                  6
+
+Rows where calculated points != actual points: 0 / 29747
+=== OK: extract_fpl_clean_dataset.py ===
+
+=== [17:50:24] Running: extract_understat_v2.py ===
+2026-07-21 17:50:24,866 [INFO] Fetching EPL 2025 player list from Understat...
+2026-07-21 17:50:27,178 [INFO] Total players found: 537
+2026-07-21 17:50:27,928 [INFO] [1/537] Erling Haaland (199 matches)
+2026-07-21 17:50:28,600 [INFO] [2/537] Thiago (46 matches)
+2026-07-21 17:50:29,368 [INFO] [3/537] Antoine Semenyo (118 matches)
+2026-07-21 17:50:30,239 [INFO] [4/537] Ollie Watkins (221 matches)
+2026-07-21 17:50:31,068 [INFO] [5/537] Morgan Gibbs-White (191 matches)
+2026-07-21 17:50:31,835 [INFO] [6/537] João Pedro (124 matches)
+2026-07-21 17:50:33,228 [INFO] [7/537] Dominic Calvert-Lewin (274 matches)
+2026-07-21 17:50:33,927 [INFO] [8/537] Viktor Gyokeres (36 matches)
+2026-07-21 17:50:35,161 [INFO] [9/537] Danny Welbeck (284 matches)
+2026-07-21 17:50:35,874 [INFO] [10/537] Eli Junior Kroupi (64 matches)
+2026-07-21 17:50:37,100 [INFO] [11/537] Jean-Philippe Mateta (231 matches)
+2026-07-21 17:50:38,337 [INFO] [12/537] Richarlison (275 matches)
+2026-07-21 17:50:39,462 [INFO] [13/537] Bryan Mbeumo (173 matches)
+2026-07-21 17:50:40,581 [INFO] [14/537] Hugo Ekitike (127 matches)
+2026-07-21 17:50:41,316 [INFO] [15/537] Benjamin Sesko (94 matches)
+2026-07-21 17:50:42,016 [INFO] [16/537] Zian Flemming (29 matches)
+2026-07-21 17:50:43,080 [INFO] [17/537] Harry Wilson (156 matches)
+2026-07-21 17:50:44,560 [INFO] [18/537] Matheus Cunha (229 matches)
+2026-07-21 17:50:45,275 [INFO] [19/537] Cole Palmer (115 matches)
+2026-07-21 17:50:45,965 [INFO] [20/537] Enzo Fernández (118 matches)
+2026-07-21 17:50:46,630 [INFO] [21/537] Morgan Rogers (85 matches)
+2026-07-21 17:50:48,253 [INFO] [22/537] Bruno Fernandes (325 matches)
+2026-07-21 17:50:49,375 [INFO] [23/537] Jarrod Bowen (238 matches)
+2026-07-21 17:50:50,574 [INFO] [24/537] Casemiro (320 matches)
+2026-07-21 17:50:51,707 [INFO] [25/537] Raúl Jiménez (254 matches)
+2026-07-21 17:50:52,561 [INFO] [26/537] Ismaila Sarr (229 matches)
+2026-07-21 17:50:53,337 [INFO] [27/537] Bruno Guimarães (209 matches)
+2026-07-21 17:50:54,081 [INFO] [28/537] Beto (159 matches)
+2026-07-21 17:50:54,780 [INFO] [29/537] Nick Woltemade (103 matches)
+2026-07-21 17:50:55,476 [INFO] [30/537] Kevin Schade (131 matches)
+2026-07-21 17:50:56,166 [INFO] [31/537] Kiernan Dewsbury-Hall (103 matches)
+2026-07-21 17:50:56,867 [INFO] [32/537] Jaidon Anthony (70 matches)
+2026-07-21 17:50:57,550 [INFO] [33/537] Noah Okafor (71 matches)
+2026-07-21 17:50:58,242 [INFO] [34/537] Thierno Barry (73 matches)
+2026-07-21 17:50:59,402 [INFO] [35/537] Callum Wilson (271 matches)
+2026-07-21 17:51:01,182 [INFO] [36/537] Mohamed Salah (399 matches)
+2026-07-21 17:51:02,013 [INFO] [37/537] Phil Foden (225 matches)
+2026-07-21 17:51:02,833 [INFO] [38/537] Harvey Barnes (237 matches)
+2026-07-21 17:51:04,036 [INFO] [39/537] Bukayo Saka (226 matches)
+2026-07-21 17:51:04,793 [INFO] [40/537] Eberechi Eze (179 matches)
+2026-07-21 17:51:05,456 [INFO] [41/537] William Osula (59 matches)
+2026-07-21 17:51:06,598 [INFO] [42/537] Dango Ouattara (156 matches)
+2026-07-21 17:51:07,309 [INFO] [43/537] Brian Brobbey (40 matches)
+2026-07-21 17:51:08,437 [INFO] [44/537] Marcus Tavernier (116 matches)
+2026-07-21 17:51:09,475 [INFO] [45/537] Cody Gakpo (127 matches)
+2026-07-21 17:51:10,594 [INFO] [46/537] Virgil van Dijk (339 matches)
+2026-07-21 17:51:11,710 [INFO] [47/537] Emiliano Buendía (191 matches)
+2026-07-21 17:51:12,561 [INFO] [48/537] Lukas Nmecha (102 matches)
+2026-07-21 17:51:13,273 [INFO] [49/537] Wilson Isidor (89 matches)
+2026-07-21 17:51:14,381 [INFO] [50/537] Leandro Trossard (239 matches)
+2026-07-21 17:51:15,414 [INFO] [51/537] Anthony Gordon (176 matches)
+2026-07-21 17:51:16,119 [INFO] [52/537] Iliman Ndiaye (96 matches)
+2026-07-21 17:51:17,246 [INFO] [53/537] Dominik Szoboszlai (167 matches)
+2026-07-21 17:51:18,371 [INFO] [54/537] Valentín Castellanos (128 matches)
+2026-07-21 17:51:19,086 [INFO] [55/537] Evanilson (67 matches)
+2026-07-21 17:51:19,802 [INFO] [56/537] Igor Jesus (37 matches)
+2026-07-21 17:51:20,937 [INFO] [57/537] Pedro Neto (184 matches)
+2026-07-21 17:51:22,057 [INFO] [58/537] Martín Zubimendi (218 matches)
+2026-07-21 17:51:23,187 [INFO] [59/537] John McGinn (233 matches)
+2026-07-21 17:51:24,312 [INFO] [60/537] Tomas Soucek (229 matches)
+2026-07-21 17:51:25,429 [INFO] [61/537] Florian Wirtz (173 matches)
+2026-07-21 17:51:26,564 [INFO] [62/537] Enzo Le Fée (174 matches)
+2026-07-21 17:51:27,689 [INFO] [63/537] Jéremy Doku (163 matches)
+2026-07-21 17:51:28,404 [INFO] [64/537] Crysencio Summerville (84 matches)
+2026-07-21 17:51:29,482 [INFO] [65/537] Anton Stach (151 matches)
+2026-07-21 17:51:30,158 [INFO] [66/537] Ryan Gravenberch (124 matches)
+2026-07-21 17:51:31,273 [INFO] [67/537] João Palhinha (118 matches)
+2026-07-21 17:51:31,987 [INFO] [68/537] Nico O&#039;Reilly (43 matches)
+2026-07-21 17:51:33,036 [INFO] [69/537] Tijjani Reijnders (101 matches)
+2026-07-21 17:51:33,728 [INFO] [70/537] Diego Gómez (48 matches)
+2026-07-21 17:51:34,442 [INFO] [71/537] Rayan (15 matches)
+2026-07-21 17:51:35,992 [INFO] [72/537] Alex Iwobi (320 matches)
+2026-07-21 17:51:37,217 [INFO] [73/537] Mikel Merino (272 matches)
+2026-07-21 17:51:38,304 [INFO] [74/537] Declan Rice (313 matches)
+2026-07-21 17:51:39,184 [INFO] [75/537] Cristian Romero (211 matches)
+2026-07-21 17:51:40,293 [INFO] [76/537] Lucas Paquetá (214 matches)
+2026-07-21 17:51:41,027 [INFO] [77/537] Taiwo Awoniyi (154 matches)
+2026-07-21 17:51:42,126 [INFO] [78/537] Mathis Cherki (179 matches)
+2026-07-21 17:51:42,844 [INFO] [79/537] Malick Thiaw (124 matches)
+2026-07-21 17:51:43,971 [INFO] [80/537] Mikkel Damsgaard (166 matches)
+2026-07-21 17:51:44,693 [INFO] [81/537] Elliot Anderson (119 matches)
+2026-07-21 17:51:45,727 [INFO] [82/537] Donyell Malen (147 matches)
+2026-07-21 17:51:46,441 [INFO] [83/537] Mathys Tel (111 matches)
+2026-07-21 17:51:47,146 [INFO] [84/537] Micky van de Ven (113 matches)
+2026-07-21 17:51:48,268 [INFO] [85/537] Brenden Aaronson (103 matches)
+2026-07-21 17:51:49,399 [INFO] [86/537] Jørgen Strand Larsen (140 matches)
+2026-07-21 17:51:50,115 [INFO] [87/537] Jack Hinshelwood (66 matches)
+2026-07-21 17:51:51,137 [INFO] [88/537] Patrick Dorgu (91 matches)
+2026-07-21 17:51:51,855 [INFO] [89/537] Daniel Muñoz (82 matches)
+2026-07-21 17:51:52,573 [INFO] [90/537] Chemsdine Talbi (28 matches)
+2026-07-21 17:51:54,330 [INFO] [91/537] Ross Barkley (285 matches)
+2026-07-21 17:51:55,452 [INFO] [92/537] Michael Keane (286 matches)
+2026-07-21 17:51:56,564 [INFO] [93/537] Dominic Solanke (176 matches)
+2026-07-21 17:51:57,802 [INFO] [94/537] Chris Wood (275 matches)
+2026-07-21 17:51:58,900 [INFO] [95/537] Alexander Isak (210 matches)
+2026-07-21 17:52:00,052 [INFO] [96/537] Gabriel Jesus (243 matches)
+2026-07-21 17:52:00,768 [INFO] [97/537] Gabriel (232 matches)
+2026-07-21 17:52:01,993 [INFO] [98/537] Nordi Mukiele (232 matches)
+2026-07-21 17:52:03,123 [INFO] [99/537] Jacob Murphy (218 matches)
+2026-07-21 17:52:03,909 [INFO] [100/537] Callum Hudson-Odoi (176 matches)
+2026-07-21 17:52:05,883 [INFO] [101/537] Trevoh Chalobah (146 matches)
+2026-07-21 17:52:06,646 [INFO] [102/537] Konstantinos Mavropanos (170 matches)
+2026-07-21 17:52:07,382 [INFO] [103/537] Ryan Sessegnon (139 matches)
+2026-07-21 17:52:08,128 [INFO] [104/537] Georginio Rutter (132 matches)
+2026-07-21 17:52:08,884 [INFO] [105/537] Mathias Jensen (166 matches)
+2026-07-21 17:52:09,736 [INFO] [106/537] Samuel Chukwueze (229 matches)
+2026-07-21 17:52:10,433 [INFO] [107/537] Emile Smith-Rowe (154 matches)
+2026-07-21 17:52:11,112 [INFO] [108/537] Lyle Foster (52 matches)
+2026-07-21 17:52:11,823 [INFO] [109/537] Marc Guehi (167 matches)
+2026-07-21 17:52:12,876 [INFO] [110/537] Mason Mount (183 matches)
+2026-07-21 17:52:13,972 [INFO] [111/537] Amine Adli (129 matches)
+2026-07-21 17:52:15,103 [INFO] [112/537] Omar Marmoush (145 matches)
+2026-07-21 17:52:16,227 [INFO] [113/537] Matthew Cash (183 matches)
+2026-07-21 17:52:16,942 [INFO] [114/537] Tolu Arokodare (43 matches)
+2026-07-21 17:52:17,661 [INFO] [115/537] Chimuanya Ugochukwu (120 matches)
+2026-07-21 17:52:18,786 [INFO] [116/537] Moisés Caicedo (151 matches)
+2026-07-21 17:52:19,792 [INFO] [117/537] Kaoru Mitoma (113 matches)
+2026-07-21 17:52:20,526 [INFO] [118/537] Jan Paul van Hecke (106 matches)
+2026-07-21 17:52:21,653 [INFO] [119/537] Keane Lewis-Potter (114 matches)
+2026-07-21 17:52:22,369 [INFO] [120/537] Santiago Bueno (104 matches)
+2026-07-21 17:52:23,086 [INFO] [121/537] Yasin Ayari (66 matches)
+2026-07-21 17:52:23,805 [INFO] [122/537] Jurriën Timber (62 matches)
+2026-07-21 17:52:24,518 [INFO] [123/537] Alex Scott (80 matches)
+2026-07-21 17:52:25,236 [INFO] [124/537] Rodrigo Gomes (47 matches)
+2026-07-21 17:52:25,906 [INFO] [125/537] Yankuba Minteh (66 matches)
+2026-07-21 17:52:26,672 [INFO] [126/537] Mateus Fernandes (72 matches)
+2026-07-21 17:52:27,386 [INFO] [127/537] Mateus Mané (28 matches)
+2026-07-21 17:52:28,504 [INFO] [128/537] Joelinton (241 matches)
+2026-07-21 17:52:29,953 [INFO] [129/537] Idrissa Gueye (360 matches)
+2026-07-21 17:52:31,181 [INFO] [130/537] Jack Grealish (209 matches)
+2026-07-21 17:52:32,412 [INFO] [131/537] Tammy Abraham (213 matches)
+2026-07-21 17:52:33,083 [INFO] [132/537] Josh Cullen (46 matches)
+2026-07-21 17:52:34,972 [INFO] [133/537] Federico Chiesa (267 matches)
+2026-07-21 17:52:36,090 [INFO] [134/537] James Tarkowski (340 matches)
+2026-07-21 17:52:37,531 [INFO] [135/537] Bernardo Silva (405 matches)
+2026-07-21 17:52:38,242 [INFO] [136/537] Adam Armstrong (98 matches)
+2026-07-21 17:52:39,427 [INFO] [137/537] Kai Havertz (281 matches)
+2026-07-21 17:52:40,189 [INFO] [138/537] Ibrahim Sangare (136 matches)
+2026-07-21 17:52:40,876 [INFO] [139/537] Joe Rodon (66 matches)
+2026-07-21 17:52:41,931 [INFO] [140/537] Eddie Nketiah (157 matches)
+2026-07-21 17:52:43,057 [INFO] [141/537] Tom Cairney (157 matches)
+2026-07-21 17:52:44,183 [INFO] [142/537] Justin Kluivert (211 matches)
+2026-07-21 17:52:45,311 [INFO] [143/537] Sean Longstaff (194 matches)
+2026-07-21 17:52:46,033 [INFO] [144/537] Tyler Adams (155 matches)
+2026-07-21 17:52:46,746 [INFO] [145/537] James Garner (114 matches)
+2026-07-21 17:52:47,478 [INFO] [146/537] James Justin (128 matches)
+2026-07-21 17:52:48,585 [INFO] [147/537] Joshua Zirkzee (125 matches)
+2026-07-21 17:52:49,708 [INFO] [148/537] Reece James (156 matches)
+2026-07-21 17:52:50,393 [INFO] [149/537] Amad Diallo Traore (74 matches)
+2026-07-21 17:52:51,452 [INFO] [150/537] Neco Williams (142 matches)
+2026-07-21 17:52:52,526 [INFO] [151/537] Alexis Mac Allister (203 matches)
+2026-07-21 17:52:53,252 [INFO] [152/537] Xavi Simons (93 matches)
+2026-07-21 17:52:54,318 [INFO] [153/537] Hee-Chan Hwang (153 matches)
+2026-07-21 17:52:55,446 [INFO] [154/537] Jacob Ramsey (164 matches)
+2026-07-21 17:52:56,162 [INFO] [155/537] Rúben Dias (170 matches)
+2026-07-21 17:52:56,879 [INFO] [156/537] Malo Gusto (146 matches)
+2026-07-21 17:52:58,005 [INFO] [157/537] Pape Sarr (162 matches)
+2026-07-21 17:52:59,091 [INFO] [158/537] Yeremi Pino (168 matches)
+2026-07-21 17:53:00,110 [INFO] [159/537] Amadou Onana (146 matches)
+2026-07-21 17:53:00,851 [INFO] [160/537] Habib Diarra (114 matches)
+2026-07-21 17:53:02,000 [INFO] [161/537] Josko Gvardiol (142 matches)
+2026-07-21 17:53:02,708 [INFO] [162/537] Loum Tchaouna (96 matches)
+2026-07-21 17:53:03,432 [INFO] [163/537] Archie Gray (52 matches)
+2026-07-21 17:53:04,558 [INFO] [164/537] Ryan Christie (124 matches)
+2026-07-21 17:53:05,687 [INFO] [165/537] Brennan Johnson (140 matches)
+2026-07-21 17:53:06,811 [INFO] [166/537] Noni Madueke (93 matches)
+2026-07-21 17:53:07,528 [INFO] [167/537] Milos Kerkez (100 matches)
+2026-07-21 17:53:08,657 [INFO] [168/537] Mohammed Kudus (84 matches)
+2026-07-21 17:53:09,372 [INFO] [169/537] Ladislav Krejcí (58 matches)
+2026-07-21 17:53:10,024 [INFO] [170/537] Mats Wieffer (51 matches)
+2026-07-21 17:53:10,701 [INFO] [171/537] Nicolò Savona (42 matches)
+2026-07-21 17:53:11,419 [INFO] [172/537] Rio Ngumoha (19 matches)
+2026-07-21 17:53:12,133 [INFO] [173/537] Maxim De Cuyper (30 matches)
+2026-07-21 17:53:12,852 [INFO] [174/537] Trai Hume (38 matches)
+2026-07-21 17:53:13,567 [INFO] [175/537] Dan Ballard (29 matches)
+2026-07-21 17:53:14,211 [INFO] [176/537] Eliezer Mayenda (20 matches)
+2026-07-21 17:53:14,898 [INFO] [177/537] Estêvão (22 matches)
+2026-07-21 17:53:15,617 [INFO] [178/537] Ao Tanaka (28 matches)
+2026-07-21 17:53:16,330 [INFO] [179/537] Charalampos Kostoulas (21 matches)
+2026-07-21 17:53:17,990 [INFO] [180/537] Granit Xhaka (383 matches)
+2026-07-21 17:53:19,313 [INFO] [181/537] Pascal Groß (353 matches)
+2026-07-21 17:53:20,533 [INFO] [182/537] James Milner (301 matches)
+2026-07-21 17:53:21,663 [INFO] [183/537] Jordan Henderson (290 matches)
+2026-07-21 17:53:22,463 [INFO] [184/537] Ben Davies (245 matches)
+2026-07-21 17:53:23,609 [INFO] [185/537] Bertrand Traoré (176 matches)
+2026-07-21 17:53:24,353 [INFO] [186/537] Kyle Walker-Peters (171 matches)
+2026-07-21 17:53:25,043 [INFO] [187/537] Harrison Reed (127 matches)
+2026-07-21 17:53:25,756 [INFO] [188/537] Axel Tuanzebe (65 matches)
+2026-07-21 17:53:26,884 [INFO] [189/537] Luke Shaw (236 matches)
+2026-07-21 17:53:28,115 [INFO] [190/537] Sasa Lukic (259 matches)
+2026-07-21 17:53:29,243 [INFO] [191/537] Harry Maguire (291 matches)
+2026-07-21 17:53:30,335 [INFO] [192/537] Andrew Robertson (332 matches)
+2026-07-21 17:53:31,697 [INFO] [193/537] Rodri (293 matches)
+2026-07-21 17:53:32,932 [INFO] [194/537] Martin Odegaard (215 matches)
+2026-07-21 17:53:33,741 [INFO] [195/537] Issa Diop (258 matches)
+2026-07-21 17:53:34,890 [INFO] [196/537] Randal Kolo Muani (195 matches)
+2026-07-21 17:53:35,975 [INFO] [197/537] Yoane Wissa (196 matches)
+2026-07-21 17:53:37,227 [INFO] [198/537] Boubacar Kamara (218 matches)
+2026-07-21 17:53:37,962 [INFO] [199/537] Kenny Tete (165 matches)
+2026-07-21 17:53:39,172 [INFO] [200/537] Lewis Dunk (299 matches)
+2026-07-21 17:53:40,282 [INFO] [201/537] Rodrigo Bentancur (243 matches)
+2026-07-21 17:53:42,146 [INFO] [202/537] Douglas Luiz (253 matches)
+2026-07-21 17:53:42,990 [INFO] [203/537] Enes Ünal (256 matches)
+2026-07-21 17:53:43,733 [INFO] [204/537] Ibrahima Konaté (184 matches)
+2026-07-21 17:53:44,477 [INFO] [205/537] Ethan Ampadu (124 matches)
+2026-07-21 17:53:45,172 [INFO] [206/537] Curtis Jones (153 matches)
+2026-07-21 17:53:45,996 [INFO] [207/537] Jaka Bijol (195 matches)
+2026-07-21 17:53:46,711 [INFO] [208/537] David Brooks (118 matches)
+2026-07-21 17:53:47,465 [INFO] [209/537] William Saliba (215 matches)
+2026-07-21 17:53:48,594 [INFO] [210/537] Pedro Porro (162 matches)
+2026-07-21 17:53:49,722 [INFO] [211/537] Marc Cucurella (256 matches)
+2026-07-21 17:53:50,761 [INFO] [212/537] Diogo Dalot (194 matches)
+2026-07-21 17:53:51,867 [INFO] [213/537] Dan Burn (227 matches)
+2026-07-21 17:53:52,999 [INFO] [214/537] Gabriel Martinelli (191 matches)
+2026-07-21 17:53:54,226 [INFO] [215/537] Jean-Ricner Bellegarde (212 matches)
+2026-07-21 17:53:55,297 [INFO] [216/537] Matthijs de Ligt (182 matches)
+2026-07-21 17:53:56,479 [INFO] [217/537] Marshall Munetsi (190 matches)
+2026-07-21 17:53:57,599 [INFO] [218/537] Evann Guessand (141 matches)
+2026-07-21 17:53:58,318 [INFO] [219/537] Riccardo Calafiori (88 matches)
+2026-07-21 17:53:59,445 [INFO] [220/537] Tyrick Mitchell (207 matches)
+2026-07-21 17:54:00,577 [INFO] [221/537] Nicolás Domínguez (192 matches)
+2026-07-21 17:54:01,263 [INFO] [222/537] Armando Broja (100 matches)
+2026-07-21 17:54:02,004 [INFO] [223/537] Chris Richards (127 matches)
+2026-07-21 17:54:02,721 [INFO] [224/537] Jarrad Branthwaite (85 matches)
+2026-07-21 17:54:03,849 [INFO] [225/537] Sven Botman (148 matches)
+2026-07-21 17:54:04,977 [INFO] [226/537] Adrien Truffert (188 matches)
+2026-07-21 17:54:06,026 [INFO] [227/537] Dan Ndoye (117 matches)
+2026-07-21 17:54:07,123 [INFO] [228/537] Joël Veltman (165 matches)
+2026-07-21 17:54:08,251 [INFO] [229/537] Maxence Lacroix (181 matches)
+2026-07-21 17:54:08,968 [INFO] [230/537] Liam Delap (67 matches)
+2026-07-21 17:54:10,093 [INFO] [231/537] Antonee Robinson (158 matches)
+2026-07-21 17:54:11,223 [INFO] [232/537] Omar Alderete (170 matches)
+2026-07-21 17:54:12,348 [INFO] [233/537] Conor Gallagher (203 matches)
+2026-07-21 17:54:13,065 [INFO] [234/537] Jayden Bogle (84 matches)
+2026-07-21 17:54:13,741 [INFO] [235/537] Fabio Carvalho (51 matches)
+2026-07-21 17:54:14,496 [INFO] [236/537] Hannibal Mejbri (41 matches)
+2026-07-21 17:54:15,625 [INFO] [237/537] Vitaly Janelt (161 matches)
+2026-07-21 17:54:16,750 [INFO] [238/537] Nathan Collins (150 matches)
+2026-07-21 17:54:17,470 [INFO] [239/537] Nico González (89 matches)
+2026-07-21 17:54:18,594 [INFO] [240/537] Piero Hincapié (141 matches)
+2026-07-21 17:54:19,306 [INFO] [241/537] Hugo Bueno (78 matches)
+2026-07-21 17:54:19,987 [INFO] [242/537] Lewis Hall (84 matches)
+2026-07-21 17:54:20,646 [INFO] [243/537] Omari Hutchinson (63 matches)
+2026-07-21 17:54:21,651 [INFO] [244/537] Alejandro Garnacho (117 matches)
+2026-07-21 17:54:22,791 [INFO] [245/537] Rodrigo Muniz (78 matches)
+2026-07-21 17:54:23,472 [INFO] [246/537] Soungoutou Magassa (66 matches)
+2026-07-21 17:54:24,632 [INFO] [247/537] Matheus Nunes (113 matches)
+2026-07-21 17:54:25,295 [INFO] [248/537] Kobbie Mainoo (78 matches)
+2026-07-21 17:54:25,997 [INFO] [249/537] Michael Kayode (80 matches)
+2026-07-21 17:54:26,988 [INFO] [250/537] Brajan Gruda (82 matches)
+2026-07-21 17:54:27,705 [INFO] [251/537] Merlin Röhl (64 matches)
+2026-07-21 17:54:28,833 [INFO] [252/537] João Gomes (116 matches)
+2026-07-21 17:54:29,548 [INFO] [253/537] Lewis Miley (55 matches)
+2026-07-21 17:54:30,587 [INFO] [254/537] Simon Adingra (88 matches)
+2026-07-21 17:54:31,292 [INFO] [255/537] Calvin Bassey (94 matches)
+2026-07-21 17:54:32,418 [INFO] [256/537] Sávio (90 matches)
+2026-07-21 17:54:33,133 [INFO] [257/537] Yehor Yarmolyuk (95 matches)
+2026-07-21 17:54:33,850 [INFO] [258/537] Andrey Santos (71 matches)
+2026-07-21 17:54:34,977 [INFO] [259/537] Lorenzo Lucca (90 matches)
+2026-07-21 17:54:35,693 [INFO] [260/537] Jake O&#039;Brien (84 matches)
+2026-07-21 17:54:36,411 [INFO] [261/537] Murillo (93 matches)
+2026-07-21 17:54:37,127 [INFO] [262/537] Alejandro Jiménez (57 matches)
+2026-07-21 17:54:37,843 [INFO] [263/537] Adam Wharton (70 matches)
+2026-07-21 17:54:38,560 [INFO] [264/537] Joshua King (40 matches)
+2026-07-21 17:54:39,274 [INFO] [265/537] Josh Acheampong (22 matches)
+2026-07-21 17:54:39,993 [INFO] [266/537] Lucas Bergvall (50 matches)
+2026-07-21 17:54:40,711 [INFO] [267/537] André (68 matches)
+2026-07-21 17:54:41,425 [INFO] [268/537] Justin Devenny (44 matches)
+2026-07-21 17:54:42,144 [INFO] [269/537] Ferdi Kadioglu (43 matches)
+2026-07-21 17:54:42,860 [INFO] [270/537] Morato (47 matches)
+2026-07-21 17:54:43,544 [INFO] [271/537] Matt O&#039;Riley (42 matches)
+2026-07-21 17:54:44,294 [INFO] [272/537] Tom Edozie (3 matches)
+2026-07-21 17:54:45,010 [INFO] [273/537] Chris Rigg (18 matches)
+2026-07-21 17:54:45,726 [INFO] [274/537] Oliver Sonne (7 matches)
+2026-07-21 17:54:46,378 [INFO] [275/537] Josh Laurent (33 matches)
+2026-07-21 17:54:47,046 [INFO] [276/537] Marcus Edwards (23 matches)
+2026-07-21 17:54:47,775 [INFO] [277/537] Jhon Arias (23 matches)
+2026-07-21 17:54:48,489 [INFO] [278/537] Max Dowman (6 matches)
+2026-07-21 17:54:49,206 [INFO] [279/537] Stefanos Tzimas (9 matches)
+2026-07-21 17:54:49,926 [INFO] [280/537] Kevin (26 matches)
+2026-07-21 17:54:51,089 [INFO] [281/537] Fabian Schär (266 matches)
+2026-07-21 17:54:51,958 [INFO] [282/537] Bernd Leno (385 matches)
+2026-07-21 17:54:53,205 [INFO] [283/537] Nathan Aké (249 matches)
+2026-07-21 17:54:54,536 [INFO] [284/537] Seamus Coleman (257 matches)
+2026-07-21 17:54:55,659 [INFO] [285/537] John Stones (236 matches)
+2026-07-21 17:54:56,790 [INFO] [286/537] Nathaniel Clyne (219 matches)
+2026-07-21 17:54:58,020 [INFO] [287/537] Kyle Walker (340 matches)
+2026-07-21 17:54:59,147 [INFO] [288/537] Kieran Trippier (293 matches)
+2026-07-21 17:55:00,375 [INFO] [289/537] Ola Aina (211 matches)
+2026-07-21 17:55:01,124 [INFO] [290/537] Jordan Pickford (362 matches)
+2026-07-21 17:55:02,319 [INFO] [291/537] Jamaal Lascelles (177 matches)
+2026-07-21 17:55:03,035 [INFO] [292/537] Karl Darlow (74 matches)
+2026-07-21 17:55:04,164 [INFO] [293/537] Adam Smith (255 matches)
+2026-07-21 17:55:05,809 [INFO] [294/537] James Ward-Prowse (373 matches)
+2026-07-21 17:55:06,461 [INFO] [295/537] Freddie Woodman (7 matches)
+2026-07-21 17:55:07,647 [INFO] [296/537] Adama Traoré (282 matches)
+2026-07-21 17:55:08,358 [INFO] [297/537] Sam Byram (61 matches)
+2026-07-21 17:55:09,058 [INFO] [298/537] Patrick Roberts (25 matches)
+2026-07-21 17:55:09,791 [INFO] [299/537] Sam Johnstone (85 matches)
+2026-07-21 17:55:10,920 [INFO] [300/537] Joseph Gomez (170 matches)
+2026-07-21 17:55:11,961 [INFO] [301/537] Tyrone Mings (189 matches)
+2026-07-21 17:55:12,829 [INFO] [302/537] Gianluigi Donnarumma (353 matches)
+2026-07-21 17:55:14,812 [INFO] [303/537] Alisson (292 matches)
+2026-07-21 17:55:15,558 [INFO] [304/537] Emil Krafth (161 matches)
+2026-07-21 17:55:16,285 [INFO] [305/537] Arthur Masuaku (112 matches)
+2026-07-21 17:55:17,008 [INFO] [306/537] Lewis Cook (189 matches)
+2026-07-21 17:55:17,855 [INFO] [307/537] Lucas Digne (330 matches)
+2026-07-21 17:55:18,719 [INFO] [308/537] Jefferson Lerma (251 matches)
+2026-07-21 17:55:20,033 [INFO] [309/537] Mateo Kovacic (317 matches)
+2026-07-21 17:55:20,866 [INFO] [310/537] Alphonse Areola (263 matches)
+2026-07-21 17:55:22,082 [INFO] [311/537] Oleksandr Zinchenko (181 matches)
+2026-07-21 17:55:22,795 [INFO] [312/537] Olivier Boscagli (40 matches)
+2026-07-21 17:55:23,926 [INFO] [313/537] Odsonne Edouard (145 matches)
+2026-07-21 17:55:24,642 [INFO] [314/537] Emiliano Martinez (233 matches)
+2026-07-21 17:55:25,773 [INFO] [315/537] Ashley Barnes (207 matches)
+2026-07-21 17:55:26,494 [INFO] [316/537] Kepa (208 matches)
+2026-07-21 17:55:27,820 [INFO] [317/537] Leon Bailey (249 matches)
+2026-07-21 17:55:28,718 [INFO] [318/537] Kevin Danso (193 matches)
+2026-07-21 17:55:29,967 [INFO] [319/537] Jacob Bruun Larsen (170 matches)
+2026-07-21 17:55:30,680 [INFO] [320/537] Angus Gunn (32 matches)
+2026-07-21 17:55:31,379 [INFO] [321/537] Nick Pope (248 matches)
+2026-07-21 17:55:32,528 [INFO] [322/537] Aaron Wan-Bissaka (233 matches)
+2026-07-21 17:55:33,244 [INFO] [323/537] Tosin Adarabioyo (116 matches)
+2026-07-21 17:55:34,372 [INFO] [324/537] Daniel James (125 matches)
+2026-07-21 17:55:35,601 [INFO] [325/537] Angel Gomes (136 matches)
+2026-07-21 17:55:36,327 [INFO] [326/537] Aaron Ramsdale (195 matches)
+2026-07-21 17:55:37,648 [INFO] [327/537] Yves Bissouma (249 matches)
+2026-07-21 17:55:38,439 [INFO] [328/537] Walter Benítez (168 matches)
+2026-07-21 17:55:39,606 [INFO] [329/537] Youri Tielemans (291 matches)
+2026-07-21 17:55:40,719 [INFO] [330/537] Solly March (194 matches)
+2026-07-21 17:55:41,445 [INFO] [331/537] Victor Lindelöf (211 matches)
+2026-07-21 17:55:42,565 [INFO] [332/537] Niclas Füllkrug (180 matches)
+2026-07-21 17:55:43,656 [INFO] [333/537] Will Hughes (214 matches)
+2026-07-21 17:55:44,891 [INFO] [334/537] Daichi Kamada (218 matches)
+2026-07-21 17:55:46,001 [INFO] [335/537] Timothy Castagne (254 matches)
+2026-07-21 17:55:47,196 [INFO] [336/537] Nikola Milenkovic (291 matches)
+2026-07-21 17:55:47,978 [INFO] [337/537] Pau Torres (210 matches)
+2026-07-21 17:55:49,048 [INFO] [338/537] Joachim Andersen (258 matches)
+2026-07-21 17:55:50,220 [INFO] [339/537] Jadon Sancho (230 matches)
+2026-07-21 17:55:50,951 [INFO] [340/537] Reiss Nelson (94 matches)
+2026-07-21 17:55:51,638 [INFO] [341/537] Martin Dubravka (197 matches)
+2026-07-21 17:55:52,700 [INFO] [342/537] Joe Willock (183 matches)
+2026-07-21 17:55:53,771 [INFO] [343/537] Rayan Ait Nouri (175 matches)
+2026-07-21 17:55:54,875 [INFO] [344/537] Dwight McNeil (248 matches)
+2026-07-21 17:55:55,660 [INFO] [345/537] Jean-Clair Todibo (186 matches)
+2026-07-21 17:55:56,803 [INFO] [346/537] James Maddison (225 matches)
+2026-07-21 17:55:57,546 [INFO] [347/537] Matt Doherty (191 matches)
+2026-07-21 17:55:58,323 [INFO] [348/537] Axel Disasi (188 matches)
+2026-07-21 17:55:59,069 [INFO] [349/537] Matz Sels (249 matches)
+2026-07-21 17:56:00,177 [INFO] [350/537] Naif Aguerd (168 matches)
+2026-07-21 17:56:01,337 [INFO] [351/537] Hamed Junior Traore (199 matches)
+2026-07-21 17:56:02,186 [INFO] [352/537] Borna Sosa (119 matches)
+2026-07-21 17:56:02,941 [INFO] [353/537] Christian Nørgaard (135 matches)
+2026-07-21 17:56:03,661 [INFO] [354/537] Benoit Badiashile Mukinayi (148 matches)
+2026-07-21 17:56:04,392 [INFO] [355/537] Bafode Diakite (128 matches)
+2026-07-21 17:56:05,499 [INFO] [356/537] Ben White (172 matches)
+2026-07-21 17:56:06,625 [INFO] [357/537] Max Kilman (186 matches)
+2026-07-21 17:56:07,401 [INFO] [358/537] Reinildo (165 matches)
+2026-07-21 17:56:08,568 [INFO] [359/537] Harvey Elliott (99 matches)
+2026-07-21 17:56:09,289 [INFO] [360/537] Wesley Fofana (111 matches)
+2026-07-21 17:56:09,975 [INFO] [361/537] Dean Henderson (160 matches)
+2026-07-21 17:56:11,132 [INFO] [362/537] Ezri Konsa Ngoyo (231 matches)
+2026-07-21 17:56:12,256 [INFO] [363/537] Sebastiaan Bornauw (152 matches)
+2026-07-21 17:56:12,974 [INFO] [364/537] Caoimhin Kelleher (62 matches)
+2026-07-21 17:56:13,700 [INFO] [365/537] Igor Julio (145 matches)
+2026-07-21 17:56:14,924 [INFO] [366/537] Sandro Tonali (209 matches)
+2026-07-21 17:56:15,637 [INFO] [367/537] Ilia Gruev (56 matches)
+2026-07-21 17:56:16,800 [INFO] [368/537] Arnaud Kalimuendo Muinga (184 matches)
+2026-07-21 17:56:17,993 [INFO] [369/537] Guido Rodríguez (184 matches)
+2026-07-21 17:56:18,710 [INFO] [370/537] Sander Berge (132 matches)
+2026-07-21 17:56:19,425 [INFO] [371/537] Ki-Jana Hoever (58 matches)
+2026-07-21 17:56:20,550 [INFO] [372/537] Luca Netz (131 matches)
+2026-07-21 17:56:21,269 [INFO] [373/537] Jorge Cuenca (94 matches)
+2026-07-21 17:56:21,980 [INFO] [374/537] Dennis Cirkin (8 matches)
+2026-07-21 17:56:23,110 [INFO] [375/537] Pascal Struijk (119 matches)
+2026-07-21 17:56:24,240 [INFO] [376/537] Jack Harrison (196 matches)
+2026-07-21 17:56:24,956 [INFO] [377/537] Stefan Ortega Moreno (95 matches)
+2026-07-21 17:56:26,083 [INFO] [378/537] Wataru Endo (156 matches)
+2026-07-21 17:56:27,202 [INFO] [379/537] Sasa Kalajdzic (69 matches)
+2026-07-21 17:56:28,270 [INFO] [380/537] Iyenoma Destiny Udogie (147 matches)
+2026-07-21 17:56:28,966 [INFO] [381/537] Guglielmo Vicario (166 matches)
+2026-07-21 17:56:30,074 [INFO] [382/537] Dilane Bakwa (90 matches)
+2026-07-21 17:56:30,792 [INFO] [383/537] Aaron Hickey (103 matches)
+2026-07-21 17:56:31,480 [INFO] [384/537] Florentino Luís (62 matches)
+2026-07-21 17:56:32,130 [INFO] [385/537] James Trafford (32 matches)
+2026-07-21 17:56:32,814 [INFO] [386/537] Robert Sánchez (170 matches)
+2026-07-21 17:56:33,555 [INFO] [387/537] Radu Dragusin (75 matches)
+2026-07-21 17:56:34,270 [INFO] [388/537] Filip Jorgensen (49 matches)
+2026-07-21 17:56:35,400 [INFO] [389/537] Jeremie Frimpong (154 matches)
+2026-07-21 17:56:36,114 [INFO] [390/537] Dane Scarlett (11 matches)
+2026-07-21 17:56:36,832 [INFO] [391/537] Maxime Estève (109 matches)
+2026-07-21 17:56:37,550 [INFO] [392/537] Valentino Livramento (110 matches)
+2026-07-21 17:56:38,679 [INFO] [393/537] Anthony Elanga (145 matches)
+2026-07-21 17:56:39,391 [INFO] [394/537] Tim Iroegbunam (59 matches)
+2026-07-21 17:56:40,102 [INFO] [395/537] Marco Bizot (146 matches)
+2026-07-21 17:56:40,785 [INFO] [396/537] David Raya (169 matches)
+2026-07-21 17:56:41,463 [INFO] [397/537] Kristoffer Ajer (112 matches)
+2026-07-21 17:56:42,161 [INFO] [398/537] Ethan Pinnock (117 matches)
+2026-07-21 17:56:42,834 [INFO] [399/537] Rico Henry (106 matches)
+2026-07-21 17:56:43,525 [INFO] [400/537] Frank Onyeka (106 matches)
+2026-07-21 17:56:44,230 [INFO] [401/537] Giorgi Mamardashvili (137 matches)
+2026-07-21 17:56:44,910 [INFO] [402/537] José Sá (160 matches)
+2026-07-21 17:56:45,964 [INFO] [403/537] Gabriel Gudmundsson (135 matches)
+2026-07-21 17:56:47,788 [INFO] [404/537] Yerson Mosquera (48 matches)
+2026-07-21 17:56:48,507 [INFO] [405/537] Romeo Lavia (58 matches)
+2026-07-21 17:56:49,223 [INFO] [406/537] Cristhian Mosquera (102 matches)
+2026-07-21 17:56:49,936 [INFO] [407/537] Lamare Bogarde (36 matches)
+2026-07-21 17:56:50,606 [INFO] [408/537] Conor Bradley (45 matches)
+2026-07-21 17:56:51,373 [INFO] [409/537] James McAtee (62 matches)
+2026-07-21 17:56:52,091 [INFO] [410/537] Diego Coppola (99 matches)
+2026-07-21 17:56:52,802 [INFO] [411/537] Myles Peart-Harris (4 matches)
+2026-07-21 17:56:53,844 [INFO] [412/537] Vitalii Mykolenko (143 matches)
+2026-07-21 17:56:54,545 [INFO] [413/537] Nathan Patterson (56 matches)
+2026-07-21 17:56:55,207 [INFO] [414/537] Toti (106 matches)
+2026-07-21 17:56:55,877 [INFO] [415/537] Josh Dasilva (50 matches)
+2026-07-21 17:56:57,004 [INFO] [416/537] Carlos Baleba (113 matches)
+2026-07-21 17:56:58,058 [INFO] [417/537] Jamie Bynoe-Gittens (92 matches)
+2026-07-21 17:56:58,748 [INFO] [418/537] Leny Yoro (99 matches)
+2026-07-21 17:56:59,463 [INFO] [419/537] Tyler Dibling (47 matches)
+2026-07-21 17:57:00,181 [INFO] [420/537] Noussair Mazraoui (95 matches)
+2026-07-21 17:57:00,898 [INFO] [421/537] Sepp van den Berg (105 matches)
+2026-07-21 17:57:01,578 [INFO] [422/537] James Hill (44 matches)
+2026-07-21 17:57:02,331 [INFO] [423/537] Joe Worrall (48 matches)
+2026-07-21 17:57:03,048 [INFO] [424/537] Djed Spence (83 matches)
+2026-07-21 17:57:03,762 [INFO] [425/537] Lisandro Martínez (76 matches)
+2026-07-21 17:57:04,476 [INFO] [426/537] Tyrell Malacia (28 matches)
+2026-07-21 17:57:05,165 [INFO] [427/537] Levi Colwill (78 matches)
+2026-07-21 17:57:06,254 [INFO] [428/537] Wilson Odobert (101 matches)
+2026-07-21 17:57:06,949 [INFO] [429/537] Rico Lewis (69 matches)
+2026-07-21 17:57:08,064 [INFO] [430/537] Emmanuel Agbadou (105 matches)
+2026-07-21 17:57:08,783 [INFO] [431/537] Marcos Senesi (116 matches)
+2026-07-21 17:57:09,907 [INFO] [432/537] Ryan Yates (118 matches)
+2026-07-21 17:57:10,620 [INFO] [433/537] Kaden Rodney (1 matches)
+2026-07-21 17:57:11,282 [INFO] [434/537] Ethan Nwaneri (43 matches)
+2026-07-21 17:57:12,061 [INFO] [435/537] Wilfried Gnonto (47 matches)
+2026-07-21 17:57:12,773 [INFO] [436/537] Chadi Riad (37 matches)
+2026-07-21 17:57:13,489 [INFO] [437/537] Ben Doak (11 matches)
+2026-07-21 17:57:14,206 [INFO] [438/537] Bashir Humphreys (20 matches)
+2026-07-21 17:57:15,005 [INFO] [439/537] Mamadou Sarr (47 matches)
+2026-07-21 17:57:15,746 [INFO] [440/537] Carlos Alcaraz (64 matches)
+2026-07-21 17:57:16,457 [INFO] [441/537] Daniel Bentley (12 matches)
+2026-07-21 17:57:17,180 [INFO] [442/537] Facundo Buonanotte (75 matches)
+2026-07-21 17:57:17,893 [INFO] [443/537] Romaine Mundle (14 matches)
+2026-07-21 17:57:18,608 [INFO] [444/537] Marc Guiu (16 matches)
+2026-07-21 17:57:19,329 [INFO] [445/537] Zeki Amdouni (38 matches)
+2026-07-21 17:57:20,043 [INFO] [446/537] Hjalmar Ekdal (27 matches)
+2026-07-21 17:57:20,756 [INFO] [447/537] Bart Verbruggen (95 matches)
+2026-07-21 17:57:21,477 [INFO] [448/537] Abduqodir Khusanov (51 matches)
+2026-07-21 17:57:22,196 [INFO] [449/537] Manuel Ugarte (76 matches)
+2026-07-21 17:57:22,913 [INFO] [450/537] Ian Maatsen (87 matches)
+2026-07-21 17:57:23,587 [INFO] [451/537] Lucas Pires (49 matches)
+2026-07-21 17:57:24,347 [INFO] [452/537] Oscar Bobb (40 matches)
+2026-07-21 17:57:25,062 [INFO] [453/537] Djordje Petrovic (92 matches)
+2026-07-21 17:57:25,775 [INFO] [454/537] Altay Bayindir (10 matches)
+2026-07-21 17:57:26,555 [INFO] [455/537] Mike Trésor (22 matches)
+2026-07-21 17:57:27,313 [INFO] [456/537] Jackson Tchatchoua (93 matches)
+2026-07-21 17:57:28,029 [INFO] [457/537] Alex Murphy (4 matches)
+2026-07-21 17:57:28,744 [INFO] [458/537] Treymaurice Nyoni (6 matches)
+2026-07-21 17:57:29,464 [INFO] [459/537] Tawanda Chirewa (10 matches)
+2026-07-21 17:57:30,180 [INFO] [460/537] Myles Lewis-Skelly (43 matches)
+2026-07-21 17:57:30,898 [INFO] [461/537] Oliver Scarles (28 matches)
+2026-07-21 17:57:31,547 [INFO] [462/537] Callum Marshall (2 matches)
+2026-07-21 17:57:32,331 [INFO] [463/537] Lucas Perri (49 matches)
+2026-07-21 17:57:33,047 [INFO] [464/537] George Earthy (4 matches)
+2026-07-21 17:57:33,763 [INFO] [465/537] Tyrique George (23 matches)
+2026-07-21 17:57:34,479 [INFO] [466/537] Hákon Valdimarsson (3 matches)
+2026-07-21 17:57:35,202 [INFO] [467/537] Christantus Uche (50 matches)
+2026-07-21 17:57:35,916 [INFO] [468/537] Harrison Armstrong (16 matches)
+2026-07-21 17:57:36,577 [INFO] [469/537] Jota Silva (32 matches)
+2026-07-21 17:57:37,246 [INFO] [470/537] Andy Irving (17 matches)
+2026-07-21 17:57:37,921 [INFO] [471/537] Mads Hermansen (45 matches)
+2026-07-21 17:57:38,575 [INFO] [472/537] Luis Guilherme (17 matches)
+2026-07-21 17:57:39,245 [INFO] [473/537] Lutsharel Geertruida (52 matches)
+2026-07-21 17:57:39,896 [INFO] [474/537] Ayden Heaven (21 matches)
+2026-07-21 17:57:40,565 [INFO] [475/537] Jaydee Canvot (40 matches)
+2026-07-21 17:57:41,240 [INFO] [476/537] Dário Essugo (30 matches)
+2026-07-21 17:57:41,890 [INFO] [477/537] Jack Fletcher (3 matches)
+2026-07-21 17:57:42,545 [INFO] [478/537] Pedro Lima (12 matches)
+2026-07-21 17:57:43,291 [INFO] [479/537] Fernando López (43 matches)
+2026-07-21 17:57:44,002 [INFO] [480/537] Callum Olusesi (1 matches)
+2026-07-21 17:57:44,719 [INFO] [481/537] Ben Winterburn (5 matches)
+2026-07-21 17:57:45,436 [INFO] [482/537] Ezra Mayers (6 matches)
+2026-07-21 17:57:46,154 [INFO] [483/537] Jonah Kusi-Asare (9 matches)
+2026-07-21 17:57:46,810 [INFO] [484/537] Max Alleyne (2 matches)
+2026-07-21 17:57:47,483 [INFO] [485/537] Zach Abbott (3 matches)
+2026-07-21 17:57:48,200 [INFO] [486/537] Jamaldeen Jimoh (1 matches)
+2026-07-21 17:57:48,920 [INFO] [487/537] Antonín Kinsky (13 matches)
+2026-07-21 17:57:49,638 [INFO] [488/537] Romain Esse (11 matches)
+2026-07-21 17:57:50,353 [INFO] [489/537] Andrés García (13 matches)
+2026-07-21 17:57:51,067 [INFO] [490/537] Joe Knight (1 matches)
+2026-07-21 17:57:51,718 [INFO] [491/537] Tyler Fredricson (3 matches)
+2026-07-21 17:57:52,399 [INFO] [492/537] Julio Soler (6 matches)
+2026-07-21 17:57:53,117 [INFO] [493/537] Shumaira Mheuka (2 matches)
+2026-07-21 17:57:53,834 [INFO] [494/537] Sean Neave (1 matches)
+2026-07-21 17:57:54,550 [INFO] [495/537] Harry Howell (4 matches)
+2026-07-21 17:57:55,268 [INFO] [496/537] Robin Roefs (35 matches)
+2026-07-21 17:57:55,985 [INFO] [497/537] Jenson Seelt (11 matches)
+2026-07-21 17:57:56,702 [INFO] [498/537] Noah Sadiki (33 matches)
+2026-07-21 17:57:57,358 [INFO] [499/537] Dan Neil (3 matches)
+2026-07-21 17:57:58,113 [INFO] [500/537] El Hadji Malick Diouf (32 matches)
+2026-07-21 17:57:58,852 [INFO] [501/537] Freddie Potts (22 matches)
+2026-07-21 17:57:59,569 [INFO] [502/537] Quilindschy Hartman (21 matches)
+2026-07-21 17:58:00,282 [INFO] [503/537] Max Weiss (3 matches)
+2026-07-21 17:58:00,952 [INFO] [504/537] David Møller Wolfe (22 matches)
+2026-07-21 17:58:02,375 [INFO] [505/537] Jorrel Hato (22 matches)
+2026-07-21 17:58:03,050 [INFO] [506/537] Rio Cardines (1 matches)
+2026-07-21 17:58:03,765 [INFO] [507/537] Jair (9 matches)
+2026-07-21 17:58:04,482 [INFO] [508/537] Antoni Milambo (1 matches)
+2026-07-21 17:58:05,141 [INFO] [509/537] Joël Piroe (16 matches)
+2026-07-21 17:58:05,813 [INFO] [510/537] Bradley Burrowes (1 matches)
+2026-07-21 17:58:06,466 [INFO] [511/537] John Victor (5 matches)
+2026-07-21 17:58:07,152 [INFO] [512/537] Veljko Milosavljevic (7 matches)
+2026-07-21 17:58:07,862 [INFO] [513/537] Tom Watson (6 matches)
+2026-07-21 17:58:08,520 [INFO] [514/537] Divine Mukasa (2 matches)
+2026-07-21 17:58:09,195 [INFO] [515/537] Senne Lammens (32 matches)
+2026-07-21 17:58:09,910 [INFO] [516/537] Luke O&#039;Nien (12 matches)
+2026-07-21 17:58:10,576 [INFO] [517/537] Nehemiah Oriola (1 matches)
+2026-07-21 17:58:11,213 [INFO] [518/537] Jun&#039;ai Byfield (1 matches)
+2026-07-21 17:58:11,862 [INFO] [519/537] James Rowswell (1 matches)
+2026-07-21 17:58:12,573 [INFO] [520/537] George Hemmings (2 matches)
+2026-07-21 17:58:13,287 [INFO] [521/537] Shea Lacey (3 matches)
+2026-07-21 17:58:14,005 [INFO] [522/537] Romelle Donovan (4 matches)
+2026-07-21 17:58:14,724 [INFO] [523/537] Mohamadou Kanté (11 matches)
+2026-07-21 17:58:15,440 [INFO] [524/537] Joél Drakes-Thomas (2 matches)
+2026-07-21 17:58:16,080 [INFO] [525/537] Bendito Mantato (1 matches)
+2026-07-21 17:58:16,721 [INFO] [526/537] Tyler Fletcher (2 matches)
+2026-07-21 17:58:17,374 [INFO] [527/537] Jaydon Banel (1 matches)
+2026-07-21 17:58:18,020 [INFO] [528/537] Pablo (14 matches)
+2026-07-21 17:58:18,670 [INFO] [529/537] Kaye Furo (1 matches)
+2026-07-21 17:58:19,320 [INFO] [530/537] Alex Tóth (9 matches)
+2026-07-21 17:58:20,047 [INFO] [531/537] Jerome Abbey (1 matches)
+2026-07-21 17:58:20,765 [INFO] [532/537] Souza (4 matches)
+2026-07-21 17:58:21,482 [INFO] [533/537] Nilson Angulo (8 matches)
+2026-07-21 17:58:22,124 [INFO] [534/537] Melker Ellborg (3 matches)
+2026-07-21 17:58:22,814 [INFO] [535/537] Alysson Edward (3 matches)
+2026-07-21 17:58:23,530 [INFO] [536/537] Djiamgone Jocelin Ta Bi (1 matches)
+2026-07-21 17:58:24,245 [INFO] [537/537] Jesse Derry (1 matches)
+
+Dataset created!
+  understat_player_id     player_name  ...             xGBuildup position
+0                8260  Erling Haaland  ...                     0       FW
+1                8260  Erling Haaland  ...                     0       FW
+2                8260  Erling Haaland  ...   0.04134632274508476       FW
+3                8260  Erling Haaland  ...    0.9339202642440796       FW
+4                8260  Erling Haaland  ...  0.058967750519514084       FW
+
+[5 rows x 19 columns]
+
+Saved to data/raw/understat_player_match_stats.csv
+Shape: (11873, 19)
+
+=== Columns ===
+['understat_player_id', 'player_name', 'team', 'understat_match_id', 'date', 'season', 'side', 'minutes', 'goals', 'assists', 'shots', 'key_passes', 'xG', 'xA', 'npxG', 'npg', 'xGChain', 'xGBuildup', 'position']
+=== OK: extract_understat_v2.py ===
+
+=== [17:58:24] Running: extract_fbref_v2.py ===
+[07/21/26 17:58:25] INFO     No custom team name replacements found. You can configure these in                                                      _config.py:92
+                             /Users/tomfitzpatrick/soccerdata/config/teamname_replacements.json.                                                                  
+                    INFO     No custom league dict found. You can configure additional leagues in                                                   _config.py:190
+                             /Users/tomfitzpatrick/soccerdata/config/league_dict.json.                                                                            
+                    INFO     Saving cached data to /Users/tomfitzpatrick/soccerdata/data/FBref                                                      _common.py:250
+[07/21/26 17:58:31] INFO     Fetching schedule...                                                                                           extract_fbref_v2.py:78
+[07/21/26 17:58:32] INFO     Resuming: 380 games already saved.                                                                             extract_fbref_v2.py:62
+                    INFO     Total games: 380 | already done: 380 | remaining: 0                                                            extract_fbref_v2.py:84
+                    INFO     Done. 0 games failed and were skipped (safe to re-run this script to retry them).                             extract_fbref_v2.py:121
+                    INFO     Final saved shape: (11492, 28)                                                                                extract_fbref_v2.py:122
+
+=== Columns ===
+['league', 'season', 'game', 'team', 'player', 'jersey_number', 'nation', 'pos', 'age', 'min', 'Performance_Gls', 'Performance_Ast', 'Performance_PK', 'Performance_PKatt', 'Performance_Sh', 'Performance_SoT', 'Performance_CrdY', 'Performance_CrdR', 'Performance_Fls', 'Performance_Fld', 'Performance_Off', 'Performance_Crs', 'Performance_TklW', 'Performance_Int', 'Performance_OG', 'Performance_PKwon', 'Performance_PKcon', 'game_id']
+=== OK: extract_fbref_v2.py ===
+
+=== [17:58:32] Running: extract_fbref_team_stats.py ===
+/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/tomfitzpatrick/FPL_Project/extract_fbref_team_stats.py': [Errno 2] No such file or directory
+=== FAILED: extract_fbref_team_stats.py (exit code 2) ===
+
+=== [17:58:32] Running: extract_understat_match_stats.py ===
+Found 690 unique Understat match IDs to fetch
+
+=== Raw structure of the FIRST match's response (verify this matches what you saw in the screenshot: PPDA, deep completions, xPTS, etc.) ===
+{
+  "id": "28778",
+  "fid": "1903117",
+  "h": "87",
+  "a": "73",
+  "date": "2025-08-15 19:00:00",
+  "league_id": "1",
+  "season": "2025",
+  "h_goals": "4",
+  "a_goals": "2",
+  "team_h": "Liverpool",
+  "team_a": "Bournemouth",
+  "h_xg": "2.33007",
+  "a_xg": "1.57303",
+  "h_w": "0.5498",
+  "h_d": "0.2276",
+  "h_l": "0.2226",
+  "league": "EPL",
+  "h_shot": "19",
+  "a_shot": "10",
+  "h_shotOnTarget": "10",
+  "a_shotOnTarget": "3",
+  "h_deep": "9",
+  "a_deep": "8",
+  "a_ppda": "11.5833",
+  "h_ppda": "8.7647",
+  "isData": true
+}
+...
+
+  [50/690] processed
+  [100/690] processed
+  [150/690] processed
+  [200/690] processed
+  [250/690] processed
+  [300/690] processed
+  [350/690] processed
+  [400/690] processed
+  [450/690] processed
+  [500/690] processed
+  [550/690] processed
+  [600/690] processed
+  [650/690] processed
+
+Done. 690 matches fetched, 0 failed.
+
+League breakdown of all fetched matches:
+league
+EPL           380
+Ligue 1        99
+Serie A        85
+Bundesliga     69
+La liga        57
+
+Rows where league == 'EPL': 380 (this should land close to 380 if the theory is right)
+Filtering to EPL-only fixtures — 310 non-EPL rows excluded.
+
+Diagnostic: 380 rows, 380 unique 'id' values, 380 unique (team_h, team_a, date) combinations.
+
+Saved -> data/raw/understat_match_stats.csv (380 rows)
+Columns: ['id', 'fid', 'h', 'a', 'date', 'league_id', 'season', 'h_goals', 'a_goals', 'team_h', 'team_a', 'h_xg', 'a_xg', 'h_w', 'h_d', 'h_l', 'league', 'h_shot', 'a_shot', 'h_shotOnTarget', 'a_shotOnTarget', 'h_deep', 'a_deep', 'a_ppda', 'h_ppda', 'isData', 'h_xpts', 'a_xpts']
+=== OK: extract_understat_match_stats.py ===
+
+=== [18:06:40] Running: build_merged_dataset.py ===
+2026-07-21 18:06:41,295 [INFO] Loading sources...
+2026-07-21 18:06:41,399 [INFO] FPL rows: 29747 | confident matches: 541 | Understat rows: 11873 | FBref rows: 11492
+
+Saved merged dataset -> data/processed/merged_player_gameweek.csv
+Shape: (29747, 67)
+
+Rows with Understat stats matched: 11646 / 29747 (39.2%)
+Rows with FBref stats matched: 11590 / 29747 (39.0%)
+
+Of rows where the player actually played AND has a confident Understat match: 11446 / 11492 (99.6%) joined successfully
+Of rows where the player actually played AND has a confident FBref match: 11460 / 11492 (99.7%) joined successfully
+
+=== Sample row ===
+   player_id player_name          full_name     team position  gameweek opponent_team  was_home          kickoff_time  fixture_id  minutes  starts  goals  assists  yellow_cards  red_cards  own_goals  clean_sheets  saves  penalties_saved  penalties_missed  defensive_contribution  goals_conceded  bonus  bps  expected_goals  expected_assists  expected_goal_involvements  expected_goals_conceded  value  selected  actual_points  calculated_points  match_date  understat_id understat_name  fbref_name  us_minutes  us_goals  us_assists  us_shots  us_key_passes  us_xG   us_xA  us_npxG  us_npg  us_xGChain  us_xGBuildup  fb_team  fb_min  fb_Performance_Gls  fb_Performance_Ast  fb_Performance_PK  fb_Performance_PKatt  fb_Performance_Sh  fb_Performance_SoT  fb_Performance_CrdY  fb_Performance_CrdR  fb_Performance_Fls  fb_Performance_Fld  fb_Performance_Off  fb_Performance_Crs  fb_Performance_TklW  fb_Performance_Int  fb_Performance_OG  fb_Performance_PKwon  fb_Performance_PKcon
+0          1        Raya  David Raya Martín  Arsenal       GK         1       Man Utd     False  2025-08-17T15:30:00Z           9       90       1      0        0             1          0          0             1      7                0                 0                       0               0      3   38             0.0              0.00                        0.00                     1.52     55   1531911             10                 10  2025-08-17        9676.0     David Raya  David Raya        90.0       0.0         0.0       0.0            0.0    0.0  0.0000      0.0     0.0    0.086901      0.086901  Arsenal    90.0                 0.0                 0.0                0.0                   0.0                0.0                 0.0                  1.0                  0.0                 0.0                 0.0                 0.0                 0.0                  0.0                 0.0                0.0                   NaN                   NaN
+1          1        Raya  David Raya Martín  Arsenal       GK         2         Leeds      True  2025-08-23T16:30:00Z          11       90       1      0        0             0          0          0             1      1                0                 0                       0               0      0   28             0.0              0.00                        0.00                     0.17     55   2284634              6                  6  2025-08-23        9676.0     David Raya  David Raya        90.0       0.0         0.0       0.0            0.0    0.0  0.0000      0.0     0.0    0.204982      0.204982  Arsenal    90.0                 0.0                 0.0                0.0                   0.0                0.0                 0.0                  0.0                  0.0                 0.0                 0.0                 0.0                 1.0                  0.0                 0.0                0.0                   NaN                   NaN
+2          1        Raya  David Raya Martín  Arsenal       GK         3     Liverpool     False  2025-08-31T15:30:00Z          25       90       1      0        0             0          0          0             0      2                0                 0                       0               1      0   12             0.0              0.02                        0.02                     0.52     55   2406964              2                  2  2025-08-31        9676.0     David Raya  David Raya        90.0       0.0         0.0       0.0            1.0    0.0  0.0495      0.0     0.0    0.108124      0.058624  Arsenal    90.0                 0.0                 0.0                0.0                   0.0                0.0                 0.0                  0.0                  0.0                 0.0                 0.0                 0.0                 0.0                  0.0                 0.0                0.0                   NaN                   NaN
+
+=== Columns ===
+['player_id', 'player_name', 'full_name', 'team', 'position', 'gameweek', 'opponent_team', 'was_home', 'kickoff_time', 'fixture_id', 'minutes', 'starts', 'goals', 'assists', 'yellow_cards', 'red_cards', 'own_goals', 'clean_sheets', 'saves', 'penalties_saved', 'penalties_missed', 'defensive_contribution', 'goals_conceded', 'bonus', 'bps', 'expected_goals', 'expected_assists', 'expected_goal_involvements', 'expected_goals_conceded', 'value', 'selected', 'actual_points', 'calculated_points', 'match_date', 'understat_id', 'understat_name', 'fbref_name', 'us_minutes', 'us_goals', 'us_assists', 'us_shots', 'us_key_passes', 'us_xG', 'us_xA', 'us_npxG', 'us_npg', 'us_xGChain', 'us_xGBuildup', 'fb_team', 'fb_min', 'fb_Performance_Gls', 'fb_Performance_Ast', 'fb_Performance_PK', 'fb_Performance_PKatt', 'fb_Performance_Sh', 'fb_Performance_SoT', 'fb_Performance_CrdY', 'fb_Performance_CrdR', 'fb_Performance_Fls', 'fb_Performance_Fld', 'fb_Performance_Off', 'fb_Performance_Crs', 'fb_Performance_TklW', 'fb_Performance_Int', 'fb_Performance_OG', 'fb_Performance_PKwon', 'fb_Performance_PKcon']
+=== OK: build_merged_dataset.py ===
+
+=== [18:06:41] Running: merge_advanced_team_stats.py ===
+[07/21/26 18:06:42] INFO     No custom team name replacements found. You can configure these in                                                      _config.py:92
+                             /Users/tomfitzpatrick/soccerdata/config/teamname_replacements.json.                                                                  
+                    INFO     No custom league dict found. You can configure additional leagues in                                                   _config.py:190
+                             /Users/tomfitzpatrick/soccerdata/config/league_dict.json.                                                                            
+Fetching FBref schedule for game_id -> date mapping (cheap, cached call)...
+                    INFO     Saving cached data to /Users/tomfitzpatrick/soccerdata/data/FBref                                                      _common.py:250
+FBref team stats: 760 rows
+Understat match stats: 760 rows
+
+Merge result: 760 rows
+_merge
+both          760
+left_only       0
+right_only      0
+
+760/760 rows matched on BOTH sources — if this is much lower than expected, team name spelling likely differs between FBref and Understat (e.g. 'Nott'ham Forest' vs 'Nottingham Forest') and will need a name-alias fix, same issue we handled for the original entity matching months ago.
+
+Saved -> data/processed/advanced_team_stats.csv
+Columns: ['team', 'match_date', 'fb_team_possession', 'fb_team_sot_pct', 'fb_team_saves_pct', 'fb_team_yellow_cards', 'fb_team_red_cards', 'us_team_ppda', 'us_team_deep', 'us_team_xpts']
+=== OK: merge_advanced_team_stats.py ===
+
+=== [18:06:47] Running: build_features.py ===
+2026-07-21 18:06:48,298 [INFO] Loading merged dataset...
+2026-07-21 18:06:48,371 [INFO] Loaded 29747 rows
+2026-07-21 18:06:48,371 [INFO] Adding player rolling form features...
+/Users/tomfitzpatrick/FPL_Project/build_features.py:92: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df[f"season_{short_name}"] = (
+/Users/tomfitzpatrick/FPL_Project/build_features.py:83: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df[f"roll{window}_{short_name}"] = (
+/Users/tomfitzpatrick/FPL_Project/build_features.py:105: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df[f"{w}_xG_per_shot"] = (df[xg_col] / df[shots_col]).replace([float("inf")], pd.NA)
+/Users/tomfitzpatrick/FPL_Project/build_features.py:107: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df[f"{w}_SoT_rate"] = (df[sot_col] / df[shots_col]).replace([float("inf")], pd.NA)
+/Users/tomfitzpatrick/FPL_Project/build_features.py:109: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df[f"{w}_conversion_rate"] = (df[goals_col] / df[shots_col]).replace([float("inf")], pd.NA)
+/Users/tomfitzpatrick/FPL_Project/build_features.py:126: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df[f"roll{window}_{short_name}_per90"] = (sum_stat / sum_minutes.replace(0, pd.NA)) * 90
+/Users/tomfitzpatrick/FPL_Project/build_features.py:129: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df["prev_match_date"] = df.groupby("player_id")["match_date"].shift(1)
+/Users/tomfitzpatrick/FPL_Project/build_features.py:132: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df["days_since_last_game"] = (df["match_date"] - df["prev_match_date"]).dt.days
+/Users/tomfitzpatrick/FPL_Project/build_features.py:135: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df["was_home_int"] = df["was_home"].astype(int)
+/Users/tomfitzpatrick/FPL_Project/build_features.py:153: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df["consecutive_starts"] = shifted_starts.groupby(df["player_id"]).transform(_consecutive_run)
+2026-07-21 18:06:49,688 [INFO] Inferring penalty-taker status...
+2026-07-21 18:06:49,724 [INFO] Building team match log...
+2026-07-21 18:06:49,772 [WARNING] Found 20 team_log rows sharing a (team, gameweek) pair — keeping one per pair to guarantee no row duplication downstream. This is usually a rare mislabeled fixture or a genuine double-gameweek; investigate data/processed/team_log_duplicates.csv if this number looks large.
+2026-07-21 18:06:49,775 [INFO] Adding team rolling (opponent strength) features...
+
+Saved -> data/processed/model_ready_dataset.csv
+Shape: (29747, 310)
+
+=== New feature columns added ===
+['own_goals', 'roll3_minutes', 'roll5_minutes', 'roll10_minutes', 'season_minutes', 'roll3_points', 'roll5_points', 'roll10_points', 'season_points', 'roll3_goals', 'roll5_goals', 'roll10_goals', 'season_goals', 'roll3_assists', 'roll5_assists', 'roll10_assists', 'season_assists', 'roll3_bonus', 'roll5_bonus', 'roll10_bonus', 'season_bonus', 'roll3_bps', 'roll5_bps', 'roll10_bps', 'season_bps', 'roll3_def_contrib', 'roll5_def_contrib', 'roll10_def_contrib', 'season_def_contrib', 'roll3_xG', 'roll5_xG', 'roll10_xG', 'season_xG', 'roll3_xA', 'roll5_xA', 'roll10_xA', 'season_xA', 'roll3_shots', 'roll5_shots', 'roll10_shots', 'season_shots', 'roll3_key_passes', 'roll5_key_passes', 'roll10_key_passes', 'season_key_passes', 'roll3_SoT', 'roll5_SoT', 'roll10_SoT', 'season_SoT', 'roll3_xGChain', 'roll5_xGChain', 'roll10_xGChain', 'season_xGChain', 'roll3_xGBuildup', 'roll5_xGBuildup', 'roll10_xGBuildup', 'season_xGBuildup', 'roll3_Fld', 'roll5_Fld', 'roll10_Fld', 'season_Fld', 'roll3_Crs', 'roll5_Crs', 'roll10_Crs', 'season_Crs', 'roll3_CrdY', 'roll5_CrdY', 'roll10_CrdY', 'season_CrdY', 'roll3_CrdR', 'roll5_CrdR', 'roll10_CrdR', 'season_CrdR', 'roll3_Fls', 'roll5_Fls', 'roll10_Fls', 'season_Fls', 'roll3_saves', 'roll5_saves', 'roll10_saves', 'season_saves', 'roll3_pens_saved', 'roll5_pens_saved', 'roll10_pens_saved', 'season_pens_saved', 'roll3_starts', 'roll5_starts', 'roll10_starts', 'season_starts', 'roll3_TklW', 'roll5_TklW', 'roll10_TklW', 'season_TklW', 'roll3_Int', 'roll5_Int', 'roll10_Int', 'season_Int', 'roll3_clean_sheets', 'roll5_clean_sheets', 'roll10_clean_sheets', 'season_clean_sheets', 'roll3_xG_per_shot', 'roll3_SoT_rate', 'roll3_conversion_rate', 'roll5_xG_per_shot', 'roll5_SoT_rate', 'roll5_conversion_rate', 'roll10_xG_per_shot', 'roll10_SoT_rate', 'roll10_conversion_rate', 'season_xG_per_shot', 'season_SoT_rate', 'season_conversion_rate', 'roll3_goals_per90', 'roll5_goals_per90', 'roll10_goals_per90', 'roll3_assists_per90', 'roll5_assists_per90', 'roll10_assists_per90', 'roll3_xG_per90', 'roll5_xG_per90', 'roll10_xG_per90', 'roll3_xA_per90', 'roll5_xA_per90', 'roll10_xA_per90', 'days_since_last_game', 'season_PK_attempts', 'opp_roll3_goals_scored', 'opp_roll5_goals_scored', 'opp_roll10_goals_scored', 'opp_season_goals_scored', 'opp_roll3_goals_conceded', 'opp_roll5_goals_conceded', 'opp_roll10_goals_conceded', 'opp_season_goals_conceded', 'opp_roll3_xG_for', 'opp_roll5_xG_for', 'opp_roll10_xG_for', 'opp_season_xG_for', 'opp_roll3_xG_against', 'opp_roll5_xG_against', 'opp_roll10_xG_against', 'opp_season_xG_against', 'opp_roll3_shots_for', 'opp_roll5_shots_for', 'opp_roll10_shots_for', 'opp_season_shots_for', 'opp_roll3_shots_against', 'opp_roll5_shots_against', 'opp_roll10_shots_against', 'opp_season_shots_against', 'opp_roll3_possession', 'opp_roll5_possession', 'opp_roll10_possession', 'opp_season_possession', 'opp_roll3_sot_pct', 'opp_roll5_sot_pct', 'opp_roll10_sot_pct', 'opp_season_sot_pct', 'opp_roll3_saves_pct', 'opp_roll5_saves_pct', 'opp_roll10_saves_pct', 'opp_season_saves_pct', 'opp_roll3_match_yellow_cards', 'opp_roll5_match_yellow_cards', 'opp_roll10_match_yellow_cards', 'opp_season_match_yellow_cards', 'opp_roll3_match_red_cards', 'opp_roll5_match_red_cards', 'opp_roll10_match_red_cards', 'opp_season_match_red_cards', 'opp_roll3_ppda', 'opp_roll5_ppda', 'opp_roll10_ppda', 'opp_season_ppda', 'opp_roll3_deep_completions', 'opp_roll5_deep_completions', 'opp_roll10_deep_completions', 'opp_season_deep_completions', 'opp_roll3_xpts', 'opp_roll5_xpts', 'opp_roll10_xpts', 'opp_season_xpts', 'own_roll3_goals_scored', 'own_roll5_goals_scored', 'own_roll10_goals_scored', 'own_season_goals_scored', 'own_roll3_goals_conceded', 'own_roll5_goals_conceded', 'own_roll10_goals_conceded', 'own_season_goals_conceded', 'own_roll3_xG_for', 'own_roll5_xG_for', 'own_roll10_xG_for', 'own_season_xG_for', 'own_roll3_xG_against', 'own_roll5_xG_against', 'own_roll10_xG_against', 'own_season_xG_against', 'own_roll3_shots_for', 'own_roll5_shots_for', 'own_roll10_shots_for', 'own_season_shots_for', 'own_roll3_shots_against', 'own_roll5_shots_against', 'own_roll10_shots_against', 'own_season_shots_against', 'own_roll3_possession', 'own_roll5_possession', 'own_roll10_possession', 'own_season_possession', 'own_roll3_sot_pct', 'own_roll5_sot_pct', 'own_roll10_sot_pct', 'own_season_sot_pct', 'own_roll3_saves_pct', 'own_roll5_saves_pct', 'own_roll10_saves_pct', 'own_season_saves_pct', 'own_roll3_match_yellow_cards', 'own_roll5_match_yellow_cards', 'own_roll10_match_yellow_cards', 'own_season_match_yellow_cards', 'own_roll3_match_red_cards', 'own_roll5_match_red_cards', 'own_roll10_match_red_cards', 'own_season_match_red_cards', 'own_roll3_ppda', 'own_roll5_ppda', 'own_roll10_ppda', 'own_season_ppda', 'own_roll3_deep_completions', 'own_roll5_deep_completions', 'own_roll10_deep_completions', 'own_season_deep_completions', 'own_roll3_xpts', 'own_roll5_xpts', 'own_roll10_xpts', 'own_season_xpts']
+
+Sanity check — player's FIRST gameweek should have NaN rolling features (no prior games exist): 0 / 841 unexpectedly have data (should be 0)
+=== OK: build_features.py ===
+
+=== [18:06:52] Running: build_prediction_pipeline.py ===
+Train: 22343 rows (gw <= 30) | Test: 6563 rows (gw > 30)
+
+Fitting component models on training data...
+  (skipping defensive contribution model for FWD: too few threshold hits)
+Calibrated average bonus (players with 60+ minutes): 0.293
+
+Generating predictions on held-out test data...
+
+======================================================================
+PIPELINE VALIDATION — predicted vs actual points, held-out gameweeks
+======================================================================
+Mean Absolute Error: 1.05 points
+Signed bias (mean predicted - actual; 0 = no systematic over/under-prediction): +0.11 points
+Naive baseline MAE (always predict training mean): 1.49 points
+Correlation (predicted vs actual): 0.519
+
+Signed bias by position:
+  GK: bias = +0.47
+  DEF: bias = +0.43
+  MID: bias = -0.08
+  FWD: bias = -0.46
+
+By position:
+  GK: MAE = 0.87 (n=760)
+  DEF: MAE = 1.30 (n=2119)
+  MID: MAE = 0.92 (n=2953)
+  FWD: MAE = 1.07 (n=731)
+
+Bias by predicted-points bucket (uses ALL test rows, not a small sample —
+shows whether the +bias is spread evenly or concentrated at certain prediction levels):
+                      n  mean_predicted  mean_actual      bias
+pred_bucket                                                   
+(0.0745, 0.197]  1317.0        0.187194     0.047077  0.140117
+(0.197, 0.248]   1309.0        0.222699     0.101604  0.121095
+(0.248, 0.506]   1312.0        0.287232     0.325457 -0.038226
+(0.506, 2.471]   1312.0        1.416306     1.855945 -0.439640
+(2.471, 9.847]   1313.0        3.828782     3.075400  0.753383
+
+Saved full predictions (6563 rows) -> data/processed/pipeline_predictions.csv
+(Open the CSV directly to inspect individual players — printing a small in-terminal sample here risks exactly the cherry-picking/anchoring problem it's better to avoid.)
+=== OK: build_prediction_pipeline.py ===
+
+=== [18:06:55] Running: extract_fixtures.py ===
+2026-07-21 18:06:55,977 [INFO] Fetching team ID -> name lookup from bootstrap-static...
+2026-07-21 18:06:56,406 [INFO] Teams found: 20
+2026-07-21 18:06:56,406 [INFO] Fetching fixtures...
+2026-07-21 18:06:56,867 [INFO] Total fixtures: 380
+
+Saved all fixtures -> data/raw/fixtures_all.csv (380 rows)
+Saved upcoming fixtures -> data/raw/fixtures_upcoming.csv (0 rows)
+
+=== Columns ===
+['fixture_id', 'gameweek', 'kickoff_time', 'home_team', 'away_team', 'home_team_difficulty', 'away_team_difficulty', 'finished', 'started']
+
+=== Sample of upcoming fixtures ===
+Empty DataFrame
+Columns: [fixture_id, gameweek, kickoff_time, home_team, away_team, home_team_difficulty, away_team_difficulty, finished, started]
+Index: []
+=== OK: extract_fixtures.py ===
+
+=== [18:06:56] Running: build_live_predictions.py ===
+/Users/tomfitzpatrick/FPL_Project/build_live_predictions.py:126: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  team_df = df.groupby(["team", "fixture_id"]).first().reset_index()
+Fitting all component models on full historical data...
+Building current player and team snapshots...
+  840 players, 20 teams
+
+*** STAND_IN_MODE is ON — using the LAST completed gameweek's real fixtures as a stand-in for 'upcoming', purely to test this connector's mechanics. Set STAND_IN_MODE = False once data/raw/fixtures_upcoming.csv has real rows. ***
+
+Generating prediction rows for 10 fixtures...
+
+Saved live predictions -> data/processed/live_predictions.csv (840 player-gameweek predictions)
+
+Top 15 predicted scorers:
+ player_id player_name          team position  gameweek  predicted_points  pred_goals  pred_assists  pred_p_dc_hit  pred_p_clean_sheet  pred_saves  pred_pens_saved  pred_cards  pred_red_cards  pred_p_any_minutes  pred_p_60plus  value  selected
+       449 B.Fernandes       Man Utd      MID        38          7.421108    0.209729      1.239624       0.123431            0.606092    0.000000         0.000000         0.2             0.0            0.972953       0.928169    104   6300201
+       430     Haaland      Man City      FWD        38          5.827862    0.993006      0.064983       0.000000            0.606604    0.000000         0.000000         0.0             0.0            0.938462       0.756215    147   8184079
+        72      Senesi   Bournemouth      DEF        38          5.797434    0.013374      0.031320       0.528908            0.646889    0.000000         0.000000         0.0             0.0            0.969256       0.936132     52   2904597
+       568 Pedro Porro         Spurs      DEF        38          5.630107    0.035241      0.288326       0.187869            0.717674    0.000000         0.000000         0.6             0.0            0.976871       0.917331     52   1547038
+       706      Justin         Leeds      DEF        38          5.597042    0.034794      0.023390       0.313730            0.734126    0.000000         0.000000         0.2             0.0            0.971744       0.930972     40    295481
+       606  Mavropanos      West Ham      DEF        38          5.542259    0.028063      0.019097       0.487375            0.603609    0.000000         0.000000         0.0             0.0            0.977801       0.914215     45    350546
+       191      Estève       Burnley      DEF        38          5.451739    0.012673      0.019742       0.495737            0.605809    0.000000         0.000000         0.0             0.0            0.965314       0.914225     38    916015
+       344       Bijol         Leeds      DEF        38          5.428663    0.016396      0.019766       0.366513            0.734126    0.000000         0.000000         0.0             0.0            0.953055       0.857196     39    170721
+        77        Hill   Bournemouth      DEF        38          5.394613    0.016305      0.021774       0.434850            0.646889    0.000000         0.000000         0.2             0.0            0.971827       0.930817     42    965625
+       475      Botman     Newcastle      DEF        38          5.381015    0.018877      0.018378       0.631107            0.551444    0.000000         0.000000         0.2             0.0            0.977801       0.914215     49     66749
+        67    Petrović   Bournemouth       GK        38          5.297025    0.000000      0.000000       0.000000            0.646889    2.614481         0.000000         0.2             0.0            0.958348       0.951876     46    687593
+        74    Truffert   Bournemouth      DEF        38          5.195912    0.021852      0.060756       0.226305            0.646889    0.000000         0.000000         0.2             0.0            0.958348       0.951876     48    711836
+       341      Darlow         Leeds       GK        38          5.161913    0.000000      0.000000       0.000000            0.734126    0.824200         0.000000         0.0             0.0            0.973539       0.926729     40    901539
+       502        Sels Nott'm Forest       GK        38          5.148498    0.000000      0.000000       0.000000            0.652276    1.407133         0.027027         0.0             0.0            0.976803       0.917514     46    663169
+       260       Guéhi      Man City      DEF        38          5.125236    0.029158      0.033896       0.225541            0.606604    0.000000         0.000000         0.0             0.0            0.974189       0.925094     51   4262393
+=== OK: build_live_predictions.py ===
+
+=== [18:06:59] Running: build_dashboard.py ===
+Loaded 840 predictions for gameweek 38
+Saved dashboard -> /Users/tomfitzpatrick/FPL_Project/dashboard.html
+Open this file directly in any browser — no server needed.
+=== OK: build_dashboard.py ===
+
+================================
+Run complete. 1 step(s) failed. Full log: /Users/tomfitzpatrick/FPL_Project/logs/run_20260721_174024.log

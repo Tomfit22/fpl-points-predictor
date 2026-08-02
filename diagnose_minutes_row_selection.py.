@@ -1,0 +1,65 @@
+"""
+FPL Points Predictor — Minutes Model Row-Selection Trace
+==============================================================
+Over half of all 734 players showed a near-identical ~3.9% chance of
+60+ minutes, including Salah (one of the most reliable starters in the
+league) at just 20%. This checks whether get_latest_player_snapshot()
+is genuinely selecting each player's most recent gameweek row after
+reconciliation, or accidentally grabbing an early-season row where
+rolling features are naturally low/undefined.
+
+Run:
+    python diagnose_minutes_row_selection.py
+"""
+
+from pathlib import Path
+
+import pandas as pd
+
+import build_live_predictions as blp
+
+PROCESSED_DIR = Path("data/processed")
+CHECK_NAMES = ["Salah", "Saka", "Robertson"]
+
+
+def main():
+    df = pd.read_csv(PROCESSED_DIR / "model_ready_dataset.csv")
+    df = df[df["roll5_minutes"].notna()]
+    roster = pd.read_csv(PROCESSED_DIR / "current_roster_snapshot.csv")
+
+    reconciled = blp.reconcile_player_ids(df, roster)
+
+    for name in CHECK_NAMES:
+        matches = reconciled[reconciled["player_name"].str.contains(name, case=False, na=False)]
+        if matches.empty:
+            print(f"\n{name}: not found after reconciliation")
+            continue
+
+        for pid in matches["player_id"].unique():
+            player_rows = reconciled[reconciled["player_id"] == pid].sort_values("gameweek")
+            print(f"\n=== {player_rows['player_name'].iloc[0]} (player_id={pid}) ===")
+            print(f"  Total rows: {len(player_rows)}, "
+                  f"gameweek range: {player_rows['gameweek'].min()}-{player_rows['gameweek'].max()}")
+
+            selected_row = player_rows.tail(1).iloc[0]
+            print(f"  Row selected by .tail(1): gameweek {selected_row['gameweek']}")
+            print(f"    roll5_starts: {selected_row.get('roll5_starts')}, "
+                  f"roll5_minutes: {selected_row.get('roll5_minutes')}, "
+                  f"consecutive_starts: {selected_row.get('consecutive_starts')}, "
+                  f"days_since_last_game: {selected_row.get('days_since_last_game')}")
+
+            last_gw_row = player_rows[player_rows["gameweek"] == player_rows["gameweek"].max()].iloc[0]
+            print(f"  Row for the ACTUAL max gameweek ({last_gw_row['gameweek']}):")
+            print(f"    roll5_starts: {last_gw_row.get('roll5_starts')}, "
+                  f"roll5_minutes: {last_gw_row.get('roll5_minutes')}, "
+                  f"consecutive_starts: {last_gw_row.get('consecutive_starts')}, "
+                  f"days_since_last_game: {last_gw_row.get('days_since_last_game')}")
+
+            if selected_row["gameweek"] != last_gw_row["gameweek"]:
+                print(f"  *** MISMATCH: .tail(1) selected gameweek {selected_row['gameweek']} "
+                      f"but the true max gameweek is {last_gw_row['gameweek']} — "
+                      f"sort_values('gameweek') is not behaving as expected. ***")
+
+
+if __name__ == "__main__":
+    main()

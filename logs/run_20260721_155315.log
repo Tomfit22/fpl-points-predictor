@@ -1,0 +1,861 @@
+FPL Pipeline Run — 20260721_155315
+================================
+
+=== [15:53:15] Running: extract_fpl_clean_dataset.py ===
+Fetching bootstrap data...
+Total players in FPL: 841
+[1/841] Processed Raya
+[2/841] Processed Arrizabalaga
+[3/841] Processed Hein
+[4/841] Processed Setford
+[5/841] Processed Gabriel
+[6/841] Processed Saliba
+[7/841] Processed Calafiori
+[8/841] Processed J.Timber
+[9/841] Processed Kiwior
+[10/841] Processed Lewis-Skelly
+[11/841] Processed White
+[12/841] Processed Clarke
+[13/841] Processed Kacurri
+[14/841] Processed Nichols
+[15/841] Processed Saka
+[16/841] Processed Ødegaard
+[17/841] Processed Madueke
+[18/841] Processed Martinelli
+[19/841] Processed Trossard
+[20/841] Processed Rice
+[21/841] Processed Merino
+[22/841] Processed Fábio Vieira
+[23/841] Processed Nørgaard
+[24/841] Processed Nwaneri
+[25/841] Processed Zubimendi
+[26/841] Processed Kabia
+[27/841] Processed Sambi
+[28/841] Processed Havertz
+[29/841] Processed G.Jesus
+[30/841] Processed Eze
+[31/841] Processed Mosquera
+[32/841] Processed Gyökeres
+[33/841] Processed Dowman
+[34/841] Processed Harriman-Annous
+[35/841] Processed Hincapie
+[36/841] Processed Salmon
+[37/841] Processed Martinez
+[38/841] Processed M.Bizot
+[39/841] Processed Gauci
+[40/841] Processed Marschall
+[41/841] Processed Cash
+[42/841] Processed Digne
+[43/841] Processed Konsa
+[44/841] Processed Maatsen
+[45/841] Processed Mings
+[46/841] Processed Pau
+[47/841] Processed A.García
+[48/841] Processed Alex Moreno
+[49/841] Processed Bogarde
+[50/841] Processed Sousa
+[51/841] Processed Yasin
+[52/841] Processed Rogers
+[53/841] Processed Tielemans
+[54/841] Processed Bailey
+[55/841] Processed Buendía
+[56/841] Processed Iling Jr
+[57/841] Processed Malen
+[58/841] Processed McGinn
+[59/841] Processed Barkley
+[60/841] Processed Barrenechea
+[61/841] Processed Dobbin
+[62/841] Processed Kamara
+[63/841] Processed Onana
+[64/841] Processed Broggio
+[65/841] Processed Dendoncker
+[66/841] Processed Jimoh-Aloba
+[67/841] Processed Young
+[68/841] Processed Watkins
+[69/841] Processed Redmond
+[70/841] Processed Elliott
+[71/841] Processed Sancho
+[72/841] Processed Wright
+[73/841] Processed Douglas Luiz
+[74/841] Processed Rowe
+[75/841] Processed Burrowes
+[76/841] Processed Proctor
+[77/841] Processed Patterson
+[78/841] Processed Lindelöf
+[79/841] Processed George Hemmings
+[80/841] Processed Hollingshead
+[81/841] Processed Leon Routh
+[82/841] Processed Carroll
+[83/841] Processed Alysson
+[84/841] Processed Abraham
+[85/841] Processed Weiss
+[86/841] Processed Green
+[87/841] Processed Hladký
+[88/841] Processed Roberts
+[89/841] Processed Walker
+[90/841] Processed Delcroix
+[91/841] Processed Dodgson
+[92/841] Processed Ekdal
+[93/841] Processed Estève
+[94/841] Processed Hartman
+[95/841] Processed Humphreys
+[96/841] Processed Jordan
+[97/841] Processed Lucas Pires
+[98/841] Processed Sambo
+[99/841] Processed Sonne
+[100/841] Processed Tuanzebe
+[101/841] Processed Worrall
+[102/841] Processed Anthony
+[103/841] Processed Benson
+[104/841] Processed Bruun Larsen
+[105/841] Processed Boateng
+[106/841] Processed Churlinov
+[107/841] Processed Cullen
+[108/841] Processed Edwards
+[109/841] Processed Hannibal
+[110/841] Processed Koleosho
+[111/841] Processed Laurent
+[112/841] Processed Tchaouna
+[113/841] Processed A.Ramsey
+[114/841] Processed Adewumi
+[115/841] Processed Banel
+[116/841] Processed Trésor
+[117/841] Processed Flemming
+[118/841] Processed Amdouni
+[119/841] Processed Foster
+[120/841] Processed Barnes
+[121/841] Processed Obafemi
+[122/841] Processed Dúbravka
+[123/841] Processed Ward-Prowse
+[124/841] Processed Ugochukwu
+[125/841] Processed Broja
+[126/841] Processed Florentino
+[127/841] Processed Pimlott
+[128/841] Processed Brierley
+[129/841] Processed McMahon-Brown
+[130/841] Processed Neto
+[131/841] Processed Petrović
+[132/841] Processed Dennis
+[133/841] Processed McKenna
+[134/841] Processed Paulsen
+[135/841] Processed Zabarnyi
+[136/841] Processed Senesi
+[137/841] Processed Smith
+[138/841] Processed Truffert
+[139/841] Processed Akinmboni
+[140/841] Processed Bevan
+[141/841] Processed Hill
+[142/841] Processed J.Araujo
+[143/841] Processed Mepham
+[144/841] Processed Soler
+[145/841] Processed Kluivert
+[146/841] Processed Tavernier
+[147/841] Processed Adams
+[148/841] Processed Brooks
+[149/841] Processed Christie
+[150/841] Processed Cook
+[151/841] Processed Philip
+[152/841] Processed Scott
+[153/841] Processed Sinisterra
+[154/841] Processed Faivre
+[155/841] Processed H.Traorè
+[156/841] Processed Sadi
+[157/841] Processed Silcott-Duberry
+[158/841] Processed Winterburn
+[159/841] Processed Evanilson
+[160/841] Processed Enes Ünal
+[161/841] Processed Adu-Adjei
+[162/841] Processed Kroupi.Jr
+[163/841] Processed Gannon-Doak
+[164/841] Processed Diakité
+[165/841] Processed Rees-Dottin
+[166/841] Processed Adli
+[167/841] Processed A.Jimenez
+[168/841] Processed Milosavljević
+[169/841] Processed DaCosta
+[170/841] Processed Forster
+[171/841] Processed Stevens
+[172/841] Processed Tóth.A
+[173/841] Processed Mandas
+[174/841] Processed Rayan
+[175/841] Processed Nelson
+[176/841] Processed O.Dango
+[177/841] Processed Kelleher
+[178/841] Processed Balcombe
+[179/841] Processed Cox
+[180/841] Processed Eyestone
+[181/841] Processed Valdimarsson
+[182/841] Processed Collins
+[183/841] Processed Lewis-Potter
+[184/841] Processed Ajer
+[185/841] Processed Henry
+[186/841] Processed Kayode
+[187/841] Processed Pinnock
+[188/841] Processed Roerslev
+[189/841] Processed Van den Berg
+[190/841] Processed Arthur
+[191/841] Processed Fredrick
+[192/841] Processed Hickey
+[193/841] Processed Ji-soo
+[194/841] Processed Meghoma
+[195/841] Processed Schade
+[196/841] Processed Damsgaard
+[197/841] Processed Milambo
+[198/841] Processed Carvalho
+[199/841] Processed Henderson
+[200/841] Processed Janelt
+[201/841] Processed Jensen
+[202/841] Processed Nunes
+[203/841] Processed Onyeka
+[204/841] Processed Yarmoliuk
+[205/841] Processed Donovan
+[206/841] Processed Konak
+[207/841] Processed Maghoma
+[208/841] Processed Peart-Harris
+[209/841] Processed Trevitt
+[210/841] Processed Thiago
+[211/841] Processed Morgan
+[212/841] Processed Dasilva
+[213/841] Processed Furo
+[214/841] Processed Bentt
+[215/841] Processed Shield
+[216/841] Processed Stephenson
+[217/841] Processed McManus
+[218/841] Processed Owen
+[219/841] Processed Steele
+[220/841] Processed Verbruggen
+[221/841] Processed McGill
+[222/841] Processed Rushworth
+[223/841] Processed Scherpen
+[224/841] Processed Boscagli
+[225/841] Processed Coppola
+[226/841] Processed De Cuyper
+[227/841] Processed Dunk
+[228/841] Processed Estupiñan
+[229/841] Processed F.Kadıoğlu
+[230/841] Processed Igor
+[231/841] Processed Lamptey
+[232/841] Processed Van Hecke
+[233/841] Processed Veltman
+[234/841] Processed Webster
+[235/841] Processed Cashin
+[236/841] Processed Slater
+[237/841] Processed Tasker
+[238/841] Processed Mitoma
+[239/841] Processed Georginio
+[240/841] Processed March
+[241/841] Processed Minteh
+[242/841] Processed Enciso
+[243/841] Processed Gruda
+[244/841] Processed Hinshelwood
+[245/841] Processed O'Riley
+[246/841] Processed Sima
+[247/841] Processed Ayari
+[248/841] Processed Baleba
+[249/841] Processed Gomez
+[250/841] Processed Milner
+[251/841] Processed Sarmiento
+[252/841] Processed Watson
+[253/841] Processed Wieffer
+[254/841] Processed Yalcouye
+[255/841] Processed Knight
+[256/841] Processed Mazilu
+[257/841] Processed Moran
+[258/841] Processed Welbeck
+[259/841] Processed Ferguson
+[260/841] Processed Tzimas
+[261/841] Processed Kostoulas
+[262/841] Processed Oriola
+[263/841] Processed Simmonds
+[264/841] Processed Groß
+[265/841] Processed Howell
+[266/841] Processed Sánchez
+[267/841] Processed Jörgensen
+[268/841] Processed Penders
+[269/841] Processed Slonina
+[270/841] Processed Cucurella
+[271/841] Processed James
+[272/841] Processed Chalobah
+[273/841] Processed Colwill
+[274/841] Processed Gusto
+[275/841] Processed B.Badiashile
+[276/841] Processed Fofana
+[277/841] Processed M.Sarr
+[278/841] Processed Tosin
+[279/841] Processed Acheampong
+[280/841] Processed Anselmino
+[281/841] Processed Palmer
+[282/841] Processed Neto
+[283/841] Processed Enzo
+[284/841] Processed Estêvão
+[285/841] Processed Gittens
+[286/841] Processed Nkunku
+[287/841] Processed Caicedo
+[288/841] Processed Lavia
+[289/841] Processed Mudryk
+[290/841] Processed Andrey Santos
+[291/841] Processed D.Essugo
+[292/841] Processed Paez
+[293/841] Processed João Pedro
+[294/841] Processed Delap
+[295/841] Processed N.Jackson
+[296/841] Processed Marc Guiu
+[297/841] Processed Garnacho
+[298/841] Processed Hato
+[299/841] Processed Emenalo
+[300/841] Processed Merrick
+[301/841] Processed Sharman-Lowe
+[302/841] Processed Derry
+[303/841] Processed Eboué
+[304/841] Processed Kavuma-McQueen
+[305/841] Processed Mheuka
+[306/841] Processed Henderson
+[307/841] Processed Benitez
+[308/841] Processed Matthews
+[309/841] Processed Muñoz
+[310/841] Processed Lacroix
+[311/841] Processed Mitchell
+[312/841] Processed Sosa
+[313/841] Processed Richards
+[314/841] Processed Chadi Riad
+[315/841] Processed Clyne
+[316/841] Processed Holding
+[317/841] Processed Kporha
+[318/841] Processed Sarr
+[319/841] Processed Doucouré
+[320/841] Processed Esse
+[321/841] Processed Hughes
+[322/841] Processed Kamada
+[323/841] Processed Lerma
+[324/841] Processed Wharton
+[325/841] Processed Agbinone
+[326/841] Processed Ahamada
+[327/841] Processed Devenny
+[328/841] Processed Ebiowei
+[329/841] Processed J.Rak-Sakyi
+[330/841] Processed M.França
+[331/841] Processed Ozoh
+[332/841] Processed Rodney
+[333/841] Processed Umeh
+[334/841] Processed Mateta
+[335/841] Processed Nketiah
+[336/841] Processed Édouard
+[337/841] Processed Marsh
+[338/841] Processed Johnson
+[339/841] Processed Strand Larsen
+[340/841] Processed Guessand
+[341/841] Processed Cardines
+[342/841] Processed Yeremy
+[343/841] Processed Canvot
+[344/841] Processed Uche
+[345/841] Processed Drakes-Thomas
+[346/841] Processed Benamar
+[347/841] Processed Casey
+[348/841] Processed King
+[349/841] Processed Imray
+[350/841] Processed Dewsbury-Hall
+[351/841] Processed George
+[352/841] Processed Pickford
+[353/841] Processed Travers
+[354/841] Processed Tyrer
+[355/841] Processed Branthwaite
+[356/841] Processed Tarkowski
+[357/841] Processed Mykolenko
+[358/841] Processed O'Brien
+[359/841] Processed Coleman
+[360/841] Processed Keane
+[361/841] Processed Patterson
+[362/841] Processed Dixon
+[363/841] Processed Welch
+[364/841] Processed Ndiaye
+[365/841] Processed McNeil
+[366/841] Processed Alcaraz
+[367/841] Processed Gana
+[368/841] Processed Garner
+[369/841] Processed Iroegbunam
+[370/841] Processed Armstrong
+[371/841] Processed Bates
+[372/841] Processed Ebere
+[373/841] Processed Heath
+[374/841] Processed Metcalfe
+[375/841] Processed Barry
+[376/841] Processed Beto
+[377/841] Processed Y.Chermiti
+[378/841] Processed Sherif
+[379/841] Processed Grealish
+[380/841] Processed King
+[381/841] Processed Aznou
+[382/841] Processed Onyango
+[383/841] Processed Campbell
+[384/841] Processed Dibling
+[385/841] Processed Röhl
+[386/841] Processed Graham
+[387/841] Processed Leno
+[388/841] Processed Benda
+[389/841] Processed Robinson
+[390/841] Processed Andersen
+[391/841] Processed Bassey
+[392/841] Processed Castagne
+[393/841] Processed Diop
+[394/841] Processed J.Cuenca
+[395/841] Processed Tete
+[396/841] Processed Amissah
+[397/841] Processed Iwobi
+[398/841] Processed Smith Rowe
+[399/841] Processed Andreas
+[400/841] Processed Sessegnon
+[401/841] Processed Wilson
+[402/841] Processed Berge
+[403/841] Processed Cairney
+[404/841] Processed Lukić
+[405/841] Processed Godo
+[406/841] Processed Harris
+[407/841] Processed King
+[408/841] Processed Reed
+[409/841] Processed Raúl
+[410/841] Processed Muniz
+[411/841] Processed Bobb
+[412/841] Processed Lecomte
+[413/841] Processed Chukwueze
+[414/841] Processed Kevin
+[415/841] Processed Kusi-Asare
+[416/841] Processed Ridgeon
+[417/841] Processed McNally
+[418/841] Processed Buonanotte
+[419/841] Processed Meslier
+[420/841] Processed Cairns
+[421/841] Processed Darlow
+[422/841] Processed Bogle
+[423/841] Processed Struijk
+[424/841] Processed Bijol
+[425/841] Processed Bornauw
+[426/841] Processed Byram
+[427/841] Processed Gudmundsson
+[428/841] Processed Rodon
+[429/841] Processed Schmidt
+[430/841] Processed Aaronson
+[431/841] Processed Gnonto
+[432/841] Processed Harrison
+[433/841] Processed James
+[434/841] Processed Ampadu
+[435/841] Processed Greenwood
+[436/841] Processed Gruev
+[437/841] Processed Ramazani
+[438/841] Processed Tanaka
+[439/841] Processed Crew
+[440/841] Processed Gelhardt
+[441/841] Processed Gyabi
+[442/841] Processed Piroe
+[443/841] Processed Bamford
+[444/841] Processed Mateo Joseph
+[445/841] Processed Nmecha
+[446/841] Processed Longstaff
+[447/841] Processed Stach
+[448/841] Processed Perri
+[449/841] Processed Calvert-Lewin
+[450/841] Processed Okafor
+[451/841] Processed Justin
+[452/841] Processed Gray
+[453/841] Processed Chambers
+[454/841] Processed Lienou
+[455/841] Processed Chadwick
+[456/841] Processed Cresswell
+[457/841] Processed A.Becker
+[458/841] Processed Mamardashvili
+[459/841] Processed Pécsi
+[460/841] Processed Woodman
+[461/841] Processed Frimpong
+[462/841] Processed Kerkez
+[463/841] Processed Robertson
+[464/841] Processed Virgil
+[465/841] Processed Konaté
+[466/841] Processed Bradley
+[467/841] Processed Gomez
+[468/841] Processed Tsimikas
+[469/841] Processed Nallo
+[470/841] Processed R.Williams
+[471/841] Processed Ramsay
+[472/841] Processed M.Salah
+[473/841] Processed Wirtz
+[474/841] Processed Luis Díaz
+[475/841] Processed Gakpo
+[476/841] Processed Chiesa
+[477/841] Processed Mac Allister
+[478/841] Processed Szoboszlai
+[479/841] Processed C.Jones
+[480/841] Processed Gravenberch
+[481/841] Processed Endo
+[482/841] Processed Bajcetic
+[483/841] Processed McConnell
+[484/841] Processed Morton
+[485/841] Processed Nyoni
+[486/841] Processed Darwin
+[487/841] Processed Danns
+[488/841] Processed Isak
+[489/841] Processed Ekitiké
+[490/841] Processed Ngumoha
+[491/841] Processed Leoni
+[492/841] Processed Morrison
+[493/841] Processed Lucky
+[494/841] Processed Wright
+[495/841] Processed Ndiaye
+[496/841] Processed Semenyo
+[497/841] Processed Trafford
+[498/841] Processed Guéhi
+[499/841] Processed Ederson M.
+[500/841] Processed Bettinelli
+[501/841] Processed Aït-Nouri
+[502/841] Processed Gvardiol
+[503/841] Processed Akanji
+[504/841] Processed Aké
+[505/841] Processed Khusanov
+[506/841] Processed Matheus N.
+[507/841] Processed Rúben
+[508/841] Processed Stones
+[509/841] Processed Lewis
+[510/841] Processed O'Reilly
+[511/841] Processed Vitor Reis
+[512/841] Processed Marmoush
+[513/841] Processed Foden
+[514/841] Processed Savinho
+[515/841] Processed Bernardo
+[516/841] Processed Cherki
+[517/841] Processed Doku
+[518/841] Processed Gündoğan
+[519/841] Processed Rodrigo
+[520/841] Processed Kovačić
+[521/841] Processed N.Gonzalez
+[522/841] Processed Echeverri
+[523/841] Processed Reijnders
+[524/841] Processed Nypan
+[525/841] Processed Phillips
+[526/841] Processed Haaland
+[527/841] Processed Donnarumma
+[528/841] Processed Mukasa
+[529/841] Processed Mfuni
+[530/841] Processed McAidoo
+[531/841] Processed Gray
+[532/841] Processed Heskey
+[533/841] Processed Alleyne
+[534/841] Processed Mbeumo
+[535/841] Processed Bayindir
+[536/841] Processed Onana
+[537/841] Processed Harrison
+[538/841] Processed Heaton
+[539/841] Processed Mee
+[540/841] Processed De Ligt
+[541/841] Processed Martinez
+[542/841] Processed Mazraoui
+[543/841] Processed D.Leon
+[544/841] Processed Dalot
+[545/841] Processed Dorgu
+[546/841] Processed Maguire
+[547/841] Processed Shaw
+[548/841] Processed Yoro
+[549/841] Processed Amass
+[550/841] Processed Fredricson
+[551/841] Processed Heaven
+[552/841] Processed Malacia
+[553/841] Processed B.Fernandes
+[554/841] Processed Cunha
+[555/841] Processed Rashford
+[556/841] Processed Amad
+[557/841] Processed Antony
+[558/841] Processed Mount
+[559/841] Processed Casemiro
+[560/841] Processed Mainoo
+[561/841] Processed Ugarte
+[562/841] Processed Collyer
+[563/841] Processed Fitzgerald
+[564/841] Processed J.Fletcher
+[565/841] Processed Kone
+[566/841] Processed Moorhouse
+[567/841] Processed Højlund
+[568/841] Processed Zirkzee
+[569/841] Processed Obi
+[570/841] Processed Wheatley
+[571/841] Processed Šeško
+[572/841] Processed Lammens
+[573/841] Processed Lacey
+[574/841] Processed Bendito Mantato
+[575/841] Processed Fletcher
+[576/841] Processed Kukonki
+[577/841] Processed Thwaites
+[578/841] Processed J.Ramsey
+[579/841] Processed Wissa
+[580/841] Processed Pope
+[581/841] Processed Gillespie
+[582/841] Processed Odysseas
+[583/841] Processed Hall
+[584/841] Processed Schär
+[585/841] Processed Botman
+[586/841] Processed Burn
+[587/841] Processed Livramento
+[588/841] Processed Trippier
+[589/841] Processed Krafth
+[590/841] Processed Lascelles
+[591/841] Processed A.Murphy
+[592/841] Processed Ashby
+[593/841] Processed Pivas
+[594/841] Processed Targett
+[595/841] Processed Gordon
+[596/841] Processed Elanga
+[597/841] Processed Barnes
+[598/841] Processed Bruno G.
+[599/841] Processed J.Murphy
+[600/841] Processed Joelinton
+[601/841] Processed Tonali
+[602/841] Processed Antoñito C.
+[603/841] Processed Willock
+[604/841] Processed Hayden
+[605/841] Processed Kuol
+[606/841] Processed L.Miley
+[607/841] Processed White
+[608/841] Processed Osula
+[609/841] Processed Neave
+[610/841] Processed Ramsdale
+[611/841] Processed Thiaw
+[612/841] Processed Seung soo
+[613/841] Processed Woltemade
+[614/841] Processed Ruddy
+[615/841] Processed Shahar
+[616/841] Processed Alabi
+[617/841] Processed Zinchenko
+[618/841] Processed Ortega Moreno
+[619/841] Processed McAtee
+[620/841] Processed Sels
+[621/841] Processed C.Miguel
+[622/841] Processed Turner
+[623/841] Processed Milenković
+[624/841] Processed Murillo
+[625/841] Processed Aina
+[626/841] Processed N.Williams
+[627/841] Processed David Carmo
+[628/841] Processed Jair Cunha
+[629/841] Processed Morato
+[630/841] Processed O.Richards
+[631/841] Processed Abbott
+[632/841] Processed Boly
+[633/841] Processed Gibbs-White
+[634/841] Processed Hudson-Odoi
+[635/841] Processed Anderson
+[636/841] Processed Jota
+[637/841] Processed Dominguez
+[638/841] Processed O'Brien
+[639/841] Processed Sangaré
+[640/841] Processed Yates
+[641/841] Processed Da Silva Moreira
+[642/841] Processed Stamenic
+[643/841] Processed Wood
+[644/841] Processed Igor Jesus
+[645/841] Processed Awoniyi
+[646/841] Processed Ndoye
+[647/841] Processed Gunn
+[648/841] Processed Hutchinson
+[649/841] Processed Kalimuendo
+[650/841] Processed John
+[651/841] Processed Savona
+[652/841] Processed Cuiabano
+[653/841] Processed Bakwa
+[654/841] Processed Lucca
+[655/841] Processed Netz
+[656/841] Processed Whitehall
+[657/841] Processed Sinclair
+[658/841] Processed Sillah
+[659/841] Processed Patterson
+[660/841] Processed Moore
+[661/841] Processed Nna Noukeu
+[662/841] Processed Ballard
+[663/841] Processed Hume
+[664/841] Processed Alese
+[665/841] Processed Anderson
+[666/841] Processed Cirkin
+[667/841] Processed Hjelde
+[668/841] Processed Huggins
+[669/841] Processed Johnson
+[670/841] Processed O'Nien
+[671/841] Processed Pembele
+[672/841] Processed Reinildo
+[673/841] Processed Seelt
+[674/841] Processed Adingra
+[675/841] Processed Diarra
+[676/841] Processed Roberts
+[677/841] Processed Aleksić
+[678/841] Processed E.Le Fée
+[679/841] Processed Mundle
+[680/841] Processed Neil
+[681/841] Processed Poveda
+[682/841] Processed Rigg
+[683/841] Processed Sadiki
+[684/841] Processed Talbi
+[685/841] Processed Ba
+[686/841] Processed Browne
+[687/841] Processed Ekwah
+[688/841] Processed H.Jones
+[689/841] Processed Matete
+[690/841] Processed Triantis
+[691/841] Processed Isidor
+[692/841] Processed Mayenda
+[693/841] Processed Abdullahi
+[694/841] Processed Luís Hemir
+[695/841] Processed Rusyn
+[696/841] Processed Xhaka
+[697/841] Processed Roefs
+[698/841] Processed Masuaku
+[699/841] Processed Alderete
+[700/841] Processed Mukiele
+[701/841] Processed Geertruida
+[702/841] Processed Brobbey
+[703/841] Processed Traoré
+[704/841] Processed Jenson Jones
+[705/841] Processed Tutierov
+[706/841] Processed Jocelin.T
+[707/841] Processed Ellborg
+[708/841] Processed Angulo
+[709/841] Processed Whittaker
+[710/841] Processed Jones
+[711/841] Processed Vicario
+[712/841] Processed Austin
+[713/841] Processed Kinsky
+[714/841] Processed Pedro Porro
+[715/841] Processed Romero
+[716/841] Processed Danso
+[717/841] Processed Davies
+[718/841] Processed Dragusin
+[719/841] Processed Spence
+[720/841] Processed Udogie
+[721/841] Processed Van de Ven
+[722/841] Processed Phillips
+[723/841] Processed Takai
+[724/841] Processed Vuskovic
+[725/841] Processed Son
+[726/841] Processed Maddison
+[727/841] Processed Kudus
+[728/841] Processed Kulusevski
+[729/841] Processed Tel
+[730/841] Processed Bentancur
+[731/841] Processed Bergvall
+[732/841] Processed Bissouma
+[733/841] Processed Odobert
+[734/841] Processed Solomon
+[735/841] Processed Bryan
+[736/841] Processed Gray
+[737/841] Processed Moore
+[738/841] Processed P.M.Sarr
+[739/841] Processed Min-hyeok
+[740/841] Processed Olusesi
+[741/841] Processed Solanke
+[742/841] Processed Richarlison
+[743/841] Processed Lankshear
+[744/841] Processed Scarlett
+[745/841] Processed J.Palhinha
+[746/841] Processed Xavi
+[747/841] Processed Kolo Muani
+[748/841] Processed Byfield
+[749/841] Processed Rowswell
+[750/841] Processed Akhamrich
+[751/841] Processed Williams-Barnett
+[752/841] Processed Gallagher
+[753/841] Processed Souza
+[754/841] Processed Kyerematen
+[755/841] Processed Wilson
+[756/841] Processed Adama
+[757/841] Processed Areola
+[758/841] Processed Foderingham
+[759/841] Processed Hegyi
+[760/841] Processed Diouf
+[761/841] Processed Emerson
+[762/841] Processed Kilman
+[763/841] Processed Mavropanos
+[764/841] Processed N.Aguerd
+[765/841] Processed Scarles
+[766/841] Processed Todibo
+[767/841] Processed Wan-Bissaka
+[768/841] Processed Casey
+[769/841] Processed L.Paquetá
+[770/841] Processed Souček
+[771/841] Processed Summerville
+[772/841] Processed Álvarez
+[773/841] Processed Cornet
+[774/841] Processed G.Rodriguez
+[775/841] Processed L.Guilherme
+[776/841] Processed Earthy
+[777/841] Processed Irving
+[778/841] Processed Orford
+[779/841] Processed Potts
+[780/841] Processed Bowen
+[781/841] Processed Füllkrug
+[782/841] Processed Marshall
+[783/841] Processed Walker-Peters
+[784/841] Processed Wilson
+[785/841] Processed Hermansen
+[786/841] Processed M.Fernandes
+[787/841] Processed S.Magassa
+[788/841] Processed Fabianski
+[789/841] Processed Mayers
+[790/841] Processed Golambeckis
+[791/841] Processed Mohamadou Kanté
+[792/841] Processed Pablo
+[793/841] Processed Taty
+[794/841] Processed Lamadrid
+[795/841] Processed Disasi
+[796/841] Processed Herrick
+[797/841] Processed Johnstone
+[798/841] Processed José Sá
+[799/841] Processed Bentley
+[800/841] Processed Agbadou
+[801/841] Processed Doherty
+[802/841] Processed H.Bueno
+[803/841] Processed Mosquera
+[804/841] Processed R.Gomes
+Error with player S.Bueno: HTTPSConnectionPool(host='fantasy.premierleague.com', port=443): Read timed out. (read timeout=10)
+[806/841] Processed Toti
+Error with player Hoever: HTTPSConnectionPool(host='fantasy.premierleague.com', port=443): Read timed out. (read timeout=10)
+Traceback (most recent call last):
+  File "/Users/tomfitzpatrick/FPL_Project/extract_fpl_clean_dataset.py", line 159, in <module>
+    data = requests.get(url, timeout=REQUEST_TIMEOUT).json()
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tomfitzpatrick/FPL_Project/venv/lib/python3.13/site-packages/requests/api.py", line 87, in get
+    return request("get", url, params=params, **kwargs)
+  File "/Users/tomfitzpatrick/FPL_Project/venv/lib/python3.13/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tomfitzpatrick/FPL_Project/venv/lib/python3.13/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/tomfitzpatrick/FPL_Project/venv/lib/python3.13/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/tomfitzpatrick/FPL_Project/venv/lib/python3.13/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/Users/tomfitzpatrick/FPL_Project/venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/Users/tomfitzpatrick/FPL_Project/venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/tomfitzpatrick/FPL_Project/venv/lib/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py", line 1450, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py", line 297, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyboardInterrupt

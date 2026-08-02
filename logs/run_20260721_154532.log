@@ -1,0 +1,56 @@
+FPL Pipeline Run — 20260721_154532
+================================
+
+=== [15:45:32] Running: extract_fpl_clean_dataset.py ===
+/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/tomfitzpatrick/FPL_Project/extract_fpl_clean_dataset.py': [Errno 2] No such file or directory
+=== FAILED: extract_fpl_clean_dataset.py (exit code 2) ===
+
+=== [15:45:32] Running: extract_understat_v2.py ===
+/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/tomfitzpatrick/FPL_Project/extract_understat_v2.py': [Errno 2] No such file or directory
+=== FAILED: extract_understat_v2.py (exit code 2) ===
+
+=== [15:45:32] Running: extract_fbref_v2.py ===
+/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/tomfitzpatrick/FPL_Project/extract_fbref_v2.py': [Errno 2] No such file or directory
+=== FAILED: extract_fbref_v2.py (exit code 2) ===
+
+=== [15:45:32] Running: extract_fbref_team_stats.py ===
+/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/tomfitzpatrick/FPL_Project/extract_fbref_team_stats.py': [Errno 2] No such file or directory
+=== FAILED: extract_fbref_team_stats.py (exit code 2) ===
+
+=== [15:45:32] Running: extract_understat_match_stats.py ===
+/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/tomfitzpatrick/FPL_Project/extract_understat_match_stats.py': [Errno 2] No such file or directory
+=== FAILED: extract_understat_match_stats.py (exit code 2) ===
+
+=== [15:45:32] Running: build_merged_dataset.py ===
+/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/tomfitzpatrick/FPL_Project/build_merged_dataset.py': [Errno 2] No such file or directory
+=== FAILED: build_merged_dataset.py (exit code 2) ===
+
+=== [15:45:32] Running: merge_advanced_team_stats.py ===
+/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/tomfitzpatrick/FPL_Project/merge_advanced_team_stats.py': [Errno 2] No such file or directory
+=== FAILED: merge_advanced_team_stats.py (exit code 2) ===
+
+=== [15:45:32] Running: build_features.py ===
+/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/tomfitzpatrick/FPL_Project/build_features.py': [Errno 2] No such file or directory
+=== FAILED: build_features.py (exit code 2) ===
+
+=== [15:45:32] Running: build_prediction_pipeline.py ===
+/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/tomfitzpatrick/FPL_Project/build_prediction_pipeline.py': [Errno 2] No such file or directory
+=== FAILED: build_prediction_pipeline.py (exit code 2) ===
+
+=== [15:45:32] Running: extract_fixtures.py ===
+/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/tomfitzpatrick/FPL_Project/extract_fixtures.py': [Errno 2] No such file or directory
+=== FAILED: extract_fixtures.py (exit code 2) ===
+
+=== [15:45:32] Running: build_live_predictions.py ===
+/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/tomfitzpatrick/FPL_Project/build_live_predictions.py': [Errno 2] No such file or directory
+=== FAILED: build_live_predictions.py (exit code 2) ===
+
+=== [15:45:32] Running: build_dashboard.py ===
+/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/tomfitzpatrick/FPL_Project/build_dashboard.py': [Errno 2] No such file or directory
+=== FAILED: build_dashboard.py (exit code 2) ===
+
+================================
+Run complete. 12 step(s) failed. Full log: /Users/tomfitzpatrick/FPL_Project/logs/run_20260721_154532.log
+
+Watchdog flagged an issue — see logs/watchdog_20260721_154532.log and 
+the 'ai-review-*' git branch it may have created for a proposed fix.

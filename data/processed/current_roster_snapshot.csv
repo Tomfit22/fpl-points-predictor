@@ -1,0 +1,559 @@
+player_id,player_name,full_name,team,position,price
+1,Raya,David Raya Martín,Arsenal,GK,60
+2,Arrizabalaga,Kepa Arrizabalaga Revuelta,Arsenal,GK,50
+3,Meslier,Illan Meslier,Arsenal,GK,50
+4,Gabriel,Gabriel dos Santos Magalhães,Arsenal,DEF,80
+5,J.Timber,Jurriën Timber,Arsenal,DEF,65
+6,Saliba,William Saliba,Arsenal,DEF,60
+7,Lewis-Skelly,Myles Lewis-Skelly,Arsenal,MID,55
+8,Calafiori,Riccardo Calafiori,Arsenal,DEF,55
+9,Hincapie,Piero Hincapié,Arsenal,DEF,55
+10,White,Benjamin White,Arsenal,DEF,55
+11,Mosquera,Cristhian Mosquera,Arsenal,DEF,55
+12,Saka,Bukayo Saka,Arsenal,MID,95
+13,Rice,Declan Rice,Arsenal,MID,75
+14,Eze,Eberechi Eze,Arsenal,MID,65
+15,Ødegaard,Martin Ødegaard,Arsenal,MID,65
+16,Madueke,Noni Madueke,Arsenal,MID,65
+17,Merino,Mikel Merino Zazón,Arsenal,MID,60
+18,Martinelli,Gabriel Martinelli Silva,Arsenal,MID,65
+19,Zubimendi,Martín Zubimendi Ibáñez,Arsenal,MID,55
+20,Dowman,Max Dowman,Arsenal,MID,55
+21,Nørgaard,Christian Nørgaard,Arsenal,MID,50
+22,Nwaneri,Ethan Nwaneri,Arsenal,MID,55
+23,Fábio Vieira,Fábio Ferreira Vieira,Arsenal,MID,55
+24,Nelson,Reiss Nelson,Arsenal,MID,55
+25,Gyökeres,Viktor Gyökeres,Arsenal,FWD,75
+26,Havertz,Kai Havertz,Arsenal,FWD,75
+27,G.Jesus,Gabriel Fernando de Jesus,Arsenal,FWD,60
+557,Tzolis,Christos Tzolis,Arsenal,MID,65
+28,Martinez,Emiliano Martínez Romero,Aston Villa,GK,50
+29,M.Bizot,Marco Bizot,Aston Villa,GK,45
+30,Digne,Lucas Digne,Aston Villa,DEF,45
+31,Konsa,Ezri Konsa Ngoyo,Aston Villa,DEF,45
+32,Cash,Matty Cash,Aston Villa,DEF,45
+33,Mings,Tyrone Mings,Aston Villa,DEF,45
+34,Pau,Pau Torres,Aston Villa,DEF,45
+35,Bogarde,Lamare Bogarde,Aston Villa,MID,50
+36,Maatsen,Ian Maatsen,Aston Villa,DEF,45
+37,Lindelöf,Victor Lindelöf,Aston Villa,DEF,45
+38,A.García,Andrés García,Aston Villa,DEF,40
+39,Nedeljkovic,Kosta Nedeljkovic,Aston Villa,DEF,40
+41,Buendía,Emiliano Buendía Stati,Aston Villa,MID,60
+42,Guessand,Evann Guessand,Aston Villa,MID,55
+44,Bailey,Leon Bailey,Aston Villa,MID,55
+45,McGinn,John McGinn,Aston Villa,MID,55
+46,Barkley,Ross Barkley,Aston Villa,MID,50
+47,Kamara,Boubacar Kamara,Aston Villa,MID,50
+48,Onana,Amadou Onana,Aston Villa,MID,50
+49,Iling Jr,Samuel Iling-Junior,Aston Villa,MID,50
+50,Burrowes,Bradley Burrowes,Aston Villa,MID,45
+51,George Hemmings,George Hemmings,Aston Villa,MID,45
+52,Alysson,Alysson Edward Franco da Rocha dos Santos,Aston Villa,MID,50
+53,Manzambi,Johan Manzambi,Aston Villa,MID,60
+54,Gomes,Joao Gomes,Aston Villa,MID,55
+55,Watkins,Ollie Watkins,Aston Villa,FWD,80
+56,Abraham,Tammy Abraham,Aston Villa,FWD,55
+160,Garnacho,Alejandro Garnacho Ferreyra,Aston Villa,MID,60
+57,Petrović,Đorđe Petrović,Bournemouth,GK,45
+58,Forster,Fraser Forster,Bournemouth,GK,40
+59,Dennis,Will Dennis,Bournemouth,GK,40
+60,Hill,James Hill,Bournemouth,DEF,55
+61,Truffert,Adrien Truffert,Bournemouth,DEF,55
+62,Diakité,Bafodé Diakité,Bournemouth,DEF,50
+63,Milosavljević,Veljko Milosavljevic,Bournemouth,DEF,50
+64,Smith,Adam Smith,Bournemouth,DEF,45
+65,J.Araujo,Julián Araujo Zúñiga,Bournemouth,DEF,45
+66,Soler,Julio Soler Barreto,Bournemouth,DEF,40
+67,Rayan,Rayan Vitor Simplício Rocha,Bournemouth,MID,65
+68,Tavernier,Marcus Tavernier,Bournemouth,MID,60
+69,Scott,Alex Scott,Bournemouth,MID,60
+70,Kluivert,Justin Kluivert,Bournemouth,MID,60
+71,Cook,Lewis Cook,Bournemouth,MID,50
+72,Gannon-Doak,Ben Gannon-Doak,Bournemouth,MID,50
+73,Adams,Tyler Adams,Bournemouth,MID,50
+74,Brooks,David Brooks,Bournemouth,MID,50
+75,Christie,Ryan Christie,Bournemouth,MID,50
+76,Tóth.A,Alex Tóth,Bournemouth,MID,50
+77,Adli,Amine Adli,Bournemouth,MID,50
+78,Kroupi.Jr,Junior Kroupi,Bournemouth,MID,75
+79,Evanilson,Francisco Evanilson de Lima Barbosa,Bournemouth,FWD,60
+80,Enes Ünal,Enes Ünal,Bournemouth,FWD,55
+81,Rodríguez,Álvaro Rodríguez,Bournemouth,FWD,60
+82,Kelleher,Caoimhín Kelleher,Brentford,GK,50
+83,Valdimarsson,Hákon Rafn Valdimarsson,Brentford,GK,45
+84,Collins,Nathan Collins,Brentford,DEF,55
+85,Van den Berg,Sepp van den Berg,Brentford,DEF,50
+86,Lewis-Potter,Keane Lewis-Potter,Brentford,MID,55
+87,Ajer,Kristoffer Ajer,Brentford,DEF,45
+88,Kayode,Michael Kayode,Brentford,DEF,45
+89,Henry,Rico Henry,Brentford,DEF,45
+90,Hickey,Aaron Hickey,Brentford,DEF,45
+91,Pinnock,Ethan Pinnock,Brentford,DEF,45
+92,Ji-soo,Kim Ji-soo,Brentford,DEF,45
+93,Schuster,Jannik Schuster,Brentford,DEF,45
+94,Schade,Kevin Schade,Brentford,MID,60
+95,O.Dango,Dango Ouattara,Brentford,MID,65
+96,Damsgaard,Mikkel Damsgaard,Brentford,MID,55
+97,Jensen,Mathias Jensen,Brentford,MID,55
+98,Janelt,Vitaly Janelt,Brentford,MID,50
+99,Milambo,Antoni Milambo,Brentford,MID,50
+100,Carvalho,Fábio Freitas Gouveia Carvalho,Brentford,MID,50
+101,Henderson,Jordan Henderson,Brentford,MID,50
+102,Yarmoliuk,Yehor Yarmoliuk,Brentford,MID,50
+103,Dasilva,Josh Dasilva,Brentford,MID,50
+105,Anthony,Jaidon Anthony,Brentford,MID,60
+106,Thiago,Igor Thiago Nascimento Rodrigues,Brentford,FWD,80
+107,Furo,Kaye Furo,Brentford,FWD,45
+108,Wilson,Callum Wilson,Brentford,FWD,55
+109,Verbruggen,Bart Verbruggen,Brighton,GK,45
+110,Rushworth,Carl Rushworth,Brighton,GK,45
+111,Steele,Jason Steele,Brighton,GK,40
+113,F.Kadıoğlu,Ferdi Kadıoğlu,Brighton,DEF,45
+114,Boscagli,Olivier Boscagli,Brighton,DEF,45
+115,De Cuyper,Maxim De Cuyper,Brighton,DEF,45
+116,Dunk,Lewis Dunk,Brighton,DEF,45
+117,Coppola,Diego Coppola,Brighton,DEF,45
+118,Igor,Igor Julio dos Santos de Paulo,Brighton,DEF,45
+119,Costinha,João Pedro Loureiro da Costa,Brighton,DEF,45
+120,Svoboda,Michael Svoboda,Brighton,DEF,50
+121,Mitoma,Mitoma Kaoru,Brighton,MID,60
+122,Minteh,Yankuba Minteh,Brighton,MID,60
+123,Hinshelwood,Jack Hinshelwood,Brighton,MID,60
+124,Groß,Pascal Groß,Brighton,MID,55
+125,Georginio,Georginio Rutter,Brighton,FWD,55
+126,O'Riley,Matt O'Riley,Brighton,MID,55
+127,Gomez,Diego Gómez Amarilla,Brighton,MID,50
+128,Buonanotte,Facundo Buonanotte,Brighton,MID,50
+129,Ayari,Yasin Ayari,Brighton,MID,55
+130,Wieffer,Mats Wieffer,Brighton,DEF,50
+131,Baleba,Carlos Baleba,Brighton,MID,50
+132,Howell,Harry Howell,Brighton,MID,45
+133,Watson,Tom Watson,Brighton,MID,50
+134,Oriola,Nehemiah Oriola,Brighton,MID,45
+135,Yohanna,Zadok Yohanna,Brighton,MID,50
+136,Welbeck,Danny Welbeck,Brighton,FWD,60
+137,Tzimas,Stefanos Tzimas,Brighton,FWD,55
+138,Kostoulas,Charalampos Kostoulas,Brighton,FWD,55
+139,Ferguson,Evan Ferguson,Brighton,FWD,50
+328,Struijk,Pascal Struijk,Brighton,DEF,50
+504,Vuskovic,Luka Vušković,Brighton,DEF,50
+40,Rogers,Morgan Rogers,Chelsea,MID,75
+140,Sánchez,Robert Lynch Sánchez,Chelsea,GK,50
+141,Jörgensen,Filip Jörgensen,Chelsea,GK,50
+142,James,Reece James,Chelsea,DEF,55
+143,Chalobah,Trevoh Chalobah,Chelsea,DEF,55
+144,Gusto,Malo Gusto,Chelsea,DEF,50
+145,Fofana,Wesley Fofana,Chelsea,DEF,50
+146,B.Badiashile,Benoît Badiashile Mukinayi,Chelsea,DEF,45
+147,Tosin,Tosin Adarabioyo,Chelsea,DEF,45
+148,Hato,Jorrel Hato,Chelsea,DEF,45
+149,Colwill,Levi Samuels Colwill,Chelsea,DEF,50
+150,M.Sarr,Mamadou Sarr,Chelsea,DEF,45
+151,Acheampong,Josh Acheampong,Chelsea,DEF,45
+152,Palestra,Marco Palestra,Chelsea,DEF,55
+153,Disasi,Axel Disasi,Chelsea,DEF,45
+154,Palmer,Cole Palmer,Chelsea,MID,95
+155,Enzo,Enzo Fernández,Chelsea,MID,70
+156,Neto,Pedro Lomba Neto,Chelsea,MID,65
+157,Estêvão,Estêvão Almeida de Oliveira Gonçalves,Chelsea,MID,65
+158,Gittens,Jamie Bynoe-Gittens,Chelsea,MID,60
+159,Caicedo,Moisés Caicedo Corozo,Chelsea,MID,55
+161,Lavia,Roméo Lavia,Chelsea,MID,50
+163,D.Essugo,Dário Luís Essugo,Chelsea,MID,45
+164,Quenda,Geovany Quenda,Chelsea,MID,55
+165,João Pedro,João Pedro Junqueira de Jesus,Chelsea,FWD,75
+166,N.Jackson,Nicolas Jackson,Chelsea,FWD,65
+167,Delap,Liam Delap,Chelsea,FWD,55
+168,Marc Guiu,Marc Guiu Paz,Chelsea,FWD,50
+169,Mheuka,Shumaira Mheuka,Chelsea,FWD,45
+170,Emegha,Emmanuel Emegha,Chelsea,FWD,50
+104,Onyeka,Frank Onyeka,Coventry City,MID,50
+171,Dovin,Oliver Dovin,Coventry City,GK,40
+172,Wilson,Ben Wilson,Coventry City,GK,45
+173,Thomas,Bobby Thomas,Coventry City,DEF,40
+174,Kitching,Liam Kitching,Coventry City,DEF,40
+175,van Ewijk,Milan van Ewijk,Coventry City,DEF,40
+176,Dasilva,Jay Dasilva,Coventry City,DEF,40
+177,Kesler-Hayden,Kaine Kesler-Hayden,Coventry City,DEF,40
+178,Bidwell,Jake Bidwell,Coventry City,DEF,40
+179,Latibeaudiere,Joel Latibeaudiere,Coventry City,DEF,40
+180,Woolfenden,Luke Woolfenden,Coventry City,DEF,40
+181,Brau,Miguel Brau,Coventry City,DEF,40
+182,Amenda,Aurèle Amenda,Coventry City,DEF,40
+183,Rudoni,Jack Rudoni,Coventry City,MID,50
+184,Grimes,Matt Grimes,Coventry City,MID,50
+185,Sakamoto,Tatsuhiro Sakamoto,Coventry City,MID,50
+186,Mason-Clark,Ephron Mason-Clark,Coventry City,MID,55
+187,Eccles,Josh Eccles,Coventry City,MID,50
+188,Torp,Victor Torp,Coventry City,MID,55
+189,Shepherd,George Shepherd,Coventry City,MID,45
+190,Tchaouna,Loum Tchaouna,Coventry City,MID,55
+191,Borges Rodrigues,Raphael Borges Rodrigues,Coventry City,MID,45
+192,Andrews,Kaine Andrews,Coventry City,MID,45
+193,Wright,Haji Wright,Coventry City,FWD,55
+194,Thomas-Asante,Brandon Thomas-Asante,Coventry City,FWD,50
+195,Simms,Ellis Simms,Coventry City,FWD,50
+196,Markelo,Jahnoah Markelo,Coventry City,FWD,50
+197,Bassette,Norman Bassette,Coventry City,FWD,45
+198,Henderson,Dean Henderson,Crystal Palace,GK,50
+199,Benitez,Walter Benítez,Crystal Palace,GK,45
+200,Lacroix,Maxence Lacroix,Crystal Palace,DEF,60
+201,Muñoz,Daniel Muñoz Mejía,Crystal Palace,DEF,55
+202,Richards,Chris Richards,Crystal Palace,DEF,50
+203,Canvot,Jaydee Canvot,Crystal Palace,DEF,50
+204,Mitchell,Tyrick Mitchell,Crystal Palace,DEF,45
+205,Sosa,Borna Sosa,Crystal Palace,DEF,45
+206,Chadi Riad,Chadi Riad Dnanou,Crystal Palace,DEF,45
+207,Mingueza,Oscar Mingueza,Crystal Palace,DEF,45
+208,Sarr,Ismaïla Sarr,Crystal Palace,MID,65
+209,Johnson,Brennan Johnson,Crystal Palace,MID,60
+210,Wharton,Adam Wharton,Crystal Palace,MID,55
+211,Yeremy,Yéremy Pino Santos,Crystal Palace,MID,55
+212,Hughes,Will Hughes,Crystal Palace,MID,45
+213,Lerma,Jefferson Lerma Solís,Crystal Palace,MID,50
+214,Kamada,Daichi Kamada,Crystal Palace,MID,50
+215,Devenny,Justin Devenny,Crystal Palace,MID,50
+216,Esse,Romain Esse,Crystal Palace,MID,50
+217,M.França,Matheus França de Oliveira,Crystal Palace,MID,50
+218,Doucouré,Cheick Doucouré,Crystal Palace,MID,50
+219,J.Rak-Sakyi,Jesurun Rak-Sakyi,Crystal Palace,MID,50
+220,Cardines,Rio Cardines,Crystal Palace,DEF,45
+221,Drakes-Thomas,Joél Drakes-Thomas,Crystal Palace,MID,45
+222,Strand Larsen,Jørgen Strand Larsen,Crystal Palace,FWD,60
+223,Mateta,Jean-Philippe Mateta,Crystal Palace,FWD,65
+224,Nketiah,Eddie Nketiah,Crystal Palace,FWD,55
+225,Uche,Christantus Uche,Crystal Palace,FWD,50
+555,Matthews,Remi Matthews,Crystal Palace,GK,40
+226,Pickford,Jordan Pickford,Everton,GK,55
+227,Travers,Mark Travers,Everton,GK,50
+228,King,Tom King,Everton,GK,45
+229,Tarkowski,James Tarkowski,Everton,DEF,60
+230,Branthwaite,Jarrad Branthwaite,Everton,DEF,55
+231,Keane,Michael Keane,Everton,DEF,50
+232,O'Brien,Jake O'Brien,Everton,DEF,50
+233,Mykolenko,Vitalii Mykolenko,Everton,DEF,45
+234,Patterson,Nathan Patterson,Everton,DEF,45
+235,Aznou,Adam Aznou,Everton,DEF,40
+236,Dewsbury-Hall,Kiernan Dewsbury-Hall,Everton,MID,65
+237,Ndiaye,Iliman Ndiaye,Everton,MID,60
+239,Garner,James Garner,Everton,MID,60
+240,Iroegbunam,Tim Iroegbunam,Everton,MID,50
+241,McNeil,Dwight McNeil,Everton,MID,55
+242,George,Tyrique George,Everton,MID,55
+243,Alcaraz,Carlos Alcaraz Durán,Everton,MID,50
+244,Armstrong,Harrison Armstrong,Everton,MID,50
+245,Dibling,Tyler Dibling,Everton,MID,55
+246,Röhl,Merlin Röhl,Everton,MID,50
+247,Hackney,Hayden Hackney,Everton,MID,55
+248,Beto,Norberto Bercique Gomes Betuncal,Everton,FWD,55
+249,Barry,Thierno Barry,Everton,FWD,55
+250,Leno,Bernd Leno,Fulham,GK,45
+251,Lecomte,Benjamin Lecomte,Fulham,GK,40
+252,McNally,Alfie McNally,Fulham,GK,40
+253,Andersen,Joachim Andersen,Fulham,DEF,50
+254,Robinson,Antonee Robinson,Fulham,DEF,45
+255,J.Cuenca,Jorge Cuenca Barreno,Fulham,DEF,45
+256,Tete,Kenny Tete,Fulham,DEF,45
+257,Bassey,Calvin Bassey,Fulham,DEF,45
+258,Castagne,Timothy Castagne,Fulham,DEF,45
+261,Iwobi,Alex Iwobi,Fulham,MID,55
+262,Smith Rowe,Emile Smith Rowe,Fulham,MID,55
+263,Kevin,Kevin Santos Lopes de Macedo,Fulham,MID,55
+264,Bobb,Oscar Bobb,Fulham,MID,55
+265,Berge,Sander Berge,Fulham,MID,50
+266,Cairney,Tom Cairney,Fulham,MID,50
+267,Lukić,Saša Lukić,Fulham,MID,50
+268,King,Josh King,Fulham,MID,55
+269,Sessegnon,Ryan Sessegnon,Fulham,DEF,45
+270,Reed,Harrison Reed,Fulham,MID,45
+271,Muniz,Rodrigo Muniz Carvalho,Fulham,FWD,55
+272,Kusi-Asare,Jonah Kusi-Asare,Fulham,FWD,45
+273,Phillips,Dillon Phillips,Hull City,GK,40
+274,Butland,Jack Butland,Hull City,GK,45
+275,Cartwright,Harvey Cartwright,Hull City,GK,40
+276,Lo-Tutala,Thimothée Lo-Tutala,Hull City,GK,40
+277,Egan,John Egan,Hull City,DEF,40
+278,Hughes,Charlie Hughes,Hull City,DEF,40
+279,Ajayi,Semi Ajayi,Hull City,DEF,40
+280,Coyle,Lewie Coyle,Hull City,DEF,40
+281,Drameh,Cody Drameh,Hull City,DEF,40
+282,Giles,Ryan Giles,Hull City,DEF,40
+283,Jacob,Matty Jacob,Hull City,DEF,40
+284,McCarthy,Cathal McCarthy,Hull City,DEF,40
+285,McNair,Paddy McNair,Hull City,DEF,40
+286,Belloumi,Mohamed Belloumi,Hull City,MID,50
+287,Millar,Liam Millar,Hull City,MID,50
+288,Dowell,Kieran Dowell,Hull City,MID,45
+289,Crooks,Matt Crooks,Hull City,MID,45
+290,Slater,Regan Slater,Hull City,MID,45
+291,Matazo,Eliot Matazo,Hull City,MID,45
+292,Ömür,Abdülkadir Ömür,Hull City,MID,50
+293,Kamara,Abu Kamara,Hull City,MID,50
+294,Zambrano,Óscar Zambrano,Hull City,MID,45
+295,McBurnie,Oli McBurnie,Hull City,FWD,55
+296,Akintola,David Akintola,Hull City,MID,50
+297,Gyabi,Darko Gyabi,Hull City,MID,45
+298,Destan,Enis Destan,Hull City,FWD,45
+299,Burstow,Mason Burstow,Hull City,FWD,45
+556,Targett,Matt Targett,Hull City,DEF,40
+259,Diop,Issa Diop,Ipswich Town,DEF,40
+300,Walton,Christian Walton,Ipswich Town,GK,45
+301,Palmer,Alex Palmer,Ipswich Town,GK,40
+302,Button,David Button,Ipswich Town,GK,40
+303,Kipré,Cédric Kipré,Ipswich Town,DEF,40
+304,O'Shea,Dara O'Shea,Ipswich Town,DEF,40
+305,Davis,Leif Davis,Ipswich Town,DEF,40
+306,Greaves,Jacob Greaves,Ipswich Town,DEF,40
+307,Johnson,Ben Johnson,Ipswich Town,DEF,40
+308,Furlong,Darnell Furlong,Ipswich Town,DEF,40
+309,Núñez,Marcelino Núñez,Ipswich Town,MID,50
+310,Matusiwa,Azor Matusiwa,Ipswich Town,MID,50
+311,Burns,Wes Burns,Ipswich Town,MID,50
+312,Taylor,Jack Taylor,Ipswich Town,MID,45
+313,Clarke,Jack Clarke,Ipswich Town,MID,55
+314,Ogbene,Chiedozie Ogbene,Ipswich Town,MID,50
+315,Fatawu,Abdul Fatawu,Ipswich Town,MID,55
+316,Emersonn,Emersonn Correia da Silva,Ipswich Town,FWD,55
+317,Hirst,George Hirst,Ipswich Town,FWD,50
+318,Philogene,Jaden Philogene,Ipswich Town,MID,55
+319,Szmodics,Sam Szmodics,Ipswich Town,MID,50
+320,Akpom,Chuba Akpom,Ipswich Town,FWD,50
+321,Walle Egeli,Sindre Walle Egeli,Ipswich Town,FWD,45
+322,Al-Hamadi,Ali Al-Hamadi,Ipswich Town,FWD,50
+323,McAteer,Kasey McAteer,Ipswich Town,MID,45
+324,Mehmeti,Anis Mehmeti,Ipswich Town,MID,50
+554,Van Oevelen,Kayne van Oevelen,Ipswich Town,GK,45
+260,Wilson,Harry Wilson,Leeds,MID,65
+326,Perri,Lucas Estella Perri,Leeds,GK,45
+327,Bijol,Jaka Bijol,Leeds,DEF,50
+329,Rodon,Joe Rodon,Leeds,DEF,45
+330,Bogle,Jayden Bogle,Leeds,DEF,45
+331,Gudmundsson,Gabriel Gudmundsson,Leeds,DEF,45
+332,Justin,James Justin,Leeds,DEF,45
+333,Bornauw,Sebastiaan Bornauw,Leeds,DEF,45
+334,Muharemović,Tarik Muharemović,Leeds,DEF,50
+335,Stach,Anton Stach,Leeds,MID,60
+336,Okafor,Noah Okafor,Leeds,MID,60
+337,Aaronson,Brenden Aaronson,Leeds,MID,55
+338,Ampadu,Ethan Ampadu,Leeds,MID,55
+339,Longstaff,Sean Longstaff,Leeds,MID,50
+340,Gelhardt,Joe Gelhardt,Leeds,MID,50
+341,Gnonto,Wilfried Gnonto,Leeds,MID,50
+342,Harrison,Jack Harrison,Leeds,MID,50
+343,James,Daniel James,Leeds,MID,50
+344,Gruev,Ilia Gruev,Leeds,MID,50
+345,Tanaka,Tanaka Ao,Leeds,MID,50
+346,Calvert-Lewin,Dominic Calvert-Lewin,Leeds,FWD,60
+347,Nmecha,Lukas Nmecha,Leeds,FWD,55
+348,Piroe,Joël Piroe,Leeds,FWD,50
+349,Mateo Joseph,Mateo Joseph Fernández-Regatillo,Leeds,FWD,45
+350,A.Becker,Alisson Becker,Liverpool,GK,55
+351,Mamardashvili,Giorgi Mamardashvili,Liverpool,GK,50
+352,Woodman,Freddie Woodman,Liverpool,GK,40
+353,Pecsi,Armin Pecsi,Liverpool,GK,40
+354,Jaros,Vitezslav Jaros,Liverpool,GK,40
+355,Davies,Harvey Davies,Liverpool,GK,40
+356,Virgil,Virgil van Dijk,Liverpool,DEF,65
+357,Frimpong,Jeremie Frimpong,Liverpool,DEF,55
+358,Kerkez,Milos Kerkez,Liverpool,DEF,55
+359,Gomez,Joe Gomez,Liverpool,DEF,50
+360,Bradley,Conor Bradley,Liverpool,DEF,50
+361,Lucky,Wellity Lucky,Liverpool,DEF,40
+362,Jacquet,Jeremy Jacquet,Liverpool,DEF,50
+363,Leoni,Giovanni Leoni,Liverpool,DEF,40
+364,Tsimikas,Kostas Tsimikas,Liverpool,DEF,50
+365,Ramsay,Calvin Ramsay,Liverpool,DEF,40
+366,Wirtz,Florian Wirtz,Liverpool,MID,75
+367,Gakpo,Cody Gakpo,Liverpool,MID,70
+368,Szoboszlai,Dominik Szoboszlai,Liverpool,MID,70
+369,Ngumoha,Rio Ngumoha,Liverpool,MID,60
+370,Chiesa,Federico Chiesa,Liverpool,MID,55
+371,Gravenberch,Ryan Gravenberch,Liverpool,MID,60
+372,Mac Allister,Alexis Mac Allister,Liverpool,MID,55
+373,C.Jones,Curtis Jones,Liverpool,MID,55
+374,Endo,Endo Wataru,Liverpool,MID,50
+375,Nyoni,Trey Nyoni,Liverpool,MID,50
+376,Bajcetic,Stefan Bajčetić Maquieira,Liverpool,MID,50
+377,Munoz,Victor Munoz,Liverpool,MID,65
+378,McConnell,James McConnell,Liverpool,MID,45
+379,Isak,Alexander Isak,Liverpool,FWD,90
+380,Ekitiké,Hugo Ekitiké,Liverpool,FWD,75
+381,Koumas,Lewis Koumas,Liverpool,MID,50
+382,Danns,Jayden Danns,Liverpool,FWD,45
+383,Elliott,Harvey Elliott,Liverpool,MID,55
+238,Grealish,Jack Grealish,Man City,MID,65
+384,Donnarumma,Gianluigi Donnarumma,Man City,GK,55
+385,Trafford,James Trafford,Man City,GK,50
+386,Bettinelli,Marcus Bettinelli,Man City,GK,45
+387,O'Reilly,Nico O'Reilly,Man City,DEF,65
+388,Guéhi,Marc Guéhi,Man City,DEF,60
+389,Matheus N.,Matheus Nunes,Man City,DEF,60
+390,Rúben,Rúben dos Santos Gato Alves Dias,Man City,DEF,55
+391,Gvardiol,Joško Gvardiol,Man City,DEF,55
+392,Aït-Nouri,Rayan Aït-Nouri,Man City,DEF,55
+393,Khusanov,Abdukodir Khusanov,Man City,DEF,55
+394,Alleyne,Max Alleyne,Man City,DEF,50
+395,Lewis,Rico Lewis,Man City,DEF,45
+396,Vitor Reis,Vitor de Oliveira Nunes dos Reis,Man City,DEF,45
+397,Semenyo,Antoine Semenyo,Man City,MID,85
+398,Foden,Phil Foden,Man City,MID,70
+399,Cherki,Rayan Cherki,Man City,MID,75
+400,Doku,Jérémy Doku,Man City,MID,75
+401,Marmoush,Omar Marmoush,Man City,FWD,70
+402,Rodrigo,Rodrigo 'Rodri' Hernandez Cascante,Man City,MID,65
+403,Savinho,Sávio Moreira de Oliveira,Man City,MID,65
+404,Reijnders,Tijjani Reijnders,Man City,MID,60
+405,N.Gonzalez,Nico González Iglesias,Man City,MID,55
+406,Kovačić,Mateo Kovačić,Man City,MID,55
+407,Echeverri,Claudio Echeverri,Man City,MID,50
+408,Phillips,Kalvin Phillips,Man City,MID,50
+409,Mukasa,Divine Mukasa,Man City,MID,45
+410,Monga,Jeremy Monga,Man City,MID,50
+411,Haaland,Erling Haaland,Man City,FWD,155
+481,Anderson,Elliot Anderson,Man City,MID,65
+43,Tielemans,Youri Tielemans,Man Utd,MID,60
+162,Andrey Santos,Andrey Nascimento dos Santos,Man Utd,MID,50
+325,Darlow,Karl Darlow,Man Utd,GK,45
+412,Lammens,Senne Lammens,Man Utd,GK,50
+413,Bayindir,Altay Bayındır,Man Utd,GK,45
+414,Heaton,Tom Heaton,Man Utd,GK,40
+415,Dorgu,Patrick Dorgu,Man Utd,MID,60
+416,De Ligt,Matthijs de Ligt,Man Utd,DEF,50
+417,Dalot,Diogo Dalot Teixeira,Man Utd,DEF,50
+418,Maguire,Harry Maguire,Man Utd,DEF,50
+419,Martinez,Lisandro Martínez,Man Utd,DEF,50
+420,Yoro,Leny Yoro,Man Utd,DEF,50
+421,Heaven,Ayden Heaven,Man Utd,DEF,45
+422,Mazraoui,Noussair Mazraoui,Man Utd,DEF,45
+423,Shaw,Luke Shaw,Man Utd,DEF,45
+424,Amass,Harry Amass,Man Utd,DEF,40
+425,Fredricson,Tyler Fredricson,Man Utd,DEF,40
+426,B.Fernandes,Bruno Borges Fernandes,Man Utd,MID,120
+427,Mbeumo,Bryan Mbeumo,Man Utd,MID,80
+428,Cunha,Matheus Santos Carneiro da Cunha,Man Utd,MID,80
+429,Rashford,Marcus Rashford,Man Utd,MID,70
+430,Mount,Mason Mount,Man Utd,MID,55
+431,Amad,Amad Diallo,Man Utd,MID,60
+432,Mainoo,Kobbie Mainoo,Man Utd,MID,55
+433,Ugarte,Manuel Ugarte Ribeiro,Man Utd,MID,50
+434,J.Fletcher,Jack Fletcher,Man Utd,MID,50
+435,Lacey,Shea Lacey,Man Utd,MID,50
+436,Collyer,Toby Collyer,Man Utd,MID,50
+437,Bendito Mantato,Bendito Mantato,Man Utd,MID,45
+438,Fletcher,Tyler Fletcher,Man Utd,MID,45
+439,Šeško,Benjamin Sesko,Man Utd,FWD,70
+440,Zirkzee,Joshua Zirkzee,Man Utd,FWD,55
+441,Obi,Chido Obi,Man Utd,FWD,45
+442,Pope,Nick Pope,Newcastle,GK,50
+443,Gillespie,Mark Gillespie,Newcastle,GK,45
+444,Jaouen,Ewen Jaouen,Newcastle,GK,45
+445,Thiaw,Malick Thiaw,Newcastle,DEF,50
+446,Schär,Fabian Schär,Newcastle,DEF,50
+447,Botman,Sven Botman,Newcastle,DEF,50
+448,Burn,Dan Burn,Newcastle,DEF,50
+449,Hall,Lewis Hall,Newcastle,DEF,50
+450,Livramento,Tino Livramento,Newcastle,DEF,50
+451,A.Murphy,Alex Murphy,Newcastle,DEF,40
+452,Bruno G.,Bruno Guimarães Rodriguez Moura,Newcastle,MID,70
+453,Barnes,Harvey Barnes,Newcastle,MID,60
+454,Elanga,Anthony Elanga,Newcastle,MID,60
+456,J.Ramsey,Jacob Ramsey,Newcastle,MID,50
+457,J.Murphy,Jacob Murphy,Newcastle,MID,60
+458,Joelinton,Joelinton Cássio Apolinário de Lira,Newcastle,MID,55
+459,L.Miley,Lewis Miley,Newcastle,MID,55
+460,Willock,Joe Willock,Newcastle,MID,50
+461,Touré,Bazoumana Touré,Newcastle,MID,60
+462,Steur,Sean Steur,Newcastle,MID,50
+463,Woltemade,Nick Woltemade,Newcastle,FWD,60
+464,Wissa,Yoane Wissa,Newcastle,FWD,60
+465,Osula,William Osula,Newcastle,FWD,60
+466,Neave,Sean Neave,Newcastle,FWD,45
+467,Sels,Matz Sels,Nott'm Forest,GK,50
+468,John,John Victor Maciel Furtado,Nott'm Forest,GK,45
+469,N.Williams,Neco Williams,Nott'm Forest,DEF,50
+470,Morato,Felipe Rodrigues da Silva,Nott'm Forest,DEF,50
+471,Milenković,Nikola Milenković,Nott'm Forest,DEF,55
+472,Murillo,Murillo Costa dos Santos,Nott'm Forest,DEF,55
+473,Aina,Ola Aina,Nott'm Forest,DEF,45
+474,Jair Cunha,Jair Paula da Cunha Filho,Nott'm Forest,DEF,45
+475,Savona,Nicolò Savona,Nott'm Forest,DEF,45
+476,O.Richards,Omar Richards,Nott'm Forest,DEF,40
+477,Abbott,Zach Abbott,Nott'm Forest,DEF,40
+478,Netz,Luca Netz,Nott'm Forest,DEF,45
+479,Bindon,Tyler Bindon,Nott'm Forest,DEF,40
+480,Gibbs-White,Morgan Gibbs-White,Nott'm Forest,MID,80
+482,Hudson-Odoi,Callum Hudson-Odoi,Nott'm Forest,MID,60
+483,Ndoye,Dan Ndoye,Nott'm Forest,MID,55
+484,Hutchinson,Omari Hutchinson,Nott'm Forest,MID,55
+485,Bakwa,Dilane Bakwa,Nott'm Forest,MID,55
+486,McAtee,James McAtee,Nott'm Forest,MID,55
+487,Dominguez,Nicolás Domínguez,Nott'm Forest,MID,50
+488,Sangaré,Ibrahim Sangaré,Nott'm Forest,MID,50
+489,Yates,Ryan Yates,Nott'm Forest,MID,45
+490,Wood,Chris Wood,Nott'm Forest,FWD,60
+491,Igor Jesus,Igor Jesus Maciel da Cruz,Nott'm Forest,FWD,60
+492,Awoniyi,Taiwo Awoniyi,Nott'm Forest,FWD,55
+493,Kalimuendo,Arnaud Kalimuendo,Nott'm Forest,FWD,55
+558,Schlager,Xaver Schlager,Nott'm Forest,MID,50
+112,Van Hecke,Jan Paul van Hecke,Spurs,DEF,50
+455,Tonali,Sandro Tonali,Spurs,MID,55
+494,Vicario,Guglielmo Vicario,Spurs,GK,45
+495,Austin,Brandon Austin,Spurs,GK,40
+496,Kinsky,Antonín Kinský,Spurs,GK,45
+497,Dubravka,Martin Dubravka,Spurs,GK,40
+498,Senesi,Marcos Senesi Barón,Spurs,DEF,60
+499,Pedro Porro,Pedro Porro Sauceda,Spurs,DEF,55
+500,Romero,Cristian Romero,Spurs,DEF,50
+501,Danso,Kevin Danso,Spurs,DEF,50
+502,Robertson,Andrew Robertson,Spurs,DEF,45
+503,Van de Ven,Micky van de Ven,Spurs,DEF,50
+505,Spence,Djed Spence,Spurs,DEF,45
+506,Udogie,Destiny Udogie,Spurs,DEF,45
+507,Phillips,Ashley Phillips,Spurs,DEF,45
+508,Davies,Ben Davies,Spurs,DEF,40
+509,Byfield,Jun'ai Byfield,Spurs,DEF,40
+510,Rowswell,James Rowswell,Spurs,DEF,40
+511,Souza,João Victor de Souza Menezes,Spurs,DEF,40
+512,Kudus,Mohammed Kudus,Spurs,MID,65
+513,Xavi,Xavi Simons,Spurs,MID,60
+514,Tel,Mathys Tel,Spurs,MID,60
+515,Maddison,James Maddison,Spurs,MID,65
+516,Bentancur,Rodrigo Bentancur,Spurs,MID,55
+517,Odobert,Wilson Odobert,Spurs,MID,55
+518,P.M.Sarr,Pape Matar Sarr,Spurs,MID,50
+519,Gallagher,Conor Gallagher,Spurs,MID,55
+520,Bergvall,Lucas Bergvall,Spurs,MID,55
+521,Kulusevski,Dejan Kulusevski,Spurs,MID,65
+522,Gray,Archie Gray,Spurs,MID,50
+523,Moore,Mikey Moore,Spurs,MID,50
+524,Olusesi,Callum Olusesi,Spurs,MID,45
+525,Fernandes,Mateus Fernandes,Spurs,MID,60
+526,Solanke,Dominic Solanke-Mitchell,Spurs,FWD,60
+527,Richarlison,Richarlison de Andrade,Spurs,FWD,60
+528,Scarlett,Dane Scarlett,Spurs,FWD,45
+529,Roefs,Robin Roefs,Sunderland,GK,50
+530,Patterson,Anthony Patterson,Sunderland,GK,40
+531,Ellborg,Melker Ellborg,Sunderland,GK,45
+532,Ballard,Daniel Ballard,Sunderland,DEF,50
+533,Mukiele,Nordi Mukiele,Sunderland,DEF,55
+534,Hume,Trai Hume,Sunderland,DEF,45
+535,Alderete,Omar Alderete,Sunderland,DEF,50
+536,Reinildo,Reinildo Mandava,Sunderland,DEF,45
+537,Seelt,Jenson Seelt,Sunderland,DEF,45
+538,Hjelde,Leo Fuhr Hjelde,Sunderland,DEF,40
+539,O'Nien,Luke O'Nien,Sunderland,DEF,40
+540,Masuaku,Arthur Masuaku,Sunderland,DEF,40
+541,Meunier,Thomas Meunier,Sunderland,DEF,45
+542,E.Le Fée,Enzo Le Fée,Sunderland,MID,60
+543,Diarra,Habib Diarra,Sunderland,MID,55
+544,Xhaka,Granit Xhaka,Sunderland,MID,55
+545,Sadiki,Noah Sadiki,Sunderland,MID,50
+546,Adingra,Simon Adingra,Sunderland,MID,50
+547,Mundle,Romaine Mundle,Sunderland,MID,50
+548,Rigg,Chris Rigg,Sunderland,MID,50
+549,Talbi,Chemsdine Talbi,Sunderland,MID,55
+550,Jocelin.T,Djiamgone Jocelin Ta Bi,Sunderland,MID,50
+551,Angulo,Nilson Angulo,Sunderland,MID,50
+552,Brobbey,Brian Brobbey,Sunderland,FWD,60
+553,Isidor,Wilson Isidor,Sunderland,FWD,55

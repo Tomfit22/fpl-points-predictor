@@ -1,0 +1,135 @@
+FPL Pipeline Run — 20260722_133252
+================================
+
+=== [13:32:52] Running: extract_fpl_clean_dataset.py ===
+Fetching bootstrap data...
+Total players in FPL: 841
+[1/841] Processed Raya
+[2/841] Processed Arrizabalaga
+[3/841] Processed Hein
+[4/841] Processed Setford
+[5/841] Processed Gabriel
+[6/841] Processed Saliba
+[7/841] Processed Calafiori
+[8/841] Processed J.Timber
+[9/841] Processed Kiwior
+[10/841] Processed Lewis-Skelly
+[11/841] Processed White
+[12/841] Processed Clarke
+[13/841] Processed Kacurri
+[14/841] Processed Nichols
+[15/841] Processed Saka
+[16/841] Processed Ødegaard
+[17/841] Processed Madueke
+[18/841] Processed Martinelli
+[19/841] Processed Trossard
+[20/841] Processed Rice
+[21/841] Processed Merino
+[22/841] Processed Fábio Vieira
+[23/841] Processed Nørgaard
+[24/841] Processed Nwaneri
+[25/841] Processed Zubimendi
+[26/841] Processed Kabia
+[27/841] Processed Sambi
+[28/841] Processed Havertz
+[29/841] Processed G.Jesus
+[30/841] Processed Eze
+[31/841] Processed Mosquera
+[32/841] Processed Gyökeres
+[33/841] Processed Dowman
+[34/841] Processed Harriman-Annous
+[35/841] Processed Hincapie
+[36/841] Processed Salmon
+[37/841] Processed Martinez
+[38/841] Processed M.Bizot
+[39/841] Processed Gauci
+[40/841] Processed Marschall
+[41/841] Processed Cash
+[42/841] Processed Digne
+[43/841] Processed Konsa
+[44/841] Processed Maatsen
+[45/841] Processed Mings
+[46/841] Processed Pau
+[47/841] Processed A.García
+[48/841] Processed Alex Moreno
+[49/841] Processed Bogarde
+[50/841] Processed Sousa
+[51/841] Processed Yasin
+[52/841] Processed Rogers
+[53/841] Processed Tielemans
+[54/841] Processed Bailey
+[55/841] Processed Buendía
+[56/841] Processed Iling Jr
+[57/841] Processed Malen
+[58/841] Processed McGinn
+[59/841] Processed Barkley
+[60/841] Processed Barrenechea
+[61/841] Processed Dobbin
+[62/841] Processed Kamara
+[63/841] Processed Onana
+[64/841] Processed Broggio
+[65/841] Processed Dendoncker
+[66/841] Processed Jimoh-Aloba
+[67/841] Processed Young
+[68/841] Processed Watkins
+[69/841] Processed Redmond
+[70/841] Processed Elliott
+[71/841] Processed Sancho
+[72/841] Processed Wright
+[73/841] Processed Douglas Luiz
+[74/841] Processed Rowe
+[75/841] Processed Burrowes
+[76/841] Processed Proctor
+[77/841] Processed Patterson
+[78/841] Processed Lindelöf
+[79/841] Processed George Hemmings
+[80/841] Processed Hollingshead
+[81/841] Processed Leon Routh
+Traceback (most recent call last):
+  File "/Users/tomfitzpatrick/FPL_Project/extract_fpl_clean_dataset.py", line 159, in <module>
+    data = requests.get(url, timeout=REQUEST_TIMEOUT).json()
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tomfitzpatrick/FPL_Project/venv/lib/python3.13/site-packages/requests/api.py", line 87, in get
+    return request("get", url, params=params, **kwargs)
+  File "/Users/tomfitzpatrick/FPL_Project/venv/lib/python3.13/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tomfitzpatrick/FPL_Project/venv/lib/python3.13/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/tomfitzpatrick/FPL_Project/venv/lib/python3.13/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/tomfitzpatrick/FPL_Project/venv/lib/python3.13/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/Users/tomfitzpatrick/FPL_Project/venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/Users/tomfitzpatrick/FPL_Project/venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/tomfitzpatrick/FPL_Project/venv/lib/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py", line 1450, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py", line 297, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyboardInterrupt
