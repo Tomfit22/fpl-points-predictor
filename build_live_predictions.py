@@ -820,7 +820,7 @@ def main():
     # shows one of the two opponents, same documented simplification
     # already accepted above for the probability columns — rare enough
     # not to be worth the complexity of showing both.
-    opponent_cols = [c for c in ["opponent_team", "was_home_int"] if c in result.columns]
+    opponent_cols = [c for c in ["opponent_team", "was_home_int", "fixture_id"] if c in result.columns]
     if opponent_cols:
         opponent_info = result.groupby(["player_id", "gameweek"], as_index=False)[opponent_cols].first()
         summed = summed.merge(opponent_info, on=["player_id", "gameweek"], how="left")
@@ -839,6 +839,25 @@ def main():
             summed["opponent_short"] = summed["opponent_team"].map(short_name_map).fillna(summed["opponent_team"])
         else:
             summed["opponent_short"] = summed["opponent_team"]
+
+        # FPL's own 1-5 difficulty rating, from THIS player's team's
+        # perspective (home_team_difficulty if they were home,
+        # away_team_difficulty if away) — powers the fixture-ticker
+        # coloring on the dashboard, same convention as the real FPL site
+        if fixtures_path.exists():
+            fixtures_ref["fixture_id"] = fixtures_ref["fixture_id"].astype(str)
+            summed["fixture_id_str"] = summed["fixture_id"].astype(str) if "fixture_id" in summed.columns else None
+            diff_lookup = fixtures_ref.set_index("fixture_id")[["home_team_difficulty", "away_team_difficulty"]]
+
+            def get_own_difficulty(row):
+                if "fixture_id_str" not in row or row["fixture_id_str"] not in diff_lookup.index:
+                    return None
+                d = diff_lookup.loc[row["fixture_id_str"]]
+                return d["home_team_difficulty"] if row["was_home_int"] == 1 else d["away_team_difficulty"]
+
+            if "fixture_id" in summed.columns:
+                summed["difficulty"] = summed.apply(get_own_difficulty, axis=1)
+                summed = summed.drop(columns=["fixture_id_str"])
 
     # price and ownership are STATIC per-player attributes, not per-fixture
     # contributions — merged in separately rather than summed (summing a

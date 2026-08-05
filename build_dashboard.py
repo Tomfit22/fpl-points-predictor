@@ -238,15 +238,18 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     ALL: [
       { key: 'player_name', label: 'Player', type: 'text' },
       { key: 'team', label: 'Team', type: 'team' },
+      { key: 'opponent_display', label: 'Opponent', type: 'opponent' },
       { key: 'position', label: 'Pos', type: 'chip' },
       { key: 'value', label: 'Price', type: 'price' },
       { key: 'ownership_pct', label: 'Owned %', type: 'ownership_pct' },
       { key: 'predicted_points', label: 'Points', type: 'pts' },
-      { key: 'sim_range', label: 'Range', type: 'range' }
+      { key: 'sim_range', label: 'Range', type: 'range' },
+      { key: 'next_fixtures', label: 'Next 5', type: 'fixtures' }
     ],
     GK: [
       { key: 'player_name', label: 'Player', type: 'text' },
       { key: 'team', label: 'Team', type: 'team' },
+      { key: 'opponent_display', label: 'Opponent', type: 'opponent' },
       { key: 'pred_p_clean_sheet', label: 'CS%', type: 'pct' },
       { key: 'pred_saves', label: 'Saves', type: 'num2' },
       { key: 'pred_pens_saved', label: 'Pen Saves', type: 'num2' },
@@ -255,11 +258,13 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       { key: 'value', label: 'Price', type: 'price' },
       { key: 'ownership_pct', label: 'Owned %', type: 'ownership_pct' },
       { key: 'predicted_points', label: 'Points', type: 'pts' },
-      { key: 'sim_range', label: 'Range', type: 'range' }
+      { key: 'sim_range', label: 'Range', type: 'range' },
+      { key: 'next_fixtures', label: 'Next 5', type: 'fixtures' }
     ],
     DEF: [
       { key: 'player_name', label: 'Player', type: 'text' },
       { key: 'team', label: 'Team', type: 'team' },
+      { key: 'opponent_display', label: 'Opponent', type: 'opponent' },
       { key: 'pred_goals', label: 'Goals', type: 'num2' },
       { key: 'pred_assists', label: 'Assists', type: 'num2' },
       { key: 'pred_p_dc_hit', label: 'DC%', type: 'pct' },
@@ -269,11 +274,13 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       { key: 'value', label: 'Price', type: 'price' },
       { key: 'ownership_pct', label: 'Owned %', type: 'ownership_pct' },
       { key: 'predicted_points', label: 'Points', type: 'pts' },
-      { key: 'sim_range', label: 'Range', type: 'range' }
+      { key: 'sim_range', label: 'Range', type: 'range' },
+      { key: 'next_fixtures', label: 'Next 5', type: 'fixtures' }
     ],
     MID: [
       { key: 'player_name', label: 'Player', type: 'text' },
       { key: 'team', label: 'Team', type: 'team' },
+      { key: 'opponent_display', label: 'Opponent', type: 'opponent' },
       { key: 'pred_goals', label: 'Goals', type: 'num2' },
       { key: 'pred_assists', label: 'Assists', type: 'num2' },
       { key: 'pred_p_dc_hit', label: 'DC%', type: 'pct' },
@@ -283,7 +290,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       { key: 'value', label: 'Price', type: 'price' },
       { key: 'ownership_pct', label: 'Owned %', type: 'ownership_pct' },
       { key: 'predicted_points', label: 'Points', type: 'pts' },
-      { key: 'sim_range', label: 'Range', type: 'range' }
+      { key: 'sim_range', label: 'Range', type: 'range' },
+      { key: 'next_fixtures', label: 'Next 5', type: 'fixtures' }
     ],
     // no CS% or DC% for forwards — clean sheets are worth 0 points for FWD,
     // and defensive contribution is negligible enough at this position
@@ -292,6 +300,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     FWD: [
       { key: 'player_name', label: 'Player', type: 'text' },
       { key: 'team', label: 'Team', type: 'team' },
+      { key: 'opponent_display', label: 'Opponent', type: 'opponent' },
       { key: 'pred_goals', label: 'Goals', type: 'num2' },
       { key: 'pred_assists', label: 'Assists', type: 'num2' },
       { key: 'pred_cards', label: 'Yellow%', type: 'pct' },
@@ -299,7 +308,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       { key: 'value', label: 'Price', type: 'price' },
       { key: 'ownership_pct', label: 'Owned %', type: 'ownership_pct' },
       { key: 'predicted_points', label: 'Points', type: 'pts' },
-      { key: 'sim_range', label: 'Range', type: 'range' }
+      { key: 'sim_range', label: 'Range', type: 'range' },
+      { key: 'next_fixtures', label: 'Next 5', type: 'fixtures' }
     ]
   };
 
@@ -319,6 +329,34 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     if (col.type === 'range') {
       if (row.sim_floor == null || row.sim_ceiling == null) return '\u2014';
       return row.sim_floor.toFixed(1) + '\u2013' + row.sim_ceiling.toFixed(1);
+    }
+    // Opponent combines opponent_short (FPL's official 3-letter code)
+    // with was_home_int into e.g. "CHE (H)" or "MUN (A)"
+    if (col.type === 'opponent') {
+      const code = row.opponent_short != null ? row.opponent_short : row.opponent_team;
+      if (code == null) return '\u2014';
+      const venue = row.was_home_int === 1 ? 'H' : 'A';
+      return code + ' (' + venue + ')';
+    }
+    // Next 5 fixtures ticker — small colored chips per fixture, colored
+    // by FPL's own 1-5 difficulty rating (green=easy, grey=medium,
+    // red=hard), same convention as the real FPL site's fixture ticker
+    if (col.type === 'fixtures') {
+      const fixtures = row.next_fixtures;
+      if (!fixtures || fixtures.length === 0) return '\u2014';
+      const difficultyColor = (d) => {
+        if (d == null) return '#7C8AA3';
+        if (d <= 2) return '#2ECC71';
+        if (d === 3) return '#95A5A6';
+        return '#E74C3C';
+      };
+      return fixtures.map(function(fx) {
+        var code = fx.opponent_short != null ? fx.opponent_short : '?';
+        var venue = fx.was_home_int === 1 ? 'H' : 'A';
+        var color = difficultyColor(fx.difficulty);
+        return '<span class="chip small" style="background:' + color + '22;color:' + color +
+               ';border-color:' + color + '55;margin-right:3px;">' + code + ' ' + venue + '</span>';
+      }).join('');
     }
     if (col.type === 'pct') return (val != null) ? (val * 100).toFixed(0) + '%' : '\\u2014';
     if (col.type === 'num2') return (val != null) ? val.toFixed(2) : '\\u2014';
@@ -456,8 +494,29 @@ STRIP_CARD_TEMPLATE = """
         </div>"""
 
 
+def build_next_fixtures_lookup(full_df: pd.DataFrame, n: int = 5) -> dict:
+    """For each player, their next N fixtures (starting with the
+    immediate upcoming one) as a list of (opponent_short, was_home_int,
+    difficulty) tuples — built from the FULL multi-gameweek data before
+    it gets filtered down to a single gameweek for the main table."""
+    lookup = {}
+    if "gameweek" not in full_df.columns:
+        return lookup
+
+    cols = [c for c in ["opponent_short", "was_home_int", "difficulty"] if c in full_df.columns]
+    if not cols:
+        return lookup
+
+    for player_id, group in full_df.sort_values("gameweek").groupby("player_id"):
+        rows = group[cols].head(n).to_dict("records")
+        lookup[player_id] = rows
+    return lookup
+
+
 def load_predictions() -> pd.DataFrame:
     df = pd.read_csv(PROCESSED_DIR / "live_predictions.csv")
+
+    next_fixtures_lookup = build_next_fixtures_lookup(df)
 
     # extract_fixtures.py now returns the FULL season's fixture list
     # (confirmed: 380 fixtures, all 38 gameweeks), not just the next
@@ -473,6 +532,9 @@ def load_predictions() -> pd.DataFrame:
               f"({df['gameweek'].min()}-{df['gameweek'].max()}) — filtering to gameweek "
               f"{target_gw} only, since that's the next upcoming one.")
         df = df[df["gameweek"] == target_gw]
+
+    df = df.copy()
+    df["next_fixtures"] = df["player_id"].map(next_fixtures_lookup)
 
     return df.sort_values("predicted_points", ascending=False).reset_index(drop=True)
 
