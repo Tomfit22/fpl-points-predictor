@@ -17,9 +17,12 @@
 #   8. build_features.py                (rolling own_/opp_ features)
 #   9. build_prediction_pipeline.py     (VALIDATE — this is what the
 #                                         watchdog checks)
-#  10. extract_fixtures.py              (refresh upcoming fixture list)
-#  11. build_live_predictions.py        (real predictions)
-#  12. build_dashboard.py               (regenerate dashboard.html)
+#  10. build_current_roster_snapshot.py (refresh CURRENT squads — who's
+#                                         actually still on each team —
+#                                         directly from FPL's live API)
+#  11. extract_fixtures.py              (refresh upcoming fixture list)
+#  12. build_live_predictions.py        (real predictions)
+#  13. build_dashboard.py               (regenerate dashboard.html)
 #
 # Every run's output is logged to logs/run_<timestamp>.log — the
 # watchdog script (check_pipeline_health.py) reads the latest log to
@@ -86,6 +89,7 @@ run_step "build_merged_dataset.py"
 run_step "merge_advanced_team_stats.py"
 run_step "build_features.py"
 run_step "build_prediction_pipeline.py"
+run_step "build_current_roster_snapshot.py"
 run_step "extract_fixtures.py"
 run_step "build_live_predictions.py"
 run_step "build_dashboard.py"
