@@ -1,0 +1,761 @@
+possession,sot_made,sot_attempted,sot_pct,saves_made,saves_attempted,saves_pct,yellow_cards,red_cards,game_id,team,opponent,was_home
+47,5,13,38,1,2,50.0,2,0,0032e7a3,West Ham,Sunderland,True
+62,6,26,23,1,3,33.0,1,0,0050df89,Manchester Utd,Burnley,True
+39,2,9,22,4,5,80.0,3,0,0061259a,Wolves,Aston Villa,True
+60,6,22,27,2,3,66.0,1,0,009bbc59,Manchester City,Brighton,True
+44,4,10,40,3,6,50.0,2,0,02dbe729,Everton,Liverpool,True
+64,6,19,32,2,2,100.0,1,0,03f6bccd,Fulham,Wolves,True
+53,7,14,50,3,4,75.0,3,0,061afa51,Brighton,Nottingham,True
+52,5,13,38,4,4,100.0,3,0,0676a57a,Bournemouth,Nottingham,True
+49,5,13,38,2,3,66.0,2,0,06bb7d71,Tottenham,Sunderland,True
+54,3,21,14,1,1,100.0,0,0,0701e218,Leeds United,Everton,True
+65,7,25,28,3,3,100.0,0,0,07b4b588,Arsenal,Everton,True
+59,8,21,38,5,6,83.0,0,0,07dfce00,Crystal Palace,Everton,True
+40,2,11,18,4,5,80.0,0,0,08780759,Crystal Palace,Fulham,True
+44,0,7,0,3,5,60.0,3,0,090b47a6,West Ham,Liverpool,True
+45,2,10,20,3,5,60.0,4,0,095133fe,Bournemouth,Manchester City,True
+65,8,20,40,0,0,,1,0,098d4b9c,Chelsea,Wolves,True
+49,1,3,33,4,8,50.0,1,0,0b316a86,Leeds United,Arsenal,True
+43,3,11,27,3,4,75.0,4,0,0bad74e2,Everton,Brighton,True
+43,4,12,33,5,6,83.0,1,0,0da8e4de,Aston Villa,Manchester Utd,True
+61,11,20,55,2,3,66.0,2,0,0dc41c01,Manchester Utd,Crystal Palace,True
+62,1,5,20,5,6,83.0,2,0,0e30cf4b,Tottenham,Bournemouth,True
+50,1,15,7,3,3,100.0,2,0,0e41702d,Aston Villa,Brighton,True
+51,5,14,36,4,4,100.0,2,0,0e46b968,Everton,Fulham,True
+51,7,18,39,4,5,80.0,0,0,0f6b6849,Newcastle,Fulham,True
+52,6,12,50,2,3,66.0,3,0,1163f46d,Everton,West Ham,True
+51,3,10,30,2,3,66.0,3,0,116cff7d,Tottenham,Wolves,True
+53,6,16,38,4,4,100.0,0,0,117c4cab,Aston Villa,Wolves,True
+48,4,12,33,1,3,33.0,2,0,11883630,Everton,Manchester Utd,True
+42,3,6,50,5,6,83.0,2,0,1314f9fd,Wolves,Brighton,True
+71,7,19,37,1,1,100.0,0,0,1340e41a,Manchester City,Everton,True
+54,9,18,50,1,1,100.0,0,0,136b19eb,Arsenal,Fulham,True
+69,4,19,21,2,2,100.0,0,0,148c23a6,Liverpool,Leeds United,True
+57,3,8,38,1,3,33.0,3,0,15b707b3,West Ham,Crystal Palace,True
+68,4,23,17,4,6,66.0,1,0,1666070b,Liverpool,Sunderland,True
+32,7,11,64,1,1,100.0,2,0,185626e2,Manchester Utd,Manchester City,True
+54,1,9,11,3,4,75.0,2,0,1b93b08a,Crystal Palace,West Ham,True
+61,4,14,29,2,6,33.0,2,0,1b9afc4b,Sunderland,Nottingham,True
+49,4,10,40,0,3,0.0,3,0,1c8203d0,Everton,Sunderland,True
+35,3,7,43,1,3,33.0,1,0,1c8e3956,West Ham,Manchester Utd,True
+65,10,23,43,1,1,100.0,1,0,1de9b261,Manchester Utd,Tottenham,True
+46,1,5,20,3,5,60.0,2,0,1e039e05,Aston Villa,Tottenham,True
+49,2,10,20,3,8,37.0,0,0,1e17ace9,Everton,Newcastle,True
+64,6,18,33,1,1,100.0,1,0,1f7cfc5f,Manchester City,Sunderland,True
+41,5,11,45,2,3,66.0,0,0,1fd7d0d8,Crystal Palace,Newcastle,True
+53,6,11,55,3,4,75.0,0,0,200f4acc,Bournemouth,Fulham,True
+67,3,12,25,2,3,66.0,1,0,2045939c,Arsenal,Manchester City,True
+55,5,16,31,4,6,66.0,3,0,21522578,Fulham,Chelsea,True
+74,4,21,19,4,7,57.0,2,0,2180fc9b,Liverpool,Nottingham,True
+71,3,19,16,4,4,100.0,2,0,2185fc64,Chelsea,Crystal Palace,True
+53,2,12,17,1,4,25.0,1,0,22326a55,Sunderland,Fulham,True
+61,3,14,21,6,7,85.0,5,0,224feca9,Crystal Palace,Wolves,True
+36,9,10,90,4,4,100.0,0,0,224ff314,Everton,Chelsea,True
+47,3,9,33,3,4,75.0,1,0,2324c097,Aston Villa,Manchester City,True
+41,5,13,38,2,3,66.0,3,0,236e3e4c,Leeds United,West Ham,True
+45,9,14,64,3,5,60.0,3,0,2392e965,Aston Villa,Liverpool,True
+34,6,15,40,5,7,71.0,1,0,23cb8016,Burnley,Aston Villa,True
+50,1,11,9,2,2,100.0,5,0,23ee8b09,Fulham,Nottingham,True
+25,6,14,43,1,4,25.0,4,0,2446cca5,Everton,Manchester City,True
+68,5,21,24,0,0,,0,0,266bddc6,Arsenal,West Ham,True
+42,3,11,27,2,4,50.0,3,0,269b2844,Bournemouth,Tottenham,True
+34,8,17,47,3,5,60.0,3,0,26e5ca72,Brentford,Liverpool,True
+67,2,12,17,3,4,75.0,4,0,27fb98e5,Chelsea,Burnley,True
+57,7,15,47,4,7,57.0,1,0,28244556,Wolves,Burnley,True
+72,5,27,19,0,2,0.0,0,0,291c58ad,Aston Villa,Brentford,True
+53,3,14,21,2,3,66.0,4,0,295b388b,Fulham,Brentford,True
+58,3,11,27,5,8,62.0,0,0,299beb27,Nottingham,West Ham,True
+48,4,9,44,0,0,,2,0,2b794de5,Arsenal,Liverpool,True
+38,3,10,30,1,4,25.0,2,1,2c75d21a,Newcastle,Liverpool,True
+58,3,10,30,3,4,75.0,0,0,2cd65ee9,Everton,Leeds United,True
+52,3,19,16,3,6,50.0,0,0,2d580ed7,Nottingham,Brighton,True
+65,3,21,14,1,3,33.0,2,0,2d7aef82,Crystal Palace,Burnley,True
+55,6,22,27,4,5,80.0,2,0,2daef12e,Fulham,Burnley,True
+55,6,13,46,1,3,33.0,2,0,2dbd7fbd,Chelsea,Fulham,True
+50,2,20,10,1,1,100.0,3,0,2dfc43ad,Tottenham,Everton,True
+46,0,3,0,5,8,62.0,2,0,2e2f2939,Burnley,Arsenal,True
+38,2,15,13,2,3,66.0,1,0,2e682c02,Burnley,Bournemouth,True
+39,4,10,40,5,6,83.0,3,0,2ed2a547,West Ham,Brighton,True
+43,4,9,44,4,8,50.0,3,0,2f844910,Aston Villa,Chelsea,True
+53,3,9,33,5,7,71.0,1,0,2ffa2be0,Liverpool,Crystal Palace,True
+35,4,15,27,2,4,50.0,5,1,30618752,Tottenham,Liverpool,True
+48,6,15,40,1,1,100.0,1,0,30741081,Nottingham,Tottenham,True
+34,2,6,33,2,2,100.0,2,0,318b1da4,Wolves,Newcastle,True
+40,3,12,25,1,2,50.0,3,0,33167c49,Brentford,Arsenal,True
+43,1,7,14,4,7,57.0,1,0,3322a47b,West Ham,Brentford,True
+58,5,17,29,2,2,100.0,1,0,33f5c26d,Chelsea,Everton,True
+39,0,6,0,3,3,100.0,1,0,345215db,Nottingham,Arsenal,True
+35,2,6,33,5,7,71.0,2,0,34884979,Sunderland,Arsenal,True
+63,2,14,14,1,3,33.0,3,0,34e802eb,Tottenham,Fulham,True
+45,6,21,29,2,3,66.0,5,0,384f3785,Sunderland,Chelsea,True
+53,3,15,20,1,3,33.0,1,0,38b3efe9,Arsenal,Bournemouth,True
+64,5,14,36,2,4,50.0,4,0,3ad15355,Brighton,Brentford,True
+41,2,11,18,1,2,50.0,3,0,3b97170d,Wolves,Tottenham,True
+59,4,12,33,1,4,25.0,0,0,3c399f5e,Wolves,Everton,True
+44,2,9,22,4,6,66.0,2,0,3c79be9f,Wolves,Brentford,True
+59,7,23,30,1,1,100.0,0,0,3d4d50ca,Aston Villa,West Ham,True
+63,3,14,21,6,8,75.0,5,0,3ddb49f0,Chelsea,Aston Villa,True
+57,4,16,25,1,3,33.0,2,0,3e588df8,Leeds United,Tottenham,True
+53,6,16,38,1,2,50.0,3,0,3eb865bb,Manchester Utd,Aston Villa,True
+32,4,10,40,4,4,100.0,1,0,3f843d94,Sunderland,Manchester City,True
+54,2,11,18,3,4,75.0,1,0,3fccfdc9,Brighton,Everton,True
+50,7,14,50,2,2,100.0,0,0,40e608f4,Brighton,Leeds United,True
+53,2,12,17,1,4,25.0,2,0,4234aaa9,Everton,Tottenham,True
+44,2,11,18,3,4,75.0,1,0,424b7408,West Ham,Fulham,True
+44,2,8,25,3,5,60.0,2,0,43c673dd,Burnley,Chelsea,True
+38,4,11,36,3,4,75.0,1,1,455c69b8,Chelsea,Arsenal,True
+56,6,16,38,1,4,25.0,1,0,45650a33,Wolves,Leeds United,True
+63,8,18,44,3,6,50.0,3,0,460a6353,Newcastle,Leeds United,True
+46,2,11,18,0,0,,2,0,46ba2256,Nottingham,Fulham,True
+70,8,16,50,3,4,75.0,2,0,472071fa,Burnley,Wolves,True
+55,3,13,23,2,3,66.0,1,0,488d99a3,Fulham,Everton,True
+56,5,14,36,2,2,100.0,0,0,4907f8ee,Everton,Burnley,True
+47,5,11,45,2,4,50.0,3,0,4972e40c,Newcastle,Chelsea,True
+53,5,18,28,4,4,100.0,0,0,49d03039,Liverpool,Fulham,True
+42,6,13,46,1,3,33.0,3,0,4ac6e328,Tottenham,Brighton,True
+55,4,17,24,4,7,57.0,0,0,4ad6111d,Brentford,Everton,True
+43,2,7,29,1,1,100.0,0,0,4e287736,Burnley,Sunderland,True
+29,4,14,29,1,2,50.0,2,1,4e615d10,Sunderland,Aston Villa,True
+73,4,11,36,4,5,80.0,1,0,4ef85729,Aston Villa,Nottingham,True
+46,6,21,29,2,2,100.0,2,0,4f95517c,Fulham,Newcastle,True
+54,5,16,31,1,1,100.0,1,0,4fe3e679,Arsenal,Nottingham,True
+49,7,15,47,8,10,80.0,2,0,512bb3b3,Brentford,Bournemouth,True
+57,8,17,47,1,2,50.0,1,0,51a5792d,Arsenal,Tottenham,True
+52,7,17,41,2,4,50.0,3,0,535a977f,Wolves,Bournemouth,True
+47,5,14,36,2,3,66.0,5,0,53a69c4e,Leeds United,Aston Villa,True
+68,8,21,38,1,2,50.0,1,0,53db8cb5,Manchester City,Burnley,True
+38,9,15,60,3,4,75.0,1,0,55587dfc,West Ham,Newcastle,True
+57,4,16,25,3,3,100.0,1,0,55fbbbe6,Newcastle,Wolves,True
+56,2,7,29,2,3,66.0,1,0,560a0a6c,Brentford,Tottenham,True
+52,4,14,29,1,2,50.0,0,0,5615f800,Brentford,Burnley,True
+66,8,17,47,3,3,100.0,1,0,56b82593,Manchester City,West Ham,True
+54,4,18,22,0,1,0.0,3,0,574b356f,Fulham,Tottenham,True
+62,7,15,47,1,1,100.0,0,0,576f681d,Arsenal,Brentford,True
+40,4,12,33,2,7,28.0,0,0,57b35843,West Ham,Chelsea,True
+50,4,10,40,1,2,50.0,3,0,57c49bae,Brighton,Fulham,True
+56,5,14,36,5,6,83.0,1,0,58356b12,Leeds United,Nottingham,True
+69,2,16,13,1,2,50.0,0,0,5914e624,Arsenal,Wolves,True
+68,5,21,24,1,4,25.0,3,0,59f26cd9,Chelsea,Nottingham,True
+36,3,12,25,5,8,62.0,3,0,5b6c0657,Chelsea,Manchester City,True
+60,7,17,41,2,3,66.0,3,0,5ca5500a,Bournemouth,Leeds United,True
+57,6,24,25,2,2,100.0,3,0,5cd7ef12,Fulham,Sunderland,True
+58,3,11,27,1,2,50.0,2,0,5da72d0e,Liverpool,Everton,True
+53,6,16,38,2,4,50.0,1,1,5edb7f11,Everton,Bournemouth,True
+60,3,21,14,1,1,100.0,1,0,6053da7e,Chelsea,Manchester Utd,True
+63,4,17,24,6,7,85.0,0,0,6126fdae,Liverpool,Tottenham,True
+29,5,17,29,1,2,50.0,1,0,6218f36c,Leeds United,Chelsea,True
+48,6,14,43,4,4,100.0,1,0,637d95da,Brentford,West Ham,True
+61,7,22,32,2,3,66.0,1,0,643d26fd,Manchester Utd,Arsenal,True
+45,2,13,15,3,4,75.0,3,1,6512ce95,Everton,Wolves,True
+65,4,17,24,1,3,33.0,2,0,66fee216,Manchester Utd,West Ham,True
+51,2,13,15,5,7,71.0,0,0,68316553,Brighton,Manchester Utd,True
+43,3,14,21,4,6,66.0,3,0,6857b94e,Crystal Palace,Manchester Utd,True
+50,5,16,31,2,3,66.0,1,0,686d660a,Arsenal,Sunderland,True
+57,2,7,29,3,4,75.0,0,0,68c62e00,Brentford,Leeds United,True
+70,6,25,24,0,1,0.0,2,0,69a9c9a3,Manchester Utd,Everton,True
+67,3,17,18,4,6,66.0,1,0,6abcb6e9,Chelsea,Bournemouth,True
+36,3,9,33,1,4,25.0,3,0,6d9cd398,West Ham,Arsenal,True
+55,2,5,40,2,3,66.0,3,0,6e2749c6,Bournemouth,Everton,True
+50,1,5,20,2,3,66.0,2,0,6f03844a,Wolves,Nottingham,True
+66,1,10,10,0,2,0.0,1,0,6f5cb4ab,Brentford,Nottingham,True
+47,2,18,11,3,4,75.0,2,0,6f6574df,Nottingham,Liverpool,True
+41,3,17,18,4,7,57.0,1,0,6f99be65,Nottingham,Manchester Utd,True
+48,4,9,44,3,4,75.0,1,0,7345f259,Aston Villa,Fulham,True
+49,7,15,47,0,1,0.0,2,0,7398b723,Brentford,Newcastle,True
+49,7,18,39,3,4,75.0,2,0,7457ff50,Liverpool,West Ham,True
+47,7,16,44,4,5,80.0,5,0,74a9797c,Brighton,Liverpool,True
+45,5,15,33,3,4,75.0,1,0,7517b26a,Nottingham,Bournemouth,True
+54,7,17,41,1,2,50.0,1,0,753e73e5,Liverpool,Newcastle,True
+51,4,10,40,2,3,66.0,0,0,756bc106,Nottingham,Burnley,True
+49,8,29,28,2,4,50.0,2,0,757ec96c,Manchester Utd,Nottingham,True
+60,3,11,27,1,2,50.0,4,0,7710fcb8,Brighton,Arsenal,True
+57,4,15,27,0,3,0.0,2,0,776b0a40,Arsenal,Manchester Utd,True
+53,6,12,50,1,2,50.0,0,0,780d534e,Chelsea,Liverpool,True
+65,6,22,27,2,3,66.0,4,0,78970349,Nottingham,Sunderland,True
+57,3,16,19,3,4,75.0,3,0,79495c07,Tottenham,Leeds United,True
+34,3,4,75,5,7,71.0,2,0,79e52ce5,Wolves,Liverpool,True
+52,7,20,35,2,5,40.0,1,0,7a0ab06b,Crystal Palace,Bournemouth,True
+46,5,13,38,2,3,66.0,0,0,7c25388b,Brighton,Newcastle,True
+53,7,19,37,0,2,0.0,0,0,7c5f15be,Newcastle,Tottenham,True
+59,5,15,33,1,3,33.0,2,0,7e3c19a1,Manchester City,Arsenal,True
+49,4,15,27,4,9,44.0,2,0,7e8f51ca,Burnley,Newcastle,True
+45,3,10,30,1,2,50.0,0,0,7ecdefc0,Leeds United,Manchester Utd,True
+47,4,15,27,5,7,71.0,2,1,7fa414c3,Liverpool,Manchester City,True
+53,5,18,28,2,4,50.0,3,0,80ab7be1,Burnley,West Ham,True
+46,6,17,35,5,6,83.0,2,0,8104e9be,Nottingham,Newcastle,True
+53,3,9,33,0,2,0.0,2,0,810c0cb9,Tottenham,Aston Villa,True
+37,7,12,58,2,3,66.0,2,0,810d81e7,Brighton,Manchester City,True
+47,5,14,36,1,1,100.0,1,0,8179bcb9,Leeds United,Fulham,True
+67,0,12,0,3,3,100.0,2,0,82c4b5d5,Crystal Palace,Leeds United,True
+61,3,13,23,0,0,,1,0,8363c605,Arsenal,Burnley,True
+52,5,13,38,1,2,50.0,4,0,8398bbef,Bournemouth,Brighton,True
+57,6,12,50,0,4,0.0,0,0,83f0391d,Fulham,Manchester City,True
+44,2,11,18,2,3,66.0,1,0,854a0e6b,Sunderland,Liverpool,True
+55,5,11,45,2,3,66.0,1,0,855f8b5e,Nottingham,Brentford,True
+52,9,20,45,3,6,50.0,3,1,857d7924,Manchester Utd,Leeds United,True
+24,2,9,22,2,2,100.0,1,0,860c7af2,Brentford,Aston Villa,True
+42,3,9,33,0,4,0.0,1,0,8613020d,Wolves,Manchester City,True
+48,2,13,15,2,2,100.0,2,0,86786c01,Bournemouth,Brentford,True
+36,4,7,57,2,5,40.0,0,1,86c7261a,West Ham,Tottenham,True
+56,4,16,25,6,6,100.0,2,0,8751f2e2,Brighton,Sunderland,True
+41,3,10,30,2,4,50.0,1,0,88b3c085,West Ham,Aston Villa,True
+38,4,16,25,3,6,50.0,2,0,88d54a65,Crystal Palace,Manchester City,True
+50,7,14,50,5,8,62.0,2,0,88e53add,Everton,Crystal Palace,True
+60,2,14,14,3,5,60.0,4,1,89538ca1,Fulham,Bournemouth,True
+47,7,22,32,2,3,66.0,2,0,89b4ea51,Arsenal,Aston Villa,True
+50,5,10,50,3,6,50.0,2,0,8a4e78e0,Burnley,Brighton,True
+28,7,16,44,3,4,75.0,1,0,8a5edb7f,Crystal Palace,Liverpool,True
+43,7,13,54,2,6,33.0,4,0,8aa8dc76,Crystal Palace,Chelsea,True
+30,1,6,17,3,4,75.0,3,0,8c0ee359,Brentford,Manchester City,True
+47,4,14,29,3,4,75.0,1,0,8c18f2a7,Sunderland,Brighton,True
+34,2,7,29,3,5,60.0,1,0,8d38f2e5,Nottingham,Manchester City,True
+31,3,11,27,4,5,80.0,1,0,8de20e5a,Wolves,Fulham,True
+60,3,10,30,1,1,100.0,0,0,8e08b6c9,Arsenal,Crystal Palace,True
+44,5,14,36,0,0,,1,0,8e2fb73d,Sunderland,Burnley,True
+55,0,16,0,6,6,100.0,0,0,8f2a6c20,Burnley,Everton,True
+60,4,16,25,4,7,57.0,1,0,91a43688,Newcastle,Sunderland,True
+44,7,18,39,3,3,100.0,2,0,91b6a5b2,West Ham,Wolves,True
+55,5,16,31,4,5,80.0,2,0,92da9022,Bournemouth,Manchester Utd,True
+51,4,15,27,1,1,100.0,0,0,92e59b6f,Sunderland,Manchester Utd,True
+33,8,11,73,0,0,,1,0,9364f40b,Wolves,West Ham,True
+37,0,9,0,4,5,80.0,0,0,94eefc1d,Fulham,Arsenal,True
+42,2,5,40,2,4,50.0,2,0,96241478,Wolves,Arsenal,True
+36,2,9,22,2,2,100.0,0,0,96c4864b,Crystal Palace,Brentford,True
+56,7,16,44,6,10,60.0,2,0,96d69898,Brighton,Aston Villa,True
+54,9,15,60,0,0,,1,0,98622df4,Brighton,Chelsea,True
+60,4,15,27,2,3,66.0,0,0,987e9f89,Brighton,Burnley,True
+58,3,14,21,2,3,66.0,3,0,989daed4,Manchester City,Chelsea,True
+53,8,16,50,1,4,25.0,1,0,993fe4a5,Burnley,Fulham,True
+58,3,14,21,4,7,57.0,1,0,99b853a8,Tottenham,Nottingham,True
+53,7,15,47,1,1,100.0,3,0,9a4fd973,Tottenham,Brentford,True
+54,3,12,25,1,3,33.0,2,0,9a65e248,Newcastle,Bournemouth,True
+43,6,15,40,5,7,71.0,2,0,9a904d13,West Ham,Burnley,True
+50,4,18,22,1,1,100.0,1,0,9b6b7eac,Liverpool,Brighton,True
+35,1,5,20,0,2,0.0,2,0,9bf2aba0,Everton,Arsenal,True
+51,6,18,33,2,3,66.0,2,0,9c19f0b3,Brentford,Sunderland,True
+43,3,8,38,4,6,66.0,1,0,9c510880,Sunderland,Leeds United,True
+70,6,21,29,1,3,33.0,1,0,9e232624,Nottingham,Everton,True
+58,4,11,36,2,3,66.0,0,0,9f1131fe,Burnley,Crystal Palace,True
+61,10,19,53,1,3,33.0,1,0,a071faa8,Liverpool,Bournemouth,True
+44,3,10,30,1,3,33.0,3,0,a0cc665c,West Ham,Everton,True
+53,8,20,40,2,3,66.0,1,0,a105af33,Leeds United,Crystal Palace,True
+49,6,14,43,1,1,100.0,2,0,a126a64c,Manchester City,Liverpool,True
+60,5,13,38,3,3,100.0,2,0,a13b6a4b,Fulham,West Ham,True
+43,9,13,69,3,5,60.0,2,0,a190da2c,Manchester Utd,Brighton,True
+70,6,14,43,4,6,66.0,3,0,a2d7d043,Chelsea,West Ham,True
+32,3,4,75,4,4,100.0,2,0,a31356f3,Burnley,Leeds United,True
+42,4,8,50,0,1,0.0,3,0,a3984be1,Crystal Palace,Nottingham,True
+59,4,14,29,1,1,100.0,2,0,a515fb3a,Bournemouth,Wolves,True
+41,4,11,36,0,1,0.0,2,0,a562da13,Manchester Utd,Chelsea,True
+42,2,8,25,0,2,0.0,1,0,a5b3e9ba,Fulham,Liverpool,True
+48,2,20,10,1,1,100.0,3,0,a624dc89,Everton,Aston Villa,True
+45,6,14,43,3,7,42.0,0,0,a67dd0e7,Everton,Brentford,True
+33,1,9,11,1,3,33.0,1,1,a68e5dc6,Nottingham,Crystal Palace,True
+34,1,7,14,7,8,87.0,1,0,a895fed0,Leeds United,Brighton,True
+33,3,11,27,3,6,50.0,1,0,a8e11f0c,Wolves,Chelsea,True
+38,6,18,33,3,5,60.0,2,0,a9037198,Manchester Utd,Liverpool,True
+48,8,18,44,2,3,66.0,4,0,a951ce95,Leeds United,Burnley,True
+45,4,11,36,3,3,100.0,2,0,aaff013b,Arsenal,Newcastle,True
+54,3,5,60,3,3,100.0,1,0,ab8543fb,Fulham,Leeds United,True
+33,5,12,42,2,4,50.0,1,0,accb3a02,Bournemouth,Liverpool,True
+46,2,6,33,5,5,100.0,3,0,ad299900,Chelsea,Brentford,True
+53,6,24,25,2,3,66.0,2,0,ad61fc31,Arsenal,Brighton,True
+55,4,10,40,0,2,0.0,5,0,ad74e791,Tottenham,Manchester Utd,True
+70,4,18,22,0,1,0.0,1,0,aebc568f,Leeds United,Sunderland,True
+63,10,35,29,3,3,100.0,0,0,aecf5052,Nottingham,Wolves,True
+41,5,12,42,3,3,100.0,1,0,afbe13a4,Arsenal,Chelsea,True
+33,3,9,33,3,3,100.0,2,0,aff462b8,Manchester Utd,Newcastle,True
+53,3,9,33,1,1,100.0,2,0,b0005978,Liverpool,Arsenal,True
+67,3,22,14,4,5,80.0,2,0,b0544110,Chelsea,Newcastle,True
+53,2,13,15,7,7,100.0,3,0,b15e7296,Sunderland,Tottenham,True
+67,4,14,29,3,4,75.0,0,0,b329ca7b,Liverpool,Wolves,True
+52,8,16,50,3,4,75.0,2,0,b333094b,Aston Villa,Bournemouth,True
+52,3,16,19,3,5,60.0,1,0,b35e6512,Manchester City,Aston Villa,True
+59,3,13,23,0,3,0.0,3,1,b3a3df9a,Chelsea,Brighton,True
+50,2,12,17,3,6,50.0,2,0,b3ac7e40,Nottingham,Chelsea,True
+59,7,12,58,1,1,100.0,1,0,b4262b3c,Newcastle,Crystal Palace,True
+72,4,15,27,2,2,100.0,0,0,b435bf00,Manchester City,Crystal Palace,True
+72,6,13,46,1,1,100.0,1,0,b77bb459,Brighton,Wolves,True
+49,3,8,38,2,3,66.0,2,0,b8728f43,Liverpool,Chelsea,True
+53,2,16,13,3,5,60.0,3,0,bacd18c5,Tottenham,Newcastle,True
+33,2,14,14,4,5,80.0,0,0,baf5cbeb,Leeds United,Manchester City,True
+61,3,17,18,1,2,50.0,3,0,bb37daa2,Sunderland,Everton,True
+70,7,21,33,2,4,50.0,0,0,bbad5618,Manchester City,Nottingham,True
+41,3,3,100,3,3,100.0,1,1,bbdf4739,Aston Villa,Newcastle,True
+43,1,10,10,2,2,100.0,1,0,bc110e0b,Leeds United,Newcastle,True
+60,8,24,33,1,2,50.0,2,0,bd48c230,Liverpool,Brentford,True
+67,4,16,25,3,4,75.0,1,0,be7eca24,Aston Villa,Leeds United,True
+57,6,15,40,3,4,75.0,0,0,bf3cb7a6,Manchester Utd,Wolves,True
+58,3,14,21,3,5,60.0,1,0,bf61d4e7,Brentford,Crystal Palace,True
+39,6,12,50,1,3,33.0,3,0,bf964dbb,Tottenham,Manchester City,True
+62,9,18,50,0,4,0.0,4,0,bfa73051,Manchester City,Leeds United,True
+63,4,12,33,3,5,60.0,0,0,c0ececfd,Fulham,Crystal Palace,True
+45,5,12,42,4,7,57.0,3,0,c0fc0aac,Leeds United,Liverpool,True
+54,4,16,25,3,3,100.0,2,0,c15115cb,Liverpool,Aston Villa,True
+46,6,14,43,2,3,66.0,2,0,c2217a56,Nottingham,Leeds United,True
+66,4,19,21,0,2,0.0,4,0,c2e2594b,Chelsea,Leeds United,True
+37,4,9,44,9,11,81.0,1,0,c4255de6,Burnley,Tottenham,True
+33,6,13,46,3,4,75.0,3,0,c569f7f7,Newcastle,Brighton,True
+54,4,16,25,3,5,60.0,2,0,c576b069,Newcastle,Brentford,True
+50,4,12,33,3,5,60.0,1,0,c6401377,Fulham,Brighton,True
+39,5,13,38,4,4,100.0,0,0,c6875359,Bournemouth,Chelsea,True
+50,7,15,47,4,7,57.0,1,0,c874d7e6,Aston Villa,Sunderland,True
+48,1,8,13,2,4,50.0,2,0,c90ed936,Wolves,Crystal Palace,True
+48,1,3,33,8,9,88.0,4,0,cb498e0b,Tottenham,Chelsea,True
+42,5,11,45,2,3,66.0,4,0,cbe24427,Everton,Nottingham,True
+63,6,19,32,2,4,50.0,0,0,cbec79a5,Liverpool,Manchester Utd,True
+48,8,15,53,4,5,80.0,2,0,cc77588b,Manchester City,Bournemouth,True
+59,10,25,40,2,2,100.0,4,0,cce1ef93,Manchester City,Brentford,True
+58,4,13,31,1,4,25.0,2,0,cd51ed93,Aston Villa,Crystal Palace,True
+42,3,20,15,5,5,100.0,1,0,cd5c0387,West Ham,Bournemouth,True
+73,11,32,34,1,1,100.0,1,0,cf2163fd,Liverpool,Burnley,True
+69,7,16,44,2,4,50.0,1,0,cfda878f,Chelsea,Sunderland,True
+39,3,8,38,5,7,71.0,0,0,d0233f18,Crystal Palace,Arsenal,True
+63,2,7,29,3,4,75.0,1,0,d16c9a31,Brighton,Crystal Palace,True
+29,1,1,100,5,6,83.0,2,0,d18bda53,West Ham,Manchester City,True
+56,5,13,38,3,3,100.0,3,0,d1da1b85,Manchester City,Fulham,True
+66,7,17,41,2,5,40.0,2,0,d29535da,Newcastle,Everton,True
+41,8,19,42,3,5,60.0,2,0,d2fc69e6,Leeds United,Bournemouth,True
+56,7,15,47,7,8,87.0,1,0,d3152ac7,Newcastle,West Ham,True
+42,6,13,46,4,6,66.0,2,0,d35c00df,Manchester Utd,Fulham,True
+68,6,16,38,4,4,100.0,0,0,d41bb8b3,Tottenham,Burnley,True
+35,1,9,11,8,9,88.0,0,0,d4c039e0,Burnley,Manchester City,True
+36,2,8,25,4,10,40.0,3,0,d52338cb,Wolves,Manchester Utd,True
+58,7,20,35,1,2,50.0,0,0,d6666d63,Wolves,Sunderland,True
+42,2,10,20,3,3,100.0,1,0,d6740601,Crystal Palace,Brighton,True
+49,5,16,31,1,1,100.0,0,0,d7832ab6,Bournemouth,Crystal Palace,True
+34,4,7,57,4,6,66.0,3,0,d8104c65,Brentford,Chelsea,True
+35,1,7,14,6,10,60.0,2,0,d85506f2,Burnley,Manchester Utd,True
+39,5,6,83,2,7,28.0,2,0,d8c5bce1,Tottenham,Arsenal,True
+45,6,11,55,4,4,100.0,2,0,d90d2b6c,Manchester Utd,Brentford,True
+53,9,20,45,3,4,75.0,1,0,d946c716,Bournemouth,Aston Villa,True
+62,2,15,13,3,4,75.0,3,0,da05abe0,Crystal Palace,Tottenham,True
+43,3,15,20,2,5,40.0,3,0,db124c87,Bournemouth,Arsenal,True
+55,7,15,47,1,2,50.0,3,0,db870461,Aston Villa,Burnley,True
+62,5,21,24,3,4,75.0,4,0,ddcde425,Bournemouth,Sunderland,True
+42,9,16,56,3,3,100.0,0,0,df8c12d9,West Ham,Leeds United,True
+55,7,15,47,6,7,85.0,2,0,dfba2599,Manchester City,Newcastle,True
+47,3,14,21,3,5,60.0,3,0,e0b5b423,West Ham,Nottingham,True
+37,5,10,50,4,4,100.0,0,0,e1058522,Sunderland,West Ham,True
+43,6,12,50,4,6,66.0,5,0,e118da78,Sunderland,Bournemouth,True
+51,6,15,40,3,3,100.0,1,0,e33ea33d,Manchester Utd,Sunderland,True
+52,9,18,50,4,4,100.0,0,0,e33f1657,Newcastle,Nottingham,True
+39,6,13,46,1,1,100.0,2,0,e38ffa68,Fulham,Aston Villa,True
+56,6,14,43,0,0,,1,0,e3cade07,Crystal Palace,Sunderland,True
+37,5,12,42,7,8,87.0,1,0,e523c1cd,Burnley,Nottingham,True
+68,4,22,18,4,5,80.0,2,0,e5c1f07b,Brighton,West Ham,True
+69,7,17,41,2,3,66.0,2,0,e5ed4270,Newcastle,Burnley,True
+36,3,8,38,5,7,71.0,2,0,e851cb5c,Newcastle,Arsenal,True
+68,5,18,28,1,1,100.0,0,0,e8724659,Arsenal,Leeds United,True
+64,4,11,36,1,1,100.0,1,0,ebde1961,Manchester City,Wolves,True
+45,5,12,42,4,5,80.0,4,0,ef9a5f6d,Newcastle,Manchester Utd,True
+32,5,9,56,3,4,75.0,1,0,efd005dc,Newcastle,Manchester City,True
+46,1,5,20,2,2,100.0,5,0,f0108982,Sunderland,Newcastle,True
+54,3,12,25,2,4,50.0,3,0,f03152d1,Sunderland,Brentford,True
+56,6,17,35,1,2,50.0,2,0,f039597c,Leeds United,Wolves,True
+66,5,17,29,1,2,50.0,2,0,f118b5cb,Brighton,Bournemouth,True
+49,3,10,30,2,4,50.0,2,0,f206e250,Brentford,Wolves,True
+65,1,16,6,0,1,0.0,1,0,f248c97b,Bournemouth,Burnley,True
+45,6,13,46,2,2,100.0,0,0,f2b1061a,Manchester City,Manchester Utd,True
+41,4,15,27,5,5,100.0,2,0,f2dc47b8,Nottingham,Aston Villa,True
+62,6,21,29,2,4,50.0,5,0,f320a9c9,Tottenham,West Ham,True
+40,4,12,33,1,4,25.0,3,1,f4ad79f6,Tottenham,Crystal Palace,True
+56,2,11,18,1,1,100.0,2,0,f55b1b65,Bournemouth,Newcastle,True
+41,5,11,45,3,3,100.0,2,0,f5a77398,Crystal Palace,Aston Villa,True
+76,10,28,36,0,2,0.0,3,0,f5c9621e,Bournemouth,West Ham,True
+47,6,15,40,7,9,77.0,0,0,f6d068df,Aston Villa,Arsenal,True
+61,4,10,40,3,5,60.0,1,0,f7e2c9c7,Manchester City,Tottenham,True
+42,3,12,25,2,7,28.0,2,0,f8fc799f,Burnley,Brentford,True
+44,8,10,80,4,6,66.0,2,0,f96a49ea,Brentford,Manchester Utd,True
+36,4,12,33,2,3,66.0,1,0,fa03feeb,Brighton,Tottenham,True
+44,4,9,44,2,3,66.0,4,0,fb3f230e,Chelsea,Tottenham,True
+64,5,18,28,2,3,66.0,1,0,fb95c6a0,Aston Villa,Everton,True
+60,4,15,27,6,8,75.0,1,0,fbd2a96b,Newcastle,Aston Villa,True
+57,4,14,29,2,2,100.0,2,0,fbe78f2d,Leeds United,Brentford,True
+52,4,13,31,3,3,100.0,1,0,fc45a8b2,Fulham,Manchester Utd,True
+59,7,13,54,1,2,50.0,3,0,fd2bfdd0,Sunderland,Crystal Palace,True
+41,2,8,25,3,3,100.0,0,0,fe212874,Sunderland,Wolves,True
+56,9,25,36,5,9,55.0,2,0,fe812068,Manchester Utd,Bournemouth,True
+19,0,3,0,3,4,75.0,2,0,fed27aaa,Burnley,Liverpool,True
+52,3,13,23,5,7,71.0,1,0,fefcfa2d,Brentford,Brighton,True
+48,4,13,31,0,0,,0,0,ffa0f139,Brentford,Fulham,True
+53,2,7,29,2,5,40.0,4,0,0032e7a3,Sunderland,West Ham,False
+38,3,6,50,5,6,83.0,5,0,0050df89,Burnley,Manchester Utd,False
+61,5,14,36,0,2,0.0,3,0,0061259a,Aston Villa,Wolves,False
+40,3,6,50,3,6,50.0,6,0,009bbc59,Brighton,Manchester City,False
+56,6,14,43,3,4,75.0,0,0,02dbe729,Liverpool,Everton,False
+36,2,5,40,4,6,66.0,3,1,03f6bccd,Wolves,Fulham,False
+47,4,13,31,5,7,71.0,1,0,061afa51,Nottingham,Brighton,False
+48,4,8,50,3,5,60.0,1,0,0676a57a,Nottingham,Bournemouth,False
+51,3,10,30,3,5,60.0,3,0,06bb7d71,Sunderland,Tottenham,False
+46,1,7,14,2,3,66.0,2,0,0701e218,Everton,Leeds United,False
+35,3,9,33,4,7,57.0,0,0,07b4b588,Everton,Arsenal,False
+41,6,13,46,6,8,75.0,2,0,07dfce00,Everton,Crystal Palace,False
+60,5,17,29,1,2,50.0,5,0,08780759,Fulham,Crystal Palace,False
+56,5,9,56,0,0,,0,0,090b47a6,Liverpool,West Ham,False
+55,5,14,36,2,2,100.0,2,0,095133fe,Manchester City,Bournemouth,False
+36,0,3,0,5,8,62.0,2,0,098d4b9c,Wolves,Chelsea,False
+51,8,14,57,1,1,100.0,1,0,0b316a86,Arsenal,Leeds United,False
+57,4,13,31,1,3,33.0,3,0,0bad74e2,Brighton,Everton,False
+57,6,15,40,2,4,50.0,2,0,0da8e4de,Manchester Utd,Aston Villa,False
+39,3,8,38,9,11,81.0,2,1,0dc41c01,Crystal Palace,Manchester Utd,False
+38,6,20,30,1,1,100.0,4,0,0e30cf4b,Bournemouth,Tottenham,False
+50,3,9,33,1,1,100.0,3,0,0e41702d,Brighton,Aston Villa,False
+50,4,8,50,3,5,60.0,2,0,0e46b968,Fulham,Everton,False
+49,5,12,42,5,7,71.0,2,0,0f6b6849,Fulham,Newcastle,False
+49,3,14,21,5,6,83.0,4,0,1163f46d,West Ham,Everton,False
+49,3,9,33,2,3,66.0,2,0,116cff7d,Wolves,Tottenham,False
+48,4,9,44,5,6,83.0,4,0,117c4cab,Wolves,Aston Villa,False
+52,3,11,27,4,4,100.0,3,0,11883630,Manchester Utd,Everton,False
+58,6,17,35,3,3,100.0,4,0,1314f9fd,Brighton,Wolves,False
+29,1,5,20,5,7,71.0,2,0,1340e41a,Everton,Manchester City,False
+46,1,10,10,6,9,66.0,1,0,136b19eb,Fulham,Arsenal,False
+31,2,4,50,4,4,100.0,2,0,148c23a6,Leeds United,Liverpool,False
+43,3,18,17,2,3,66.0,3,0,15b707b3,Crystal Palace,West Ham,False
+32,6,9,67,4,4,100.0,1,0,1666070b,Sunderland,Liverpool,False
+68,1,7,14,5,7,71.0,3,0,185626e2,Manchester City,Manchester Utd,False
+46,4,9,44,1,1,100.0,1,0,1b93b08a,West Ham,Crystal Palace,False
+39,6,10,60,4,4,100.0,5,0,1b9afc4b,Nottingham,Sunderland,False
+52,3,7,43,3,4,75.0,0,0,1c8203d0,Sunderland,Everton,False
+65,3,9,33,2,3,66.0,1,0,1c8e3956,Manchester Utd,West Ham,False
+35,1,7,14,8,10,80.0,2,1,1de9b261,Tottenham,Manchester Utd,False
+55,5,10,50,0,1,0.0,5,0,1e039e05,Tottenham,Aston Villa,False
+51,8,13,62,1,2,50.0,0,0,1e17ace9,Newcastle,Everton,False
+37,1,8,13,2,6,33.0,0,1,1f7cfc5f,Sunderland,Manchester City,False
+59,3,7,43,3,5,60.0,3,0,1fd7d0d8,Newcastle,Crystal Palace,False
+47,4,12,33,3,6,50.0,1,0,200f4acc,Fulham,Bournemouth,False
+33,3,5,60,2,3,66.0,2,0,2045939c,Manchester City,Arsenal,False
+46,6,14,43,3,5,60.0,3,1,21522578,Chelsea,Fulham,False
+26,7,15,47,3,4,75.0,0,0,2180fc9b,Nottingham,Liverpool,False
+29,4,12,33,2,3,66.0,3,0,2185fc64,Crystal Palace,Chelsea,False
+47,4,12,33,1,2,50.0,1,0,22326a55,Fulham,Sunderland,False
+39,7,12,58,2,3,66.0,3,0,224feca9,Wolves,Crystal Palace,False
+64,4,12,33,5,9,55.0,2,0,224ff314,Chelsea,Everton,False
+53,4,18,22,2,3,66.0,4,0,2324c097,Manchester City,Aston Villa,False
+59,3,9,33,3,5,60.0,3,0,236e3e4c,West Ham,Leeds United,False
+55,5,16,31,5,9,55.0,1,0,2392e965,Liverpool,Aston Villa,False
+66,7,18,39,4,6,66.0,1,0,23cb8016,Aston Villa,Burnley,False
+51,2,12,17,0,1,0.0,4,0,23ee8b09,Nottingham,Fulham,False
+75,4,21,19,3,6,50.0,1,0,2446cca5,Manchester City,Everton,False
+32,0,4,0,3,5,60.0,2,0,266bddc6,West Ham,Arsenal,False
+58,4,16,25,0,3,0.0,3,0,269b2844,Tottenham,Bournemouth,False
+66,5,18,28,5,8,62.0,2,0,26e5ca72,Liverpool,Brentford,False
+34,4,12,33,1,2,50.0,2,0,27fb98e5,Burnley,Chelsea,False
+43,7,11,64,5,7,71.0,0,0,28244556,Burnley,Wolves,False
+28,2,6,33,5,5,100.0,3,1,291c58ad,Brentford,Aston Villa,False
+47,3,8,38,2,3,66.0,1,0,295b388b,Brentford,Fulham,False
+42,8,12,67,3,3,100.0,0,0,299beb27,West Ham,Nottingham,False
+52,0,8,0,4,4,100.0,2,0,2b794de5,Liverpool,Arsenal,False
+63,4,5,80,1,3,33.0,3,0,2c75d21a,Liverpool,Newcastle,False
+42,4,14,29,2,3,66.0,3,0,2cd65ee9,Leeds United,Everton,False
+48,6,17,35,3,3,100.0,1,0,2d580ed7,Brighton,Nottingham,False
+36,3,8,38,1,3,33.0,1,0,2d7aef82,Burnley,Crystal Palace,False
+45,5,9,56,3,6,50.0,2,1,2daef12e,Burnley,Fulham,False
+45,3,11,27,4,6,66.0,2,0,2dbd7fbd,Fulham,Chelsea,False
+50,1,10,10,1,2,50.0,2,0,2dfc43ad,Everton,Tottenham,False
+54,8,12,67,0,0,,1,0,2e2f2939,Arsenal,Burnley,False
+62,3,22,14,2,2,100.0,0,0,2e682c02,Bournemouth,Burnley,False
+61,6,16,38,2,4,50.0,5,0,2ed2a547,Brighton,West Ham,False
+57,8,15,53,3,4,75.0,2,0,2f844910,Chelsea,Aston Villa,False
+47,7,14,50,0,3,0.0,3,0,2ffa2be0,Crystal Palace,Liverpool,False
+65,4,8,50,4,4,100.0,3,0,30618752,Liverpool,Tottenham,False
+52,1,6,17,3,6,50.0,3,0,30741081,Tottenham,Nottingham,False
+66,2,12,17,2,2,100.0,2,0,318b1da4,Newcastle,Wolves,False
+60,2,7,29,2,3,66.0,2,0,33167c49,Arsenal,Brentford,False
+57,7,22,32,1,1,100.0,1,0,3322a47b,Brentford,West Ham,False
+42,2,11,18,3,5,60.0,0,0,33f5c26d,Everton,Chelsea,False
+61,3,15,20,0,0,,1,0,345215db,Arsenal,Nottingham,False
+65,7,17,41,0,2,0.0,1,0,34884979,Arsenal,Sunderland,False
+37,3,7,43,0,2,0.0,2,0,34e802eb,Fulham,Tottenham,False
+55,3,8,38,5,6,83.0,5,0,384f3785,Chelsea,Sunderland,False
+47,3,8,38,2,3,66.0,3,0,38b3efe9,Bournemouth,Arsenal,False
+36,4,10,40,3,5,60.0,2,0,3ad15355,Brentford,Brighton,False
+59,2,11,18,2,2,100.0,4,0,3b97170d,Tottenham,Wolves,False
+42,4,10,40,2,4,50.0,1,0,3c399f5e,Everton,Wolves,False
+56,6,7,86,1,2,50.0,4,0,3c79be9f,Brentford,Wolves,False
+41,1,9,11,4,7,57.0,1,0,3d4d50ca,West Ham,Aston Villa,False
+37,8,11,73,2,3,66.0,3,0,3ddb49f0,Aston Villa,Chelsea,False
+44,3,9,33,3,4,75.0,3,0,3e588df8,Tottenham,Leeds United,False
+47,2,9,22,3,6,50.0,2,0,3eb865bb,Aston Villa,Manchester Utd,False
+68,4,14,29,4,4,100.0,1,0,3f843d94,Manchester City,Sunderland,False
+47,4,7,57,1,2,50.0,2,0,3fccfdc9,Everton,Brighton,False
+50,2,5,40,4,7,57.0,1,0,40e608f4,Leeds United,Brighton,False
+47,4,7,57,2,2,100.0,0,0,4234aaa9,Tottenham,Everton,False
+56,4,15,27,2,2,100.0,3,0,424b7408,Fulham,West Ham,False
+56,5,15,33,2,2,100.0,3,0,43c673dd,Chelsea,Burnley,False
+62,4,8,50,3,4,75.0,6,0,455c69b8,Arsenal,Chelsea,False
+44,4,6,67,5,6,83.0,1,0,45650a33,Leeds United,Wolves,False
+37,6,14,43,3,8,37.0,2,0,460a6353,Leeds United,Newcastle,False
+54,0,5,0,2,2,100.0,3,0,46ba2256,Fulham,Nottingham,False
+30,4,16,25,7,8,87.0,2,0,472071fa,Wolves,Burnley,False
+45,3,16,19,3,3,100.0,5,0,488d99a3,Everton,Fulham,False
+45,2,5,40,3,5,60.0,1,0,4907f8ee,Burnley,Everton,False
+53,4,13,31,3,5,60.0,6,0,4972e40c,Chelsea,Newcastle,False
+47,4,19,21,3,5,60.0,0,0,49d03039,Fulham,Liverpool,False
+58,3,10,30,4,6,66.0,1,0,4ac6e328,Brighton,Tottenham,False
+45,7,14,50,2,4,50.0,2,0,4ad6111d,Everton,Brentford,False
+57,1,9,11,0,2,0.0,1,0,4e287736,Sunderland,Burnley,False
+71,2,12,17,3,4,75.0,1,0,4e615d10,Aston Villa,Sunderland,False
+27,5,10,50,1,4,25.0,2,0,4ef85729,Nottingham,Aston Villa,False
+54,2,7,29,4,6,66.0,2,0,4f95517c,Newcastle,Fulham,False
+46,1,5,20,2,5,40.0,1,0,4fe3e679,Nottingham,Arsenal,False
+51,10,20,50,4,7,57.0,2,0,512bb3b3,Bournemouth,Brentford,False
+43,2,3,67,4,8,50.0,3,0,51a5792d,Tottenham,Arsenal,False
+48,4,9,44,7,7,100.0,3,0,535a977f,Bournemouth,Wolves,False
+53,3,14,21,3,5,60.0,1,0,53a69c4e,Aston Villa,Leeds United,False
+32,2,9,22,5,8,62.0,3,0,53db8cb5,Burnley,Manchester City,False
+62,4,12,33,7,9,77.0,2,0,55587dfc,Newcastle,West Ham,False
+43,3,8,38,3,4,75.0,4,0,55fbbbe6,Wolves,Newcastle,False
+44,3,9,33,2,2,100.0,2,0,560a0a6c,Tottenham,Brentford,False
+48,2,6,33,1,4,25.0,2,0,5615f800,Burnley,Brentford,False
+34,3,7,43,5,8,62.0,1,0,56b82593,West Ham,Manchester City,False
+46,1,13,8,2,4,50.0,3,0,574b356f,Tottenham,Fulham,False
+38,1,6,17,5,7,71.0,1,0,576f681d,Brentford,Arsenal,False
+60,7,12,58,3,4,75.0,1,0,57b35843,Chelsea,West Ham,False
+50,2,7,29,3,4,75.0,3,0,57c49bae,Fulham,Brighton,False
+44,6,16,38,2,5,40.0,1,0,58356b12,Nottingham,Leeds United,False
+31,2,3,67,2,2,100.0,4,0,5914e624,Wolves,Arsenal,False
+33,4,6,67,3,5,60.0,1,0,59f26cd9,Nottingham,Chelsea,False
+64,8,18,44,3,3,100.0,1,0,5b6c0657,Manchester City,Chelsea,False
+40,3,10,30,5,7,71.0,0,0,5ca5500a,Leeds United,Bournemouth,False
+43,2,4,50,4,6,66.0,3,0,5cd7ef12,Sunderland,Fulham,False
+43,2,9,22,1,3,33.0,3,0,5da72d0e,Everton,Liverpool,False
+47,4,11,36,5,6,83.0,3,0,5edb7f11,Bournemouth,Everton,False
+40,1,4,25,3,3,100.0,3,0,6053da7e,Manchester Utd,Chelsea,False
+37,7,13,54,3,4,75.0,0,0,6126fdae,Tottenham,Liverpool,False
+71,2,14,14,2,5,40.0,1,0,6218f36c,Chelsea,Leeds United,False
+52,4,13,31,4,6,66.0,3,0,637d95da,West Ham,Brentford,False
+39,3,9,33,7,7,100.0,4,0,643d26fd,Arsenal,Manchester Utd,False
+55,4,12,33,1,2,50.0,3,0,6512ce95,Wolves,Everton,False
+35,3,11,27,3,4,75.0,2,0,66fee216,West Ham,Manchester Utd,False
+49,7,11,64,2,2,100.0,1,0,68316553,Manchester Utd,Brighton,False
+57,6,14,43,2,3,66.0,2,0,6857b94e,Manchester Utd,Crystal Palace,False
+51,3,5,60,2,5,40.0,2,0,686d660a,Sunderland,Arsenal,False
+43,4,18,22,1,2,50.0,0,0,68c62e00,Leeds United,Brentford,False
+30,1,3,33,6,6,100.0,0,1,69a9c9a3,Everton,Manchester Utd,False
+33,6,17,35,2,3,66.0,1,0,6abcb6e9,Bournemouth,Chelsea,False
+64,4,15,27,3,3,100.0,4,0,6d9cd398,Arsenal,West Ham,False
+45,3,13,23,2,2,100.0,3,0,6e2749c6,Everton,Bournemouth,False
+51,3,10,30,1,1,100.0,2,0,6f03844a,Nottingham,Wolves,False
+34,2,7,29,1,1,100.0,0,0,6f5cb4ab,Nottingham,Brentford,False
+53,4,10,40,2,2,100.0,0,0,6f6574df,Liverpool,Nottingham,False
+59,7,18,39,1,3,33.0,1,0,6f99be65,Manchester Utd,Nottingham,False
+52,4,11,36,1,4,25.0,4,0,7345f259,Fulham,Aston Villa,False
+51,1,5,20,4,7,57.0,3,0,7398b723,Newcastle,Brentford,False
+51,4,11,36,2,7,28.0,2,0,7457ff50,West Ham,Liverpool,False
+54,5,12,42,4,7,57.0,5,0,74a9797c,Liverpool,Brighton,False
+55,4,17,24,3,5,60.0,1,0,7517b26a,Bournemouth,Nottingham,False
+46,2,8,25,3,7,42.0,3,0,753e73e5,Newcastle,Liverpool,False
+49,3,4,75,0,4,0.0,2,0,756bc106,Burnley,Nottingham,False
+51,4,11,36,5,8,62.0,1,0,757ec96c,Nottingham,Manchester Utd,False
+40,2,7,29,2,3,66.0,1,0,7710fcb8,Arsenal,Brighton,False
+43,3,10,30,3,4,75.0,0,0,776b0a40,Manchester Utd,Arsenal,False
+47,2,12,17,4,6,66.0,2,0,780d534e,Liverpool,Chelsea,False
+35,3,11,27,6,6,100.0,2,0,78970349,Sunderland,Nottingham,False
+43,4,11,36,1,3,33.0,1,0,79495c07,Leeds United,Tottenham,False
+66,7,19,37,1,3,33.0,1,0,79e52ce5,Liverpool,Wolves,False
+48,5,8,63,4,7,57.0,4,0,7a0ab06b,Bournemouth,Crystal Palace,False
+54,3,16,19,3,5,60.0,1,0,7c25388b,Newcastle,Brighton,False
+47,2,8,25,4,7,57.0,3,0,7c5f15be,Tottenham,Newcastle,False
+41,3,9,33,2,5,40.0,2,0,7e3c19a1,Arsenal,Manchester City,False
+51,9,20,45,2,4,50.0,1,0,7e8f51ca,Newcastle,Burnley,False
+55,2,15,13,2,3,66.0,1,0,7ecdefc0,Manchester Utd,Leeds United,False
+54,7,17,41,3,4,75.0,4,0,7fa414c3,Manchester City,Liverpool,False
+47,4,6,67,5,5,100.0,1,0,80ab7be1,West Ham,Burnley,False
+54,6,16,38,5,6,83.0,0,0,8104e9be,Newcastle,Nottingham,False
+47,2,8,25,2,3,66.0,0,0,810c0cb9,Aston Villa,Tottenham,False
+64,3,12,25,5,7,71.0,2,0,810d81e7,Manchester City,Brighton,False
+53,1,8,13,4,5,80.0,5,0,8179bcb9,Fulham,Leeds United,False
+34,3,10,30,0,0,,3,0,82c4b5d5,Leeds United,Crystal Palace,False
+39,0,5,0,2,3,66.0,3,0,8363c605,Burnley,Arsenal,False
+48,2,6,33,3,5,60.0,4,0,8398bbef,Brighton,Bournemouth,False
+43,4,11,36,1,6,16.0,1,0,83f0391d,Manchester City,Fulham,False
+56,3,23,13,2,2,100.0,0,0,854a0e6b,Liverpool,Sunderland,False
+45,3,10,30,2,5,40.0,2,0,855f8b5e,Brentford,Nottingham,False
+48,6,15,40,6,9,66.0,2,0,857d7924,Leeds United,Manchester Utd,False
+76,2,17,12,1,2,50.0,2,0,860c7af2,Aston Villa,Brentford,False
+59,4,15,27,3,3,100.0,2,0,8613020d,Manchester City,Wolves,False
+52,2,5,40,2,2,100.0,1,0,86786c01,Brentford,Bournemouth,False
+64,5,14,36,4,4,100.0,1,0,86c7261a,Tottenham,West Ham,False
+44,6,14,43,4,4,100.0,2,0,8751f2e2,Sunderland,Brighton,False
+59,4,7,57,1,3,33.0,2,0,88b3c085,Aston Villa,West Ham,False
+62,6,7,86,4,4,100.0,0,0,88d54a65,Manchester City,Crystal Palace,False
+50,8,15,53,5,7,71.0,3,0,88e53add,Crystal Palace,Everton,False
+40,5,10,50,2,2,100.0,2,1,89538ca1,Bournemouth,Fulham,False
+53,3,11,27,3,7,42.0,3,0,89b4ea51,Aston Villa,Arsenal,False
+50,6,13,46,4,5,80.0,1,0,8a4e78e0,Brighton,Burnley,False
+72,4,20,20,5,7,71.0,3,0,8a5edb7f,Liverpool,Crystal Palace,False
+57,6,10,60,5,7,71.0,2,0,8aa8dc76,Chelsea,Crystal Palace,False
+70,4,10,40,1,1,100.0,2,0,8c0ee359,Manchester City,Brentford,False
+53,4,12,33,3,4,75.0,2,0,8c18f2a7,Brighton,Sunderland,False
+66,5,16,31,1,2,50.0,2,0,8d38f2e5,Manchester City,Nottingham,False
+69,5,13,38,2,3,66.0,0,0,8de20e5a,Fulham,Wolves,False
+40,1,7,14,2,3,66.0,0,0,8e08b6c9,Crystal Palace,Arsenal,False
+56,0,5,0,3,5,60.0,4,0,8e2fb73d,Burnley,Sunderland,False
+45,6,15,40,0,0,,2,0,8f2a6c20,Everton,Burnley,False
+40,7,17,41,3,4,75.0,6,0,91a43688,Sunderland,Newcastle,False
+56,3,14,21,3,7,42.0,2,0,91b6a5b2,Wolves,West Ham,False
+45,5,14,36,3,5,60.0,2,1,92da9022,Manchester Utd,Bournemouth,False
+49,1,11,9,4,4,100.0,3,0,92e59b6f,Manchester Utd,Sunderland,False
+68,0,6,0,5,8,62.0,0,0,9364f40b,West Ham,Wolves,False
+63,5,16,31,0,0,,0,0,94eefc1d,Arsenal,Fulham,False
+58,4,10,40,0,2,0.0,1,0,96241478,Arsenal,Wolves,False
+65,2,6,33,1,2,50.0,3,0,96c4864b,Brentford,Crystal Palace,False
+44,10,14,71,4,7,57.0,2,0,96d69898,Aston Villa,Brighton,False
+46,0,6,0,4,9,44.0,1,0,98622df4,Chelsea,Brighton,False
+40,3,5,60,2,4,50.0,4,0,987e9f89,Burnley,Brighton,False
+42,3,8,38,2,3,66.0,3,0,989daed4,Chelsea,Manchester City,False
+47,4,6,67,6,8,75.0,2,0,993fe4a5,Fulham,Burnley,False
+42,7,8,88,3,3,100.0,2,0,99b853a8,Nottingham,Tottenham,False
+47,1,4,25,5,7,71.0,4,0,9a4fd973,Brentford,Tottenham,False
+46,3,12,25,2,3,66.0,4,0,9a65e248,Bournemouth,Newcastle,False
+58,7,16,44,3,6,50.0,2,0,9a904d13,Burnley,West Ham,False
+50,1,14,7,2,4,50.0,2,0,9b6b7eac,Brighton,Liverpool,False
+65,2,13,15,1,1,100.0,2,0,9bf2aba0,Arsenal,Everton,False
+49,3,11,27,3,6,50.0,1,0,9c19f0b3,Sunderland,Brentford,False
+57,6,17,35,2,3,66.0,0,0,9c510880,Leeds United,Sunderland,False
+30,3,11,27,6,6,100.0,0,0,9e232624,Everton,Nottingham,False
+42,3,3,100,3,4,75.0,0,0,9f1131fe,Crystal Palace,Burnley,False
+39,3,10,30,6,10,60.0,2,0,a071faa8,Bournemouth,Liverpool,False
+56,3,11,27,1,3,33.0,4,0,a0cc665c,Everton,West Ham,False
+47,3,9,33,2,8,25.0,3,0,a105af33,Crystal Palace,Leeds United,False
+51,1,7,14,2,6,33.0,4,0,a126a64c,Liverpool,Manchester City,False
+40,3,9,33,5,5,100.0,4,0,a13b6a4b,West Ham,Fulham,False
+57,5,17,29,5,9,55.0,2,0,a190da2c,Brighton,Manchester Utd,False
+30,6,11,55,3,6,50.0,2,1,a2d7d043,West Ham,Chelsea,False
+69,4,19,21,1,3,33.0,1,0,a31356f3,Leeds United,Burnley,False
+58,1,9,11,3,4,75.0,3,0,a3984be1,Nottingham,Crystal Palace,False
+41,1,6,17,3,4,75.0,4,1,a515fb3a,Wolves,Bournemouth,False
+59,1,5,20,2,4,50.0,5,1,a562da13,Chelsea,Manchester Utd,False
+59,2,10,20,0,2,0.0,1,0,a5b3e9ba,Liverpool,Fulham,False
+52,1,7,14,2,2,100.0,3,0,a624dc89,Aston Villa,Everton,False
+55,7,11,64,4,6,66.0,2,0,a67dd0e7,Brentford,Everton,False
+67,3,14,21,0,1,0.0,3,0,a68e5dc6,Crystal Palace,Nottingham,False
+66,8,19,42,1,1,100.0,0,0,a895fed0,Brighton,Leeds United,False
+67,6,15,40,2,3,66.0,1,0,a8e11f0c,Chelsea,Wolves,False
+62,5,13,38,3,6,50.0,2,0,a9037198,Liverpool,Manchester Utd,False
+52,3,9,33,5,8,62.0,3,0,a951ce95,Burnley,Leeds United,False
+55,3,13,23,3,4,75.0,2,0,aaff013b,Newcastle,Arsenal,False
+46,3,10,30,3,3,100.0,2,0,ab8543fb,Leeds United,Fulham,False
+67,4,14,29,2,5,40.0,1,0,accb3a02,Liverpool,Bournemouth,False
+54,5,15,33,0,2,0.0,2,0,ad299900,Brentford,Chelsea,False
+47,3,8,38,5,6,83.0,3,0,ad61fc31,Brighton,Arsenal,False
+45,2,5,40,2,4,50.0,1,0,ad74e791,Manchester Utd,Tottenham,False
+30,1,3,33,4,4,100.0,3,0,aebc568f,Sunderland,Leeds United,False
+37,3,7,43,10,10,100.0,2,0,aecf5052,Wolves,Nottingham,False
+59,3,9,33,3,5,60.0,5,0,afbe13a4,Chelsea,Arsenal,False
+67,3,16,19,2,3,66.0,1,0,aff462b8,Newcastle,Manchester Utd,False
+47,1,11,9,2,3,66.0,2,0,b0005978,Arsenal,Liverpool,False
+33,5,7,71,3,3,100.0,2,0,b0544110,Newcastle,Chelsea,False
+48,7,11,64,1,2,50.0,3,0,b15e7296,Tottenham,Sunderland,False
+34,4,9,44,2,4,50.0,1,0,b329ca7b,Wolves,Liverpool,False
+48,4,13,31,4,8,50.0,2,0,b333094b,Bournemouth,Aston Villa,False
+48,5,12,42,2,3,66.0,0,0,b35e6512,Aston Villa,Manchester City,False
+41,3,12,25,2,3,66.0,5,0,b3a3df9a,Brighton,Chelsea,False
+50,6,17,35,2,2,100.0,4,0,b3ac7e40,Chelsea,Nottingham,False
+41,1,11,9,5,7,71.0,3,0,b4262b3c,Crystal Palace,Newcastle,False
+28,2,6,33,1,4,25.0,2,0,b435bf00,Crystal Palace,Manchester City,False
+28,1,5,20,3,6,50.0,2,0,b77bb459,Wolves,Brighton,False
+51,3,6,50,2,3,66.0,4,0,b8728f43,Chelsea,Liverpool,False
+47,5,21,24,1,2,50.0,2,0,bacd18c5,Newcastle,Tottenham,False
+67,5,14,36,2,2,100.0,3,0,baf5cbeb,Manchester City,Leeds United,False
+39,2,8,25,2,3,66.0,2,0,bb37daa2,Everton,Sunderland,False
+30,4,9,44,3,7,42.0,4,0,bbad5618,Nottingham,Manchester City,False
+59,3,16,19,3,3,100.0,1,0,bbdf4739,Newcastle,Aston Villa,False
+57,2,8,25,1,1,100.0,1,0,bc110e0b,Newcastle,Leeds United,False
+40,2,11,18,7,8,87.0,3,0,bd48c230,Brentford,Liverpool,False
+33,4,14,29,3,4,75.0,4,0,be7eca24,Leeds United,Aston Villa,False
+43,4,11,36,5,6,83.0,2,0,bf3cb7a6,Wolves,Manchester Utd,False
+42,5,16,31,1,3,33.0,3,0,bf61d4e7,Crystal Palace,Brentford,False
+61,3,15,20,4,6,66.0,3,0,bf964dbb,Manchester City,Tottenham,False
+38,4,9,44,6,9,66.0,1,0,bfa73051,Leeds United,Manchester City,False
+37,5,11,45,3,4,75.0,0,0,c0ececfd,Crystal Palace,Fulham,False
+55,7,16,44,2,5,40.0,3,0,c0fc0aac,Liverpool,Leeds United,False
+46,3,10,30,2,4,50.0,3,0,c15115cb,Aston Villa,Liverpool,False
+54,3,10,30,3,6,50.0,1,0,c2217a56,Leeds United,Nottingham,False
+34,2,4,50,2,4,50.0,4,0,c2e2594b,Leeds United,Chelsea,False
+63,11,18,61,2,4,50.0,0,0,c4255de6,Tottenham,Burnley,False
+67,4,13,31,4,6,66.0,3,0,c569f7f7,Brighton,Newcastle,False
+46,5,11,45,1,4,25.0,2,0,c576b069,Brentford,Newcastle,False
+50,5,13,38,2,4,50.0,1,0,c6401377,Brighton,Fulham,False
+61,4,11,36,5,5,100.0,2,0,c6875359,Chelsea,Bournemouth,False
+50,7,10,70,3,7,42.0,3,0,c874d7e6,Sunderland,Aston Villa,False
+52,4,10,40,1,1,100.0,3,0,c90ed936,Crystal Palace,Wolves,False
+52,9,15,60,1,1,100.0,2,0,cb498e0b,Chelsea,Tottenham,False
+59,3,7,43,3,5,60.0,3,0,cbe24427,Nottingham,Everton,False
+37,4,12,33,5,6,83.0,2,0,cbec79a5,Manchester Utd,Liverpool,False
+52,5,8,63,4,8,50.0,2,0,cc77588b,Bournemouth,Manchester City,False
+41,2,4,50,7,10,70.0,2,0,cce1ef93,Brentford,Manchester City,False
+42,4,6,67,4,4,100.0,3,0,cd51ed93,Crystal Palace,Aston Villa,False
+58,5,10,50,3,3,100.0,1,0,cd5c0387,Bournemouth,West Ham,False
+27,1,7,14,8,11,72.0,2,0,cf2163fd,Burnley,Liverpool,False
+31,4,10,40,6,7,85.0,1,0,cfda878f,Sunderland,Chelsea,False
+61,7,17,41,2,3,66.0,1,0,d0233f18,Arsenal,Crystal Palace,False
+37,4,7,57,2,2,100.0,3,0,d16c9a31,Crystal Palace,Brighton,False
+71,6,24,25,0,1,0.0,2,0,d18bda53,Manchester City,West Ham,False
+44,3,14,21,2,5,40.0,1,0,d1da1b85,Fulham,Manchester City,False
+34,5,9,56,4,7,57.0,3,0,d29535da,Everton,Newcastle,False
+59,5,12,42,6,8,75.0,2,0,d2fc69e6,Bournemouth,Leeds United,False
+45,8,15,53,4,7,57.0,3,0,d3152ac7,West Ham,Newcastle,False
+58,6,14,43,3,6,50.0,1,0,d35c00df,Fulham,Manchester Utd,False
+32,4,14,29,3,6,50.0,0,0,d41bb8b3,Burnley,Tottenham,False
+65,9,28,32,1,1,100.0,0,0,d4c039e0,Manchester City,Burnley,False
+64,10,27,37,1,2,50.0,2,0,d52338cb,Manchester Utd,Wolves,False
+42,2,10,20,6,7,85.0,4,1,d6666d63,Sunderland,Wolves,False
+58,3,7,43,2,2,100.0,4,0,d6740601,Brighton,Crystal Palace,False
+51,1,7,14,3,5,60.0,2,0,d7832ab6,Crystal Palace,Bournemouth,False
+66,6,16,38,3,4,75.0,2,0,d8104c65,Chelsea,Brentford,False
+65,10,30,33,0,1,0.0,0,0,d85506f2,Manchester Utd,Burnley,False
+61,7,20,35,4,5,80.0,1,0,d8c5bce1,Arsenal,Tottenham,False
+55,4,12,33,3,6,50.0,4,0,d90d2b6c,Brentford,Manchester Utd,False
+47,4,7,57,7,9,77.0,1,0,d946c716,Aston Villa,Bournemouth,False
+38,4,8,50,2,2,100.0,2,0,da05abe0,Tottenham,Crystal Palace,False
+57,5,12,42,1,3,33.0,1,0,db124c87,Arsenal,Bournemouth,False
+45,2,5,40,5,7,71.0,1,0,db870461,Burnley,Aston Villa,False
+38,4,8,50,4,5,80.0,2,0,ddcde425,Sunderland,Bournemouth,False
+58,3,13,23,5,9,55.0,3,0,df8c12d9,Leeds United,West Ham,False
+45,7,13,54,5,7,71.0,5,0,dfba2599,Newcastle,Manchester City,False
+53,5,13,38,3,3,100.0,0,0,e0b5b423,Nottingham,West Ham,False
+63,4,12,33,2,5,40.0,1,0,e1058522,West Ham,Sunderland,False
+57,6,18,33,3,6,50.0,5,1,e118da78,Bournemouth,Sunderland,False
+49,3,8,38,4,6,66.0,4,0,e33ea33d,Sunderland,Manchester Utd,False
+48,4,5,80,7,9,77.0,4,0,e33f1657,Nottingham,Newcastle,False
+61,1,10,10,5,6,83.0,2,0,e38ffa68,Aston Villa,Fulham,False
+44,0,6,0,6,6,100.0,1,0,e3cade07,Sunderland,Crystal Palace,False
+63,8,17,47,4,5,80.0,1,0,e523c1cd,Nottingham,Burnley,False
+32,5,14,36,4,4,100.0,2,0,e5c1f07b,West Ham,Brighton,False
+31,3,9,33,6,7,85.0,2,1,e5ed4270,Burnley,Newcastle,False
+64,7,20,35,2,3,66.0,1,0,e851cb5c,Arsenal,Newcastle,False
+32,1,3,33,0,5,0.0,2,0,e8724659,Leeds United,Arsenal,False
+36,1,11,9,2,4,50.0,3,0,ebde1961,Wolves,Manchester City,False
+55,5,14,36,3,5,60.0,3,0,ef9a5f6d,Manchester Utd,Newcastle,False
+68,4,17,24,3,5,60.0,3,0,efd005dc,Manchester City,Newcastle,False
+54,2,6,33,1,1,100.0,4,0,f0108982,Newcastle,Sunderland,False
+46,4,7,57,1,3,33.0,2,0,f03152d1,Brentford,Sunderland,False
+44,2,7,29,3,6,50.0,1,0,f039597c,Wolves,Leeds United,False
+34,2,12,17,4,5,80.0,3,0,f118b5cb,Bournemouth,Brighton,False
+51,4,13,31,1,3,33.0,4,0,f206e250,Wolves,Brentford,False
+35,1,4,25,0,1,0.0,1,0,f248c97b,Burnley,Bournemouth,False
+55,2,12,17,3,6,50.0,0,0,f2b1061a,Manchester Utd,Manchester City,False
+59,5,12,42,4,4,100.0,2,0,f2dc47b8,Aston Villa,Nottingham,False
+38,4,17,24,5,6,83.0,3,0,f320a9c9,West Ham,Tottenham,False
+60,4,9,44,3,4,75.0,2,0,f4ad79f6,Crystal Palace,Tottenham,False
+44,1,4,25,2,2,100.0,1,0,f55b1b65,Newcastle,Bournemouth,False
+59,3,15,20,5,5,100.0,0,0,f5a77398,Aston Villa,Crystal Palace,False
+24,2,5,40,10,10,100.0,2,0,f5c9621e,West Ham,Bournemouth,False
+53,9,15,60,4,6,66.0,2,0,f6d068df,Arsenal,Aston Villa,False
+39,5,12,42,4,4,100.0,4,0,f7e2c9c7,Tottenham,Manchester City,False
+58,7,16,44,1,3,33.0,2,0,f8fc799f,Brentford,Burnley,False
+56,6,14,43,5,8,62.0,2,0,f96a49ea,Manchester Utd,Brentford,False
+64,3,11,27,2,4,50.0,2,0,fa03feeb,Tottenham,Brighton,False
+56,3,9,33,2,4,50.0,3,0,fb3f230e,Tottenham,Chelsea,False
+37,3,9,33,5,5,100.0,2,0,fb95c6a0,Everton,Aston Villa,False
+40,8,14,57,4,4,100.0,2,0,fbd2a96b,Aston Villa,Newcastle,False
+43,2,6,33,4,4,100.0,0,0,fbe78f2d,Brentford,Leeds United,False
+49,3,10,30,2,4,50.0,1,0,fc45a8b2,Manchester Utd,Fulham,False
+41,2,6,33,5,7,71.0,3,0,fd2bfdd0,Crystal Palace,Sunderland,False
+59,3,16,19,1,2,50.0,0,0,fe212874,Wolves,Sunderland,False
+44,9,14,64,5,9,55.0,3,0,fe812068,Bournemouth,Manchester Utd,False
+81,4,27,15,0,0,,2,0,fed27aaa,Liverpool,Burnley,False
+48,7,11,64,3,3,100.0,2,0,fefcfa2d,Brighton,Brentford,False
+52,0,11,0,4,4,100.0,1,0,ffa0f139,Fulham,Brentford,False

@@ -41,6 +41,15 @@ def get_team_lookup() -> dict:
     return {t["id"]: t["name"] for t in teams}
 
 
+def get_team_short_name_lookup() -> dict:
+    """FPL's own official 3-letter team codes (e.g. 'ARS', 'MUN') —
+    same bootstrap-static call, just capturing short_name too."""
+    r = requests.get(BOOTSTRAP_URL, timeout=REQUEST_TIMEOUT)
+    r.raise_for_status()
+    teams = r.json()["teams"]
+    return {t["name"]: t["short_name"] for t in teams}
+
+
 def get_fixtures() -> list:
     log.info("Fetching fixtures...")
     r = requests.get(FIXTURES_URL, timeout=REQUEST_TIMEOUT)
@@ -48,15 +57,20 @@ def get_fixtures() -> list:
     return r.json()
 
 
-def build_fixtures_df(fixtures: list, team_lookup: dict) -> pd.DataFrame:
+def build_fixtures_df(fixtures: list, team_lookup: dict, short_name_lookup: dict = None) -> pd.DataFrame:
+    short_name_lookup = short_name_lookup or {}
     rows = []
     for f in fixtures:
+        home_team = team_lookup.get(f.get("team_h"))
+        away_team = team_lookup.get(f.get("team_a"))
         rows.append({
             "fixture_id": f.get("id"),
             "gameweek": f.get("event"),  # None for fixtures not yet scheduled into a gameweek
             "kickoff_time": f.get("kickoff_time"),
-            "home_team": team_lookup.get(f.get("team_h")),
-            "away_team": team_lookup.get(f.get("team_a")),
+            "home_team": home_team,
+            "away_team": away_team,
+            "home_team_short": short_name_lookup.get(home_team, home_team),
+            "away_team_short": short_name_lookup.get(away_team, away_team),
             "home_team_difficulty": f.get("team_h_difficulty"),  # FPL's own 1-5 difficulty rating
             "away_team_difficulty": f.get("team_a_difficulty"),
             "finished": f.get("finished"),
@@ -116,12 +130,13 @@ def detect_blank_and_double_gameweeks(upcoming: pd.DataFrame, team_lookup: dict)
 
 def main():
     team_lookup = get_team_lookup()
+    short_name_lookup = get_team_short_name_lookup()
     log.info("Teams found: %d", len(team_lookup))
 
     fixtures = get_fixtures()
     log.info("Total fixtures: %d", len(fixtures))
 
-    df = build_fixtures_df(fixtures, team_lookup)
+    df = build_fixtures_df(fixtures, team_lookup, short_name_lookup)
 
     all_path = OUTPUT_DIR / "fixtures_all.csv"
     df.to_csv(all_path, index=False)

@@ -715,6 +715,52 @@ def main():
 
     print("Building current player and team snapshots...")
     player_snapshot = get_latest_player_snapshot(df)
+
+    # Filter to genuinely CURRENT roster members only. Reconciliation
+    # redirects players who are STILL in the league to their correct
+    # new ID, but it doesn't remove anyone — a player who's genuinely
+    # left the league entirely (retired, transferred out, relegated
+    # with their old team) never matches anything in the current
+    # roster and just sits in the historical data under their old,
+    # untouched ID forever. Left unfiltered, get_latest_player_snapshot
+    # includes them anyway with stale, outdated team info — confirmed
+    # on real data: 890 "current" players when the actual roster only
+    # has 558. Anyone not genuinely on today's roster gets dropped here.
+    if "roster_for_reconciliation" in locals():
+        before_count = len(player_snapshot)
+        current_roster_ids = set(roster_for_reconciliation["player_id"])
+        player_snapshot = player_snapshot[player_snapshot["player_id"].isin(current_roster_ids)]
+        dropped = before_count - len(player_snapshot)
+        if dropped > 0:
+            print(f"  Dropped {dropped} players no longer on any current team's roster "
+                  f"(left the league, retired, or transferred out — their historical data "
+                  f"was never a reconciliation target since nobody currently shares their name).")
+
+        # Reconciliation fixes player_id but NOT team/position — a
+        # player's historical rows still say whatever club they were at
+        # LAST season, even after being correctly matched to their
+        # current roster entry. Confirmed on real data: reconciled
+        # players who transferred to a DIFFERENT club still in the
+        # league (e.g. Liverpool players who moved elsewhere) kept
+        # showing their old team. Overwrite with the roster's
+        # authoritative current values for anyone genuinely reconciled.
+        roster_lookup = roster_for_reconciliation.set_index("player_id")
+        team_updates = 0
+        for idx in player_snapshot.index:
+            pid = player_snapshot.at[idx, "player_id"]
+            if pid in roster_lookup.index:
+                current_team = roster_lookup.at[pid, "team"]
+                if player_snapshot.at[idx, "team"] != current_team:
+                    player_snapshot.at[idx, "team"] = current_team
+                    team_updates += 1
+                if "position" in roster_lookup.columns:
+                    player_snapshot.at[idx, "position"] = roster_lookup.at[pid, "position"]
+        if team_updates > 0:
+            print(f"  Corrected {team_updates} players' team field to their current club "
+                  f"(reconciliation matches the right PERSON, but doesn't update team/position "
+                  f"on its own — this fixes cases like a player showing their old club after "
+                  f"transferring elsewhere within the league).")
+
     player_snapshot = add_missing_roster_players(player_snapshot, df)
     player_snapshot = apply_cold_start_priors(player_snapshot, df)
     team_stats = get_latest_team_snapshot(df)
@@ -768,6 +814,31 @@ def main():
     summed = result.groupby(["player_id", "player_name", "team", "position", "gameweek"], as_index=False)[
         component_cols
     ].sum()
+
+    # Opponent + home/away — taken from the FIRST fixture per
+    # (player, gameweek) group. For a genuine double gameweek this only
+    # shows one of the two opponents, same documented simplification
+    # already accepted above for the probability columns — rare enough
+    # not to be worth the complexity of showing both.
+    opponent_cols = [c for c in ["opponent_team", "was_home_int"] if c in result.columns]
+    if opponent_cols:
+        opponent_info = result.groupby(["player_id", "gameweek"], as_index=False)[opponent_cols].first()
+        summed = summed.merge(opponent_info, on=["player_id", "gameweek"], how="left")
+
+        # FPL's official 3-letter team code, not a hand-typed guess —
+        # falls back to the full name if a fixtures file with short
+        # codes hasn't been generated yet (older extract_fixtures.py run)
+        fixtures_path = Path("data/raw/fixtures_all.csv")
+        if fixtures_path.exists():
+            fixtures_ref = pd.read_csv(fixtures_path)
+            short_name_map = {}
+            if "home_team" in fixtures_ref.columns and "home_team_short" in fixtures_ref.columns:
+                short_name_map.update(dict(zip(fixtures_ref["home_team"], fixtures_ref["home_team_short"])))
+            if "away_team" in fixtures_ref.columns and "away_team_short" in fixtures_ref.columns:
+                short_name_map.update(dict(zip(fixtures_ref["away_team"], fixtures_ref["away_team_short"])))
+            summed["opponent_short"] = summed["opponent_team"].map(short_name_map).fillna(summed["opponent_team"])
+        else:
+            summed["opponent_short"] = summed["opponent_team"]
 
     # price and ownership are STATIC per-player attributes, not per-fixture
     # contributions — merged in separately rather than summed (summing a

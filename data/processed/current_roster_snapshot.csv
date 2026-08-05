@@ -168,6 +168,9 @@ player_id,player_name,full_name,team,position,price
 168,Marc Guiu,Marc Guiu Paz,Chelsea,FWD,50
 169,Mheuka,Shumaira Mheuka,Chelsea,FWD,45
 170,Emegha,Emmanuel Emegha,Chelsea,FWD,50
+200,Lacroix,Maxence Lacroix,Chelsea,DEF,60
+560,Penders,Mike Penders,Chelsea,GK,45
+561,Anselmino,Aaron Anselmino,Chelsea,DEF,45
 104,Onyeka,Frank Onyeka,Coventry City,MID,50
 171,Dovin,Oliver Dovin,Coventry City,GK,40
 172,Wilson,Ben Wilson,Coventry City,GK,45
@@ -198,7 +201,6 @@ player_id,player_name,full_name,team,position,price
 197,Bassette,Norman Bassette,Coventry City,FWD,45
 198,Henderson,Dean Henderson,Crystal Palace,GK,50
 199,Benitez,Walter Benítez,Crystal Palace,GK,45
-200,Lacroix,Maxence Lacroix,Crystal Palace,DEF,60
 201,Muñoz,Daniel Muñoz Mejía,Crystal Palace,DEF,55
 202,Richards,Chris Richards,Crystal Palace,DEF,50
 203,Canvot,Jaydee Canvot,Crystal Palace,DEF,50
@@ -297,6 +299,7 @@ player_id,player_name,full_name,team,position,price
 298,Destan,Enis Destan,Hull City,FWD,45
 299,Burstow,Mason Burstow,Hull City,FWD,45
 556,Targett,Matt Targett,Hull City,DEF,40
+563,Morita,Hidemasa Morita,Hull City,MID,50
 259,Diop,Issa Diop,Ipswich Town,DEF,40
 300,Walton,Christian Walton,Ipswich Town,GK,45
 301,Palmer,Alex Palmer,Ipswich Town,GK,40
@@ -324,6 +327,8 @@ player_id,player_name,full_name,team,position,price
 323,McAteer,Kasey McAteer,Ipswich Town,MID,45
 324,Mehmeti,Anis Mehmeti,Ipswich Town,MID,50
 554,Van Oevelen,Kayne van Oevelen,Ipswich Town,GK,45
+562,Maeda,Daizen Maeda,Ipswich Town,MID,55
+564,Scherpen,Kjell Scherpen,Ipswich Town,GK,45
 260,Wilson,Harry Wilson,Leeds,MID,65
 326,Perri,Lucas Estella Perri,Leeds,GK,45
 327,Bijol,Jaka Bijol,Leeds,DEF,50
@@ -469,6 +474,7 @@ player_id,player_name,full_name,team,position,price
 464,Wissa,Yoane Wissa,Newcastle,FWD,60
 465,Osula,William Osula,Newcastle,FWD,60
 466,Neave,Sean Neave,Newcastle,FWD,45
+559,Bamba,Aladji Bamba,Newcastle,MID,50
 467,Sels,Matz Sels,Nott'm Forest,GK,50
 468,John,John Victor Maciel Furtado,Nott'm Forest,GK,45
 469,N.Williams,Neco Williams,Nott'm Forest,DEF,50
