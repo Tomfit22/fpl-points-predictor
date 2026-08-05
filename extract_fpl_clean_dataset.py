@@ -234,6 +234,29 @@ print(df.head())
 # SAVE
 # -----------------------------
 output_path = OUTPUT_DIR / "fpl_clean_dataset.csv"
+
+# SAFETY GUARD: refuse to overwrite existing good data with an empty
+# result. This happens for real — confirmed on 2026-07-24 — when FPL's
+# bootstrap-static resets to a new season's player list before any
+# gameweeks have actually been played, meaning every player's history
+# is genuinely empty. Silently saving that over a complete prior
+# dataset is real, avoidable data loss, not just an inconvenience.
+if len(df) == 0:
+    if output_path.exists():
+        print(f"\n{'*' * 70}")
+        print(f"REFUSING TO SAVE: 0 rows collected, but {output_path} already exists "
+              f"with real data. This almost always means the new season's player list "
+              f"has loaded but no gameweeks have been played yet (per-gameweek history "
+              f"is empty for everyone). NOT overwriting your existing data.")
+        print(f"Once the new season actually starts, this will work normally again.")
+        print(f"{'*' * 70}")
+    else:
+        print("\n0 rows collected and no existing file to protect — saving empty "
+              "result anyway so downstream steps fail loudly rather than silently.")
+        df.to_csv(output_path, index=False)
+    import sys
+    sys.exit(1 if output_path.exists() else 0)
+
 df.to_csv(output_path, index=False)
 
 print(f"\nSaved dataset to: {output_path}")
@@ -242,10 +265,19 @@ print("\nDataset shape:", df.shape)
 # -----------------------------
 # QUICK CHECK
 # -----------------------------
-print("\nPoints comparison:")
-print(df[["actual_points", "calculated_points"]].head(10))
+# An empty dataset here is EXPECTED and CORRECT during preseason —
+# no gameweeks have been played yet, so there's genuinely no
+# per-gameweek data to extract. This isn't a failure; the dataset was
+# already saved successfully above. Only run the points-comparison
+# sanity check when there's actually something to check.
+if df.empty or "actual_points" not in df.columns or "calculated_points" not in df.columns:
+    print("\n(No gameweek data yet — skipping points-comparison check. "
+          "This is expected before the season's first gameweek has been played.)")
+else:
+    print("\nPoints comparison:")
+    print(df[["actual_points", "calculated_points"]].head(10))
 
-mismatches = df[df["actual_points"] != df["calculated_points"]]
-print(f"\nRows where calculated points != actual points: {len(mismatches)} / {len(df)}")
-if len(mismatches) > 0:
-    print(mismatches[["player_name", "gameweek", "actual_points", "calculated_points"]].head(20))
+    mismatches = df[df["actual_points"] != df["calculated_points"]]
+    print(f"\nRows where calculated points != actual points: {len(mismatches)} / {len(df)}")
+    if len(mismatches) > 0:
+        print(mismatches[["player_name", "gameweek", "actual_points", "calculated_points"]].head(20))
