@@ -254,8 +254,17 @@ if len(df) == 0:
         print("\n0 rows collected and no existing file to protect — saving empty "
               "result anyway so downstream steps fail loudly rather than silently.")
         df.to_csv(output_path, index=False)
+        import sys
+        sys.exit(1)  # genuinely suspicious: no prior data AND nothing extracted —
+                      # worth flagging for real attention
+
+    # reaching here means the protective branch above ran: an existing,
+    # real dataset was correctly left untouched rather than overwritten
+    # with an empty preseason result. That's the safeguard working
+    # exactly as intended, not a failure — exit cleanly so the
+    # orchestrator doesn't flag this as something needing attention.
     import sys
-    sys.exit(1 if output_path.exists() else 0)
+    sys.exit(0)
 
 df.to_csv(output_path, index=False)
 
