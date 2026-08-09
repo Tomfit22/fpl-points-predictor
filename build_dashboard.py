@@ -159,10 +159,10 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   table { width: max-content; min-width: 100%; border-collapse: collapse; background: var(--surface); }
   thead th {
     text-align: left;
-    font-size: 11px;
-    letter-spacing: 0.06em;
+    font-size: 10px;
+    letter-spacing: 0.05em;
     color: var(--fog);
-    padding: 12px 14px;
+    padding: 10px 9px;
     border-bottom: 1px solid var(--border);
     background: var(--surface-2);
   }
@@ -170,7 +170,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     background: none; border: none; color: inherit; font: inherit;
     cursor: pointer; padding: 0; text-transform: uppercase; letter-spacing: 0.06em;
   }
-  tbody td { padding: 11px 14px; border-bottom: 1px solid var(--border); font-size: 14px; }
+  tbody td { padding: 9px 9px; border-bottom: 1px solid var(--border); font-size: 13px; }
   .td-fixtures { white-space: nowrap; }
   tbody tr:last-child td { border-bottom: none; }
   tbody tr:hover { background: var(--surface-2); }
@@ -210,6 +210,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     </div>
     <select class="team-select" id="teamFilter">
       <option value="ALL">All teams</option>
+    </select>
+    <select class="team-select" id="priceFilter">
+      <option value="ALL">Any price</option>
     </select>
     <input class="search" id="search" type="text" placeholder="Search player or team&hellip;">
   </div>
@@ -329,7 +332,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     ]
   };
 
-  let state = { pos: 'ALL', team: 'ALL', query: '', sortKey: 'predicted_points', sortDir: -1 };
+  let state = { pos: 'ALL', team: 'ALL', query: '', priceMin: null, priceMax: null, sortKey: 'predicted_points', sortDir: -1 };
 
   function formatCell(row, col) {
     const val = row[col.key];
@@ -413,7 +416,13 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   function render() {
     var cols = COLUMN_SETS[state.pos];
     let rows = DATA.filter(function(r) {
-      return (state.pos === 'ALL' || r.position === state.pos) && (state.team === 'ALL' || r.team === state.team);
+      var posOk = (state.pos === 'ALL' || r.position === state.pos);
+      var teamOk = (state.team === 'ALL' || r.team === state.team);
+      var price = r.value != null ? r.value / 10 : null;  // stored in tenths of a million
+      var priceOk = true;
+      if (state.priceMin != null) priceOk = priceOk && price != null && price >= state.priceMin;
+      if (state.priceMax != null) priceOk = priceOk && price != null && price < state.priceMax;
+      return posOk && teamOk && priceOk;
     });
     if (state.query) {
       var q = state.query.toLowerCase();
@@ -477,6 +486,33 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     });
     select.addEventListener('change', function(e) {
       state.team = e.target.value;
+      render();
+    });
+  })();
+
+  (function populatePriceFilter() {
+    var prices = DATA.map(function(r) { return r.value != null ? r.value / 10 : null; }).filter(function(p) { return p != null; });
+    if (prices.length === 0) return;
+    var lo = Math.floor(Math.min.apply(null, prices) * 2) / 2;  // round down to nearest 0.5
+    var hi = Math.ceil(Math.max.apply(null, prices) * 2) / 2;   // round up to nearest 0.5
+    var select = document.getElementById('priceFilter');
+    for (var p = lo; p < hi; p += 0.5) {
+      var bandMin = Math.round(p * 10) / 10;
+      var bandMax = Math.round((p + 0.5) * 10) / 10;
+      var opt = document.createElement('option');
+      opt.value = bandMin + '-' + bandMax;
+      opt.textContent = '\u00A3' + bandMin.toFixed(1) + 'm \u2013 \u00A3' + bandMax.toFixed(1) + 'm';
+      select.appendChild(opt);
+    }
+    select.addEventListener('change', function(e) {
+      if (e.target.value === 'ALL') {
+        state.priceMin = null;
+        state.priceMax = null;
+      } else {
+        var parts = e.target.value.split('-');
+        state.priceMin = parseFloat(parts[0]);
+        state.priceMax = parseFloat(parts[1]);
+      }
       render();
     });
   })();
