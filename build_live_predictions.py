@@ -369,8 +369,9 @@ def reconcile_player_ids(df: pd.DataFrame, roster: pd.DataFrame) -> pd.DataFrame
         print(f"\n*** {len(ambiguous)} name(s) matched MULTIPLE historical players even after "
               f"full-name/position tie-breaking — left UNCHANGED rather than guessed at (real "
               f"risk of merging two different people's history, same issue found earlier with "
-              f"two different real 'Onana's). Review manually if these players' predictions "
-              f"look off: ***")
+              f"two different real 'Onana's). NO ACTION NEEDED — they still appear on the "
+              f"dashboard automatically, just using price-based estimation instead of their "
+              f"real linked history for this one player, same as any brand-new signing: ***")
         for name, team, candidates in ambiguous:
             print(f"  {name} ({team}): {len(candidates)} possible historical matches")
 
@@ -728,8 +729,26 @@ def main():
     # has 558. Anyone not genuinely on today's roster gets dropped here.
     if "roster_for_reconciliation" in locals():
         before_count = len(player_snapshot)
-        current_roster_ids = set(roster_for_reconciliation["player_id"])
-        player_snapshot = player_snapshot[player_snapshot["player_id"].isin(current_roster_ids)]
+
+        # Checking id membership ALONE is unsafe — the exact same
+        # ID-coincidence problem already found and fixed for
+        # reconciliation. FPL renumbers ids every season, so a
+        # DEPARTED player's old id can coincidentally equal a
+        # completely different CURRENT player's new id — letting the
+        # departed player's own name/data slip straight through an
+        # id-only filter. Requiring the NAME to also match closes this.
+        roster_id_to_name = dict(zip(
+            roster_for_reconciliation["player_id"],
+            roster_for_reconciliation["player_name"].apply(normalize_name),
+        ))
+
+        def is_genuinely_current(row):
+            pid = row["player_id"]
+            if pid not in roster_id_to_name:
+                return False
+            return normalize_name(row["player_name"]) == roster_id_to_name[pid]
+
+        player_snapshot = player_snapshot[player_snapshot.apply(is_genuinely_current, axis=1)]
         dropped = before_count - len(player_snapshot)
         if dropped > 0:
             print(f"  Dropped {dropped} players no longer on any current team's roster "
@@ -876,6 +895,25 @@ def main():
         except ImportError:
             print("  (estimate_ownership.py not found — skipping ownership % calculation, "
                   "raw 'selected' counts still available)")
+
+        # FPL's own directly-published LIVE percentage beats the
+        # squad-composition ESTIMATE wherever it's available — the
+        # estimate exists specifically for historical gameweeks FPL
+        # doesn't retroactively publish, not for right-now data.
+        roster_path = PROCESSED_DIR / "current_roster_snapshot.csv"
+        if roster_path.exists():
+            live_roster = pd.read_csv(roster_path)
+            if "ownership_pct_live" in live_roster.columns:
+                live_lookup = live_roster.set_index("player_id")["ownership_pct_live"]
+                overridden = 0
+                for idx in summed.index:
+                    pid = summed.at[idx, "player_id"]
+                    if pid in live_lookup.index:
+                        summed.at[idx, "ownership_pct"] = live_lookup.at[pid]
+                        overridden += 1
+                if overridden > 0:
+                    print(f"  Using FPL's own live ownership % (not the squad-composition "
+                          f"estimate) for {overridden} players with current roster data.")
 
     output_path = PROCESSED_DIR / "live_predictions.csv"
     summed.sort_values("predicted_points", ascending=False).to_csv(output_path, index=False)
