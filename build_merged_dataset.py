@@ -149,17 +149,36 @@ def apply_position_history(df: pd.DataFrame) -> pd.DataFrame:
 
 def main():
     fpl_path = DATA_DIR / "fpl_clean_dataset.csv"
-    if not fpl_path.exists() or fpl_path.stat().st_size == 0:
-        print(f"\n{fpl_path} is empty — expected during preseason before any real "
-              f"gameweek data exists yet (the extraction step correctly refuses to "
-              f"overwrite good data with an empty preseason result, but there's "
-              f"genuinely nothing new to merge in until real games have been played). "
-              f"Skipping — the existing merged_player_gameweek.csv and downstream "
-              f"model_ready_dataset.csv are untouched and still valid for predictions.")
+
+    def preseason_skip_message():
+        print(f"\n{fpl_path} has no usable data — expected during preseason before "
+              f"any real gameweek data exists yet (the extraction step correctly "
+              f"refuses to overwrite good data with an empty preseason result, but "
+              f"there's genuinely nothing new to merge in until real games have been "
+              f"played). Skipping — the existing merged_player_gameweek.csv and "
+              f"downstream model_ready_dataset.csv are untouched and still valid "
+              f"for predictions.")
+
+    if not fpl_path.exists():
+        preseason_skip_message()
         return
 
-    df = build_merged_dataset()
+    # Catching the actual pandas error directly here, rather than trying
+    # to predict every possible way a file can be "empty" from its file
+    # properties beforehand (confirmed on real data: a file can have
+    # nonzero size — e.g. a stray blank line — while still being
+    # functionally unparseable, which a simple size==0 check misses).
+    try:
+        df = build_merged_dataset()
+    except pd.errors.EmptyDataError:
+        preseason_skip_message()
+        return
+
     df = apply_position_history(df)
+
+    if len(df) == 0:
+        preseason_skip_message()
+        return
 
     output_path = PROCESSED_DIR / "merged_player_gameweek.csv"
     df.to_csv(output_path, index=False)
