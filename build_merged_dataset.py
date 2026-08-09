@@ -148,6 +148,16 @@ def apply_position_history(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def main():
+    fpl_path = DATA_DIR / "fpl_clean_dataset.csv"
+    if not fpl_path.exists() or fpl_path.stat().st_size == 0:
+        print(f"\n{fpl_path} is empty — expected during preseason before any real "
+              f"gameweek data exists yet (the extraction step correctly refuses to "
+              f"overwrite good data with an empty preseason result, but there's "
+              f"genuinely nothing new to merge in until real games have been played). "
+              f"Skipping — the existing merged_player_gameweek.csv and downstream "
+              f"model_ready_dataset.csv are untouched and still valid for predictions.")
+        return
+
     df = build_merged_dataset()
     df = apply_position_history(df)
 
