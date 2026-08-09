@@ -885,6 +885,30 @@ def main():
     if static_cols:
         summed = summed.merge(player_snapshot[["player_id"] + static_cols], on="player_id", how="left")
 
+    # 'value' above comes from each player's LAST HISTORICAL row, which
+    # for most players is still last season's final price — not their
+    # current, live price. Override with the roster's real current
+    # price wherever available, same id+name-safe pattern as ownership
+    # and ICT below (an id-only lookup is the exact bug already found
+    # and fixed for the roster filter).
+    roster_path_for_price = PROCESSED_DIR / "current_roster_snapshot.csv"
+    if roster_path_for_price.exists():
+        price_roster = pd.read_csv(roster_path_for_price)
+        if "price" in price_roster.columns:
+            roster_id_to_name_price = dict(zip(price_roster["player_id"],
+                                                price_roster["player_name"].apply(normalize_name)))
+            price_lookup = price_roster.set_index("player_id")["price"]
+            price_updates = 0
+            for idx in summed.index:
+                pid = summed.at[idx, "player_id"]
+                if (pid in roster_id_to_name_price
+                        and roster_id_to_name_price[pid] == normalize_name(summed.at[idx, "player_name"])):
+                    summed.at[idx, "value"] = price_lookup.at[pid]
+                    price_updates += 1
+            if price_updates > 0:
+                print(f"  Using current LIVE price (not last season's final price) for "
+                      f"{price_updates} players.")
+
     # genuine ownership % via the squad-composition estimator — 'selected'
     # alone is just a raw manager count; this converts it into a real
     # percentage using FPL's fixed squad rules (2 GK/5 DEF/5 MID/3 FWD)
@@ -914,6 +938,46 @@ def main():
                 if overridden > 0:
                     print(f"  Using FPL's own live ownership % (not the squad-composition "
                           f"estimate) for {overridden} players with current roster data.")
+
+    # ICT Index — FPL's own composite metric, shown informationally
+    # alongside our own predicted_points as a second opinion, not fed
+    # into the model (see build_current_roster_snapshot.py for why).
+    # Same id+name safety check as everywhere else — an id-only lookup
+    # is exactly the bug already found and fixed for the roster filter.
+    roster_path = PROCESSED_DIR / "current_roster_snapshot.csv"
+    if roster_path.exists():
+        live_roster = pd.read_csv(roster_path)
+        if "ict_index" in live_roster.columns:
+            roster_id_to_name_ict = dict(zip(live_roster["player_id"],
+                                              live_roster["player_name"].apply(normalize_name)))
+            ict_lookup = live_roster.set_index("player_id")["ict_index"]
+            summed["ict_index"] = summed.apply(
+                lambda row: ict_lookup.at[row["player_id"]]
+                if row["player_id"] in roster_id_to_name_ict
+                and roster_id_to_name_ict[row["player_id"]] == normalize_name(row["player_name"])
+                else None,
+                axis=1,
+            )
+
+    # Rank within position, BY GAMEWEEK — a player's predicted_points
+    # differs per gameweek (different opponent/difficulty), so rank
+    # needs computing per gameweek, not once across the whole season.
+    if "position" in summed.columns and "gameweek" in summed.columns:
+        summed["position_rank"] = (
+            summed.groupby(["position", "gameweek"])["predicted_points"]
+            .rank(ascending=False, method="min")
+            .astype(int)
+        )
+
+    # Forward-looking average predicted_points over the player's next 5
+    # gameweeks (including the current one) — smooths out one unusually
+    # good/bad single-fixture prediction, useful for judging a player
+    # over an upcoming stretch rather than just their next match.
+    if "player_id" in summed.columns and "gameweek" in summed.columns:
+        summed = summed.sort_values(["player_id", "gameweek"])
+        summed["next5_avg_points"] = summed.groupby("player_id")["predicted_points"].transform(
+            lambda s: s[::-1].rolling(window=5, min_periods=1).mean()[::-1]
+        )
 
     output_path = PROCESSED_DIR / "live_predictions.csv"
     summed.sort_values("predicted_points", ascending=False).to_csv(output_path, index=False)

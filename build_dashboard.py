@@ -156,7 +156,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   }
 
   .table-scroll { overflow-x: auto; border-radius: 12px; }
-  table { width: 100%; min-width: 480px; border-collapse: collapse; background: var(--surface); }
+  table { width: max-content; min-width: 100%; border-collapse: collapse; background: var(--surface); }
   thead th {
     text-align: left;
     font-size: 11px;
@@ -171,6 +171,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     cursor: pointer; padding: 0; text-transform: uppercase; letter-spacing: 0.06em;
   }
   tbody td { padding: 11px 14px; border-bottom: 1px solid var(--border); font-size: 14px; }
+  .td-fixtures { white-space: nowrap; }
   tbody tr:last-child td { border-bottom: none; }
   tbody tr:hover { background: var(--surface-2); }
   .num { font-family: 'IBM Plex Mono', monospace; text-align: right; }
@@ -244,6 +245,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       { key: 'ownership_pct', label: 'Owned %', type: 'ownership_pct' },
       { key: 'predicted_points', label: 'Points', type: 'pts' },
       { key: 'sim_range', label: 'Range', type: 'range' },
+      { key: 'position_rank', label: 'Pos Rank', type: 'rank' },
+      { key: 'next5_avg_points', label: 'Next 5 Avg', type: 'num2' },
+      { key: 'ict_index', label: 'ICT', type: 'num2' },
       { key: 'next_fixtures', label: 'Next 5', type: 'fixtures' }
     ],
     GK: [
@@ -259,6 +263,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       { key: 'ownership_pct', label: 'Owned %', type: 'ownership_pct' },
       { key: 'predicted_points', label: 'Points', type: 'pts' },
       { key: 'sim_range', label: 'Range', type: 'range' },
+      { key: 'position_rank', label: 'Pos Rank', type: 'rank' },
+      { key: 'next5_avg_points', label: 'Next 5 Avg', type: 'num2' },
+      { key: 'ict_index', label: 'ICT', type: 'num2' },
       { key: 'next_fixtures', label: 'Next 5', type: 'fixtures' }
     ],
     DEF: [
@@ -275,6 +282,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       { key: 'ownership_pct', label: 'Owned %', type: 'ownership_pct' },
       { key: 'predicted_points', label: 'Points', type: 'pts' },
       { key: 'sim_range', label: 'Range', type: 'range' },
+      { key: 'position_rank', label: 'Pos Rank', type: 'rank' },
+      { key: 'next5_avg_points', label: 'Next 5 Avg', type: 'num2' },
+      { key: 'ict_index', label: 'ICT', type: 'num2' },
       { key: 'next_fixtures', label: 'Next 5', type: 'fixtures' }
     ],
     MID: [
@@ -291,6 +301,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       { key: 'ownership_pct', label: 'Owned %', type: 'ownership_pct' },
       { key: 'predicted_points', label: 'Points', type: 'pts' },
       { key: 'sim_range', label: 'Range', type: 'range' },
+      { key: 'position_rank', label: 'Pos Rank', type: 'rank' },
+      { key: 'next5_avg_points', label: 'Next 5 Avg', type: 'num2' },
+      { key: 'ict_index', label: 'ICT', type: 'num2' },
       { key: 'next_fixtures', label: 'Next 5', type: 'fixtures' }
     ],
     // no CS% or DC% for forwards — clean sheets are worth 0 points for FWD,
@@ -309,6 +322,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       { key: 'ownership_pct', label: 'Owned %', type: 'ownership_pct' },
       { key: 'predicted_points', label: 'Points', type: 'pts' },
       { key: 'sim_range', label: 'Range', type: 'range' },
+      { key: 'position_rank', label: 'Pos Rank', type: 'rank' },
+      { key: 'next5_avg_points', label: 'Next 5 Avg', type: 'num2' },
+      { key: 'ict_index', label: 'ICT', type: 'num2' },
       { key: 'next_fixtures', label: 'Next 5', type: 'fixtures' }
     ]
   };
@@ -358,6 +374,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                ';border-color:' + color + '55;margin-right:3px;">' + code + ' ' + venue + '</span>';
       }).join('');
     }
+    if (col.type === 'rank') return (val != null) ? '#' + val : '\u2014';
     if (col.type === 'pct') return (val != null) ? (val * 100).toFixed(0) + '%' : '\\u2014';
     if (col.type === 'num2') return (val != null) ? val.toFixed(2) : '\\u2014';
     // price is stored in tenths of a million (FPL convention, e.g. 55 -> £5.5m)
