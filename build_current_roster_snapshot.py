@@ -49,6 +49,13 @@ def fetch_roster() -> pd.DataFrame:
             "team": team_lookup.get(el.get("team")),
             "position": POSITION_MAP.get(el.get("element_type")),
             "price": el.get("now_cost"),  # tenths of a million, e.g. 55 = £5.5m
+            # FPL's own directly-published LIVE ownership % — real,
+            # current, and exact. Not an estimate: the squad-composition
+            # trick in estimate_ownership.py is only needed for
+            # HISTORICAL gameweeks where FPL doesn't retroactively
+            # publish this; for right-now data, this is more accurate
+            # than reconstructing an estimate.
+            "ownership_pct_live": float(el.get("selected_by_percent", 0) or 0),
         })
     return pd.DataFrame(rows)
 
