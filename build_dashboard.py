@@ -116,6 +116,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   .strip-score { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 20px; }
 
   .controls { display: flex; gap: 10px; align-items: center; margin-bottom: 14px; flex-wrap: wrap; }
+  .fdr-key { display: flex; gap: 6px; align-items: center; margin-bottom: 14px; font-size: 12px; color: var(--fog); }
+  .fdr-key-label { margin-right: 4px; }
+  .fdr-chip { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 5px; color: white; font-weight: 600; font-size: 11px; }
   .tabs { display: flex; gap: 6px; }
   .tab {
     background: var(--surface);
@@ -217,6 +220,15 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <input class="search" id="search" type="text" placeholder="Search player or team&hellip;">
   </div>
 
+  <div class="fdr-key">
+    <span class="fdr-key-label">Fixture difficulty:</span>
+    <span class="fdr-chip" style="background:#1E8449">1</span>
+    <span class="fdr-chip" style="background:#2ECC71">2</span>
+    <span class="fdr-chip" style="background:#95A5A6">3</span>
+    <span class="fdr-chip" style="background:#E74C3C">4</span>
+    <span class="fdr-chip" style="background:#922B21">5</span>
+  </div>
+
   <div class="table-scroll">
   <table>
     <thead>
@@ -246,8 +258,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       { key: 'position', label: 'Pos', type: 'chip' },
       { key: 'value', label: 'Price', type: 'price' },
       { key: 'ownership_pct', label: 'Owned %', type: 'ownership_pct' },
-      { key: 'predicted_points', label: 'Points', type: 'pts' },
-      { key: 'sim_range', label: 'Range', type: 'range' },
+      { key: 'predicted_points', label: 'Predicted Points', type: 'pts' },
+      { key: 'sim_ceiling', label: 'Range', type: 'range' },
       { key: 'position_rank', label: 'Pos Rank', type: 'rank' },
       { key: 'next5_avg_points', label: 'Next 5 Avg', type: 'num2' },
       { key: 'ict_index', label: 'ICT', type: 'num2' },
@@ -264,8 +276,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       { key: 'pred_red_cards', label: 'Red%', type: 'pct' },
       { key: 'value', label: 'Price', type: 'price' },
       { key: 'ownership_pct', label: 'Owned %', type: 'ownership_pct' },
-      { key: 'predicted_points', label: 'Points', type: 'pts' },
-      { key: 'sim_range', label: 'Range', type: 'range' },
+      { key: 'predicted_points', label: 'Predicted Points', type: 'pts' },
+      { key: 'sim_ceiling', label: 'Range', type: 'range' },
       { key: 'position_rank', label: 'Pos Rank', type: 'rank' },
       { key: 'next5_avg_points', label: 'Next 5 Avg', type: 'num2' },
       { key: 'ict_index', label: 'ICT', type: 'num2' },
@@ -283,8 +295,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       { key: 'pred_red_cards', label: 'Red%', type: 'pct' },
       { key: 'value', label: 'Price', type: 'price' },
       { key: 'ownership_pct', label: 'Owned %', type: 'ownership_pct' },
-      { key: 'predicted_points', label: 'Points', type: 'pts' },
-      { key: 'sim_range', label: 'Range', type: 'range' },
+      { key: 'predicted_points', label: 'Predicted Points', type: 'pts' },
+      { key: 'sim_ceiling', label: 'Range', type: 'range' },
       { key: 'position_rank', label: 'Pos Rank', type: 'rank' },
       { key: 'next5_avg_points', label: 'Next 5 Avg', type: 'num2' },
       { key: 'ict_index', label: 'ICT', type: 'num2' },
@@ -302,8 +314,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       { key: 'pred_red_cards', label: 'Red%', type: 'pct' },
       { key: 'value', label: 'Price', type: 'price' },
       { key: 'ownership_pct', label: 'Owned %', type: 'ownership_pct' },
-      { key: 'predicted_points', label: 'Points', type: 'pts' },
-      { key: 'sim_range', label: 'Range', type: 'range' },
+      { key: 'predicted_points', label: 'Predicted Points', type: 'pts' },
+      { key: 'sim_ceiling', label: 'Range', type: 'range' },
       { key: 'position_rank', label: 'Pos Rank', type: 'rank' },
       { key: 'next5_avg_points', label: 'Next 5 Avg', type: 'num2' },
       { key: 'ict_index', label: 'ICT', type: 'num2' },
@@ -323,8 +335,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       { key: 'pred_red_cards', label: 'Red%', type: 'pct' },
       { key: 'value', label: 'Price', type: 'price' },
       { key: 'ownership_pct', label: 'Owned %', type: 'ownership_pct' },
-      { key: 'predicted_points', label: 'Points', type: 'pts' },
-      { key: 'sim_range', label: 'Range', type: 'range' },
+      { key: 'predicted_points', label: 'Predicted Points', type: 'pts' },
+      { key: 'sim_ceiling', label: 'Range', type: 'range' },
       { key: 'position_rank', label: 'Pos Rank', type: 'rank' },
       { key: 'next5_avg_points', label: 'Next 5 Avg', type: 'num2' },
       { key: 'ict_index', label: 'ICT', type: 'num2' },
@@ -365,9 +377,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       if (!fixtures || fixtures.length === 0) return '\u2014';
       const difficultyColor = (d) => {
         if (d == null) return '#7C8AA3';
-        if (d <= 2) return '#2ECC71';
-        if (d === 3) return '#95A5A6';
-        return '#E74C3C';
+        if (d === 1) return '#1E8449';   // dark green
+        if (d === 2) return '#2ECC71';   // light green
+        if (d === 3) return '#95A5A6';   // grey
+        if (d === 4) return '#E74C3C';   // red
+        return '#922B21';                // dark red (5)
       };
       return fixtures.map(function(fx) {
         var code = fx.opponent_short != null ? fx.opponent_short : '?';
