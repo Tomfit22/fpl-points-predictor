@@ -64,6 +64,8 @@ CS_FEATURES = ["own_season_goals_conceded", "own_roll5_goals_conceded",
                "own_season_ppda", "opp_season_ppda"]
 SAVES_FEATURES = ["season_saves", "own_season_shots_against", "opp_season_shots_for", "was_home_int"]
 MINUTES_FEATURES = ["roll5_minutes", "roll5_starts", "consecutive_starts", "days_since_last_game"]
+CARDS_FEATURES = ["season_CrdY", "roll5_CrdY", "was_home_int"]
+RED_CARDS_FEATURES = ["season_CrdR", "roll5_CrdR", "was_home_int"]
 
 
 def drop_zero_variance(df: pd.DataFrame, features: list) -> list:
@@ -97,7 +99,8 @@ def fit_minutes_model(df: pd.DataFrame, threshold: int):
     return sm.Logit(y, X).fit(disp=0), features
 
 
-def fit_poisson_by_position(df: pd.DataFrame, target: str, candidate_features: list, positions: list):
+def fit_poisson_by_position(df: pd.DataFrame, target: str, candidate_features: list, positions: list,
+                             weight_col: str = None):
     models = {}
     for position in positions:
         pos_df = df[df["position"] == position]
@@ -106,10 +109,49 @@ def fit_poisson_by_position(df: pd.DataFrame, target: str, candidate_features: l
             continue
         X = sm.add_constant(pos_df[features].fillna(0))
         try:
-            models[position] = (sm.GLM(pos_df[target], X, family=sm.families.Poisson()).fit(), features)
+            # freq_weights treats each row as N identical observations —
+            # used by cards specifically to weight 25/26 rows more
+            # heavily than 24/25 (see build_cards_training_data.py).
+            # weight_col=None (default) preserves EXISTING behavior
+            # exactly for goals/assists, which don't use this.
+            fit_kwargs = {}
+            if weight_col and weight_col in pos_df.columns:
+                fit_kwargs["freq_weights"] = pos_df[weight_col]
+            models[position] = (
+                sm.GLM(pos_df[target], X, family=sm.families.Poisson(), **fit_kwargs).fit(),
+                features,
+            )
         except Exception as e:
             print(f"  (skipping {target} model for {position}: {e})")
     return models
+
+
+def fit_cards_model(cards_training_path: str = "data/processed/cards_training_combined.csv"):
+    """Fits real Poisson models for yellow and red cards, per position,
+    on the combined 24/25 + 25/26 weighted training data — replacing
+    the naive roll5_CrdY passthrough that previously stood in for an
+    actual model. Returns (yellow_models, red_models); either can be
+    an empty dict if the training data isn't ready yet, in which case
+    the caller falls back to the naive rolling average rather than
+    predicting zero for everyone."""
+    path = Path(cards_training_path)
+    if not path.exists():
+        print(f"  {path} not found — run build_cards_training_data.py first. "
+              f"Falling back to the naive roll5_CrdY passthrough for now.")
+        return {}, {}
+
+    cards_df = pd.read_csv(path)
+    positions = ["GK", "DEF", "MID", "FWD"]
+
+    yellow_models = fit_poisson_by_position(
+        cards_df, "yellow_cards", CARDS_FEATURES, positions, weight_col="sample_weight"
+    )
+    red_models = fit_poisson_by_position(
+        cards_df, "red_cards", RED_CARDS_FEATURES, positions, weight_col="sample_weight"
+    )
+    print(f"  Cards model fitted: yellow -> {list(yellow_models.keys())}, "
+          f"red -> {list(red_models.keys())}")
+    return yellow_models, red_models
 
 
 def fit_dc_models(df: pd.DataFrame):
@@ -583,8 +625,16 @@ def predict_points(df: pd.DataFrame, components: dict, avg_bonus_when_played: fl
         X_saves = sm.add_constant(df.loc[save_mask, saves_features].fillna(0), has_constant="add")
         df.loc[save_mask, "pred_saves"] = saves_model.predict(X_saves)
 
-    df["pred_cards"] = df["roll5_CrdY"].fillna(0) if "roll5_CrdY" in df.columns else 0
-    df["pred_red_cards"] = df["roll5_CrdR"].fillna(0) if "roll5_CrdR" in df.columns else 0
+    # real fitted model where available; falls back to the naive rolling
+    # average only if fit_cards_model() couldn't fit anything (e.g. the
+    # training data hasn't been built yet) — never silently predicts
+    # zero across the board.
+    df["pred_cards"] = (predict_poisson_by_pos(components["cards_yellow"])
+                         if components["cards_yellow"]
+                         else (df["roll5_CrdY"].fillna(0) if "roll5_CrdY" in df.columns else 0))
+    df["pred_red_cards"] = (predict_poisson_by_pos(components["cards_red"])
+                             if components["cards_red"]
+                             else (df["roll5_CrdR"].fillna(0) if "roll5_CrdR" in df.columns else 0))
     # penalty saves: too rare to model properly (agreed early in this project) —
     # just use each keeper's own historical rate directly, not a fitted model
     df["pred_pens_saved"] = df["season_pens_saved"].fillna(0) if "season_pens_saved" in df.columns else 0.0
@@ -689,6 +739,7 @@ def run_monte_carlo_simulation(df: pd.DataFrame, avg_bonus_when_played: float,
 
 
 def main():
+    yellow_card_models, red_card_models = fit_cards_model()
     df = pd.read_csv(PROCESSED_DIR / "model_ready_dataset.csv")
     df = df[df["roll5_minutes"].notna()]
 
@@ -711,6 +762,8 @@ def main():
         "dc": fit_dc_models(df),
         "clean_sheet": fit_clean_sheet_model(df),
         "saves": fit_saves_model(df),
+        "cards_yellow": yellow_card_models,
+        "cards_red": red_card_models,
     }
     avg_bonus_when_played = df[df["minutes"] >= 60]["bonus"].mean() if "bonus" in df.columns else 0.3
 
