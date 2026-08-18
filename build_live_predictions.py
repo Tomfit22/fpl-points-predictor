@@ -66,6 +66,7 @@ SAVES_FEATURES = ["season_saves", "own_season_shots_against", "opp_season_shots_
 MINUTES_FEATURES = ["roll5_minutes", "roll5_starts", "consecutive_starts", "days_since_last_game"]
 CARDS_FEATURES = ["season_CrdY", "roll5_CrdY", "was_home_int"]
 RED_CARDS_FEATURES = ["season_CrdR", "roll5_CrdR", "was_home_int"]
+BONUS_FEATURES = ["roll5_bps", "season_bps", "roll5_CrdY", "roll5_minutes", "was_home_int"]
 
 
 def drop_zero_variance(df: pd.DataFrame, features: list) -> list:
@@ -177,6 +178,28 @@ def fit_dc_models(df: pd.DataFrame):
             print(f"  (standard MLE failed for {position} ({e}) — falling back to regularized fit)")
             model = sm.Logit(pos_df["hit"], X).fit_regularized(disp=0, alpha=0.1)
         models[position] = (model, features)
+    return models
+
+
+def fit_bonus_v2_model(bonus_training_path: str = "data/processed/bonus_training_combined.csv"):
+    """Fits a real per-player expected-bonus model (Poisson per
+    position) — validated on genuinely held-out data to beat the flat
+    position-average baseline by 13.9% MAE (see validate_bonus_v2.py).
+    Returns an empty dict if the training data isn't ready, in which
+    case the caller falls back to the per-position average rather than
+    predicting zero for everyone."""
+    path = Path(bonus_training_path)
+    if not path.exists():
+        print(f"  {path} not found — run build_bonus_training_data.py first. "
+              f"Falling back to the per-position bonus average for now.")
+        return {}
+
+    bonus_df = pd.read_csv(path)
+    positions = ["GK", "DEF", "MID", "FWD"]
+    models = fit_poisson_by_position(
+        bonus_df, "bonus", BONUS_FEATURES, positions, weight_col="sample_weight"
+    )
+    print(f"  Bonus v2 model fitted: {list(models.keys())}")
     return models
 
 
@@ -593,7 +616,7 @@ def build_fixture_rows(player_snapshot: pd.DataFrame, team_stats: dict, fixtures
 # =========================
 # PREDICT
 # =========================
-def predict_points(df: pd.DataFrame, components: dict, avg_bonus_by_position: dict, overall_avg_bonus: float) -> pd.DataFrame:
+def predict_points(df: pd.DataFrame, components: dict, avg_bonus_by_position: dict, overall_avg_bonus: float, bonus_v2_models: dict) -> pd.DataFrame:
     def predict_logit(model, features):
         X = sm.add_constant(df[features].fillna(0), has_constant="add")
         return pd.Series(model.predict(X), index=df.index)
@@ -650,7 +673,18 @@ def predict_points(df: pd.DataFrame, components: dict, avg_bonus_by_position: di
     save_pts = (df["pred_saves"] / 3) * df["pred_p_any_minutes"]
     pen_save_pts = df["pred_pens_saved"] * 5 * df["pred_p_any_minutes"]
     card_pts = -(df["pred_cards"] * 1 + df["pred_red_cards"] * 3) * df["pred_p_any_minutes"]
-    bonus_pts = df["position"].map(avg_bonus_by_position).fillna(overall_avg_bonus) * df["pred_p_60plus"]
+    # per-player bonus prediction where available (validated 13.9% MAE
+    # improvement over the flat position average — see
+    # validate_bonus_v2.py); falls back to the position average for any
+    # player missing the required rolling features (e.g. brand-new
+    # signings with no history yet), never silently zero
+    position_fallback_bonus = df["position"].map(avg_bonus_by_position).fillna(overall_avg_bonus)
+    if bonus_v2_models:
+        v2_bonus_pred = predict_poisson_by_pos(bonus_v2_models)
+        per_player_bonus = v2_bonus_pred.where(v2_bonus_pred.notna() & (v2_bonus_pred > 0), position_fallback_bonus)
+    else:
+        per_player_bonus = position_fallback_bonus
+    bonus_pts = per_player_bonus * df["pred_p_60plus"]
 
     df["predicted_points"] = appearance_pts + goal_pts + assist_pts + dc_pts + cs_pts + save_pts + pen_save_pts + card_pts + bonus_pts
 
@@ -745,6 +779,7 @@ def run_monte_carlo_simulation(df: pd.DataFrame, avg_bonus_by_position: dict, ov
 
 def main():
     yellow_card_models, red_card_models = fit_cards_model()
+    bonus_v2_models = fit_bonus_v2_model()
     df = pd.read_csv(PROCESSED_DIR / "model_ready_dataset.csv")
     df = df[df["roll5_minutes"].notna()]
 
@@ -892,7 +927,7 @@ def main():
               "the fixtures file and model_ready_dataset.csv.")
         return
 
-    result = predict_points(fixture_rows, components, avg_bonus_by_position, overall_avg_bonus)
+    result = predict_points(fixture_rows, components, avg_bonus_by_position, overall_avg_bonus, bonus_v2_models)
 
     print("Running Monte Carlo simulation (5,000 draws per player) for prediction ranges...")
     result = run_monte_carlo_simulation(result, avg_bonus_by_position, overall_avg_bonus)
