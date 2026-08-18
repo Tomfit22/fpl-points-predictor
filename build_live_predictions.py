@@ -593,7 +593,7 @@ def build_fixture_rows(player_snapshot: pd.DataFrame, team_stats: dict, fixtures
 # =========================
 # PREDICT
 # =========================
-def predict_points(df: pd.DataFrame, components: dict, avg_bonus_when_played: float) -> pd.DataFrame:
+def predict_points(df: pd.DataFrame, components: dict, avg_bonus_by_position: dict, overall_avg_bonus: float) -> pd.DataFrame:
     def predict_logit(model, features):
         X = sm.add_constant(df[features].fillna(0), has_constant="add")
         return pd.Series(model.predict(X), index=df.index)
@@ -650,7 +650,7 @@ def predict_points(df: pd.DataFrame, components: dict, avg_bonus_when_played: fl
     save_pts = (df["pred_saves"] / 3) * df["pred_p_any_minutes"]
     pen_save_pts = df["pred_pens_saved"] * 5 * df["pred_p_any_minutes"]
     card_pts = -(df["pred_cards"] * 1 + df["pred_red_cards"] * 3) * df["pred_p_any_minutes"]
-    bonus_pts = avg_bonus_when_played * df["pred_p_60plus"]
+    bonus_pts = df["position"].map(avg_bonus_by_position).fillna(overall_avg_bonus) * df["pred_p_60plus"]
 
     df["predicted_points"] = appearance_pts + goal_pts + assist_pts + dc_pts + cs_pts + save_pts + pen_save_pts + card_pts + bonus_pts
 
@@ -669,7 +669,7 @@ def predict_points(df: pd.DataFrame, components: dict, avg_bonus_when_played: fl
     return df
 
 
-def run_monte_carlo_simulation(df: pd.DataFrame, avg_bonus_when_played: float,
+def run_monte_carlo_simulation(df: pd.DataFrame, avg_bonus_by_position: dict, overall_avg_bonus: float,
                                 n_sims: int = 5000, random_seed: int = 42) -> pd.DataFrame:
     """
     Runs the SAME points formula as predict_points() above, but draws a
@@ -679,13 +679,17 @@ def run_monte_carlo_simulation(df: pd.DataFrame, avg_bonus_when_played: float,
     just one number, directly answering "how much variance/risk does
     this prediction actually carry."
 
-    Honest limitation: bonus has no real per-player distribution to draw
-    from (already proven bonus can't be reliably differentiated between
-    players — see build_bonus_predictions.py). It's added as a FIXED
-    amount conditional on playing 60+, matching the same expected value
-    as the deterministic formula, but contributing zero simulated
-    variance — better to be upfront about this than fake uncertainty we
-    don't actually have.
+    Honest limitation: bonus has no real PER-PLAYER distribution to draw
+    from (already proven exact bonus value can't be reliably predicted
+    per player — see "Bonus by pos.py" / "Bonus point pred.py": BPS
+    regression R²=0.082, doesn't beat a naive "always 0" baseline on
+    held-out data). It IS differentiated by POSITION now (forwards
+    genuinely earn more bonus than goalkeepers on average), but still
+    added as a FIXED amount conditional on playing 60+ WITHIN a
+    position — matching that position's expected value, but
+    contributing zero simulated variance within it. Better to be
+    upfront about this than fake player-level uncertainty we don't
+    actually have.
     """
     rng = np.random.default_rng(random_seed)
     n_players = len(df)
@@ -723,7 +727,8 @@ def run_monte_carlo_simulation(df: pd.DataFrame, avg_bonus_when_played: float,
     save_pts = (saves / 3) * played_any
     pen_save_pts = pen_saves * 5 * played_any
     card_pts = -(yellow.astype(float) * 1 + red.astype(float) * 3) * played_any
-    bonus_pts = avg_bonus_when_played * played_60.astype(float)
+    bonus_rate_per_player = df["position"].map(avg_bonus_by_position).fillna(overall_avg_bonus).values[:, None]
+    bonus_pts = bonus_rate_per_player * played_60.astype(float)
 
     total = (appearance_pts + goal_pts + assist_pts + dc_pts + cs_pts
              + save_pts + pen_save_pts + card_pts + bonus_pts)
@@ -765,7 +770,35 @@ def main():
         "cards_yellow": yellow_card_models,
         "cards_red": red_card_models,
     }
-    avg_bonus_when_played = df[df["minutes"] >= 60]["bonus"].mean() if "bonus" in df.columns else 0.3
+    # Per-position average bonus when played 60+ minutes — confirmed on
+    # real data this varies meaningfully by position (FWD 0.52 vs GK
+    # 0.21 vs DEF 0.22 vs MID 0.32), so one flat average understates
+    # forwards' real bonus potential and overstates goalkeepers'/
+    # defenders'. Falls back to the overall average for any position
+    # with too little data to trust its own number, and to the same
+    # 0.3 default as before if there's no bonus column at all.
+    #
+    # Deliberately NOT a full per-player bonus model — that was
+    # investigated already and confirmed genuinely hard (BPS regression
+    # R²=0.082; exact bonus prediction doesn't beat a naive "always 0"
+    # baseline on held-out data — see "Bonus by pos.py" / "Bonus point
+    # pred.py"). Position averaging is the honest, defensible
+    # improvement available without overclaiming precision we don't have.
+    MIN_ROWS_FOR_POSITION_BONUS_AVERAGE = 100
+    if "bonus" in df.columns:
+        played_60_df = df[df["minutes"] >= 60]
+        overall_avg_bonus = played_60_df["bonus"].mean()
+        position_counts = played_60_df.groupby("position")["bonus"].count()
+        avg_bonus_by_position = played_60_df.groupby("position")["bonus"].mean().to_dict()
+        for position, count in position_counts.items():
+            if count < MIN_ROWS_FOR_POSITION_BONUS_AVERAGE:
+                avg_bonus_by_position[position] = overall_avg_bonus
+        print(f"  Bonus averages by position: "
+              f"{ {k: round(v, 3) for k, v in avg_bonus_by_position.items()} } "
+              f"(overall flat average was {overall_avg_bonus:.3f})")
+    else:
+        avg_bonus_by_position = {}
+        overall_avg_bonus = 0.3
 
     print("Building current player and team snapshots...")
     player_snapshot = get_latest_player_snapshot(df)
@@ -859,10 +892,10 @@ def main():
               "the fixtures file and model_ready_dataset.csv.")
         return
 
-    result = predict_points(fixture_rows, components, avg_bonus_when_played)
+    result = predict_points(fixture_rows, components, avg_bonus_by_position, overall_avg_bonus)
 
     print("Running Monte Carlo simulation (5,000 draws per player) for prediction ranges...")
-    result = run_monte_carlo_simulation(result, avg_bonus_when_played)
+    result = run_monte_carlo_simulation(result, avg_bonus_by_position, overall_avg_bonus)
 
     # sum across fixtures per player, per gameweek — handles double
     # gameweeks automatically (a team with 2 fixtures produces 2 rows,

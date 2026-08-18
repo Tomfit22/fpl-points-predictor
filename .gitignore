@@ -6,3 +6,6 @@ data/processed/*.csv
 data/processed/*.json
 logs/
 .DS_Store
+*.bak
+*.bonus_bak
+__pycache__/

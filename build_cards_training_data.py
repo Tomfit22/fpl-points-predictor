@@ -83,6 +83,7 @@ def main():
         print(f"{current_path} not found — run the main pipeline first.")
         return
     current = pd.read_csv(current_path)
+    current = current.copy()
     current["season"] = "2025-26"
     current["sample_weight"] = WEIGHT_CURRENT_SEASON
 

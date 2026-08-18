@@ -56,6 +56,16 @@ def fetch_roster() -> pd.DataFrame:
             # publish this; for right-now data, this is more accurate
             # than reconstructing an estimate.
             "ownership_pct_live": float(el.get("selected_by_percent", 0) or 0),
+            # FPL's own ICT Index — a composite of Influence, Creativity,
+            # and Threat. Displayed informationally alongside our own
+            # predicted_points, not fed into the model itself — it
+            # overlaps heavily with features we already use (shots, key
+            # passes, defensive actions), which is exactly the kind of
+            # setup that caused the multicollinearity bugs found and
+            # fixed earlier in this project (roll5_starts/roll5_minutes,
+            # CBI/Tackles). A second, independent opinion is safer and
+            # still useful without that risk.
+            "ict_index": float(el.get("ict_index", 0) or 0),
         })
     return pd.DataFrame(rows)
 
