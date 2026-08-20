@@ -184,6 +184,35 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
   .empty { text-align: center; color: var(--fog); padding: 40px; font-size: 14px; }
 
+  .clickable-row { cursor: pointer; transition: background 0.12s; }
+  .clickable-row:hover { background: var(--surface-2); }
+
+  .modal-overlay {
+    display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6);
+    z-index: 100; align-items: center; justify-content: center; padding: 20px;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal-panel {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    max-width: 480px; width: 100%; max-height: 80vh; overflow-y: auto;
+    padding: 24px; position: relative;
+  }
+  .modal-close {
+    position: absolute; top: 14px; right: 16px; background: none; border: none;
+    color: var(--fog); font-size: 24px; cursor: pointer; line-height: 1; padding: 4px;
+  }
+  .modal-close:hover { color: var(--text); }
+  .modal-player-name { font-size: 20px; font-weight: 700; margin-bottom: 2px; }
+  .modal-player-sub { color: var(--fog); font-size: 13px; margin-bottom: 18px; }
+  .modal-gw-row {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 0; border-bottom: 1px solid var(--border);
+  }
+  .modal-gw-row:last-child { border-bottom: none; }
+  .modal-gw-label { color: var(--fog); font-size: 13px; width: 56px; flex-shrink: 0; }
+  .modal-gw-opponent { flex: 1; font-size: 14px; }
+  .modal-gw-points { font-weight: 700; color: var(--gold); font-size: 15px; }
+
   @media (max-width: 640px) {
     .strip { grid-template-columns: repeat(2, 1fr); }
     .hero-card { flex-direction: column; align-items: stretch; }
@@ -239,6 +268,13 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   </div>
   <div class="empty" id="emptyState" style="display:none">No players match this filter.</div>
 
+  <div class="modal-overlay" id="playerModalOverlay">
+    <div class="modal-panel" id="playerModalPanel">
+      <button class="modal-close" id="playerModalClose">&times;</button>
+      <div id="playerModalContent"></div>
+    </div>
+  </div>
+
 </div>
 
 <script>
@@ -259,7 +295,6 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       { key: 'value', label: 'Price', type: 'price' },
       { key: 'ownership_pct', label: 'Owned %', type: 'ownership_pct' },
       { key: 'predicted_points', label: 'Predicted Points', type: 'pts' },
-      { key: 'pts_bonus', label: 'Bonus', type: 'num2' },
       { key: 'sim_ceiling', label: 'Range', type: 'range' },
       { key: 'position_rank', label: 'Pos Rank', type: 'rank' },
       { key: 'next5_avg_points', label: 'Next 5 Avg', type: 'num2' },
@@ -473,9 +508,52 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         if (c.type === 'pts') cls += ' pts';
         return '<td class="' + cls + '">' + formatCell(r, c) + '</td>';
       }).join('');
-      return '<tr>' + cells + '</tr>';
+      return '<tr class="clickable-row" data-player-id="' + r.player_id + '">' + cells + '</tr>';
     }).join('');
   }
+
+  // Click-to-expand: shows a player's genuine per-gameweek predicted
+  // points (not the averaged Next 5 Avg column) — each upcoming
+  // gameweek's own opponent and its OWN individual prediction.
+  function openPlayerModal(playerId) {
+    var player = DATA.find(function(p) { return String(p.player_id) === String(playerId); });
+    if (!player) return;
+
+    var breakdown = player.gameweek_breakdown || [];
+    var rowsHtml = breakdown.length
+      ? breakdown.map(function(gw) {
+          var venue = gw.was_home_int === 1 ? 'H' : 'A';
+          var opp = gw.opponent_short != null ? (gw.opponent_short + ' (' + venue + ')') : '\u2014';
+          var pts = gw.predicted_points != null ? gw.predicted_points.toFixed(1) : '\u2014';
+          return '<div class="modal-gw-row">' +
+                   '<span class="modal-gw-label">GW' + gw.gameweek + '</span>' +
+                   '<span class="modal-gw-opponent">' + opp + '</span>' +
+                   '<span class="modal-gw-points">' + pts + '</span>' +
+                 '</div>';
+        }).join('')
+      : '<div class="modal-gw-row"><span class="modal-gw-opponent">No upcoming fixture data available.</span></div>';
+
+    document.getElementById('playerModalContent').innerHTML =
+      '<div class="modal-player-name">' + player.player_name + '</div>' +
+      '<div class="modal-player-sub">' + player.team + ' \u00b7 ' + player.position + '</div>' +
+      rowsHtml;
+
+    document.getElementById('playerModalOverlay').classList.add('open');
+  }
+
+  function closePlayerModal() {
+    document.getElementById('playerModalOverlay').classList.remove('open');
+  }
+
+  document.getElementById('tableBody').addEventListener('click', function(e) {
+    var row = e.target.closest('.clickable-row');
+    if (!row) return;
+    openPlayerModal(row.dataset.playerId);
+  });
+  document.getElementById('playerModalClose').addEventListener('click', closePlayerModal);
+  document.getElementById('playerModalOverlay').addEventListener('click', function(e) {
+    if (e.target.id === 'playerModalOverlay') closePlayerModal();
+  });
 
   document.getElementById('posTabs').addEventListener('click', function(e) {
     var btn = e.target.closest('.tab');
@@ -585,10 +663,34 @@ def build_next_fixtures_lookup(full_df: pd.DataFrame, n: int = 5) -> dict:
     return lookup
 
 
+def build_gameweek_breakdown_lookup(full_df: pd.DataFrame, n: int = 10) -> dict:
+    """For each player, their next N gameweeks' individual PREDICTED
+    POINTS (not summed/averaged) alongside opponent/home-away — the
+    real per-gameweek breakdown for the click-to-expand detail view.
+    Deliberately separate from build_next_fixtures_lookup() above,
+    which stays a short, compact ticker for the main table — this one
+    is used only when a player is actually clicked, so it can show
+    more games without cluttering the table itself."""
+    lookup = {}
+    if "gameweek" not in full_df.columns or "predicted_points" not in full_df.columns:
+        return lookup
+
+    cols = [c for c in ["gameweek", "opponent_short", "was_home_int", "predicted_points"]
+            if c in full_df.columns]
+    if "gameweek" not in cols or "predicted_points" not in cols:
+        return lookup
+
+    for player_id, group in full_df.sort_values("gameweek").groupby("player_id"):
+        rows = group[cols].head(n).to_dict("records")
+        lookup[player_id] = rows
+    return lookup
+
+
 def load_predictions() -> pd.DataFrame:
     df = pd.read_csv(PROCESSED_DIR / "live_predictions.csv")
 
     next_fixtures_lookup = build_next_fixtures_lookup(df)
+    gameweek_breakdown_lookup = build_gameweek_breakdown_lookup(df)
 
     # extract_fixtures.py now returns the FULL season's fixture list
     # (confirmed: 380 fixtures, all 38 gameweeks), not just the next
@@ -607,6 +709,7 @@ def load_predictions() -> pd.DataFrame:
 
     df = df.copy()
     df["next_fixtures"] = df["player_id"].map(next_fixtures_lookup)
+    df["gameweek_breakdown"] = df["player_id"].map(gameweek_breakdown_lookup)
 
     return df.sort_values("predicted_points", ascending=False).reset_index(drop=True)
 

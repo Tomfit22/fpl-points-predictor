@@ -34,6 +34,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import statsmodels.api as sm
+from scipy.stats import poisson as poisson_dist
 
 PROCESSED_DIR = Path("data/processed")
 RAW_DIR = Path("data/raw")
@@ -639,7 +640,8 @@ def predict_points(df: pd.DataFrame, components: dict, avg_bonus_by_position: di
 
     cs_model, cs_features = components["clean_sheet"]
     X_cs = sm.add_constant(df[cs_features].fillna(0), has_constant="add")
-    df["pred_p_clean_sheet"] = np.exp(-cs_model.predict(X_cs))
+    df["pred_goals_conceded"] = cs_model.predict(X_cs)
+    df["pred_p_clean_sheet"] = np.exp(-df["pred_goals_conceded"])
 
     saves_model, saves_features = components["saves"]
     save_mask = df["position"] == "GK"
@@ -673,6 +675,23 @@ def predict_points(df: pd.DataFrame, components: dict, avg_bonus_by_position: di
     save_pts = (df["pred_saves"] / 3) * df["pred_p_any_minutes"]
     pen_save_pts = df["pred_pens_saved"] * 5 * df["pred_p_any_minutes"]
     card_pts = -(df["pred_cards"] * 1 + df["pred_red_cards"] * 3) * df["pred_p_any_minutes"]
+
+    # FPL rule: goalkeepers and defenders lose 1 point for every 2 goals
+    # their team concedes (rounded down), while on the pitch (same
+    # 60-minute eligibility as clean sheets) — a real, standard scoring
+    # rule that was missing entirely until now. Computed as the exact
+    # Poisson expected value of floor(goals_conceded / 2), using the
+    # SAME predicted goals-conceded rate already fitted for clean
+    # sheets — no new model needed, just a second use of an existing one.
+    gc_eligible = df["position"].isin(["GK", "DEF"])
+    _max_k = 20
+    _k_vals = np.arange(_max_k + 1)
+    _pmf = poisson_dist.pmf(_k_vals[:, None], df["pred_goals_conceded"].fillna(0).values[None, :])
+    _expected_floor_half = (_pmf * (_k_vals[:, None] // 2)).sum(axis=0)
+    gc_penalty_pts = pd.Series(
+        np.where(gc_eligible, -_expected_floor_half, 0.0), index=df.index
+    ) * df["pred_p_60plus"]
+
     # per-player bonus prediction where available (validated 13.9% MAE
     # improvement over the flat position average — see
     # validate_bonus_v2.py); falls back to the position average for any
@@ -686,7 +705,7 @@ def predict_points(df: pd.DataFrame, components: dict, avg_bonus_by_position: di
         per_player_bonus = position_fallback_bonus
     bonus_pts = per_player_bonus * df["pred_p_60plus"]
 
-    df["predicted_points"] = appearance_pts + goal_pts + assist_pts + dc_pts + cs_pts + save_pts + pen_save_pts + card_pts + bonus_pts
+    df["predicted_points"] = appearance_pts + goal_pts + assist_pts + dc_pts + cs_pts + save_pts + pen_save_pts + card_pts + gc_penalty_pts + bonus_pts
 
     # save the actual POINT contribution of each component, not just the
     # raw probability/rate — needed for anything that explains WHY a
@@ -699,6 +718,7 @@ def predict_points(df: pd.DataFrame, components: dict, avg_bonus_by_position: di
     df["pts_saves"] = save_pts
     df["pts_pen_saves"] = pen_save_pts
     df["pts_cards"] = card_pts
+    df["pts_gc_penalty"] = gc_penalty_pts
     df["pts_bonus"] = bonus_pts
     return df
 
@@ -749,6 +769,7 @@ def run_monte_carlo_simulation(df: pd.DataFrame, avg_bonus_by_position: dict, ov
     pen_saves = rng.poisson(df["pred_pens_saved"].fillna(0).values[:, None], size=(n_players, n_sims))
     yellow = rng.random((n_players, n_sims)) < np.clip(df["pred_cards"].fillna(0).values[:, None], 0, 1)
     red = rng.random((n_players, n_sims)) < np.clip(df["pred_red_cards"].fillna(0).values[:, None], 0, 1)
+    goals_conceded_sim = rng.poisson(df["pred_goals_conceded"].fillna(0).values[:, None], size=(n_players, n_sims))
 
     goal_points_arr = df["position"].map(GOAL_POINTS).fillna(0).values[:, None]
     cs_points_arr = df["position"].map(CLEAN_SHEET_POINTS).fillna(0).values[:, None]
@@ -761,11 +782,22 @@ def run_monte_carlo_simulation(df: pd.DataFrame, avg_bonus_by_position: dict, ov
     save_pts = (saves / 3) * played_any
     pen_save_pts = pen_saves * 5 * played_any
     card_pts = -(yellow.astype(float) * 1 + red.astype(float) * 3) * played_any
+
+    # same FPL rule as predict_points(): GK/DEF lose 1 point per 2 goals
+    # conceded (rounded down), while on the pitch. Here we use the
+    # EXACT sampled goals_conceded draw directly (integer floor
+    # division) rather than an expected-value approximation — the
+    # whole point of the Monte Carlo simulation is drawing real
+    # outcomes, so this is even more precise than predict_points()'s
+    # deterministic version.
+    gc_eligible_arr = df["position"].isin(["GK", "DEF"]).values[:, None]
+    gc_penalty_pts = -(goals_conceded_sim // 2) * gc_eligible_arr * played_60
+
     bonus_rate_per_player = df["position"].map(avg_bonus_by_position).fillna(overall_avg_bonus).values[:, None]
     bonus_pts = bonus_rate_per_player * played_60.astype(float)
 
     total = (appearance_pts + goal_pts + assist_pts + dc_pts + cs_pts
-             + save_pts + pen_save_pts + card_pts + bonus_pts)
+             + save_pts + pen_save_pts + card_pts + gc_penalty_pts + bonus_pts)
 
     result = df.copy()
     result["sim_floor"] = np.percentile(total, 10, axis=1)
@@ -945,10 +977,10 @@ def main():
     # acceptable since double gameweeks are rare and these are secondary
     # display columns, not the points calculation itself.
     component_cols = ["predicted_points", "pred_goals", "pred_assists", "pred_p_dc_hit",
-                       "pred_p_clean_sheet", "pred_saves", "pred_pens_saved", "pred_cards", "pred_red_cards",
+                       "pred_p_clean_sheet", "pred_goals_conceded", "pred_saves", "pred_pens_saved", "pred_cards", "pred_red_cards",
                        "pred_p_any_minutes", "pred_p_60plus",
                        "pts_appearance", "pts_goals", "pts_assists", "pts_dc", "pts_clean_sheet",
-                       "pts_saves", "pts_pen_saves", "pts_cards", "pts_bonus",
+                       "pts_saves", "pts_pen_saves", "pts_cards", "pts_gc_penalty", "pts_bonus",
                        "sim_floor", "sim_p25", "sim_median", "sim_p75", "sim_ceiling"]
     component_cols = [c for c in component_cols if c in result.columns]
     summed = result.groupby(["player_id", "player_name", "team", "position", "gameweek"], as_index=False)[
