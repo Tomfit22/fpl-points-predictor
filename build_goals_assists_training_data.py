@@ -79,6 +79,14 @@ def main():
     current["season"] = "2025-26"
     current["sample_weight"] = WEIGHT_CURRENT_SEASON
 
+    # same naming mismatch already found and fixed in
+    # build_historical_season_data.py — model_ready_dataset.csv uses
+    # "goals" where the raw archive naming convention would say
+    # "goals_scored". Normalize here too rather than silently lose the
+    # column.
+    if "goals_scored" not in current.columns and "goals" in current.columns:
+        current = current.rename(columns={"goals": "goals_scored"})
+
     # current data won't have fpl_xG/fpl_xA under these exact names —
     # it has its own richer Understat-based season_xG/roll5_xG instead.
     # For the CURRENT season we compute the SAME kind of rolling feature

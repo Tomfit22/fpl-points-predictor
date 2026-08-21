@@ -180,7 +180,6 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   .num { font-family: 'IBM Plex Mono', monospace; text-align: right; }
   .pts { font-weight: 600; color: var(--gold); }
   .player-cell { font-weight: 500; }
-  .low-confidence-marker { color: #E8A33D; font-size: 12px; cursor: help; opacity: 0.85; }
   .team-cell { color: var(--fog); font-size: 13px; }
 
   .empty { text-align: center; color: var(--fog); padding: 40px; font-size: 14px; }
@@ -391,16 +390,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
   function formatCell(row, col) {
     const val = row[col.key];
-    if (col.type === 'text') {
-      // low-confidence marker: cold-start player (new signing, no real
-      // history) or a fixture involving a promoted team's league-average
-      // fallback stats — a real, known reason to trust this specific
-      // prediction less, made visible instead of only a console message
-      if (col.key === 'player_name' && row.is_low_confidence) {
-        return row[col.key] + ' <span class="low-confidence-marker" title="Lower confidence: limited real history (new signing or involves a newly-promoted team)">\u26A0</span>';
-      }
-      return row[col.key];
-    }
+    if (col.type === 'text') return row[col.key];
     if (col.type === 'team') return row[col.key];
     if (col.type === 'chip') {
       var color = POSITION_COLORS[row.position] || '#7C8AA3';

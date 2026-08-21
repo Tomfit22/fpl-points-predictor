@@ -630,26 +630,26 @@ def build_fixture_rows(player_snapshot: pd.DataFrame, team_stats: dict, fixtures
 # PREDICT
 # =========================
 def load_cs_calibrator():
-    """Loads the Platt scaling clean sheet calibrator. Switched from
-    isotonic after a direct four-way comparison across 6 temporal
-    splits found them statistically tied (3/6 wins each, 0.0005 avg
-    Brier difference) — Platt preferred as the simpler, smoother
-    model: no hard plateaus, no literal 0%/100% predictions, and just
-    two plain numbers stored in JSON (no pickle risk at all). Falls
-    back gracefully to uncalibrated predictions if the file doesn't
-    exist yet - never crashes the pipeline over a missing optional
-    file. Returns (coefficient, intercept) or None."""
-    calibrator_path = PROCESSED_DIR / "cs_platt_calibrator.json"
+    """Loads the isotonic clean sheet calibrator — validated across 6
+    independent temporal splits, 5.9% average Brier improvement, every
+    split won (see validate_calibration_multi_split.py). Falls back
+    gracefully to uncalibrated predictions if the file doesn't exist
+    yet - never crashes the pipeline over a missing optional file.
+    Returns the full saved dict (model + clip bounds) — the model is
+    intentionally a plain sklearn object, no custom wrapper class,
+    since a custom class saved in one script cannot be safely
+    unpickled from a different script (confirmed directly — this was
+    a real bug in an earlier version of this function)."""
+    calibrator_path = PROCESSED_DIR / "cs_isotonic_calibrator.pkl"
     if not calibrator_path.exists():
-        print("  (cs_platt_calibrator.json not found - using uncalibrated clean sheet "
+        print("  (cs_isotonic_calibrator.pkl not found - using uncalibrated clean sheet "
               "probabilities. Run fit_and_save_cs_calibrator.py to enable calibration.)")
         return None
-    import json
-    with open(calibrator_path, "r") as f:
-        saved = json.load(f)
-    print("  Clean sheet Platt calibrator loaded (validated vs isotonic, statistical tie, "
-          "preferred for smoother/safer behavior)")
-    return saved["coefficient"], saved["intercept"]
+    import pickle
+    with open(calibrator_path, "rb") as f:
+        saved = pickle.load(f)
+    print("  Clean sheet calibrator loaded (validated 6/6 splits, +5.9% avg Brier improvement)")
+    return saved
 
 
 def predict_points(df: pd.DataFrame, components: dict, avg_bonus_by_position: dict, overall_avg_bonus: float, bonus_v2_models: dict, cs_calibrator=None) -> pd.DataFrame:
@@ -678,10 +678,8 @@ def predict_points(df: pd.DataFrame, components: dict, avg_bonus_by_position: di
     df["pred_goals_conceded"] = cs_model.predict(X_cs)
     df["pred_p_clean_sheet_raw"] = np.exp(-df["pred_goals_conceded"])
     if cs_calibrator is not None:
-        _coef, _intercept = cs_calibrator
-        _raw_clipped = df["pred_p_clean_sheet_raw"].clip(1e-6, 1 - 1e-6)
-        _logit_raw = np.log(_raw_clipped / (1 - _raw_clipped))
-        df["pred_p_clean_sheet"] = 1 / (1 + np.exp(-(_coef * _logit_raw + _intercept)))
+        calibrated = cs_calibrator["isotonic_model"].predict(df["pred_p_clean_sheet_raw"].values)
+        df["pred_p_clean_sheet"] = np.clip(calibrated, cs_calibrator["clip_min"], cs_calibrator["clip_max"])
     else:
         df["pred_p_clean_sheet"] = df["pred_p_clean_sheet_raw"]
 

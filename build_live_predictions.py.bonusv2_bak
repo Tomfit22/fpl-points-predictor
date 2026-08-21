@@ -34,7 +34,6 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import statsmodels.api as sm
-from scipy.stats import poisson as poisson_dist
 
 PROCESSED_DIR = Path("data/processed")
 RAW_DIR = Path("data/raw")
@@ -67,7 +66,6 @@ SAVES_FEATURES = ["season_saves", "own_season_shots_against", "opp_season_shots_
 MINUTES_FEATURES = ["roll5_minutes", "roll5_starts", "consecutive_starts", "days_since_last_game"]
 CARDS_FEATURES = ["season_CrdY", "roll5_CrdY", "was_home_int"]
 RED_CARDS_FEATURES = ["season_CrdR", "roll5_CrdR", "was_home_int"]
-BONUS_FEATURES = ["roll5_bps", "season_bps", "roll5_CrdY", "roll5_minutes", "was_home_int"]
 
 
 def drop_zero_variance(df: pd.DataFrame, features: list) -> list:
@@ -182,28 +180,6 @@ def fit_dc_models(df: pd.DataFrame):
     return models
 
 
-def fit_bonus_v2_model(bonus_training_path: str = "data/processed/bonus_training_combined.csv"):
-    """Fits a real per-player expected-bonus model (Poisson per
-    position) — validated on genuinely held-out data to beat the flat
-    position-average baseline by 13.9% MAE (see validate_bonus_v2.py).
-    Returns an empty dict if the training data isn't ready, in which
-    case the caller falls back to the per-position average rather than
-    predicting zero for everyone."""
-    path = Path(bonus_training_path)
-    if not path.exists():
-        print(f"  {path} not found — run build_bonus_training_data.py first. "
-              f"Falling back to the per-position bonus average for now.")
-        return {}
-
-    bonus_df = pd.read_csv(path)
-    positions = ["GK", "DEF", "MID", "FWD"]
-    models = fit_poisson_by_position(
-        bonus_df, "bonus", BONUS_FEATURES, positions, weight_col="sample_weight"
-    )
-    print(f"  Bonus v2 model fitted: {list(models.keys())}")
-    return models
-
-
 def fit_clean_sheet_model(df: pd.DataFrame):
     team_df = df.groupby(["team", "fixture_id"]).first().reset_index()
     features = drop_zero_variance(team_df, [f for f in CS_FEATURES if f in team_df.columns])
@@ -299,8 +275,6 @@ def apply_cold_start_priors(player_snapshot: pd.DataFrame, full_history: pd.Data
         print(f"\n{n_low_games_not_flagged} players have <{COLD_START_THRESHOLD_GAMES} games but are priced at "
               f"or below their position average — treated as genuine fringe/reserve players (real signal, "
               f"not missing data), NOT given a cold-start prior.")
-
-    player_snapshot["is_cold_start"] = cold_start_mask
 
     if not cold_start_mask.any():
         return player_snapshot.drop(columns=["_games_played", "_price_ratio"])
@@ -611,16 +585,6 @@ def build_fixture_rows(player_snapshot: pd.DataFrame, team_stats: dict, fixtures
               f"using league-average stats as a fallback: {sorted(teams_using_fallback)}. "
               f"Treat predictions involving these teams as lower-confidence. ***")
 
-    # mark every row where EITHER side of the fixture used the
-    # league-average fallback — a real, known reason to trust this
-    # specific prediction less, now carried through to the final output
-    # instead of only appearing as a console message
-    for team_players in rows:
-        team_players["uses_fallback_stats"] = (
-            team_players["team"].isin(teams_using_fallback)
-            | team_players["opponent_team"].isin(teams_using_fallback)
-        )
-
     if not rows:
         return pd.DataFrame()
     return pd.concat(rows, ignore_index=True)
@@ -629,30 +593,7 @@ def build_fixture_rows(player_snapshot: pd.DataFrame, team_stats: dict, fixtures
 # =========================
 # PREDICT
 # =========================
-def load_cs_calibrator():
-    """Loads the Platt scaling clean sheet calibrator. Switched from
-    isotonic after a direct four-way comparison across 6 temporal
-    splits found them statistically tied (3/6 wins each, 0.0005 avg
-    Brier difference) — Platt preferred as the simpler, smoother
-    model: no hard plateaus, no literal 0%/100% predictions, and just
-    two plain numbers stored in JSON (no pickle risk at all). Falls
-    back gracefully to uncalibrated predictions if the file doesn't
-    exist yet - never crashes the pipeline over a missing optional
-    file. Returns (coefficient, intercept) or None."""
-    calibrator_path = PROCESSED_DIR / "cs_platt_calibrator.json"
-    if not calibrator_path.exists():
-        print("  (cs_platt_calibrator.json not found - using uncalibrated clean sheet "
-              "probabilities. Run fit_and_save_cs_calibrator.py to enable calibration.)")
-        return None
-    import json
-    with open(calibrator_path, "r") as f:
-        saved = json.load(f)
-    print("  Clean sheet Platt calibrator loaded (validated vs isotonic, statistical tie, "
-          "preferred for smoother/safer behavior)")
-    return saved["coefficient"], saved["intercept"]
-
-
-def predict_points(df: pd.DataFrame, components: dict, avg_bonus_by_position: dict, overall_avg_bonus: float, bonus_v2_models: dict, cs_calibrator=None) -> pd.DataFrame:
+def predict_points(df: pd.DataFrame, components: dict, avg_bonus_by_position: dict, overall_avg_bonus: float) -> pd.DataFrame:
     def predict_logit(model, features):
         X = sm.add_constant(df[features].fillna(0), has_constant="add")
         return pd.Series(model.predict(X), index=df.index)
@@ -675,15 +616,7 @@ def predict_points(df: pd.DataFrame, components: dict, avg_bonus_by_position: di
 
     cs_model, cs_features = components["clean_sheet"]
     X_cs = sm.add_constant(df[cs_features].fillna(0), has_constant="add")
-    df["pred_goals_conceded"] = cs_model.predict(X_cs)
-    df["pred_p_clean_sheet_raw"] = np.exp(-df["pred_goals_conceded"])
-    if cs_calibrator is not None:
-        _coef, _intercept = cs_calibrator
-        _raw_clipped = df["pred_p_clean_sheet_raw"].clip(1e-6, 1 - 1e-6)
-        _logit_raw = np.log(_raw_clipped / (1 - _raw_clipped))
-        df["pred_p_clean_sheet"] = 1 / (1 + np.exp(-(_coef * _logit_raw + _intercept)))
-    else:
-        df["pred_p_clean_sheet"] = df["pred_p_clean_sheet_raw"]
+    df["pred_p_clean_sheet"] = np.exp(-cs_model.predict(X_cs))
 
     saves_model, saves_features = components["saves"]
     save_mask = df["position"] == "GK"
@@ -717,37 +650,9 @@ def predict_points(df: pd.DataFrame, components: dict, avg_bonus_by_position: di
     save_pts = (df["pred_saves"] / 3) * df["pred_p_any_minutes"]
     pen_save_pts = df["pred_pens_saved"] * 5 * df["pred_p_any_minutes"]
     card_pts = -(df["pred_cards"] * 1 + df["pred_red_cards"] * 3) * df["pred_p_any_minutes"]
+    bonus_pts = df["position"].map(avg_bonus_by_position).fillna(overall_avg_bonus) * df["pred_p_60plus"]
 
-    # FPL rule: goalkeepers and defenders lose 1 point for every 2 goals
-    # their team concedes (rounded down), while on the pitch (same
-    # 60-minute eligibility as clean sheets) — a real, standard scoring
-    # rule that was missing entirely until now. Computed as the exact
-    # Poisson expected value of floor(goals_conceded / 2), using the
-    # SAME predicted goals-conceded rate already fitted for clean
-    # sheets — no new model needed, just a second use of an existing one.
-    gc_eligible = df["position"].isin(["GK", "DEF"])
-    _max_k = 20
-    _k_vals = np.arange(_max_k + 1)
-    _pmf = poisson_dist.pmf(_k_vals[:, None], df["pred_goals_conceded"].fillna(0).values[None, :])
-    _expected_floor_half = (_pmf * (_k_vals[:, None] // 2)).sum(axis=0)
-    gc_penalty_pts = pd.Series(
-        np.where(gc_eligible, -_expected_floor_half, 0.0), index=df.index
-    ) * df["pred_p_60plus"]
-
-    # per-player bonus prediction where available (validated 13.9% MAE
-    # improvement over the flat position average — see
-    # validate_bonus_v2.py); falls back to the position average for any
-    # player missing the required rolling features (e.g. brand-new
-    # signings with no history yet), never silently zero
-    position_fallback_bonus = df["position"].map(avg_bonus_by_position).fillna(overall_avg_bonus)
-    if bonus_v2_models:
-        v2_bonus_pred = predict_poisson_by_pos(bonus_v2_models)
-        per_player_bonus = v2_bonus_pred.where(v2_bonus_pred.notna() & (v2_bonus_pred > 0), position_fallback_bonus)
-    else:
-        per_player_bonus = position_fallback_bonus
-    bonus_pts = per_player_bonus * df["pred_p_60plus"]
-
-    df["predicted_points"] = appearance_pts + goal_pts + assist_pts + dc_pts + cs_pts + save_pts + pen_save_pts + card_pts + gc_penalty_pts + bonus_pts
+    df["predicted_points"] = appearance_pts + goal_pts + assist_pts + dc_pts + cs_pts + save_pts + pen_save_pts + card_pts + bonus_pts
 
     # save the actual POINT contribution of each component, not just the
     # raw probability/rate — needed for anything that explains WHY a
@@ -760,7 +665,6 @@ def predict_points(df: pd.DataFrame, components: dict, avg_bonus_by_position: di
     df["pts_saves"] = save_pts
     df["pts_pen_saves"] = pen_save_pts
     df["pts_cards"] = card_pts
-    df["pts_gc_penalty"] = gc_penalty_pts
     df["pts_bonus"] = bonus_pts
     return df
 
@@ -811,7 +715,6 @@ def run_monte_carlo_simulation(df: pd.DataFrame, avg_bonus_by_position: dict, ov
     pen_saves = rng.poisson(df["pred_pens_saved"].fillna(0).values[:, None], size=(n_players, n_sims))
     yellow = rng.random((n_players, n_sims)) < np.clip(df["pred_cards"].fillna(0).values[:, None], 0, 1)
     red = rng.random((n_players, n_sims)) < np.clip(df["pred_red_cards"].fillna(0).values[:, None], 0, 1)
-    goals_conceded_sim = rng.poisson(df["pred_goals_conceded"].fillna(0).values[:, None], size=(n_players, n_sims))
 
     goal_points_arr = df["position"].map(GOAL_POINTS).fillna(0).values[:, None]
     cs_points_arr = df["position"].map(CLEAN_SHEET_POINTS).fillna(0).values[:, None]
@@ -824,22 +727,11 @@ def run_monte_carlo_simulation(df: pd.DataFrame, avg_bonus_by_position: dict, ov
     save_pts = (saves / 3) * played_any
     pen_save_pts = pen_saves * 5 * played_any
     card_pts = -(yellow.astype(float) * 1 + red.astype(float) * 3) * played_any
-
-    # same FPL rule as predict_points(): GK/DEF lose 1 point per 2 goals
-    # conceded (rounded down), while on the pitch. Here we use the
-    # EXACT sampled goals_conceded draw directly (integer floor
-    # division) rather than an expected-value approximation — the
-    # whole point of the Monte Carlo simulation is drawing real
-    # outcomes, so this is even more precise than predict_points()'s
-    # deterministic version.
-    gc_eligible_arr = df["position"].isin(["GK", "DEF"]).values[:, None]
-    gc_penalty_pts = -(goals_conceded_sim // 2) * gc_eligible_arr * played_60
-
     bonus_rate_per_player = df["position"].map(avg_bonus_by_position).fillna(overall_avg_bonus).values[:, None]
     bonus_pts = bonus_rate_per_player * played_60.astype(float)
 
     total = (appearance_pts + goal_pts + assist_pts + dc_pts + cs_pts
-             + save_pts + pen_save_pts + card_pts + gc_penalty_pts + bonus_pts)
+             + save_pts + pen_save_pts + card_pts + bonus_pts)
 
     result = df.copy()
     result["sim_floor"] = np.percentile(total, 10, axis=1)
@@ -853,7 +745,6 @@ def run_monte_carlo_simulation(df: pd.DataFrame, avg_bonus_by_position: dict, ov
 
 def main():
     yellow_card_models, red_card_models = fit_cards_model()
-    bonus_v2_models = fit_bonus_v2_model()
     df = pd.read_csv(PROCESSED_DIR / "model_ready_dataset.csv")
     df = df[df["roll5_minutes"].notna()]
 
@@ -1001,22 +892,7 @@ def main():
               "the fixtures file and model_ready_dataset.csv.")
         return
 
-    cs_calibrator = load_cs_calibrator()
-    result = predict_points(fixture_rows, components, avg_bonus_by_position, overall_avg_bonus, bonus_v2_models, cs_calibrator)
-
-    # combined low-confidence flag — either a cold-start player (new
-    # signing, no real PL history to predict from) or a fixture
-    # involving a promoted team's league-average fallback stats. Both
-    # are real, known reasons to trust this specific prediction less;
-    # this makes that visible downstream (e.g. the dashboard) instead
-    # of only ever appearing as a console message during generation.
-    result["is_low_confidence"] = (
-        result.get("is_cold_start", False).fillna(False).astype(bool)
-        if "is_cold_start" in result.columns else False
-    ) | (
-        result.get("uses_fallback_stats", False).fillna(False).astype(bool)
-        if "uses_fallback_stats" in result.columns else False
-    )
+    result = predict_points(fixture_rows, components, avg_bonus_by_position, overall_avg_bonus)
 
     print("Running Monte Carlo simulation (5,000 draws per player) for prediction ranges...")
     result = run_monte_carlo_simulation(result, avg_bonus_by_position, overall_avg_bonus)
@@ -1034,10 +910,10 @@ def main():
     # acceptable since double gameweeks are rare and these are secondary
     # display columns, not the points calculation itself.
     component_cols = ["predicted_points", "pred_goals", "pred_assists", "pred_p_dc_hit",
-                       "pred_p_clean_sheet", "pred_p_clean_sheet_raw", "pred_goals_conceded", "pred_saves", "pred_pens_saved", "pred_cards", "pred_red_cards",
-                       "pred_p_any_minutes", "pred_p_60plus", "is_low_confidence",
+                       "pred_p_clean_sheet", "pred_saves", "pred_pens_saved", "pred_cards", "pred_red_cards",
+                       "pred_p_any_minutes", "pred_p_60plus",
                        "pts_appearance", "pts_goals", "pts_assists", "pts_dc", "pts_clean_sheet",
-                       "pts_saves", "pts_pen_saves", "pts_cards", "pts_gc_penalty", "pts_bonus",
+                       "pts_saves", "pts_pen_saves", "pts_cards", "pts_bonus",
                        "sim_floor", "sim_p25", "sim_median", "sim_p75", "sim_ceiling"]
     component_cols = [c for c in component_cols if c in result.columns]
     summed = result.groupby(["player_id", "player_name", "team", "position", "gameweek"], as_index=False)[

@@ -54,6 +54,7 @@ KEEP_COLUMNS = {
     "value": "value",
     "was_home": "was_home_int",
     "GW": "gameweek",
+    "opponent_team": "opponent_team",
     "expected_goals": "fpl_xG",
     "expected_assists": "fpl_xA",
     "expected_goals_conceded": "fpl_xGC",
@@ -61,6 +62,8 @@ KEEP_COLUMNS = {
     "influence": "influence",
     "creativity": "creativity",
     "threat": "threat",
+    "fixture": "fixture_id",
+    "opponent_team": "opponent_team",
 }
 
 
